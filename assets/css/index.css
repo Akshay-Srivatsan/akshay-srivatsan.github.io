@@ -1,0 +1,8 @@
+body {
+    top: 75px;
+    position: relative;
+}
+
+.pin {
+    z-index: 100;
+}
