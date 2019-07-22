@@ -1,0 +1,13 @@
+#contents a {
+    display: block;
+    line-height: 1.5;
+}
+
+iframe {
+    width: 80vw;
+    height: 54vw;
+    max-width: 640px;
+    max-height: 360px;
+    margin: 0 auto;
+    display: block;
+}

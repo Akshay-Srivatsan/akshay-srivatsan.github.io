@@ -1,0 +1,48 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 10px 50px;
+    background-color: white;
+    min-height: 100vh;
+}
+
+p {
+    line-height: 1.25;
+    margin-bottom: 1.5em;
+}
+
+a:link, a:visited {
+    color: blue;
+}
+
+.associated_image {
+    float: right;
+    width: 150px;
+    border-radius: 100px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+section, hr {
+    clear: both;
+}
+
+a.current {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    font-size: 14pt;
+    margin: 10px;
+}
