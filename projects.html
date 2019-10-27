@@ -22,11 +22,13 @@
     </header>
     <section id="section-contents">
       <h2>Contents</h2>
-      <a href="#musicplayer">Modular Music Player</a>
-      <a href="#gpu">Raspbery Pi GPU Library</a>
-      <a href="#orchestra">Robotic Orchestra</a>
-      <a href="#tech">Theatre Tech</a>
-      <a href="#other">Other</a>
+      <ol>
+        <li><a href="#musicplayer">Modular Music Player</a></li>
+        <li><a href="#gpu">Raspbery Pi GPU Library</a></li>
+        <li><a href="#orchestra">Robotic Orchestra</a></li>
+        <li><a href="#tech">Theatre Tech</a></li>
+        <li><a href="#other">Other</a></li>
+      </ol>
     </section>
     <h2>Projects</h2>
     <section id="section-musicplayer">
@@ -34,35 +36,36 @@
       <h3>Modular Music Player</h3>
       <h4>Summary</h4>
       <p>
-      I made this for the course EE47 (Press Play: Interactive Device Design) at
-      Stanford University during the summer quarter of 2015. This music player
-      differs from normal music players because it consists of multiple
-      independent modules. The "main" module contains the MP3 decoding and
-      processor, and it sends audio and video signals over ports on either side
-      of itself. The speaker and display modules have similar ports on either
-      sides of themselves, and will either use the signals they receive or pass
-      them to the port on the opposite side. This means the modules can be
+      I made this for the course EE47 (Press Play: Interactive Device Design) 
+      at Stanford University during the summer quarter of 2015. This music 
+      player differs from normal music players because it consists of multiple 
+      independent modules. The "main" module contains the MP3 decoding and 
+      processor, and it sends audio and video signals over ports on either side 
+      of itself. The speaker and display modules have similar ports on either 
+      sides of themselves, and will either use the signals they receive or pass 
+      them to the port on the opposite side. This means the modules can be 
       connected in any order.
       </p>
       <h4>Demo</h4>
-      <iframe src="https://www.youtube-nocookie.com/embed/ACNUcU-_VM0?rel=0" frameborder="0" gesture="media"
-                                                                                             allow="encrypted-media" allowfullscreen></iframe>
+      <iframe src="https://www.youtube-nocookie.com/embed/ACNUcU-_VM0?rel=0" 
+              frameborder="0" gesture="media" allow="encrypted-media" 
+                                              allowfullscreen></iframe>
       <h4>Design</h4>
       <p>
-      I designed this player for people whose needs are constantly changing.
-      Such a person may need his/her MP3 player to be quiet while at work or at
-      a library, but loud while at home. He/she may want a display while playing
-      music at home, but not want to risk damaging it while biking or running.
-      Current MP3 players are "all-or-nothing" – an iPod Classic can't be used
-      while biking because it needs headphones and has a fragile display. A
-      boombox can't be used at work because it is too loud. An MP3 player with
-      tactile buttons may be great for use in a pocket, but would be horrible
-      for use in a kitchen (water/guacamole/whatever would get stuck in the
-      buttons or enter the electronics). Conversely, capacitive buttons are
-      great for the kitchen, but horrible for in-pocket use (how would you tell
-      the buttons apart?). It's impractical to buy a separate MP3 player for
-      each of these uses, so a MP3 player which makes each part easily removable
-      and reattach-able would be much more efficient.
+      I designed this player for people whose needs are constantly changing.  
+      Such a person may need his/her MP3 player to be quiet while at work or at 
+      a library, but loud while at home. He/she may want a display while 
+      playing music at home, but not want to risk damaging it while biking or 
+      running. Current MP3 players are "all-or-nothing" – an iPod Classic can't 
+      be used while biking because it needs headphones and has a fragile 
+      display. A boombox can't be used at work because it is too loud. An MP3 
+      player with tactile buttons may be great for use in a pocket, but would 
+      be horrible for use in a kitchen (water/guacamole/whatever would get 
+      stuck in the buttons or enter the electronics). Conversely, capacitive 
+      buttons are great for the kitchen, but horrible for in-pocket use (how 
+      would you tell the buttons apart?). It's impractical to buy a separate 
+      MP3 player for each of these uses, so a MP3 player which makes each part 
+      easily removable and reattach-able would be much more efficient.
       </p>
       <h4>Links</h4>
       <ul>
@@ -80,16 +83,17 @@
       <h3>GPU Library</h3>
       <h4>Summary</h4>
       <p>
-      I made this for the course CS 107E (Computer Systems from the Ground Up)
-      at Stanford University during the winter quarter of 2018. This project
-      contains a graphics library that communicates directly with the VideoCore
-      IV 3D Graphics Processor which is on the BCM2835 SoC on a Raspberry Pi. It
-      also includes demos of a GUI library and two games. This library can draw
-      more than 60 non-trivial 1920x1080 frames per second.
+      I made this for the course CS 107E (Computer Systems from the Ground Up) 
+      at Stanford University during the winter quarter of 2018. This project 
+      contains a graphics library that communicates directly with the VideoCore 
+      IV 3D Graphics Processor which is on the BCM2835 SoC on a Raspberry Pi.  
+      It also includes demos of a GUI library and two games.  This library can 
+      draw more than 60 non-trivial 1920x1080 frames per second.
       </p>
       <h4>Demo</h4>
-      <iframe src="https://www.youtube-nocookie.com/embed/B9Hq34TlSnk?rel=0" frameborder="0" gesture="media"
-                                                                                             allow="encrypted-media" allowfullscreen></iframe>
+      <iframe src="https://www.youtube-nocookie.com/embed/B9Hq34TlSnk?rel=0" 
+              frameborder="0" gesture="media" allow="encrypted-media" 
+                                              allowfullscreen></iframe>
     </section>
     <hr />
     <section id="section-orchestra">
@@ -97,15 +101,16 @@
       <h3>Robotic Orchestra</h3>
       <h4>Summary</h4>
       <p>
-      This project was made jointly by Nitya Tarakad and me, based on a previous
-      project by Chris Strong and Saul Woolf, as part of our Applied Science
-      Research class at Menlo School. We made robots which could play multiple
-      instruments (a piano, recorder, and a drum set) and developed software to
-      keep them in sync.
+      This project was made jointly by Nitya Tarakad and me, based on a 
+      previous project by Chris Strong and Saul Woolf, as part of our Applied 
+      Science Research class at Menlo School. We made robots which could play 
+      multiple instruments (a piano, recorder, and a drum set) and developed 
+      software to keep them in sync.
       </p>
       <h4>Demo</h4>
-      <iframe src="https://www.youtube-nocookie.com/embed/HaKiNusVA1s?rel=0" frameborder="0" gesture="media"
-                                                                                             allow="encrypted-media" allowfullscreen></iframe>
+      <iframe src="https://www.youtube-nocookie.com/embed/HaKiNusVA1s?rel=0" 
+              frameborder="0" gesture="media" allow="encrypted-media" 
+                                              allowfullscreen></iframe>
       <h4>Links</h4>
       <ul>
         <li><a href="http://asr.menloschool.org">Menlo ASR</a></li>
@@ -120,8 +125,8 @@
       <h3>Theatre Tech</h3>
       <h4>Summary</h4>
       <p>
-      I worked backstage on many Menlo School Drama Department shows, as well as
-      a few other shows done at Menlo.
+      I worked backstage on many Menlo School Drama Department shows, as well 
+      as a few other shows done at Menlo.
       </p>
       <h4>Shows</h4>
       <p>
@@ -134,10 +139,10 @@
       The Mystery of Edwin Drood (Fall 2016): Light Board Operator <br />
       The Diary of Anne Frank (Winter 2017): Sound Designer and Production Lead
       <br />
-      Student-Directed One-Acts: Writer (1 skit), Director (1 skit), and
+      Student-Directed One-Acts: Writer (1 skit), Director (1 skit), and 
       Technical Director (entire show) <br />
       Dance Concert 2017: Student Technical Director <br />
-      How to Succeed in Business Without Really Trying (Spring 2017): Light
+      How to Succeed in Business Without Really Trying (Spring 2017): Light 
       Board Operator
       </p>
       <h4>Links</h4>
@@ -146,7 +151,8 @@
           <a href="https://www.menloschool.org/arts/drama.php">Menlo Drama</a>
         </li>
         <li>
-          <a href="https://www.flickr.com/photos/menlophoto/albums/">Menlo Photos</a>
+          <a href="https://www.flickr.com/photos/menlophoto/albums/">Menlo 
+            Photos</a>
         </li>
       </ul>
     </section>
@@ -155,9 +161,9 @@
       <a name="other"></a>
       <h3>Other Projects</h3>
       <p>
-      While the projects above were the biggest, I've worked on tons of
-      smaller projects. A few of them (although this is by no means an
-      exhaustive list) are:
+      While the projects above were the biggest, I've worked on tons of smaller 
+      projects. A few of them (although this is by no means an exhaustive list) 
+      are:
       </p>
       <ul>
         <li>operating system kernels</li>
