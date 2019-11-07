@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
+
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Fira Code', 'Consolas', 'Courier New', Courier, monospace;
     max-width: 720px;
     margin: 0 auto;
     padding: 10px 50px;
