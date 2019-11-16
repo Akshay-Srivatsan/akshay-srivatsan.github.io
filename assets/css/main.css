@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
 
+html {
+  background-color: lightgrey;
+}
+
 body {
     font-family: 'Fira Code', 'Consolas', 'Courier New', Courier, monospace;
     max-width: 720px;
