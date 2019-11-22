@@ -10,4 +10,5 @@ iframe {
     max-height: 360px;
     margin: 0 auto;
     display: block;
+    border: none;
 }
