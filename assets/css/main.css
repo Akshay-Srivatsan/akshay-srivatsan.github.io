@@ -1,51 +1,84 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
 
+:root {
+  --background-color: white;
+  --foreground-color: black;
+  --link-color: blue;
+  --visited-color: purple;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #202124;
+    --foreground-color: #fafafa;
+    --link-color: #88aaff;
+    --visited-color: #9977ff;
+  }
+}
+
 html {
-  background-color: lightgrey;
+  background-color: white;
+  background-color: var(--background-color);
+  color: black;
+  color: var(--foreground-color);
+}
+
+a:not(:visited) {
+  color: var(--link-color);
+}
+
+a:visited {
+  color: var(--visited-color);
 }
 
 body {
-    font-family: 'Fira Code', 'Consolas', 'Courier New', Courier, monospace;
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 10px 50px;
-    background-color: white;
-    min-height: 100vh;
+  font-family: 'Fira Code', 'Consolas', 'Courier New', Courier, monospace;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 10px 25px;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 720px) {
+  h1 {
+    text-align: center;
+  }
 }
 
 p {
-    line-height: 1.25;
-    margin-bottom: 1.5em;
+  line-height: 1.25;
+  margin-bottom: 1.5em;
 }
 
 .associated_image {
-    float: right;
-    width: 150px;
-    border-radius: 100px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+  float: right;
+  width: 150px;
+  border-radius: 100px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 section, hr {
-    clear: both;
+  clear: both;
 }
 
 a.current {
-    font-weight: bold;
-    text-decoration: none;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 footer {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav a {
-    font-size: 14pt;
-    margin: 10px;
+  font-size: 14pt;
+  margin: 10px;
 }
+
