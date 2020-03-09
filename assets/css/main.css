@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
 :root {
-  --background-color: white;
+  --background-color: #ffffff;
   --foreground-color: black;
-  --link-color: blue;
-  --visited-color: purple;
+  --link-color: #3949ab;
+  --visited-color: #7b1fa2;
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -32,7 +32,8 @@ a:visited {
 }
 
 body {
-  font-family: 'Fira Code', 'Consolas', 'Courier New', Courier, monospace;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', 'Arial', sans-serif;
+  font-size: 14pt;
   max-width: 720px;
   margin: 0 auto;
   padding: 10px 25px;
@@ -65,6 +66,7 @@ section, hr {
 a.current {
   font-weight: bold;
   text-decoration: none;
+  color: var(--foreground-color);
 }
 
 footer {
@@ -79,6 +81,6 @@ nav {
 
 nav a {
   font-size: 14pt;
-  margin: 10px;
+  margin: 5px;
 }
 
