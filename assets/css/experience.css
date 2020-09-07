@@ -2,6 +2,6 @@ section {
     margin-bottom: 100px;
 }
 
-#carta_image {
+.no_radius {
   border-radius: unset;
 }
