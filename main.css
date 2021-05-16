@@ -34,7 +34,7 @@ a:visited {
 body {
   font-family: 'Source Sans Pro', 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 14pt;
-  max-width: 720px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 10px 25px;
   min-height: 100vh;
@@ -59,8 +59,22 @@ p {
   margin-bottom: 20px;
 }
 
+.not_rounded {
+  border-radius: 0;
+}
+
 section, hr {
   clear: both;
+}
+
+hr {
+  color: var(--foreground-color);
+}
+
+section hr {
+  color: var(--foreground-color);
+  border: dotted 1px;
+  opacity: 25%;
 }
 
 a.current {
