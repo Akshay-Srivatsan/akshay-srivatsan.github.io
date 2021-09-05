@@ -1,100 +1,42 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
-
-:root {
-  --background-color: #ffffff;
-  --foreground-color: black;
-  --link-color: #3949ab;
-  --visited-color: #7b1fa2;
-}
-
-@media screen and (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #202124;
-    --foreground-color: #fafafa;
-    --link-color: #88aaff;
-    --visited-color: #9977ff;
-  }
-}
-
-html {
-  background-color: white;
-  background-color: var(--background-color);
-  color: black;
-  color: var(--foreground-color);
-}
-
-a:not(:visited) {
-  color: var(--link-color);
-}
-
-a:visited {
-  color: var(--visited-color);
-}
-
+@import url('fonts.css');
 body {
-  font-family: 'Source Sans Pro', 'Helvetica Neue', 'Arial', sans-serif;
-  font-size: 14pt;
-  max-width: 960px;
+  font-family: 'Montserrat', sans-serif;
   margin: 0 auto;
-  padding: 10px 25px;
-  min-height: 100vh;
+  max-width: 720px;
 }
 
-@media only screen and (max-width: 720px) {
-  h1 {
+:lang(la) {
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+:lang(ta) {
+  font-family: 'Noto Serif Tamil', sans-serif;
+}
+
+:lang(hi) {
+  font-family: 'Noto Serif Devanagari', sans-serif;
+}
+
+:lang(sa) {
+  font-family: 'Noto Serif Grantha', sans-serif;
+}
+
+img {
+  float: right;
+  max-width: 240px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+@media (orientation: portrait) {
+  h1, h2 {
     text-align: center;
   }
+  body {
+    max-width: inherit;
+    margin: 50px;
+  }
+  img {
+    max-width: 196px;
+  }
 }
-
-p {
-  line-height: 1.25;
-  margin-bottom: 1.5em;
-}
-
-.associated_image {
-  float: right;
-  width: 150px;
-  border-radius: 100px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-.not_rounded {
-  border-radius: 0;
-}
-
-section, hr {
-  clear: both;
-}
-
-hr {
-  color: var(--foreground-color);
-}
-
-section hr {
-  color: var(--foreground-color);
-  border: dotted 1px;
-  opacity: 25%;
-}
-
-a.current {
-  font-weight: bold;
-  text-decoration: none;
-  color: var(--foreground-color);
-}
-
-footer {
-  margin-top: 10px;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-nav a {
-  font-size: 14pt;
-  margin: 5px;
-}
-

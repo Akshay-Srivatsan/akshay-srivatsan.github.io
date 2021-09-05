@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap'); */
+@font-face {
+  font-family: 'Noto Sans Tamil';
+  src: url('assets/fonts/NotoSansTamil-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans Devanagari';
+  src: url('assets/fonts/NotoSansDevanagari-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans Grantha';
+  src: url('assets/fonts/NotoSansGrantha-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Noto Serif Tamil';
+  src: url('assets/fonts/NotoSerifTamil-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Noto Serif Devanagari';
+  src: url('assets/fonts/NotoSerifDevanagari-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Noto Serif Grantha';
+  src: url('assets/fonts/NotoSerifGrantha-Regular.ttf') format('truetype');
+}
