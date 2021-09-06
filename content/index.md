@@ -1,7 +1,6 @@
 ---
 title: Akshay Srivatsan
 description: Systems Developer, Stanford MS CS '22
-image: assets/img/portrait-small.jpg
 image-alt: Portrait of Akshay Srivatsan with San Francisco in the background.
 mainfont: Montserrat, sans
 lang: en
@@ -34,7 +33,7 @@ Facebook/Instagram, and Aqua Satellite.
 
 
 Outside of school/work, I'm also interested in analog and digital photography, 
-playing the piano, and [learning languages.]("latin.html")
+playing the piano, and [learning languages]("latin.html").
 
 
 

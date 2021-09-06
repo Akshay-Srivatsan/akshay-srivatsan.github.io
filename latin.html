@@ -19,7 +19,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap');
 /* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 @font-face {
   font-family: 'Noto Sans Tamil';
   src: url('assets/fonts/NotoSansTamil-Regular.ttf') format('truetype');
@@ -70,13 +70,13 @@ img {
   margin: 10px;
 }
 
-@media (orientation: portrait) {
+@media only screen and (max-width: 720px) {
   h1, h2 {
     text-align: center;
   }
   body {
     max-width: inherit;
-    margin: 50px;
+    margin: 25px;
   }
   img {
     max-width: 196px;
@@ -89,7 +89,7 @@ img {
       </head>
   <body>
     <h1 id="akshay-srivatsan">Akshay Srivatsan</h1>
-    <p>idem: <span lang="ta"> அக்ஷய் ஶ்ரீவத்ஸன் </span> aut <span lang="hi"> अक्षय श्रीवत्सन </span> aut <span lang="sa-Gran"> 𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍 </span></p>
+    <p>Idem: <span lang="ta"> அக்ஷய் ஶ்ரீவத்ஸன் </span> aut <span lang="hi"> अक्षय श्रीवत्सन </span> aut <span lang="sa-Gran"> 𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍 </span></p>
     <p>haec pagina praesto est in: <a href="index.html">Lingua Anglica</a>.</p>
     <h2 id="salve">Salve!</h2>
     <script>
@@ -97,6 +97,12 @@ img {
     </script>
     <p>salve! haec versio Latina situs interretialis mei est. si errata vidis, meum note! quattor annos Latinam non scripsi, ergo multorum oblivisci; me paenitet.</p>
     <p>Nota Bene: hic situs interretialis non videbitur recte translatore Google; translator Google bene intellegere Latinam non potest.</p>
+    <div id="fonts" style="display:none">
+    <p><strong>speciem litterae elige:</strong> <button onclick="document.body.style.fontFamily='Julius Sans One'">capitales quadratae</button> <button onclick="document.body.style.fontFamily='Uncial Antiqua'">capitales unciales</button></p>
+    </div>
+    <script>
+    document.getElementById("fonts").style.display = "block";
+    </script>
     <h2 id="de-me">De Me</h2>
     <p><img src="assets/img/portrait-small.jpg" alt="photographema mei ante urbem Sanctum Franciscum" /></p>
     <p>ego discipulus in Universitate Stanfordiensi sum. scientiam computatralis studio. nunc organizationem computatrorum et robotos studio, et prius graphicam et simulationem computatralem studebam. in ludo secundo, situm interretialem pro <em>Menlo JCL</em> feci, et gregem ad Latinam loquendum institui. anno quarto ludi secundi, pro <em>California JCL</em> situm interretialem gubernabam.</p>

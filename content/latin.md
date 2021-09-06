@@ -9,7 +9,7 @@ mainfont: Julius Sans One, sans
 js: assets/js/date.js
 ---
 # Akshay Srivatsan
-idem: <span lang="ta">
+Idem: <span lang="ta">
   அக்ஷய் ஶ்ரீவத்ஸன்
 </span> aut
 <span lang="hi">
@@ -32,6 +32,16 @@ paenitet.
 
 Nota Bene: hic situs interretialis non videbitur recte translatore Google; 
 translator Google bene intellegere Latinam non potest.
+
+<div id="fonts" style="display:none">
+**speciem litterae elige:**
+<button onclick="document.body.style.fontFamily='Julius Sans One'">capitales quadratae</button>
+<button onclick="document.body.style.fontFamily='Uncial Antiqua'">capitales unciales</button>
+</div>
+
+<script>
+document.getElementById("fonts").style.display = "block";
+</script>
 
 ## De Me
 
