@@ -1,0 +1,61 @@
+$fonts.css()$
+
+body {
+  $if(mainfont)$
+  font-family: $mainfont$;
+  $else$
+  font-family: sans-serif;
+  $endif$
+  $if(fontsize)$
+  font-size: $fontsize$;
+  $endif$
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+:lang(ta) {
+  $if(noto-sans)$
+  font-family: 'Noto Sans Tamil', sans-serif;
+  $else$
+  font-family: 'Noto Serif Tamil', sans-serif;
+  $endif$
+}
+
+:lang(hi) {
+  $if(noto-sans)$
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  $else$
+  font-family: 'Noto Serif Devanagari', sans-serif;
+  $endif$
+}
+
+:lang(sa-Gran) {
+  $if(noto-sans)$
+  font-family: 'Noto Sans Grantha', sans-serif;
+  $else$
+  font-family: 'Noto Serif Grantha', sans-serif;
+  $endif$
+}
+
+img {
+  float: right;
+  max-width: 240px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+@media (orientation: portrait) {
+  h1, h2 {
+    text-align: center;
+  }
+  body {
+    max-width: inherit;
+    margin: 50px;
+  }
+  img {
+    max-width: 196px;
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+}
