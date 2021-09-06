@@ -33,7 +33,7 @@ Facebook/Instagram, and Aqua Satellite.
 
 
 Outside of school/work, I'm also interested in analog and digital photography, 
-playing the piano, and [learning languages]("latin.html").
+playing the piano, and [learning languages](latin.html).
 
 
 
