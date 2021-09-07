@@ -103,7 +103,6 @@ function transcribe_string(string, mapping) {
 
 function transcribe(node, mapping) {
   if (node.nodeType === Node.TEXT_NODE) {
-    console.log(node.nodeValue);
     node.nodeValue = transcribe_string(node.nodeValue, mapping);
   } else if (node.nodeType === Node.ELEMENT_NODE) {
     if (node.lang !== "") return;
@@ -120,6 +119,7 @@ function grantha() {
   document.documentElement.lang = "sa-Gran";
   document.getElementById("grantha").disabled = true;
   document.getElementById("devanagari").disabled = false;
+  window.history.replaceState("", document.title, window.location.pathname + "?grantha");
 }
 
 function devanagari() {
@@ -128,5 +128,6 @@ function devanagari() {
   document.documentElement.lang = "sa";
   document.getElementById("grantha").disabled = false;
   document.getElementById("devanagari").disabled = true;
+  window.history.replaceState("", document.title, window.location.pathname);
 }
 

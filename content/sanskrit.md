@@ -26,6 +26,7 @@ js: transcribe.js
 
 <script>
 document.getElementById("scripts").style.display = "block";
+if (window.location.search === "?grantha") grantha();
 </script>
 
 ## हतिहास मम

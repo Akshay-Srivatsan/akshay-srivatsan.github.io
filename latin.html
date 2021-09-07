@@ -112,10 +112,22 @@ img {
     <p>salve! haec versio Latina situs interretialis mei est. si errata vidis, meum note! quattor annos Latinam non scripsi, ergo multorum oblivisci; me paenitet.</p>
     <p>Nota Bene: hic situs interretialis non videbitur recte translatore Google; translator Google bene intellegere Latinam non potest.</p>
     <div id="fonts" style="display:none">
-    <p><strong>speciem litterae elige:</strong> <button onclick="document.documentElement.lang='la'" lang="la">capitales quadratae</button> <button onclick="document.documentElement.lang='la-Latg'" lang="la-Latg">capitales unciales</button></p>
+    <p><strong>speciem litterae elige:</strong> <button onclick="capitals()" lang="la">capitales quadratae</button> <button onclick="uncials()" lang="la-Latg">capitales unciales</button></p>
     </div>
     <script>
     document.getElementById("fonts").style.display = "block";
+
+    function capitals() {
+        document.documentElement.lang='la';
+        window.history.replaceState("", document.title, window.location.pathname);
+    }
+
+    function uncials() {
+        document.documentElement.lang='la-Latg';
+        window.history.replaceState("", document.title, window.location.pathname + "?uncials");
+    }
+
+    if (window.location.search === "?uncials") uncials();
     </script>
     <h2 id="de-me">De Me</h2>
     <p><img src="assets/img/portrait-small.jpg" alt="photographema mei ante urbem Sanctum Franciscum" /></p>

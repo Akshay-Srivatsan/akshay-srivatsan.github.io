@@ -28,12 +28,24 @@ translator Google bene intellegere Latinam non potest.
 
 <div id="fonts" style="display:none">
 **speciem litterae elige:**
-<button onclick="document.documentElement.lang='la'" lang="la">capitales quadratae</button>
-<button onclick="document.documentElement.lang='la-Latg'" lang="la-Latg">capitales unciales</button>
+<button onclick="capitals()" lang="la">capitales quadratae</button>
+<button onclick="uncials()" lang="la-Latg">capitales unciales</button>
 </div>
 
 <script>
 document.getElementById("fonts").style.display = "block";
+
+function capitals() {
+    document.documentElement.lang='la';
+    window.history.replaceState("", document.title, window.location.pathname);
+}
+
+function uncials() {
+    document.documentElement.lang='la-Latg';
+    window.history.replaceState("", document.title, window.location.pathname + "?uncials");
+}
+
+if (window.location.search === "?uncials") uncials();
 </script>
 
 ## De Me
