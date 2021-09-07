@@ -8,9 +8,9 @@ noto-sans: true
 js: transcribe.js
 ---
 # अक्षय् श्रीवतसन्
-तद्: <span lang="ta">அக்ஷய் ஶ்ரீவத்ஸன்</span>  च
-<span lang="en">Akshay Srivatsan</span> च
-<span lang="sa-Gran">𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍</span>
+तद्: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta}  च
+[Akshay Srivatsan]{lang=en} च
+[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran}</span>
 
 एतद् जालपृष्ठ उपलभ्य [आङ्ग्लभाषया](index.html), [लातिन्भाषया](latin.html).
 
@@ -48,7 +48,7 @@ document.getElementById("scripts").style.display = "block";
 ## उद्योगाः
 
 * भृत्यशास्त्र:  उपग्रह समुद्रे (ग्रीष्मकाले २०२१)
-* अध्यापकाय सहायक: स्टैन्फ़ोर्ड् CS 140E (वसन्ते २०२१)
+* अध्यापकाय सहायक: स्टैन्फ़ोर्ड् [CS 140E]{lang=en}---कासंविधाः (वसन्ते २०२१)
 * तन्त्रांशाभियन्ता: इन्स्टग्रैम् (ग्रीष्मकाले २०२०)
 * तन्त्रांशाभियन्ता: फ़ैस्बुक् (ग्रीष्मकाले २०१९)
 
@@ -56,24 +56,28 @@ document.getElementById("scripts").style.display = "block";
 
 ### शोधः
 
-* [Making a Synchronous Motor 
+* [[Making a Synchronous Motor]{lang=en} 
   ](http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf)
-  (Menlo Roundtable, शरद्काले २०१६)
-* [Performance Boost: Dynamically Improving a Home's Wi-Fi Signal 
+  ([Menlo Roundtable]{lang=en}, शरद्काले २०१६)
+* [[Performance Boost: Dynamically Improving a Home's Wi-Fi Signal]{lang=en}
   ](http://ieeexplore.ieee.org/abstract/document/7425403/)
-  (IEEE Potentials, मार्च्--आप्रिल् २०१६)
-* [A Dual Sensor System for Determining the Unique Oxygen Production Signature 
-  of Plants ](http://www.cyberjournals.com/Papers/2015/01.pdf)
-  (Cyber Journals - Mechatronics, २०१५)
+  ([IEEE Potentials]{lang=en}, मार्च्--आप्रिल् २०१६)
+* [[A Dual Sensor System for Determining the Unique Oxygen Production Signature 
+  of Plants]{lang=en}](http://www.cyberjournals.com/Papers/2015/01.pdf)
+  ([Cyber Journals - Mechatronics]{lang=en}, २०१५)
 
 
 ### आविष्काराः
+::: {lang=en}
+
 * Modular Media Player (US D769941 S1)
 * Multi-Person Straw for Sharing/Tasting Beverages (US 9186007 B2)
 * Apparatus and Method for Repairing a Surface Submerged in Liquid by Creating 
   a Workable Space (US 8925168 B2)
 * System, Methodology, and Product to Sort, Organize, and Store Toy 
   Building/Construction Sets (US 7987990 B2)
+  
+:::
 
 ### परिशब्दाः
 

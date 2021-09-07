@@ -6,9 +6,9 @@ lang: en
 noto-sans: true
 ---
 # Akshay Srivatsan
-Also: <span lang="ta">அக்ஷய் ஶ்ரீவத்ஸன்</span>,
-<span lang="hi">अक्षय श्रीवत्सन</span>,
-<span lang="sa-Gran">𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍</span>
+Also: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta},
+[अक्षय श्रीवत्सन]{lang=hi},
+[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran}
 
 This page is also available in [Latin](latin.html) and [Sanskrit](sanskrit.html).
 

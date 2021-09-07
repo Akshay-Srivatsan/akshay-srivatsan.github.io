@@ -4,7 +4,8 @@ TEMPLATES=$(wildcard templates/*)
 SOURCE=$(wildcard content/*.md)
 HTML=$(patsubst content/%.md,%.html,$(SOURCE))
 
-PANDOCFLAGS=--standalone\
+PANDOCFLAGS=--from markdown+bracketed_spans+fenced_divs\
+			--standalone\
 			--template=$(HTML_TEMPLATE)\
 			-fmarkdown-implicit_figures\
 			--variable copyyear=$(shell date +"%Y")\
