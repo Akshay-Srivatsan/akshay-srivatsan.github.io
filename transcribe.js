@@ -117,6 +117,7 @@ function transcribe(node, mapping) {
 function grantha() {
   transcribe(document.body, to_grantha);
   document.title = transcribe_string(document.title, to_grantha);
+  document.documentElement.lang = "sa-Gran";
   document.getElementById("grantha").disabled = true;
   document.getElementById("devanagari").disabled = false;
 }
@@ -124,6 +125,7 @@ function grantha() {
 function devanagari() {
   transcribe(document.body, to_devanagari);
   document.title = transcribe_string(document.title, to_devanagari);
+  document.documentElement.lang = "sa";
   document.getElementById("grantha").disabled = false;
   document.getElementById("devanagari").disabled = true;
 }
