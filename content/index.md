@@ -6,15 +6,9 @@ lang: en
 noto-sans: true
 ---
 # Akshay Srivatsan
-Also: <span lang="ta">
-  அக்ஷய் ஶ்ரீவத்ஸன்
-</span>,
-<span lang="hi">
-  अक्षय श्रीवत्सन
-</span>,
-<span lang="sa-Gran">
-  𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍
-</span>
+Also: <span lang="ta">அக்ஷய் ஶ்ரீவத்ஸன்</span>,
+<span lang="hi">अक्षय श्रीवत्सन</span>,
+<span lang="sa-Gran">𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍</span>
 
 This page is also available in [Latin](latin.html) and [Sanskrit](sanskrit.html).
 
@@ -33,7 +27,6 @@ Facebook/Instagram, and Aqua Satellite.
 
 Outside of school/work, I'm also interested in analog and digital photography, 
 playing the piano, and [learning languages](latin.html).
-
 
 
 ## Education

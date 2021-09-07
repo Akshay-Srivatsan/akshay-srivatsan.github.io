@@ -8,15 +8,9 @@ lang: la
 js: assets/js/date.js
 ---
 # Akshay Srivatsan
-Idem: <span lang="ta">
-  அக்ஷய் ஶ்ரீவத்ஸன்
-</span> aut
-<span lang="hi">
-  अक्षय श्रीवत्सन
-</span> aut
-<span lang="sa-Gran">
-  𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍
-</span>
+Idem: <span lang="ta">அக்ஷய் ஶ்ரீவத்ஸன்</span> aut
+<span lang="hi">अक्षय श्रीवत्सन</span> aut
+<span lang="sa-Gran">𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍</span>
 
 haec pagina praesto est in [Lingua Anglica](index.html) et [Lingua Sanscrita](sanskrit.html).
 
