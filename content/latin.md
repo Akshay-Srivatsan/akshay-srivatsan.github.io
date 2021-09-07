@@ -54,8 +54,8 @@ institui.  anno quarto ludi secundi, pro _California JCL_ situm
 interretialem gubernabam.
 
 extra ludum et opus, mihi photographia, clavile cantare,
-et [linguas discere](index.html) placet.  linguas Latinam, 
-Tamulicam, Hindicam, et Sanscritam aliquid scio.
+et [linguas discere](sanskrit.html) placet.  linguas Anglicam, Latinam, Tamulicam, 
+Hindicam, et Sanscritam aliquid scio.
 
 
 ## Eruditio Mea

@@ -13,6 +13,14 @@ body {
   max-width: 720px;
 }
 
+:lang(en) {
+  $if(mainfont)$
+  font-family: $mainfont$, sans-serif;
+  $else$
+  font-family: 'Montserrat', sans-serif;
+  $endif$
+}
+
 :lang(la) {
   $if(mainfont)$
   font-family: $mainfont$, sans-serif;
