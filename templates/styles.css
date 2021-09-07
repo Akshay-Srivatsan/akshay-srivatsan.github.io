@@ -2,15 +2,31 @@ $fonts.css()$
 
 body {
   $if(mainfont)$
-  font-family: $mainfont$;
+  font-family: $mainfont$, sans-serif;
   $else$
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   $endif$
   $if(fontsize)$
   font-size: $fontsize$;
   $endif$
   margin: 0 auto;
   max-width: 720px;
+}
+
+:lang(la) {
+  $if(mainfont)$
+  font-family: $mainfont$, sans-serif;
+  $else$
+  font-family: 'Julius Sans One', sans-serif;
+  $endif$
+}
+
+:lang(la-Latg) {
+  $if(mainfont)$
+  font-family: $mainfont$, sans-serif;
+  $else$
+  font-family: 'Uncial Antiqua', sans-serif;
+  $endif$
 }
 
 :lang(ta) {
@@ -21,7 +37,7 @@ body {
   $endif$
 }
 
-:lang(hi) {
+:lang(sa), :lang(hi) {
   $if(noto-sans)$
   font-family: 'Noto Sans Devanagari', sans-serif;
   $else$

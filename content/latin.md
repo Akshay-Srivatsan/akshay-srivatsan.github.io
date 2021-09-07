@@ -5,7 +5,6 @@ description: programmator, Stanford MS CS MMXXII
 image: assets/img/portrait-small.jpg
 image-alt: photographema mei ante urbem Sanctum Franciscum
 lang: la
-mainfont: Julius Sans One, sans
 js: assets/js/date.js
 ---
 # Akshay Srivatsan
@@ -19,7 +18,7 @@ Idem: <span lang="ta">
   𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍
 </span>
 
-haec pagina praesto est in: [Lingua Anglica](index.html).
+haec pagina praesto est in [Lingua Anglica](index.html) et [Lingua Sanscrita](sanskrit.html).
 
 ## Salve!
 <script>
@@ -35,8 +34,8 @@ translator Google bene intellegere Latinam non potest.
 
 <div id="fonts" style="display:none">
 **speciem litterae elige:**
-<button onclick="document.body.style.fontFamily='Julius Sans One'">capitales quadratae</button>
-<button onclick="document.body.style.fontFamily='Uncial Antiqua'">capitales unciales</button>
+<button onclick="document.documentElement.lang='la'" lang="la">capitales quadratae</button>
+<button onclick="document.documentElement.lang='la-Latg'" lang="la-Latg">capitales unciales</button>
 </div>
 
 <script>

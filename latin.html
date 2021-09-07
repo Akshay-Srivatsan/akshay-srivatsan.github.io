@@ -15,7 +15,9 @@
         <meta name="author" content="Akshay Srivatsan" />
                     <meta name="description" content="programmator, Stanford MS CS MMXXII" />
         <meta name="generator" content="pandoc" />
-    <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat&family=Uncial+Antiqua&display=swap" rel="stylesheet">     <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap');
 /* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
@@ -46,16 +48,24 @@
 }
 
 body {
-    font-family: Julius Sans One, sans;
+    font-family: 'Montserrat', sans-serif;
       margin: 0 auto;
   max-width: 720px;
 }
+
+:lang(la) {
+    font-family: 'Julius Sans One', sans-serif;
+  }
+
+:lang(la-Latg) {
+    font-family: 'Uncial Antiqua', sans-serif;
+  }
 
 :lang(ta) {
     font-family: 'Noto Serif Tamil', sans-serif;
   }
 
-:lang(hi) {
+:lang(sa), :lang(hi) {
     font-family: 'Noto Serif Devanagari', sans-serif;
   }
 
@@ -90,7 +100,7 @@ img {
   <body>
     <h1 id="akshay-srivatsan">Akshay Srivatsan</h1>
     <p>Idem: <span lang="ta"> அக்ஷய் ஶ்ரீவத்ஸன் </span> aut <span lang="hi"> अक्षय श्रीवत्सन </span> aut <span lang="sa-Gran"> 𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍 </span></p>
-    <p>haec pagina praesto est in: <a href="index.html">Lingua Anglica</a>.</p>
+    <p>haec pagina praesto est in <a href="index.html">Lingua Anglica</a> et <a href="sanskrit.html">Lingua Sanscrita</a>.</p>
     <h2 id="salve">Salve!</h2>
     <script>
       documentum.scribe(`<b>hodie est:</b> ${hodie()} (${hodie_breve()})`);
@@ -98,7 +108,7 @@ img {
     <p>salve! haec versio Latina situs interretialis mei est. si errata vidis, meum note! quattor annos Latinam non scripsi, ergo multorum oblivisci; me paenitet.</p>
     <p>Nota Bene: hic situs interretialis non videbitur recte translatore Google; translator Google bene intellegere Latinam non potest.</p>
     <div id="fonts" style="display:none">
-    <p><strong>speciem litterae elige:</strong> <button onclick="document.body.style.fontFamily='Julius Sans One'">capitales quadratae</button> <button onclick="document.body.style.fontFamily='Uncial Antiqua'">capitales unciales</button></p>
+    <p><strong>speciem litterae elige:</strong> <button onclick="document.documentElement.lang='la'" lang="la">capitales quadratae</button> <button onclick="document.documentElement.lang='la-Latg'" lang="la-Latg">capitales unciales</button></p>
     </div>
     <script>
     document.getElementById("fonts").style.display = "block";
