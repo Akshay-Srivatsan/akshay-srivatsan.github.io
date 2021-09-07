@@ -105,10 +105,10 @@ in manu "Flumen and Fabulae" laborabam.
 ### Inventions
 * Modular Media Player (US D769941 S1)
 * Multi-Person Straw for Sharing/Tasting Beverages (US 9186007 B2)
-* Apparatus and Method for Repairing a Surface Submerged in Liquid by 
-* Creating a Workable Space (US 8925168 B2)
+* Apparatus and Method for Repairing a Surface Submerged in Liquid by Creating 
+  a Workable Space (US 8925168 B2)
 * System, Methodology, and Product to Sort, Organize, and Store Toy 
-* Building/Construction Sets (US 7987990 B2)
+  Building/Construction Sets (US 7987990 B2)
 
 ### Links
 * [GitHub](https://github.com/Akshay-Srivatsan)
