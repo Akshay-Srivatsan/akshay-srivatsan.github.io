@@ -55,31 +55,30 @@ if (window.location.search === "?uncials") uncials();
 ego discipulus in Universitate Stanfordiensi sum.  scientiam computatralis 
 studio.  nunc organizationem computatrorum et robotos studio, et prius 
 graphicam et simulationem computatralem studebam.  in ludo secundo, situm 
-interretialem pro _Menlo JCL_ feci, et gregem ad Latinam loquendum 
-institui.  anno quarto ludi secundi, pro _California JCL_ situm 
-interretialem gubernabam.
+interretialem pro _Menlo JCL_ feci, et gregem ad Latinam loquendum institui.  
+anno quarto ludi secundi, pro _California JCL_ situm interretialem gubernabam.
 
 extra ludum et opus, mihi photographia, clavile cantare,
-et [linguas discere](sanskrit.html) placet.  linguas Anglicam, Latinam, Tamulicam, 
-Hindicam, et Sanscritam aliquid scio.
+et [linguas discere](sanskrit.html) placet.  linguas Anglicam, Latinam, 
+Tamulicam, Hindicam, et Sanscritam aliquid scio.
 
 
 ## Eruditio Mea
 
-in Universitate Stanfordiensi pro Diplomate Magistri in Scientia 
-Computatrali studio.  Baccalaureus quoque in Stanford perfeci (a MMXVII ad MMXXI).  
-prius, in Ludo Menloniensi studebam.
+in Universitate Stanfordiensi pro Diplomate Magistri in Scientia Computatrali 
+studio.  Baccalaureus quoque in Stanford perfeci (a MMXVII ad MMXXI).  prius, 
+in Ludo Menloniensi studebam.
 
 ## Negotia Mea
 
 ### Architectus Robotorum (Tiro): Aqua Satellite (Aestate MMXXI)
 in Aqua Satellite, modus programmandi statuebam et programmam initialem ad 
-robotum movendum scribebam.  roboto nostro nomen "Thaumas" est, simile dei 
-Graeci miraculorum maris.  Thaumas vehiculum automatum subaqueanum ad 
-mare explorandum est.
+robotum movendum scribebam.  roboto nostro nomen "Thaumas" est, simile deo 
+Graeco miraculorum maris.  Thaumas vehiculum automatum subaqueanum ad mare 
+explorandum est.
 
 ### Administer Cursus: Stanford CS 140E (Vere MMXXI)
-adjuvebam cursu _CS 140E: Inventioque Constructioque Nucelorum Computatrorum_.  
+cursu _CS 140E: Inventioque Constructioque Nucelorum Computatrorum_ adjuvebam.  
 in laboratorio discipulos juvebam, et interdum cursum docui.
 
 ### Productio Ingeniarius (Tiro): Instagram (Aestate MMXX)
