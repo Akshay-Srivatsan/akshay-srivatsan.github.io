@@ -120,6 +120,8 @@ function grantha() {
   document.getElementById("grantha").disabled = true;
   document.getElementById("devanagari").disabled = false;
   window.history.replaceState("", document.title, window.location.pathname + "?grantha");
+  document.getElementById("grantha-name").style.display = "none";
+  document.getElementById("devanagari-name").style.display = "inline";
 }
 
 function devanagari() {
@@ -129,5 +131,7 @@ function devanagari() {
   document.getElementById("grantha").disabled = false;
   document.getElementById("devanagari").disabled = true;
   window.history.replaceState("", document.title, window.location.pathname);
+  document.getElementById("grantha-name").style.display = "inline";
+  document.getElementById("devanagari-name").style.display = "none";
 }
 
