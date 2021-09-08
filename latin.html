@@ -35,6 +35,10 @@
   src: url('assets/fonts/NotoSansGrantha-Regular.ttf') format('truetype');
 }
 @font-face {
+  font-family: 'Noto Sans Brahmi';
+  src: url('assets/fonts/NotoSansBrahmi-Regular.ttf') format('truetype');
+}
+@font-face {
   font-family: 'Noto Serif Tamil';
   src: url('assets/fonts/NotoSerifTamil-Regular.ttf') format('truetype');
 }
@@ -45,12 +49,6 @@
 @font-face {
   font-family: 'Noto Serif Grantha';
   src: url('assets/fonts/NotoSerifGrantha-Regular.ttf') format('truetype');
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-      margin: 0 auto;
-  max-width: 720px;
 }
 
 :lang(en) {
@@ -76,6 +74,16 @@ body {
 :lang(sa-Gran) {
     font-family: 'Noto Serif Grantha', sans-serif;
   }
+
+:lang(sa-Brah) {
+  font-family: 'Noto Sans Brahmi', sans-serif;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+      margin: 0 auto;
+  max-width: 720px;
+}
 
 img {
   float: right;
@@ -103,16 +111,16 @@ img {
       </head>
   <body>
     <h1 id="akshay-srivatsan">Akshay Srivatsan</h1>
-    <p>Idem: <span lang="ta">அக்ஷய் ஶ்ரீவத்ஸன்</span> aut <span lang="hi">अक्षय श्रीवत्सन</span> aut <span lang="sa-Gran">𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍</span></p>
+    <p>idem: <span lang="ta">அக்ஷய் ஶ்ரீவத்ஸன்</span> et <span lang="hi">अक्षय श्रीवत्सन</span> et <span lang="sa-Gran">𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍</span> et <span lang="sa-Brah">𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆</span></p>
     <p>haec pagina praesto est in <a href="index.html">Lingua Anglica</a> et <a href="sanskrit.html">Lingua Sanscrita</a>.</p>
     <h2 id="salve">Salve!</h2>
     <script>
       documentum.scribe(`<b>hodie est:</b> ${hodie()} (${hodie_breve()})`);
     </script>
     <p>salve! haec versio Latina situs interretialis mei est. si errata vidis, meum note! quattor annos Latinam non scripsi, ergo multorum oblivisci; me paenitet.</p>
-    <p>Nota Bene: hic situs interretialis non videbitur recte translatore Google; translator Google bene intellegere Latinam non potest.</p>
+    <p>nota bene: hic situs interretialis non videbitur recte translatore Google; translator Google bene intellegere Latinam non potest.</p>
     <div id="fonts" style="display:none">
-    <p><strong>speciem litterae elige:</strong> <button onclick="capitals()" lang="la">capitales quadratae</button> <button onclick="uncials()" lang="la-Latg">capitales unciales</button></p>
+    <p><strong>speciem litterarum elige:</strong> <button onclick="capitals()" lang="la">capitales quadratae</button> <button onclick="uncials()" lang="la-Latg">capitales unciales</button></p>
     </div>
     <script>
     document.getElementById("fonts").style.display = "block";

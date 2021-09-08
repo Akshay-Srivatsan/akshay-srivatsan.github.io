@@ -49,7 +49,6 @@ let to_grantha = {
   'ष': '𑌷',
   'स': '𑌸',
   'ह': '𑌹',
-  'ऻ': '𑌻',
   '़': '𑌼',
   'ऽ': '𑌽',
   'ा': '𑌾',
@@ -84,9 +83,96 @@ let to_grantha = {
   '९': '௯',
 };
 
-let to_devanagari = {};
+let to_brahmi = {
+  'ँ': '𑀀',
+  'ं': '𑀁',
+  'ः': '𑀂',
+  'अ': '𑀅',
+  'आ': '𑀆',
+  'इ': '𑀇',
+  'ई': '𑀈',
+  'उ': '𑀉',
+  'ऊ': '𑀊',
+  'ऋ': '𑀋',
+  'ऌ': '𑀍',
+  'ए': '𑀏',
+  'ऐ': '𑀐',
+  'ओ': '𑀑',
+  'औ': '𑀒',
+  'क': '𑀓',
+  'ख': '𑀔',
+  'ग': '𑀕',
+  'घ': '𑀖',
+  'ङ': '𑀗',
+  'च': '𑀘',
+  'छ': '𑀙',
+  'ज': '𑀚',
+  'झ': '𑀛',
+  'ञ': '𑀜',
+  'ट': '𑀝',
+  'ठ': '𑀞',
+  'ड': '𑀟',
+  'ढ': '𑀠',
+  'ण': '𑀡',
+  'त': '𑀢',
+  'थ': '𑀣',
+  'द': '𑀤',
+  'ध': '𑀥',
+  'न': '𑀦',
+  'ऩ': '𑀷',
+  'प': '𑀧',
+  'फ': '𑀨',
+  'ब': '𑀩',
+  'भ': '𑀪',
+  'म': '𑀫',
+  'य': '𑀬',
+  'र': '𑀭',
+  'ऱ': '𑀶',
+  'ल': '𑀮',
+  'ळ': '𑀴',
+  'ऴ': '𑀵',
+  'व': '𑀯',
+  'श': '𑀰',
+  'ष': '𑀱',
+  'स': '𑀲',
+  'ह': '𑀳',
+  'ा': '𑀸',
+  'ि': '𑀺',
+  'ी': '𑀻',
+  'ु': '𑀼',
+  'ू': '𑀽',
+  'ृ': '𑀾',
+  'ॄ': '𑀿',
+  'े': '𑁂',
+  'ै': '𑁃',
+  'ो': '𑁄',
+  'ौ': '𑁅',
+  '्': '𑁆',
+  'ॠ': '𑀌',
+  'ॡ': '𑀎',
+  'ॢ': '𑁀',
+  'ॣ': '𑁁',
+  '।': '𑁇',
+  '॥': '𑁈',
+  '०': '𑁦',
+  '१': '𑁧',
+  '२': '𑁨',
+  '३': '𑁩',
+  '४': '𑁪',
+  '५': '𑁫',
+  '६': '𑁬',
+  '७': '𑁭',
+  '८': '𑁮',
+  '९': '𑁯',
+};
+
+let from_grantha = {};
 for (let key in to_grantha) {
-  to_devanagari[to_grantha[key]] = key;
+  from_grantha[to_grantha[key]] = key;
+}
+let from_brahmi = {};
+for (let key in to_brahmi) {
+  from_brahmi[to_brahmi[key]] = key;
 }
 
 function transcribe_string(string, mapping) {
@@ -113,25 +199,42 @@ function transcribe(node, mapping) {
   }
 }
 
+function set_script(script) {
+  document.getElementById("grantha").disabled = false;
+  document.getElementById("devanagari").disabled = false;
+  document.getElementById("brahmi").disabled = false;
+  document.getElementById("grantha-name").style.display = "inline";
+  document.getElementById("devanagari-name").style.display = "inline";
+  document.getElementById("brahmi-name").style.display = "inline";
+
+  document.getElementById(script).disabled = true;
+  document.getElementById(script + "-name").style.display = "none";
+}
+
 function grantha() {
+  devanagari();
   transcribe(document.body, to_grantha);
   document.title = transcribe_string(document.title, to_grantha);
   document.documentElement.lang = "sa-Gran";
-  document.getElementById("grantha").disabled = true;
-  document.getElementById("devanagari").disabled = false;
   window.history.replaceState("", document.title, window.location.pathname + "?grantha");
-  document.getElementById("grantha-name").style.display = "none";
-  document.getElementById("devanagari-name").style.display = "inline";
+  set_script("grantha");
+}
+
+function brahmi() {
+  devanagari();
+  transcribe(document.body, to_brahmi);
+  document.title = transcribe_string(document.title, to_brahmi);
+  document.documentElement.lang = "sa-Gran";
+  window.history.replaceState("", document.title, window.location.pathname + "?brahmi");
+  set_script("brahmi");
 }
 
 function devanagari() {
-  transcribe(document.body, to_devanagari);
-  document.title = transcribe_string(document.title, to_devanagari);
+  transcribe(document.body, from_brahmi);
+  transcribe(document.body, from_grantha);
+  document.title = transcribe_string(document.title, from_grantha);
+  document.title = transcribe_string(document.title, from_brahmi);
   document.documentElement.lang = "sa";
-  document.getElementById("grantha").disabled = false;
-  document.getElementById("devanagari").disabled = true;
   window.history.replaceState("", document.title, window.location.pathname);
-  document.getElementById("grantha-name").style.display = "inline";
-  document.getElementById("devanagari-name").style.display = "none";
+  set_script("devanagari");
 }
-

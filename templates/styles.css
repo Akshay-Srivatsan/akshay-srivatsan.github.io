@@ -13,54 +13,6 @@ body {
   max-width: 720px;
 }
 
-:lang(en) {
-  $if(mainfont)$
-  font-family: $mainfont$, sans-serif;
-  $else$
-  font-family: 'Montserrat', sans-serif;
-  $endif$
-}
-
-:lang(la) {
-  $if(mainfont)$
-  font-family: $mainfont$, sans-serif;
-  $else$
-  font-family: 'Julius Sans One', sans-serif;
-  $endif$
-}
-
-:lang(la-Latg) {
-  $if(mainfont)$
-  font-family: $mainfont$, sans-serif;
-  $else$
-  font-family: 'Uncial Antiqua', sans-serif;
-  $endif$
-}
-
-:lang(ta) {
-  $if(noto-sans)$
-  font-family: 'Noto Sans Tamil', sans-serif;
-  $else$
-  font-family: 'Noto Serif Tamil', sans-serif;
-  $endif$
-}
-
-:lang(sa), :lang(hi) {
-  $if(noto-sans)$
-  font-family: 'Noto Sans Devanagari', sans-serif;
-  $else$
-  font-family: 'Noto Serif Devanagari', sans-serif;
-  $endif$
-}
-
-:lang(sa-Gran) {
-  $if(noto-sans)$
-  font-family: 'Noto Sans Grantha', sans-serif;
-  $else$
-  font-family: 'Noto Serif Grantha', sans-serif;
-  $endif$
-}
-
 img {
   float: right;
   max-width: 240px;

@@ -15,6 +15,10 @@
   src: url('assets/fonts/NotoSansGrantha-Regular.ttf') format('truetype');
 }
 @font-face {
+  font-family: 'Noto Sans Brahmi';
+  src: url('assets/fonts/NotoSansBrahmi-Regular.ttf') format('truetype');
+}
+@font-face {
   font-family: 'Noto Serif Tamil';
   src: url('assets/fonts/NotoSerifTamil-Regular.ttf') format('truetype');
 }
@@ -25,4 +29,56 @@
 @font-face {
   font-family: 'Noto Serif Grantha';
   src: url('assets/fonts/NotoSerifGrantha-Regular.ttf') format('truetype');
+}
+
+:lang(en) {
+  $if(mainfont)$
+  font-family: $mainfont$, sans-serif;
+  $else$
+  font-family: 'Montserrat', sans-serif;
+  $endif$
+}
+
+:lang(la) {
+  $if(mainfont)$
+  font-family: $mainfont$, sans-serif;
+  $else$
+  font-family: 'Julius Sans One', sans-serif;
+  $endif$
+}
+
+:lang(la-Latg) {
+  $if(mainfont)$
+  font-family: $mainfont$, sans-serif;
+  $else$
+  font-family: 'Uncial Antiqua', sans-serif;
+  $endif$
+}
+
+:lang(ta) {
+  $if(noto-sans)$
+  font-family: 'Noto Sans Tamil', sans-serif;
+  $else$
+  font-family: 'Noto Serif Tamil', sans-serif;
+  $endif$
+}
+
+:lang(sa), :lang(hi) {
+  $if(noto-sans)$
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  $else$
+  font-family: 'Noto Serif Devanagari', sans-serif;
+  $endif$
+}
+
+:lang(sa-Gran) {
+  $if(noto-sans)$
+  font-family: 'Noto Sans Grantha', sans-serif;
+  $else$
+  font-family: 'Noto Serif Grantha', sans-serif;
+  $endif$
+}
+
+:lang(sa-Brah) {
+  font-family: 'Noto Sans Brahmi', sans-serif;
 }

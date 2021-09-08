@@ -8,9 +8,10 @@ lang: la
 js: assets/js/date.js
 ---
 # Akshay Srivatsan
-Idem: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} aut
-[अक्षय श्रीवत्सन]{lang=hi} aut
-[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran}
+idem: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} et
+[अक्षय श्रीवत्सन]{lang=hi} et
+[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran} et
+[𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah}
 
 haec pagina praesto est in [Lingua Anglica](index.html) et [Lingua Sanscrita](sanskrit.html).
 
@@ -20,14 +21,13 @@ haec pagina praesto est in [Lingua Anglica](index.html) et [Lingua Sanscrita](sa
 </script>
 
 salve! haec versio Latina situs interretialis mei est. si errata vidis, meum 
-note! quattor annos Latinam non scripsi, ergo multorum oblivisci; me 
-paenitet.
+note! quattor annos Latinam non scripsi, ergo multorum oblivisci; me paenitet.
 
-Nota Bene: hic situs interretialis non videbitur recte translatore Google; 
+nota bene: hic situs interretialis non videbitur recte translatore Google; 
 translator Google bene intellegere Latinam non potest.
 
 <div id="fonts" style="display:none">
-**speciem litterae elige:**
+**speciem litterarum elige:**
 <button onclick="capitals()" lang="la">capitales quadratae</button>
 <button onclick="uncials()" lang="la-Latg">capitales unciales</button>
 </div>

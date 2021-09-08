@@ -8,7 +8,8 @@ noto-sans: true
 # Akshay Srivatsan
 Also: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta},
 [अक्षय श्रीवत्सन]{lang=hi},
-[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran}
+[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran}, and
+[𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah}
 
 This page is also available in [Latin](latin.html) and [Sanskrit](sanskrit.html).
 
