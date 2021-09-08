@@ -19,11 +19,12 @@ This page is also available in [Latin](latin.html) and [Sanskrit](sanskrit.html)
 background.](assets/img/portrait-small.jpg)
 
 I'm a graduate student at Stanford University doing my masters in Computer 
-Science.  I focus mostly on computer systems and robotics nowadays, and I 
-previously did my undergrad focusing on computer graphics and simulation.  My 
-experience ranges from raytracers to websites, but I mostly like working at the 
-OS level and working with hardware.  I've worked at Stanford, 
-Facebook/Instagram, and Aqua Satellite.
+Science.
+I focus mostly on computer systems and robotics nowadays, and I previously did 
+my undergrad focusing on computer graphics and simulation.
+My experience ranges from raytracers to websites, but I mostly like working at 
+the OS level and working with hardware.
+I've worked at Stanford, Facebook/Instagram, and Aqua Satellite.
 
 
 Outside of school/work, I'm also interested in analog and digital photography, 
@@ -33,9 +34,10 @@ playing the piano, and [learning languages](latin.html).
 ## Education
 
 I'm currently pursuing a masters degree at Stanford University, focusing on 
-computer systems within the Department of Computer Science.  I also did my 
-undergrad at Stanford (2017--2021), focusing on computer graphics.  Before 
-that, I went to Menlo School for high school.
+computer systems within the Department of Computer Science.
+I also did my undergrad at Stanford (2017--2021), focusing on computer 
+graphics.
+Before that, I went to Menlo School for high school.
 
 ## Experience
 
@@ -47,8 +49,8 @@ vehicle.
 
 ### Course Assistant: Stanford CS 140E (Spring 2021)
 
-I assisted with _CS 140E: Operating Systems Design and Implementation_.  As 
-part of my responsibilities, I reviewed lesson plans, refined assignment 
+I assisted with _CS 140E: Operating Systems Design and Implementation_.
+As part of my responsibilities, I reviewed lesson plans, refined assignment 
 specifications, held office hours, assisted students in biweekly lab sessions, 
 and evaluated student work.
 
