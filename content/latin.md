@@ -8,6 +8,9 @@ lang: la
 js: assets/js/date.js
 ---
 # Akshay Srivatsan
+
+[/ak.sei̯ sriː.wat.san/]{lang=la-phonipa}
+
 idem: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} et
 [अक्षय श्रीवत्सन]{lang=hi} et
 [𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran} et
@@ -28,20 +31,31 @@ nota bene: hic situs interretialis non videbitur recte translatore Google;
 translator Google bene intellegere Latinam non potest.
 
 <div id="fonts" style="display:none">
-**speciem litterarum elige:**
-<button onclick="capitals()" lang="la">capitales quadratae</button>
-<button onclick="uncials()" lang="la-Latg">capitales unciales</button>
+<label for="font">**speciem litterarum elige:**</label>
+<select name="font" id="font" onchange="setFont(this.value)">
+    <option value="capitals">capitales quadratae</option>
+    <option value="uncials">capitales unciales</option>
+</select>
 </div>
 
 <script>
 document.getElementById("fonts").style.display = "block";
 
+function setFont(type) {
+    if (type == "uncials")
+        uncials();
+    else if (type == "capitals")
+        capitals();
+}
+
 function capitals() {
+    font.selectedIndex = 0;
     document.documentElement.lang='la';
     window.history.replaceState("", document.title, window.location.pathname);
 }
 
 function uncials() {
+    font.selectedIndex = 1;
     document.documentElement.lang='la-Latg';
     window.history.replaceState("", document.title, window.location.pathname + "?uncials");
 }

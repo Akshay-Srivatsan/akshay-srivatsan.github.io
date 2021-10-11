@@ -22,6 +22,7 @@
 /* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
 @font-face {
   font-family: 'Noto Sans Tamil';
   src: url('assets/fonts/NotoSansTamil-Regular.ttf') format('truetype');
@@ -79,6 +80,12 @@
   font-family: 'Noto Sans Brahmi', sans-serif;
 }
 
+:lang(en-phonipa), :lang(la-phonipa), :lang(sa-phonipa) {
+  font-family: "Voces", sans-serif;
+  font-size: 1.25em;
+}
+
+
 body {
     font-family: 'Montserrat', sans-serif;
       margin: 0 auto;
@@ -111,6 +118,7 @@ img {
       </head>
   <body>
     <h1 id="akshay-srivatsan">Akshay Srivatsan</h1>
+    <p><span lang="la-phonipa">/ak.sei̯ sriː.wat.san/</span></p>
     <p>idem: <span lang="ta">அக்ஷய் ஶ்ரீவத்ஸன்</span> et <span lang="hi">अक्षय श्रीवत्सन</span> et <span lang="sa-Gran">𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍</span> et <span lang="sa-Brah">𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆</span></p>
     <p>haec pagina praesto est in <a href="index.html">Lingua Anglica</a> et <a href="sanskrit.html">Lingua Sanscrita</a>.</p>
     <h2 id="salve">Salve!</h2>
@@ -120,17 +128,26 @@ img {
     <p>salve! haec versio Latina situs interretialis mei est. si errata vidis, meum note! quattor annos Latinam non scripsi, ergo multorum oblivisci; me paenitet.</p>
     <p>nota bene: hic situs interretialis non videbitur recte translatore Google; translator Google bene intellegere Latinam non potest.</p>
     <div id="fonts" style="display:none">
-    <p><strong>speciem litterarum elige:</strong> <button onclick="capitals()" lang="la">capitales quadratae</button> <button onclick="uncials()" lang="la-Latg">capitales unciales</button></p>
+    <p><label for="font"><strong>speciem litterarum elige:</strong></label> <select name="font" id="font" onchange="setFont(this.value)"> <option value="capitals">capitales quadratae</option> <option value="uncials">capitales unciales</option> </select></p>
     </div>
     <script>
     document.getElementById("fonts").style.display = "block";
 
+    function setFont(type) {
+        if (type == "uncials")
+            uncials();
+        else if (type == "capitals")
+            capitals();
+    }
+
     function capitals() {
+        font.selectedIndex = 0;
         document.documentElement.lang='la';
         window.history.replaceState("", document.title, window.location.pathname);
     }
 
     function uncials() {
+        font.selectedIndex = 1;
         document.documentElement.lang='la-Latg';
         window.history.replaceState("", document.title, window.location.pathname + "?uncials");
     }

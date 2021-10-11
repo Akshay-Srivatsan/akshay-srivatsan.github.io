@@ -200,14 +200,10 @@ function transcribe(node, mapping) {
 }
 
 function set_script(script) {
-  document.getElementById("grantha").disabled = false;
-  document.getElementById("devanagari").disabled = false;
-  document.getElementById("brahmi").disabled = false;
   document.getElementById("grantha-name").style.display = "inline";
   document.getElementById("devanagari-name").style.display = "inline";
   document.getElementById("brahmi-name").style.display = "inline";
 
-  document.getElementById(script).disabled = true;
   document.getElementById(script + "-name").style.display = "none";
 }
 
@@ -217,6 +213,7 @@ function grantha() {
   document.title = transcribe_string(document.title, to_grantha);
   document.documentElement.lang = "sa-Gran";
   window.history.replaceState("", document.title, window.location.pathname + "?grantha");
+  script.selectedIndex = 1;
   set_script("grantha");
 }
 
@@ -226,6 +223,7 @@ function brahmi() {
   document.title = transcribe_string(document.title, to_brahmi);
   document.documentElement.lang = "sa-Gran";
   window.history.replaceState("", document.title, window.location.pathname + "?brahmi");
+  script.selectedIndex = 2;
   set_script("brahmi");
 }
 
@@ -236,5 +234,6 @@ function devanagari() {
   document.title = transcribe_string(document.title, from_brahmi);
   document.documentElement.lang = "sa";
   window.history.replaceState("", document.title, window.location.pathname);
+  script.selectedIndex = 0;
   set_script("devanagari");
 }

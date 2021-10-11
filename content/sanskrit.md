@@ -8,6 +8,9 @@ noto-sans: true
 js: transcribe.js
 ---
 # अक्षय् श्रीवत्सन्
+
+[/ɐ.kʂɐj sriː.ʋɐt.sɐn/]{lang=sa-phonipa}
+
 तद्: [Akshay Srivatsan]{lang=en} च
 [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} च
 [[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran} च]{#grantha-name}
@@ -23,14 +26,25 @@ js: transcribe.js
 संस्कृतमेकं वर्षं विश्वविद्यलये अपठम्। दोषेभ्यः क्षम्यताम्।
 
 <div id="scripts" style="display:none">
-**लिपीं चिनो:**
-<button id="devanagari" disabled onclick="devanagari()" lang="sa">देवनागरी</button>
-<button id="grantha" onclick="grantha()" lang="sa-Gran">𑌗𑍍𑌰𑌨𑍍𑌥</button>
-<button id="brahmi" onclick="brahmi()" lang="sa-Brah">𑀩𑁆𑀭𑀸𑀳𑁆𑀫𑀻</button>
+<label for="script">**लिपीं चिनो:**</label>
+<select name="script" id="script" onchange="setScript(this.value)">
+    <option value="devanagari">देवनागरी</option>
+    <option value="grantha">𑌗𑍍𑌰𑌨𑍍𑌥</option>
+    <option value="brahmi">𑀩𑁆𑀭𑀸𑀳𑁆𑀫𑀻</option>
+</select>
 </div>
 
 <script>
 document.getElementById("scripts").style.display = "block";
+
+function setScript(type) {
+    if (type == "devanagari")
+        devanagari();
+    else if (type == "grantha")
+        grantha();
+    else if (type == "brahmi")
+        brahmi();
+}
 </script>
 
 ## हतिहास मम
