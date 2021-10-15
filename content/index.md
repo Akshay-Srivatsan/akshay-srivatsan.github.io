@@ -7,7 +7,7 @@ noto-sans: true
 ---
 # Akshay Srivatsan
 
-[/əˈkʃeɪ ʃɹiˈvʌθ.sən/]{lang=en-phonipa}
+[/əˈkʃeɪ ʃɹiˈvʌθsən/]{lang=en-phonipa}
 
 Also: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta},
 [अक्षय श्रीवत्सन]{lang=hi},

@@ -117,13 +117,13 @@ img {
       </head>
   <body>
     <h1 id="अकषय-शरवतसन">अक्षय् श्रीवत्सन्</h1>
-    <p><span lang="sa-phonipa">/ɐ.kʂɐj sriː.ʋɐt.sɐn/</span></p>
+    <p><span lang="sa-phonipa">/’ɐk.ʂɐj ɕriː’ʋɐt̪.s̪ɐn̪/</span></p>
     <p>तद्: <span lang="en">Akshay Srivatsan</span> च <span lang="ta">அக்ஷய் ஶ்ரீவத்ஸன்</span> च <span id="grantha-name"><span lang="sa-Gran">𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍</span> च</span> <span id="devanagari-name" style="display:none"><span lang="sa">अक्षय् श्रीवत्सन्</span> च</span> <span id="brahmi-name"><span lang="sa-Brah">𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆</span> च</span></p>
     <p>एतद् जालपृष्ठ उपलभ्य <a href="index.html">आङ्ग्लभाषया</a>, <a href="latin.html">लातिन्भाषया</a>.</p>
     <h2 id="नमसकर">नमस्कार!</h2>
     <p>नमस्कार! तत् जालपृष्ठ <a href="index.html">आङ्ग्लभाषयाच</a> <a href="latin.html">लातिन्भाषयाच</a> अस्ति। संस्कृतमेकं वर्षं विश्वविद्यलये अपठम्। दोषेभ्यः क्षम्यताम्।</p>
     <div id="scripts" style="display:none">
-    <p><label for="script"><strong>लिपीं चिनो:</strong></label> <select name="script" id="script" onchange="setScript(this.value)"> <option value="devanagari">देवनागरी</option> <option value="grantha">𑌗𑍍𑌰𑌨𑍍𑌥</option> <option value="brahmi">𑀩𑁆𑀭𑀸𑀳𑁆𑀫𑀻</option> </select></p>
+    <p><label for="script"><strong>लिपीं चिनो:</strong></label> <select name="script" id="script" onchange="setScript(this.value)"> <option value="devanagari">देवनागरी</option> <option value="grantha">ग्रन्थ</option> <option value="brahmi">ब्राह्मी</option> </select></p>
     </div>
     <script>
     document.getElementById("scripts").style.display = "block";
@@ -179,8 +179,7 @@ img {
     <li><a href="mailto:srivatsan.akshay+website@gmail.com">ईपत्र</a></li>
     </ul>
     <script>
-    if (window.location.search === "?grantha") grantha();
-    if (window.location.search === "?brahmi") brahmi();
+    if (window.location.search) setScript(window.location.search.slice(1));
     </script>
     <p lang="en">
           &copy; 2021 Akshay Srivatsan

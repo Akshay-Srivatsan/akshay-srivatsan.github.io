@@ -9,7 +9,7 @@ js: assets/js/date.js
 ---
 # Akshay Srivatsan
 
-[/ak.sei̯ sriː.wat.san/]{lang=la-phonipa}
+[/ak.sei̯ sriːwat.san/]{lang=la-phonipa}
 
 idem: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} et
 [अक्षय श्रीवत्सन]{lang=hi} et

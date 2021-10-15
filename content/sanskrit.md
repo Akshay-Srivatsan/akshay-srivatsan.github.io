@@ -9,7 +9,7 @@ js: transcribe.js
 ---
 # अक्षय् श्रीवत्सन्
 
-[/ɐ.kʂɐj sriː.ʋɐt.sɐn/]{lang=sa-phonipa}
+[/'ɐk.ʂɐj ɕriː'ʋɐt̪.s̪ɐn̪/]{lang=sa-phonipa}
 
 तद्: [Akshay Srivatsan]{lang=en} च
 [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} च
@@ -29,8 +29,8 @@ js: transcribe.js
 <label for="script">**लिपीं चिनो:**</label>
 <select name="script" id="script" onchange="setScript(this.value)">
     <option value="devanagari">देवनागरी</option>
-    <option value="grantha">𑌗𑍍𑌰𑌨𑍍𑌥</option>
-    <option value="brahmi">𑀩𑁆𑀭𑀸𑀳𑁆𑀫𑀻</option>
+    <option value="grantha">ग्रन्थ</option>
+    <option value="brahmi">ब्राह्मी</option>
 </select>
 </div>
 
@@ -106,6 +106,5 @@ function setScript(type) {
 * [ईपत्र](mailto:srivatsan.akshay+website@gmail.com)
 
 <script>
-if (window.location.search === "?grantha") grantha();
-if (window.location.search === "?brahmi") brahmi();
+if (window.location.search) setScript(window.location.search.slice(1));
 </script>
