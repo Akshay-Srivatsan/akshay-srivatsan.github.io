@@ -9,7 +9,7 @@ js: transcribe.js
 ---
 # अक्षय् श्रीवत्सन्
 
-[/'ɐk.ʂɐj ɕriː'ʋɐt̪.s̪ɐn̪/]{lang=sa-phonipa}
+[/'ɐk.ʂɐj ɕriː'ʋɐt.sɐn/]{lang=sa-phonipa}
 
 तद्: [Akshay Srivatsan]{lang=en} च
 [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} च
