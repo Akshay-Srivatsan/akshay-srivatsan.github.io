@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 @font-face {
   font-family: 'Noto Sans Tamil';
   src: url('assets/fonts/NotoSansTamil-Regular.ttf') format('truetype');
@@ -56,7 +58,7 @@
   $endif$
 }
 
-:lang(ta) {
+:lang(ta), :lang(sa-Taml) {
   $if(noto-sans)$
   font-family: 'Noto Sans Tamil', sans-serif;
   $else$
@@ -80,12 +82,18 @@
   $endif$
 }
 
+:lang(sa-Latn) {
+  $if(noto-sans)$
+  font-family: 'Noto Sans', sans-serif;
+  $else$
+  font-family: 'Noto Serif', sans-serif;
+  $endif$
+}
+
 :lang(sa-Brah) {
   font-family: 'Noto Sans Brahmi', sans-serif;
 }
 
 :lang(en-phonipa), :lang(la-phonipa), :lang(sa-phonipa) {
   font-family: "Voces", sans-serif;
-  font-size: 1.25em;
 }
-

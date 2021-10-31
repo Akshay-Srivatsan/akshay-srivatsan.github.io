@@ -7,12 +7,12 @@
     <meta charset="utf-8" />
         <link rel="icon" href="assets/img/favicon.png" />
             <meta property="og:url" content="https://aks.io/sanskrit.html" />
-                <meta property="og:description" content="विश्लेषक विज्ञानस्य सङ्गणकयन्त्राणां स्टैन्फोर्ड् विश्वविद्यलये २०२२" />
+                <meta property="og:description" content="विश्लेषक विज्ञानस्य सङ्गणकयन्त्राणां स्टान्फोर्ड् विश्वविद्यलये २०२२" />
             <meta property="og:image" content="assets/img/portrait-small.jpg" />
             <meta property="og:image:alt" content="चित्र मम सान् फ्रान्सिस्को नगरे" />
     
         <meta name="author" content="Akshay Srivatsan" />
-                    <meta name="description" content="विश्लेषक विज्ञानस्य सङ्गणकयन्त्राणां स्टैन्फोर्ड् विश्वविद्यलये २०२२" />
+                    <meta name="description" content="विश्लेषक विज्ञानस्य सङ्गणकयन्त्राणां स्टान्फोर्ड् विश्वविद्यलये २०२२" />
         <meta name="generator" content="pandoc" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +22,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 @font-face {
   font-family: 'Noto Sans Tamil';
   src: url('assets/fonts/NotoSansTamil-Regular.ttf') format('truetype');
@@ -63,7 +65,7 @@
     font-family: 'Uncial Antiqua', sans-serif;
   }
 
-:lang(ta) {
+:lang(ta), :lang(sa-Taml) {
     font-family: 'Noto Sans Tamil', sans-serif;
   }
 
@@ -75,15 +77,17 @@
     font-family: 'Noto Sans Grantha', sans-serif;
   }
 
+:lang(sa-Latn) {
+    font-family: 'Noto Sans', sans-serif;
+  }
+
 :lang(sa-Brah) {
   font-family: 'Noto Sans Brahmi', sans-serif;
 }
 
 :lang(en-phonipa), :lang(la-phonipa), :lang(sa-phonipa) {
   font-family: "Voces", sans-serif;
-  font-size: 1.25em;
 }
-
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -96,6 +100,10 @@ img {
   max-width: 240px;
   border-radius: 100%;
   margin: 10px;
+}
+
+.ipa {
+  font-size: 1.25em;
 }
 
 @media only screen and (max-width: 720px) {
@@ -117,13 +125,13 @@ img {
       </head>
   <body>
     <h1 id="अकषय-शरवतसन">अक्षय् श्रीवत्सन्</h1>
-    <p><span lang="sa-phonipa">/’ɐk.ʂɐj ɕriː’ʋɐt.sɐn/</span></p>
-    <p>तद्: <span lang="en">Akshay Srivatsan</span> च <span lang="ta">அக்ஷய் ஶ்ரீவத்ஸன்</span> च <span id="grantha-name"><span lang="sa-Gran">𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍</span> च</span> <span id="devanagari-name" style="display:none"><span lang="sa">अक्षय् श्रीवत्सन्</span> च</span> <span id="brahmi-name"><span lang="sa-Brah">𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆</span> च</span></p>
+    <p><span id="ipa-name" class="ipa" lang="sa-phonipa">/’ɐk.ʂɐj ɕriː’ʋɐt.sɐn/</span></p>
+    <p>तद्: <span lang="en">Akshay Srivatsan</span> च <span id="tamil-name"><span lang="ta">அக்ஷய் ஶ்ரீவத்ஸன்</span> च</span> <span id="grantha-name"><span lang="sa-Gran">𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍</span> च</span> <span id="devanagari-name" style="display:none"><span lang="sa">अक्षय् श्रीवत्सन्</span> च</span> <span id="brahmi-name"><span lang="sa-Brah">𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆</span> च</span> <span id="latin-name"><span lang="sa-Latn">akṣay srīvatsan</span> च</span></p>
     <p>एतद् जालपृष्ठ उपलभ्य <a href="index.html">आङ्ग्लभाषया</a>, <a href="latin.html">लातिन्भाषया</a>.</p>
     <h2 id="नमसकर">नमस्कार!</h2>
     <p>नमस्कार! तत् जालपृष्ठ <a href="index.html">आङ्ग्लभाषयाच</a> <a href="latin.html">लातिन्भाषयाच</a> अस्ति। संस्कृतमेकं वर्षं विश्वविद्यलये अपठम्। दोषेभ्यः क्षम्यताम्।</p>
     <div id="scripts" style="display:none">
-    <p><label for="script"><strong>लिपीं चिनो:</strong></label> <select name="script" id="script" onchange="setScript(this.value)"> <option value="devanagari">देवनागरी</option> <option value="grantha">ग्रन्थ</option> <option value="brahmi">ब्राह्मी</option> </select></p>
+    <p><label for="script"><strong>लिपिं चिनो:</strong></label> <select name="script" id="script" onchange="setScript(this.value)"> <option value="devanagari">देवनागरी</option> <option value="grantha">ग्रन्थ</option> <option value="brahmi">ब्राह्मी</option> <option value="tamil">तमिऴ्</option> <option value="latin">लातिन्</option> <option value="ipa">सर्वदेशीय</option> </select></p>
     </div>
     <script>
     document.getElementById("scripts").style.display = "block";
@@ -135,24 +143,30 @@ img {
             grantha();
         else if (type == "brahmi")
             brahmi();
+        else if (type == "tamil")
+            tamil();
+        else if (type == "latin")
+            latin();
+        else if (type == "ipa")
+            ipa();
     }
     </script>
     <h2 id="हतहस-मम">हतिहास मम</h2>
     <p><img src="assets/img/portrait-small.jpg" alt="चित्र मम सान् फ्रान्सिस्को नगरे" /></p>
-    <p>स्टैन्फोर्ड् विश्वविद्यालये विज्ञान सङ्गणकयन्त्राणां पठमि। कासंविधासु गवेषणं करोमि।</p>
+    <p>स्टान्फोर्ड् विश्वविद्यालये विज्ञान सङ्गणकयन्त्राणां पठमि। कासंविधासु गवेषणं करोमि।</p>
     <p>विद्यालयात् वहिः छायाचित्रं च वादित्रान् वादयतुं च <a href="latin.html">भाषा ज्ञतुम्</a> रोचे च।</p>
     <p>सर्वो विवरण <a href="index.html">आङ्ग्लभाषायाम्</a>।</p>
     <h2 id="शकषण-मम">शिक्षण मम</h2>
     <ul>
-    <li>आचार्य-उपाधि विज्ञाने सङ्गणकयन्त्राणां स्टैन्फोर्ड् विश्वविद्यलये (कासंविधा, २०२०-२०२२)</li>
-    <li>शास्त्रि-उपाधि विज्ञाने सङ्गणकयन्त्राणां स्टैन्फोर्ड् विश्वविद्यलये (चित्रण, २०१७-२०२१)</li>
+    <li>आचार्य-उपाधि विज्ञाने सङ्गणकयन्त्राणां स्टान्फोर्ड् विश्वविद्यलये (कासंविधा, २०२०-२०२२)</li>
+    <li>शास्त्रि-उपाधि विज्ञाने सङ्गणकयन्त्राणां स्टान्फोर्ड् विश्वविद्यलये (चित्रण, २०१७-२०२१)</li>
     <li>मेन्लो विद्यालय (२०१३-२०१७)</li>
     </ul>
     <h2 id="उदयग">उद्योगाः</h2>
     <ul>
     <li>भृत्यशास्त्र: उपग्रह समुद्रे (ग्रीष्मकाले २०२१)</li>
-    <li>अध्यापकाय सहायक: स्टैन्फोर्ड् <span lang="en">CS 140E</span>—कासंविधाः (वसन्ते २०२१)</li>
-    <li>तन्त्रांशाभियन्ता: इन्स्टग्रैम् (ग्रीष्मकाले २०२०)</li>
+    <li>अध्यापकाय सहायक: स्टान्फोर्ड् <span lang="en">CS 140E</span>—कासंविधाः (वसन्ते २०२१)</li>
+    <li>तन्त्रांशाभियन्ता: इन्स्टग्राम् (ग्रीष्मकाले २०२०)</li>
     <li>तन्त्रांशाभियन्ता: फैस्बुक् (ग्रीष्मकाले २०१९)</li>
     </ul>
     <h2 id="परकशन">प्रकाशनाः</h2>
@@ -175,7 +189,7 @@ img {
     <ul>
     <li><a href="https://github.com/Akshay-Srivatsan">विधिलेख</a></li>
     <li><a href="https://www.linkedin.com/in/akshay-srivatsan/">लिन्क्डिन्</a></li>
-    <li><a href="https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA">यूत्यूब्</a></li>
+    <li><a href="https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA">यूट्यूब्</a></li>
     <li><a href="mailto:srivatsan.akshay+website@gmail.com">ईपत्र</a></li>
     </ul>
     <script>
