@@ -157,6 +157,7 @@ function fixup_string_in_devanagari(s) {
   return s.replace("फ़",  "\u095e");
 }
 
+let title = document.title;
 let originals = new WeakMap();
 function transcribe_node(node, mapping) {
   if (node.nodeType === Node.TEXT_NODE) {
@@ -179,7 +180,11 @@ function transcribe_node(node, mapping) {
 
 function transcribe(mapping) {
   transcribe_node(document.body, mapping);
-  transcribe_node(document.title, mapping);
+  if (mapping) {
+    document.title = transcribe_string(title, mapping);
+  } else {
+    document.title = title;
+  }
 }
 
 function reset() {
