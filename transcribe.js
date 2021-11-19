@@ -121,7 +121,7 @@ function fixup_string_in_tamil(source) {
       }
     }
     if (c === "ந" && i > 0) {
-      if (chars[i - 1] !== " ") {
+      if (chars[i - 1] !== " " && !(chars[i + 1] === "्" && "तथदध".indexOf(chars[i + 2]) === -1)) {
         chars[i] = "ன";
       }
     }
