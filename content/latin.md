@@ -86,6 +86,12 @@ studio.
 Baccalaureus quoque in Stanford perfeci (a MMXVII ad MMXXI).
 prius, in Ludo Menloniensi studebam.
 
+## Coepta Mea
+
+[Carta](https://carta.stanford.edu): situs interretialis ad consilia cursuum facienda a studentibus. (MMXIX-MMXX)
+
+[Stagecast](https://taps.stanford.edu/stagecast): programma ad dramata agenda in interretiale dum COVID epidemia est. (MMXX-MMXXI)
+
 ## Negotia Mea
 
 ### Architectus Robotorum (Tiro): Aqua Satellite (Aestate MMXXI)

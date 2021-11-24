@@ -42,6 +42,12 @@ I also did my undergrad at Stanford (2017--2021), focusing on computer
 graphics.
 Before that, I went to Menlo School for high school.
 
+## Projects
+
+[Carta](https://carta.stanford.edu): a course-planning website for Stanford students.
+
+[Stagecast](https://taps.stanford.edu/stagecast): software to allow musicians and actors to rehearse and perform shows online during the COVID-19 pandemic.
+
 ## Experience
 
 ### Robotics Intern: Aqua Satellite (Summer 2021)
