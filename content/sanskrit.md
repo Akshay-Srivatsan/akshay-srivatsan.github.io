@@ -5,35 +5,35 @@ image: assets/img/portrait-small.jpg
 image-alt: चित्र मम सान् फ्रान्सिस्को नगरे
 lang: sa
 noto-sans: true
-js: transcribe.js
+js: [sanskrit.js, transliterate.js]
 ---
+
 # अक्षय् श्रीवत्सन्
 
-[/'ɐk.ʂɐj ɕriː'ʋɐt.sɐn/]{lang=sa-phonipa .ipa #ipa-name}
+[/ˈɐk.ʂɐj ɕriːˈʋɐt.sɐn/]{lang=sa-phonipa .ipa #ipa-name}
 
 तद्: [Akshay Srivatsan]{lang=en} च
 [[அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} च]{#tamil-name}
 [[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran} च]{#grantha-name}
 [[अक्षय् श्रीवत्सन्]{lang=sa} च]{#devanagari-name style=display:none}
 [[𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah} च]{#brahmi-name}
-[[akṣay srīvatsan]{lang=sa-Latn} च]{#latin-name}
+[[akṣay srīvatsan]{lang=sa-Latn} च]{#iso-name}
 
-एतद् जालपृष्ठ उपलभ्य [आङ्ग्लभाषया](index.html), [लातिन्भाषया](latin.html).
+एतद् जालपृष्ठ उपलभ्य [आङ्ग्लभाषया](index.html) च [तमिऴ्भाषया](tamil.html) च [लातिन्भाषया](latin.html) असति.
 
 ## नमस्कार!
 
 नमस्कार!
-तत् जालपृष्ठ [आङ्ग्लभाषयाच](index.html) [लातिन्भाषयाच](latin.html) अस्ति।
 संस्कृतमेकं वर्षं विश्वविद्यलये अपठम्। दोषेभ्यः क्षम्यताम्।
 
 <div id="scripts" style="display:none">
-<label for="script">**लिपिं चिनो:**</label>
-<select name="script" id="script" onchange="setScript(this.value)">
+<label for="script">**लिपिं चिनो—**</label>
+<select name="script" id="script" onchange="set_document_script(this.value)">
     <option value="devanagari">देवनागरी (Devanagari)</option>
     <option value="grantha">ग्रन्थ (Grantha)</option>
     <option value="brahmi">ब्राह्मी (Brahmi)</option>
     <option value="tamil">तमिऴ् (Tamil)</option>
-    <option value="latin">लातिन् (ISO 15919)</option>
+    <option value="iso">लातिन् (ISO 15919)</option>
     <option value="ipa">सर्वदेशीय (IPA)</option>
 </select>
 </div>
@@ -41,7 +41,7 @@ js: transcribe.js
 <script>
 document.getElementById("scripts").style.display = "block";
 
-function setScript(type) {
+function set_document_script(type) {
     if (type == "devanagari")
         devanagari();
     else if (type == "grantha")
@@ -50,8 +50,8 @@ function setScript(type) {
         brahmi();
     else if (type == "tamil")
         tamil();
-    else if (type == "latin")
-        latin();
+    else if (type == "iso")
+        iso();
     else if (type == "ipa")
         ipa();
 }
@@ -63,7 +63,7 @@ function setScript(type) {
 
 स्टॅन्फ़ॊर्ड् विश्वविद्यालये विज्ञान सङ्गणकयन्त्राणां पठमि। कासंविधासु गवेषणं करोमि।
 
-विद्यालयात् वहिः छायाचित्रं च वादित्रान् वादयतुं च [भाषा ज्ञतुम्](latin.html) रोचे च।
+विद्यालयात् वहिः छायाचित्रं च वादित्रान् वादयतुं च भाषा ज्ञतुम् रोचे च।
 
 सर्वो विवरण [आङ्ग्लभाषायाम्](index.html)। 
 
@@ -116,5 +116,5 @@ function setScript(type) {
 * [ईपत्र](mailto:srivatsan.akshay+website@gmail.com)
 
 <script>
-if (window.location.search) setScript(window.location.search.slice(1));
+if (window.location.search) set_document_script(window.location.search.slice(1));
 </script>

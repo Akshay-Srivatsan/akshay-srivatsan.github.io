@@ -7,14 +7,14 @@ noto-sans: true
 ---
 # Akshay Srivatsan
 
-[/əˈkʃeɪ ʃɹiˈvʌθsən/]{lang=en-phonipa .ipa}
+[/əˈkʃeɪ ʃɹiˈvʌθ.sən/]{lang=en-phonipa .ipa}
 
 Also: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta},
 [अक्षय श्रीवत्सन]{lang=hi},
 [𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran}, and
 [𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah}
 
-This page is also available in [Latin](latin.html) and [Sanskrit](sanskrit.html).
+This page is also available in [Latin](latin.html), [Tamil](tamil.html), and [Sanskrit](sanskrit.html).
 
 ## About
 
@@ -31,7 +31,7 @@ I've worked at Stanford, Facebook/Instagram, and Aqua Satellite.
 
 
 Outside of school/work, I'm also interested in analog and digital photography, 
-playing the piano, and [learning languages](latin.html).
+playing the piano, and learning languages.
 
 
 ## Education

@@ -66,7 +66,7 @@
   $endif$
 }
 
-:lang(sa), :lang(hi) {
+:lang(sa), :lang(hi), :lang(ta-Deva) {
   $if(noto-sans)$
   font-family: 'Noto Sans Devanagari', sans-serif;
   $else$
@@ -74,7 +74,7 @@
   $endif$
 }
 
-:lang(sa-Gran) {
+:lang(sa-Gran), :lang(ta-Gran) {
   $if(noto-sans)$
   font-family: 'Noto Sans Grantha', sans-serif;
   $else$
@@ -82,7 +82,7 @@
   $endif$
 }
 
-:lang(sa-Latn) {
+:lang(sa-Latn), :lang(ta-Latn) {
   $if(noto-sans)$
   font-family: 'Noto Sans', sans-serif;
   $else$
@@ -90,11 +90,11 @@
   $endif$
 }
 
-:lang(sa-Brah) {
+:lang(sa-Brah), :lang(ta-Brah) {
   font-family: 'Noto Sans Brahmi', sans-serif;
 }
 
-:lang(en-phonipa), :lang(la-phonipa), :lang(sa-phonipa) {
+:lang(en-phonipa), :lang(la-phonipa), :lang(sa-phonipa), :lang(ta-phonipa) {
   font-family: "Voces", sans-serif;
   font-weight: 400;
 }

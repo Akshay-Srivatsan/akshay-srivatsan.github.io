@@ -9,14 +9,14 @@ js: assets/js/date.js
 ---
 # Akshay Srivatsan
 
-[/ak.sei̯ sriːwat.san/]{lang=la-phonipa .ipa}
+[/ak.sei̯ sriː.wat.san/]{lang=la-phonipa .ipa}
 
 idem: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} et
 [अक्षय श्रीवत्सन]{lang=hi} et
 [𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran} et
 [𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah}
 
-haec pagina praesto est in [Lingua Anglica](index.html) et [Lingua Sanscrita](sanskrit.html).
+haec pagina praesto est in [Lingua Anglica](index.html), [Lingua Tamulica](tamil.html), et [Lingua Sanscrita](sanskrit.html).
 
 ## Salve!
 <script>
@@ -75,7 +75,7 @@ _Menlo JCL_ feci, et gregem ad Latinam loquendum institui.
 anno quarto ludi secundi, pro _California JCL_ situm interretialem gubernabam.
 
 extra ludum et opus, mihi photographia, clavile cantare,
-et [linguas discere](sanskrit.html) placet.  linguas Anglicam, Latinam, 
+et linguas discere placet.  linguas Anglicam, Latinam, 
 Tamulicam, Hindicam, et Sanscritam aliquid scio.
 
 
