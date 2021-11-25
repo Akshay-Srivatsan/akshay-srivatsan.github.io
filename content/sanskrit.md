@@ -64,7 +64,7 @@ function set_document_script(type) {
 sṭênforḍ viśvavidyālayē vijñāna saṅgaṇakayantrāṇāṁ paṭhami. kāsaṁvidhāsu
 gavēṣaṇaṁ karōmi.
 
-vidyālayāt vahiḥ chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatum rōcē ca.
+vidyālayāt vahiḥ chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatum ca rōcē.
 
 sarvō vivaraṇa [āṅglabhāṣāyām](index.html).
 
