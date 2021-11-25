@@ -1,5 +1,12 @@
 let brahmic_map = [
   {
+    "Devanagari": "ॐ",
+    "Grantha": "𑍐",
+    "Brahmi": "ॐ",
+    "Tamil": "ௐ",
+    "ISO": "ॐ"
+  },
+  {
     "Devanagari": "◌ऀ",
     "Grantha": "◌𑌀",
     "Brahmi": "◌𑀀",
@@ -26,6 +33,48 @@ let brahmic_map = [
     "Brahmi": "◌𑀂",
     "Tamil": "◌𑌃",
     "ISO": "ḥ"
+  },
+  {
+    "Devanagari": "◌़",
+    "Grantha": "◌𑌼",
+    "Brahmi": "",
+    "Tamil": "",
+    "ISO": ""
+  },
+  {
+    "Devanagari": "।",
+    "Grantha": "।",
+    "Brahmi": "𑁇",
+    "Tamil": ".",
+    "ISO": "."
+  },
+  {
+    "Devanagari": "॥",
+    "Grantha": "॥",
+    "Brahmi": "𑁈",
+    "Tamil": ".",
+    "ISO": "."
+  },
+  {
+    "Devanagari": "॰",
+    "Grantha": ".",
+    "Brahmi": "𑁉",
+    "Tamil": ".",
+    "ISO": "."
+  },
+  {
+    "Devanagari": "ॱ",
+    "Grantha": "-",
+    "Brahmi": "𑁋",
+    "Tamil": "-",
+    "ISO": "-"
+  },
+  {
+    "Devanagari": "ऽ",
+    "Grantha": "𑌽",
+    "Brahmi": "𑀅",
+    "Tamil": "அ",
+    "ISO": "'"
   },
   {
     "Devanagari": "अ",
@@ -84,11 +133,25 @@ let brahmic_map = [
     "ISO": "r̥"
   },
   {
+    "Devanagari": "ॠ",
+    "Grantha": "𑍠",
+    "Brahmi": "𑀌",
+    "Tamil": "ரூ’",
+    "ISO": "r̥̄"
+  },
+  {
     "Devanagari": "ऌ",
     "Grantha": "𑌌",
     "Brahmi": "𑀍",
     "Tamil": "லு’",
     "ISO": "l̥"
+  },
+  {
+    "Devanagari": "ॡ",
+    "Grantha": "𑍡",
+    "Brahmi": "𑀎",
+    "Tamil": "லூ’",
+    "ISO": "l̥̄"
   },
   {
     "Devanagari": "ऍ",
@@ -145,6 +208,132 @@ let brahmic_map = [
     "Brahmi": "𑀒",
     "Tamil": "ஔ",
     "ISO": "au"
+  },
+  {
+    "Devanagari": "◌्",
+    "Grantha": "◌𑍍",
+    "Brahmi": "◌𑁆",
+    "Tamil": "்",
+    "ISO": "\b"
+  },
+  {
+    "Devanagari": "◌ा",
+    "Grantha": "◌𑌾",
+    "Brahmi": "◌𑀸",
+    "Tamil": "◌ா",
+    "ISO": "\bā"
+  },
+  {
+    "Devanagari": "◌ि",
+    "Grantha": "◌𑌿",
+    "Brahmi": "◌𑀺",
+    "Tamil": "◌ி",
+    "ISO": "\bi"
+  },
+  {
+    "Devanagari": "◌ी",
+    "Grantha": "◌𑍀",
+    "Brahmi": "◌𑀻",
+    "Tamil": "◌ீ",
+    "ISO": "\bī"
+  },
+  {
+    "Devanagari": "◌ु",
+    "Grantha": "◌𑍁",
+    "Brahmi": "◌𑀼",
+    "Tamil": "◌ு",
+    "ISO": "\bu"
+  },
+  {
+    "Devanagari": "◌ू",
+    "Grantha": "◌𑍂",
+    "Brahmi": "◌𑀽",
+    "Tamil": "◌ூ",
+    "ISO": "\bū"
+  },
+  {
+    "Devanagari": "◌ृ",
+    "Grantha": "◌𑍃",
+    "Brahmi": "◌𑀾",
+    "Tamil": "்ரு’",
+    "ISO": "\br̥"
+  },
+  {
+    "Devanagari": "◌ॄ",
+    "Grantha": "◌𑍄",
+    "Brahmi": "◌𑀿",
+    "Tamil": "்ரூ’",
+    "ISO": "\br̥̄"
+  },
+  {
+    "Devanagari": "◌ॢ",
+    "Grantha": "◌𑍢",
+    "Brahmi": "◌𑁀",
+    "Tamil": "்லு’",
+    "ISO": "\bl̥"
+  },
+  {
+    "Devanagari": "◌ॣ",
+    "Grantha": "◌𑍣",
+    "Brahmi": "◌𑁁",
+    "Tamil": "்லூ’",
+    "ISO": "\bl̥̄"
+  },
+  {
+    "Devanagari": "◌ॅ",
+    "Grantha": "",
+    "Brahmi": "",
+    "Tamil": "",
+    "ISO": "\bê"
+  },
+  {
+    "Devanagari": "◌ॆ",
+    "Grantha": "◌𑍇",
+    "Brahmi": "◌𑁂",
+    "Tamil": "◌ெ",
+    "ISO": "\be"
+  },
+  {
+    "Devanagari": "◌े",
+    "Grantha": "◌𑍇",
+    "Brahmi": "◌𑁂",
+    "Tamil": "◌ே",
+    "ISO": "\bē"
+  },
+  {
+    "Devanagari": "◌ै",
+    "Grantha": "◌𑍈",
+    "Brahmi": "◌𑁃",
+    "Tamil": "◌ை",
+    "ISO": "\bai"
+  },
+  {
+    "Devanagari": "◌ॉ",
+    "Grantha": "◌𑌾",
+    "Brahmi": "◌𑀸",
+    "Tamil": "◌ா",
+    "ISO": "\bô"
+  },
+  {
+    "Devanagari": "◌ॊ",
+    "Grantha": "◌𑍋",
+    "Brahmi": "◌𑁄",
+    "Tamil": "◌ொ",
+    "ISO": "\bo"
+  },
+  {
+    "Devanagari": "◌ो",
+    "Grantha": "◌𑍋",
+    "Brahmi": "◌𑁄",
+    "Tamil": "◌ோ",
+    "ISO": "\bō"
+  },
+  {
+    "Devanagari": "◌ौ",
+    "Grantha": "◌𑍌",
+    "Brahmi": "◌𑁅",
+    "Tamil": "◌ௌ",
+    "ISO": "\bau"
   },
   {
     "Devanagari": "क",
@@ -406,139 +595,6 @@ let brahmic_map = [
     "ISO": "ha"
   },
   {
-    "Devanagari": "◌़",
-    "Grantha": "◌𑌼",
-    "Brahmi": "",
-    "Tamil": "",
-    "ISO": ""
-  },
-  {
-    "Devanagari": "ऽ",
-    "Grantha": "𑌽",
-    "Brahmi": "𑀅",
-    "Tamil": "அ",
-    "ISO": "'"
-  },
-  {
-    "Devanagari": "◌ा",
-    "Grantha": "◌𑌾",
-    "Brahmi": "◌𑀸",
-    "Tamil": "◌ா",
-    "ISO": "\bā"
-  },
-  {
-    "Devanagari": "◌ि",
-    "Grantha": "◌𑌿",
-    "Brahmi": "◌𑀺",
-    "Tamil": "◌ி",
-    "ISO": "\bi"
-  },
-  {
-    "Devanagari": "◌ी",
-    "Grantha": "◌𑍀",
-    "Brahmi": "◌𑀻",
-    "Tamil": "◌ீ",
-    "ISO": "\bī"
-  },
-  {
-    "Devanagari": "◌ु",
-    "Grantha": "◌𑍁",
-    "Brahmi": "◌𑀼",
-    "Tamil": "◌ு",
-    "ISO": "\bu"
-  },
-  {
-    "Devanagari": "◌ू",
-    "Grantha": "◌𑍂",
-    "Brahmi": "◌𑀽",
-    "Tamil": "◌ூ",
-    "ISO": "\bū"
-  },
-  {
-    "Devanagari": "◌ृ",
-    "Grantha": "◌𑍃",
-    "Brahmi": "◌𑀾",
-    "Tamil": "்ரு’",
-    "ISO": "\br̥"
-  },
-  {
-    "Devanagari": "◌ॄ",
-    "Grantha": "◌𑍄",
-    "Brahmi": "◌𑀿",
-    "Tamil": "்ரூ’",
-    "ISO": "\br̥̄"
-  },
-  {
-    "Devanagari": "◌ॅ",
-    "Grantha": "",
-    "Brahmi": "",
-    "Tamil": "",
-    "ISO": "\bê"
-  },
-  {
-    "Devanagari": "◌ॆ",
-    "Grantha": "◌𑍇",
-    "Brahmi": "◌𑁂",
-    "Tamil": "◌ெ",
-    "ISO": "\be"
-  },
-  {
-    "Devanagari": "◌े",
-    "Grantha": "◌𑍇",
-    "Brahmi": "◌𑁂",
-    "Tamil": "◌ே",
-    "ISO": "\bē"
-  },
-  {
-    "Devanagari": "◌ै",
-    "Grantha": "◌𑍈",
-    "Brahmi": "◌𑁃",
-    "Tamil": "◌ை",
-    "ISO": "\bai"
-  },
-  {
-    "Devanagari": "◌ॉ",
-    "Grantha": "◌𑌾",
-    "Brahmi": "◌𑀸",
-    "Tamil": "◌ா",
-    "ISO": "\bô"
-  },
-  {
-    "Devanagari": "◌ॊ",
-    "Grantha": "◌𑍋",
-    "Brahmi": "◌𑁄",
-    "Tamil": "◌ொ",
-    "ISO": "\bo"
-  },
-  {
-    "Devanagari": "◌ो",
-    "Grantha": "◌𑍋",
-    "Brahmi": "◌𑁄",
-    "Tamil": "◌ோ",
-    "ISO": "\bō"
-  },
-  {
-    "Devanagari": "◌ौ",
-    "Grantha": "◌𑍌",
-    "Brahmi": "◌𑁅",
-    "Tamil": "◌ௌ",
-    "ISO": "\bau"
-  },
-  {
-    "Devanagari": "◌्",
-    "Grantha": "◌𑍍",
-    "Brahmi": "◌𑁆",
-    "Tamil": "்",
-    "ISO": "\b"
-  },
-  {
-    "Devanagari": "ॐ",
-    "Grantha": "𑍐",
-    "Brahmi": "ॐ",
-    "Tamil": "ௐ",
-    "ISO": "ōm"
-  },
-  {
     "Devanagari": "क़",
     "Grantha": "𑌕𑌼",
     "Brahmi": "𑀓",
@@ -593,48 +649,6 @@ let brahmic_map = [
     "Brahmi": "𑀛",
     "Tamil": "ஃஜ²",
     "ISO": "ža"
-  },
-  {
-    "Devanagari": "ॠ",
-    "Grantha": "𑍠",
-    "Brahmi": "𑀌",
-    "Tamil": "ரூ’",
-    "ISO": "r̥̄"
-  },
-  {
-    "Devanagari": "ॡ",
-    "Grantha": "𑍡",
-    "Brahmi": "𑀎",
-    "Tamil": "லூ’",
-    "ISO": "l̥̄"
-  },
-  {
-    "Devanagari": "◌ॢ",
-    "Grantha": "◌𑍢",
-    "Brahmi": "◌𑁀",
-    "Tamil": "்லு’",
-    "ISO": "\bl̥"
-  },
-  {
-    "Devanagari": "◌ॣ",
-    "Grantha": "◌𑍣",
-    "Brahmi": "◌𑁁",
-    "Tamil": "்லூ’",
-    "ISO": "\bl̥̄"
-  },
-  {
-    "Devanagari": "।",
-    "Grantha": "।",
-    "Brahmi": "𑁇",
-    "Tamil": ".",
-    "ISO": "."
-  },
-  {
-    "Devanagari": "॥",
-    "Grantha": "॥",
-    "Brahmi": "𑁈",
-    "Tamil": ".",
-    "ISO": "."
   },
   {
     "Devanagari": "०",
@@ -705,22 +719,8 @@ let brahmic_map = [
     "Brahmi": "𑁯",
     "Tamil": "௯",
     "ISO": 9
-  },
-  {
-    "Devanagari": "॰",
-    "Grantha": ".",
-    "Brahmi": "𑁉",
-    "Tamil": ".",
-    "ISO": "."
-  },
-  {
-    "Devanagari": "ॱ",
-    "Grantha": "-",
-    "Brahmi": "𑁋",
-    "Tamil": "-",
-    "ISO": "-"
   }
-]
+];
 
 let ipa_map = [
   {
@@ -1142,6 +1142,12 @@ let ipa_map = [
     "Sanskrit": "-",
     "Hindi": "-",
     "Tamil": "-"
+  },
+  {
+    "ISO": "ॐ",
+    "Sanskrit": "oṃ",
+    "Hindi": "oṃ",
+    "Tamil": "oṃ"
   }
 ];
 
@@ -1155,6 +1161,75 @@ function fix_iso(s) {
   s = s.normalize();
   return Array.from(s).filter((x, i) => x !== '\b' && s[i+1] !==
     '\b').join("");
+}
+
+function unfix_iso(s) {
+  s = s.normalize();
+  let keys = brahmic_map.map(x => x.ISO);
+  let as = Array.from(s);
+  let types = as.map((x, i) => {
+    // ◌
+    if (keys.includes(x + "a")) {
+      if (as[i + 1] === fix_string("◌̥")) {
+        return "V";
+      }
+      return "C";
+    } else if (keys.includes("\b" + x)) {
+      return "V";
+    } else if (x == "a") {
+      return "A";
+    } else {
+      return "?";
+    }
+  });
+  s = as.flatMap((x, i) => {
+    let ty = types[i];
+    let p_ty = i > 0 ? types[i-1] : "?";
+    let y = i > 0 ? as[i-1] : "\0";
+    let z = i < as.length - 1 ? as[i+1] : "\0";
+    if (ty === "C") {
+      if (x === "h" && keys.includes(y + "ha")) {
+        return "";
+      }
+      if (z === "h" && keys.includes(x + "ha")) {
+        x = x + "h";
+      }
+      if (p_ty === "C") {
+        return "\b" + x + "a";
+      }
+      return x + "a";
+    } else if (ty === "V") {
+      if (p_ty === "C") {
+        return "\b" + x;
+      } else {
+        return x;
+      }
+    } else if (ty === "A") {
+      if (z === "i" || z === "u") {
+        return "\ba";
+      }
+      if (p_ty === "C") {
+        return "";
+      }
+      return x;
+    } else {
+      if (p_ty === "C") {
+        return "\b" + x;
+      } else {
+        return x;
+      }
+    }
+  }).join("");
+  if (s.length === 0) {
+    return "";
+  }
+  if (s[0] === "\b") {
+    s = s.substr(1);
+  }
+  if (types[types.length - 1] === "C") {
+    s += "\b";
+  }
+  return s;
 }
 
 function fix_ipa(s) {
@@ -1202,7 +1277,13 @@ function brahmic_convert(s, from, to) {
   if (!from || !to) {
     return s;
   }
+  if (from === to) {
+    return s;
+  }
   s = s.normalize();
+  if (from == "ISO") {
+    s = unfix_iso(s);
+  }
   let set = new Set();
   let entries = brahmic_map.map(x => [fix_string(x[from]), fix_string(x[to])]).filter(([k, v]) => {
     if (set.has(k)) return false;
@@ -1284,4 +1365,3 @@ function transcribe_document(from, to) {
 function reset() {
   transcribe_document(null, null);
 }
-

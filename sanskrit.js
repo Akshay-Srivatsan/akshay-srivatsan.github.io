@@ -7,18 +7,18 @@ function set_script(name) {
   document.getElementById("ipa-name").style.display = "inline";
 
   document.getElementById(name + "-name").style.display = "none";
-  script.selectedIndex = ["devanagari", "grantha", "brahmi", "tamil", "iso", "ipa"].indexOf(name);
+  script.selectedIndex = ["iso", "devanagari", "grantha", "brahmi", "tamil", "ipa"].indexOf(name);
 }
 
 function transcribe(to) {
-  transcribe_document("Devanagari", to);
+  transcribe_document("ISO", to);
 }
 
-function devanagari() {
+function iso() {
   reset();
-  document.documentElement.lang = "sa";
+  document.documentElement.lang = "sa-Latn";
   window.history.replaceState("", document.title, window.location.pathname);
-  set_script("devanagari");
+  set_script("iso");
 }
 
 function grantha() {
@@ -45,12 +45,12 @@ function tamil() {
   set_script("tamil");
 }
 
-function iso() {
+function devanagari() {
   reset();
-  transcribe("ISO");
-  document.documentElement.lang = "sa-Latn";
-  window.history.replaceState("", document.title, window.location.pathname + "?iso");
-  set_script("iso");
+  transcribe("Devanagari");
+  document.documentElement.lang = "sa";
+  window.history.replaceState("", document.title, window.location.pathname + "?devanagari");
+  set_script("devanagari");
 }
 
 function ipa() {

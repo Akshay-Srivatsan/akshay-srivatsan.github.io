@@ -1,40 +1,40 @@
 ---
-title: अक्षयस्य जालस्थान
+title: akṣayasya jālsthāna
 description: विश्लेषक विज्ञानस्य सङ्गणकयन्त्राणां स्टॅन्फ़ॊर्ड् विश्वविद्यलये २०२२
 image: assets/img/portrait-small.jpg
 image-alt: चित्र मम सान् फ्रान्सिस्को नगरे
-lang: sa
+lang: sa-Latn
 noto-sans: true
 js: [sanskrit.js, transliterate.js]
 ---
 
-# अक्षय् श्रीवत्सन्
+# akṣay śrīvatsan
 
 [/ˈɐk.ʂɐj ɕriːˈʋɐt.sɐn/]{lang=sa-phonipa .ipa #ipa-name}
 
-तद्: [Akshay Srivatsan]{lang=en} च
-[[அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} च]{#tamil-name}
-[[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran} च]{#grantha-name}
-[[अक्षय् श्रीवत्सन्]{lang=sa} च]{#devanagari-name style=display:none}
-[[𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah} च]{#brahmi-name}
-[[akṣay srīvatsan]{lang=sa-Latn} च]{#iso-name}
+tad: [Akshay Srivatsan]{lang=en} ca
+[[அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} ca]{#tamil-name}
+[[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran} ca]{#grantha-name}
+[[अक्षय् श्रीवत्सन्]{lang=sa} ca]{#devanagari-name}
+[[𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah} ca]{#brahmi-name}
+[[akṣay srīvatsan]{lang=sa-Latn} ca]{#iso-name style=display:none}
 
-एतद् जालपृष्ठ उपलभ्य [आङ्ग्लभाषया](index.html) च [तमिऴ्भाषया](tamil.html) च [लातिन्भाषया](latin.html) असति.
+ētad jālapr̥ṣṭha upalabhya [āṅglabhāṣayā](index.html) ca 
+[tamiḻbhāṣayā](tamil.html) ca [lātinbhāṣayā](latin.html) asati.
 
-## नमस्कार!
+## namaskāra!
 
-नमस्कार!
-संस्कृतमेकं वर्षं विश्वविद्यलये अपठम्। दोषेभ्यः क्षम्यताम्।
+namaskāra! saṁskr̥tamēkaṁ varṣaṁ viśvavidyalayē apaṭham. dōṣēbhyaḥ kṣamyatām.
 
 <div id="scripts" style="display:none">
-<label for="script">**लिपिं चिनो—**</label>
+<label for="script">**lipiṁ cinō—**</label>
 <select name="script" id="script" onchange="set_document_script(this.value)">
-    <option value="devanagari">देवनागरी (Devanagari)</option>
-    <option value="grantha">ग्रन्थ (Grantha)</option>
-    <option value="brahmi">ब्राह्मी (Brahmi)</option>
-    <option value="tamil">तमिऴ् (Tamil)</option>
-    <option value="iso">लातिन् (ISO 15919)</option>
-    <option value="ipa">सर्वदेशीय (IPA)</option>
+    <option value="iso">lātin</option>
+    <option value="devanagari">dēvanāgarī</option>
+    <option value="grantha">grantha</option>
+    <option value="brahmi">brāhmī</option>
+    <option value="tamil">tamiḻ</option>
+    <option value="ipa">sarvadēśīya</option>
 </select>
 </div>
 
@@ -42,7 +42,9 @@ js: [sanskrit.js, transliterate.js]
 document.getElementById("scripts").style.display = "block";
 
 function set_document_script(type) {
-    if (type == "devanagari")
+    if (type == "iso")
+        iso();
+    else if (type == "devanagari")
         devanagari();
     else if (type == "grantha")
         grantha();
@@ -50,53 +52,55 @@ function set_document_script(type) {
         brahmi();
     else if (type == "tamil")
         tamil();
-    else if (type == "iso")
-        iso();
     else if (type == "ipa")
         ipa();
 }
 </script>
 
-## हतिहास मम
+## hatihāsa mama
 
-![चित्र मम सान् फ्रान्सिस्को नगरे](assets/img/portrait-small.jpg)
+![citra mama sān frānsiskō nagarē](assets/img/portrait-small.jpg)
 
-स्टॅन्फ़ॊर्ड् विश्वविद्यालये विज्ञान सङ्गणकयन्त्राणां पठमि। कासंविधासु गवेषणं करोमि।
+sṭênforḍ viśvavidyālayē vijñāna saṅgaṇakayantrāṇāṁ paṭhami. kāsaṁvidhāsu 
+gavēṣaṇaṁ karōmi.
 
-विद्यालयात् वहिः छायाचित्रं च वादित्रान् वादयतुं च भाषा ज्ञतुम् रोचे च।
+vidyālayāt vahiḥ chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatum rōcē ca.
 
-सर्वो विवरण [आङ्ग्लभाषायाम्](index.html)। 
+sarvō vivaraṇa [āṅglabhāṣāyām](index.html).
 
 
-## शिक्षण मम
+## śikṣaṇa mama
 
-* आचार्य-उपाधि विज्ञाने सङ्गणकयन्त्राणां स्टॅन्फ़ॊर्ड् विश्वविद्यलये (कासंविधा, २०२०-२०२२)
-* शास्त्रि-उपाधि विज्ञाने सङ्गणकयन्त्राणां स्टॅन्फ़ॊर्ड् विश्वविद्यलये (चित्रण, २०१७-२०२१)
-* मॆन्लो विद्यालय (२०१३-२०१७)
+* ācārya-upādhi vijñānē saṅgaṇakayantrāṇāṁ sṭênforḍ viśvavidyalayē (kāsaṁvidhā, 
+  2020--2022)
+* śāstri-upādhi vijñānē saṅgaṇakayantrāṇāṁ sṭênforḍ viśvavidyalayē (citraṇa, 
+  2017--2021)
+* menlō vidyālaya (2013--2017)
 
-## उद्योगाः
+## udyōgāḥ
 
-* भृत्यशास्त्र---उपग्रह समुद्रे (ग्रीष्मकाले २०२१)
-* अध्यापकाय सहायक---स्टॅन्फ़ॊर्ड् [CS 140E]{lang=en} कासंविधाः (वसन्ते २०२१)
-* तन्त्रांशाभियन्ता---इन्स्टग्राम् (ग्रीष्मकाले २०२०)
-* तन्त्रांशाभियन्ता---फ़ैस्बुक् (ग्रीष्मकाले २०१९)
 
-## प्रकाशनाः
+* bhr̥tyaśāstra—upagraha samudrē (grīṣmakālē 2021)
+* adhyāpakāya sahāyaka—sṭênforḍ [CS 140E]{lang=en} kāsaṁvidhāḥ (vasantē 2021)
+* tantrāṁśābhiyantā—insṭagrām (grīṣmakālē 2020)
+* tantrāṁśābhiyantā—faisbuk (grīṣmakālē 2019)
 
-### शोधः
+## prakāśanāḥ
+
+### śōdhaḥ
 
 * [[Making a Synchronous Motor]{lang=en} 
   ](http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf)
-  ([Menlo Roundtable]{lang=en}, शरद्काले २०१६)
+  ([Menlo Roundtable]{lang=en}, śaradkālē 2016)
 * [[Performance Boost: Dynamically Improving a Home's Wi-Fi Signal]{lang=en}
   ](http://ieeexplore.ieee.org/abstract/document/7425403/)
-  ([IEEE Potentials]{lang=en}, मार्च्--आप्रिल् २०१६)
+  ([IEEE Potentials]{lang=en}, mārc–āpril 2016)
 * [[A Dual Sensor System for Determining the Unique Oxygen Production Signature 
   of Plants]{lang=en}](http://www.cyberjournals.com/Papers/2015/01.pdf)
-  ([Cyber Journals - Mechatronics]{lang=en}, २०१५)
+  ([Cyber Journals - Mechatronics]{lang=en}, 2015)
 
 
-### आविष्काराः
+### āviṣkārāḥ
 ::: {lang=en}
 
 * Modular Media Player (US D769941 S1)
@@ -108,12 +112,12 @@ function set_document_script(type) {
   
 :::
 
-### परिशब्दाः
+### pariśabdāḥ
 
-* [विधिलेख](https://github.com/Akshay-Srivatsan)
-* [लिन्क्डिन्](https://www.linkedin.com/in/akshay-srivatsan/)
-* [यूट्यूब्](https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA)
-* [ईपत्र](mailto:srivatsan.akshay+website@gmail.com)
+* [vidhilēkha](https://github.com/Akshay-Srivatsan)
+* [linkḍin](https://www.linkedin.com/in/akshay-srivatsan/)
+* [yūṭyūb](https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA)
+* [īpatra](mailto:srivatsan.akshay+website@gmail.com)
 
 <script>
 if (window.location.search) set_document_script(window.location.search.slice(1));
