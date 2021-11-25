@@ -1,6 +1,6 @@
 ---
 title: akṣayasya jālasthāna
-description: viślēṣaka vijñānasya saṅgaṇakayantrāṇāṁ stênfôrd viśvavidyalayē 2022
+description: viślēṣakō vijñānasya saṅgaṇakayantrāṇāṁ stênfôrd viśvavidyalayē 2022
 image: assets/img/portrait-small.jpg
 image-alt: citraṁ mama sān frānsiskō nagarē
 lang: sa-Latn
@@ -19,12 +19,12 @@ tad: [Akshay Srivatsan]{lang=en} ca
 [[𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah} ca]{#brahmi-name}
 [[akṣay srīvatsan]{lang=sa-Latn} ca]{#iso-name style=display:none}
 
-ētad jālapr̥ṣṭha upalabhya [āṅglabhāṣayā](index.html) ca
+ētad jālapr̥ṣṭhopalabhya [āṅglabhāṣayā](index.html) ca
 [tamiḻbhāṣayā](tamil.html) ca [lātinbhāṣayā](latin.html) asati.
 
 ## namaskāra!
 
-namaskāra! saṁskr̥tamēkaṁ varṣaṁ viśvavidyalayē apaṭham. dōṣēbhyaḥ kṣamyatām.
+namaskāra! saṁskr̥tamēkaṁ varṣaṁ viśvavidyalayē 'paṭham. dōṣēbhyaḥ kṣamyatām.
 
 <div id="scripts" style="display:none">
 <label for="script">**lipiṁ cinō—**</label>
@@ -70,24 +70,25 @@ sarvō vivaraṇa [āṅglabhāṣāyām](index.html).
 
 ## śikṣaṇa mama
 
-- ācārya-upādhi vijñānē saṅgaṇakayantrāṇāṁ sṭênforḍ viśvavidyalayē (kāsaṁvidhā,
+- ācāryopādhi vijñānē saṅgaṇakayantrāṇāṁ sṭênforḍ viśvavidyalayē (kāsaṁvidhā,
   2020--2022)
-- śāstri-upādhi vijñānē saṅgaṇakayantrāṇāṁ sṭênforḍ viśvavidyalayē (citraṇa,
+- śāstryupādhi vijñānē saṅgaṇakayantrāṇāṁ sṭênforḍ viśvavidyalayē (citraṇa,
   2017--2021)
 - menlō vidyālaya (2013--2017)
 
 ## prakalpā mama
 
-[kārṭā](https://carta.stanford.edu)—jālasthānaḥ kakṣāyābhyaś chātrebhyaḥ.
-[sṭējkāsṭ](https://taps.stanford.edu/stagecast)—saṁvidhi naṭakebhyō viśtuṁ
-kōviḍ saṅkāmakē.
+[kārṭā](https://carta.stanford.edu) jālasthānaḥ kakṣāyābhyaś chātrebhya asti.
+
+[sṭējkāsṭ](https://taps.stanford.edu/stagecast) saṁvidhi naṭakebhyō viśtuṁ
+kōviḍ saṅkāmakē 'sti.
 
 ## udyōgā mama
 
-- bhr̥tyaśāstra—upagrahaḥ samudrē (grīṣmakālē 2021)
-- adhyāpakāya sahāyaka—sṭênforḍ [CS 140E]{lang=en} kāsaṁvidhāḥ (vasantē 2021)
-- tantrāṁśābhiyantā—insṭagrām (grīṣmakālē 2020)
-- tantrāṁśābhiyantā—faisbuk (grīṣmakālē 2019)
+- bhr̥tyaśāstropagrahē samudrē (grīṣmakālē 2021)
+- adhyāpakāyaḥ sahāyaka sṭênforḍ [CS 140E]{lang=en} kāsaṁvidhāṇām (vasantē 2021)
+- tantrāṁśābhiyantēnsṭagrāmi (grīṣmakālē 2020)
+- tantrāṁśābhiyantā fēsbuki (grīṣmakālē 2019)
 
 ## prakāśanā mama
 
