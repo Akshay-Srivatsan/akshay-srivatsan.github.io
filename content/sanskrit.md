@@ -61,10 +61,10 @@ function set_document_script(type) {
 
 ![citra mama sān frānsiskō nagarē](assets/img/portrait-small.jpg)
 
-sṭênforḍ viśvavidyālayē vijñāna saṅgaṇakayantrāṇāṁ paṭhami. kāsaṁvidhāsu
+sṭênforḍ viśvavidyālayē vijñānaṃ saṅgaṇakayantrāṇāṁ paṭhami. kāsaṁvidhāsu
 gavēṣaṇaṁ karōmi.
 
-vidyālayāt vahiḥ chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatum ca rōcē.
+vidyālayād vahiś chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatuṃ ca rōcē.
 
 sarvō vivaraṇa [āṅglabhāṣāyām](index.html).
 
@@ -76,16 +76,22 @@ sarvō vivaraṇa [āṅglabhāṣāyām](index.html).
   2017--2021)
 - menlō vidyālaya (2013--2017)
 
-## udyōgāḥ
+## prakalpā mama
 
-- bhr̥tyaśāstra—upagraha samudrē (grīṣmakālē 2021)
+[kārṭā](https://carta.stanford.edu)—jālasthānaḥ kakṣāyābhyaś chātrebhyaḥ.
+[sṭējkāsṭ](https://taps.stanford.edu/stagecast)—saṃvidhi naṭakebhyō viśtuṃ
+kōviḍ saṅkāmakē.
+
+## udyōgā mama
+
+- bhr̥tyaśāstra—upagrahaḥ samudrē (grīṣmakālē 2021)
 - adhyāpakāya sahāyaka—sṭênforḍ [CS 140E]{lang=en} kāsaṁvidhāḥ (vasantē 2021)
 - tantrāṁśābhiyantā—insṭagrām (grīṣmakālē 2020)
 - tantrāṁśābhiyantā—faisbuk (grīṣmakālē 2019)
 
-## prakāśanāḥ
+## prakāśanā mama
 
-### śōdhaḥ
+### śōdhāḥ
 
 - [[Making a Synchronous Motor]{lang=en}
   ](http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf)
