@@ -7,7 +7,14 @@ function set_script(name) {
   document.getElementById("ipa-name").style.display = "inline";
 
   document.getElementById(name + "-name").style.display = "none";
-  script.selectedIndex = ["tamil", "brahmi", "devanagari", "grantha", "iso", "ipa"].indexOf(name);
+  script.selectedIndex = [
+    "tamil",
+    "brahmi",
+    "devanagari",
+    "grantha",
+    "iso",
+    "ipa",
+  ].indexOf(name);
 }
 
 function transcribe(to) {
@@ -25,7 +32,11 @@ function grantha() {
   reset();
   transcribe("Grantha");
   document.documentElement.lang = "ta-Gran";
-  window.history.replaceState("", document.title, window.location.pathname + "?grantha");
+  window.history.replaceState(
+    "",
+    document.title,
+    window.location.pathname + "?grantha"
+  );
   set_script("grantha");
 }
 
@@ -33,7 +44,11 @@ function brahmi() {
   reset();
   transcribe("Brahmi");
   document.documentElement.lang = "ta-Brah";
-  window.history.replaceState("", document.title, window.location.pathname + "?brahmi");
+  window.history.replaceState(
+    "",
+    document.title,
+    window.location.pathname + "?brahmi"
+  );
   set_script("brahmi");
 }
 
@@ -41,7 +56,11 @@ function devanagari() {
   reset();
   transcribe("Devanagari");
   document.documentElement.lang = "ta-Deva";
-  window.history.replaceState("", document.title, window.location.pathname + "?tamil");
+  window.history.replaceState(
+    "",
+    document.title,
+    window.location.pathname + "?tamil"
+  );
   set_script("devanagari");
 }
 
@@ -49,7 +68,11 @@ function iso() {
   reset();
   transcribe("ISO");
   document.documentElement.lang = "sa-Latn";
-  window.history.replaceState("", document.title, window.location.pathname + "?iso");
+  window.history.replaceState(
+    "",
+    document.title,
+    window.location.pathname + "?iso"
+  );
   set_script("iso");
 }
 
@@ -57,6 +80,10 @@ function ipa() {
   reset();
   transcribe("IPA-Tamil");
   document.documentElement.lang = "sa-phonipa";
-  window.history.replaceState("", document.title, window.location.pathname + "?ipa");
+  window.history.replaceState(
+    "",
+    document.title,
+    window.location.pathname + "?ipa"
+  );
   set_script("ipa");
 }
