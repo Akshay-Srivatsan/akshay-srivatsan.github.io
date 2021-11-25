@@ -2,7 +2,7 @@
 title: akṣayasya jālasthāna
 description: viślēṣaka vijñānasya saṅgaṇakayantrāṇāṁ stênfôrd viśvavidyalayē 2022
 image: assets/img/portrait-small.jpg
-image-alt: citra mama sān frānsiskō nagarē
+image-alt: citraṁ mama sān frānsiskō nagarē
 lang: sa-Latn
 noto-sans: true
 js: [assets/js/sanskrit.js, assets/js/transliterate.js]
@@ -59,12 +59,12 @@ function set_document_script(type) {
 
 ## hatihāsa mama
 
-![citra mama sān frānsiskō nagarē](assets/img/portrait-small.jpg)
+![citraṁ mama sān frānsiskō nagarē](assets/img/portrait-small.jpg)
 
-sṭênforḍ viśvavidyālayē vijñānaṃ saṅgaṇakayantrāṇāṁ paṭhami. kāsaṁvidhāsu
+sṭênforḍ viśvavidyālayē vijñānaṁ saṅgaṇakayantrāṇāṁ paṭhami. kāsaṁvidhāsu
 gavēṣaṇaṁ karōmi.
 
-vidyālayād vahiś chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatuṃ ca rōcē.
+vidyālayād vahiś chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatuṁ ca rōcē.
 
 sarvō vivaraṇa [āṅglabhāṣāyām](index.html).
 
@@ -79,7 +79,7 @@ sarvō vivaraṇa [āṅglabhāṣāyām](index.html).
 ## prakalpā mama
 
 [kārṭā](https://carta.stanford.edu)—jālasthānaḥ kakṣāyābhyaś chātrebhyaḥ.
-[sṭējkāsṭ](https://taps.stanford.edu/stagecast)—saṃvidhi naṭakebhyō viśtuṃ
+[sṭējkāsṭ](https://taps.stanford.edu/stagecast)—saṁvidhi naṭakebhyō viśtuṁ
 kōviḍ saṅkāmakē.
 
 ## udyōgā mama
