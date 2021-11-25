@@ -1,8 +1,8 @@
 ---
-title: akṣayasya jālsthāna
-description: विश्लेषक विज्ञानस्य सङ्गणकयन्त्राणां स्टॅन्फ़ॊर्ड् विश्वविद्यलये २०२२
+title: akṣayasya jālasthāna
+description: viślēṣaka vijñānasya saṅgaṇakayantrāṇāṁ stênfôrd viśvavidyalayē 2022
 image: assets/img/portrait-small.jpg
-image-alt: चित्र मम सान् फ्रान्सिस्को नगरे
+image-alt: citra mama sān frānsiskō nagarē
 lang: sa-Latn
 noto-sans: true
 js: [assets/js/sanskrit.js, assets/js/transliterate.js]

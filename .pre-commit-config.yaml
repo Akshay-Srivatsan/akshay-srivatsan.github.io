@@ -11,7 +11,4 @@ repos:
     rev: v2.4.1
     hooks:
       - id: prettier
-  - repo: https://github.com/markdownlint/markdownlint
-    rev: v0.11.0
-    hooks:
-      - id: markdownlint
+        types_or: [javascript, markdown]

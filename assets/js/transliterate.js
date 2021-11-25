@@ -1368,6 +1368,7 @@ function transcribe_node(node, from, to) {
     }
   } else if (node.nodeType === Node.ELEMENT_NODE) {
     if (node.lang !== "") return;
+    if (node.nodeName === "script") return;
     for (let i = 0; i < node.childNodes.length; i++) {
       let child = node.childNodes[i];
       transcribe_node(child, from, to);
