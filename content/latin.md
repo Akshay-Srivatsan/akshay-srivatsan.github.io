@@ -12,12 +12,11 @@ js: assets/js/date.js
 
 [/ak.sei̯ sriː.wat.san/]{lang=la-phonipa .ipa}
 
-idem: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} et
-[अक्षय श्रीवत्सन]{lang=hi} et
-[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran} et
-[𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah}
+idem: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} et [अक्षय श्रीवत्सन]{lang=hi} et [𑌅𑌕𑍍𑌷𑌯𑍍
+𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran} et [𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah}
 
-haec pagina praesto est in [Lingua Anglica](index.html), [Lingua Tamulica](tamil.html), et [Lingua Sanscrita](sanskrit.html).
+haec pagina praesto est in [Lingua Anglica](index.html), [Lingua
+Tamulica](tamil.html), et [Lingua Sanscrita](sanskrit.html).
 
 ## Salve!
 
@@ -25,9 +24,8 @@ haec pagina praesto est in [Lingua Anglica](index.html), [Lingua Tamulica](tamil
   documentum.scribe(`<b>hodie est:</b> ${hodie()} (${hodie_breve()})`);
 </script>
 
-salve!
-haec versio Latina situs interretialis mei est. si errata vidis, meum note!
-quattor annos Latinam non scripsi, ergo multorum oblivisci; me paenitet.
+salve! haec versio Latina situs interretialis mei est. si errata vidis, meum
+note! quattor annos Latinam non scripsi, ergo multorum oblivisci; me paenitet.
 
 nota bene: hic situs interretialis non videbitur recte translatore Google;
 translator Google bene intellegere Latinam non potest.
@@ -67,13 +65,14 @@ if (window.location.search === "?uncials") uncials();
 
 ## De Me
 
-![photographema mei ante urbem Sanctum Franciscum](assets/img/portrait-small.jpg)
+![photographema mei ante urbem Sanctum
+Franciscum](assets/img/portrait-small.jpg)
 
 ego discipulus in Universitate Stanfordiensi sum. scientiam computatralis
-studio. nunc organizationem computatrorum et robotos studio, et prius
-graphicam et simulationem computatralem studebam. in ludo secundo, situm
-interretialem pro _Menlo JCL_ feci, et gregem ad Latinam loquendum institui.  
-anno quarto ludi secundi, pro _California JCL_ situm interretialem gubernabam.
+studio. nunc organizationem computatrorum et robotos studio, et prius graphicam
+et simulationem computatralem studebam. in ludo secundo, situm interretialem pro
+_Menlo JCL_ feci, et gregem ad Latinam loquendum institui. anno quarto ludi
+secundi, pro _California JCL_ situm interretialem gubernabam.
 
 extra ludum et opus, mihi photographia, clavile cantare, et linguas discere
 placet. linguas Anglicam, Latinam, Tamulicam, Hindicam, et Sanscritam aliquid
@@ -82,8 +81,8 @@ scio.
 ## Eruditio Mea
 
 in Universitate Stanfordiensi pro Diplomate Magistri in Scientia Computatrali
-studio. Baccalaureus quoque in Stanford perfeci (a MMXVII ad MMXXI). prius,
-in Ludo Menloniensi studebam.
+studio. Baccalaureus quoque in Stanford perfeci (a MMXVII ad MMXXI). prius, in
+Ludo Menloniensi studebam.
 
 ## Coepta Mea
 
@@ -123,18 +122,18 @@ in manu "Flumen and Fabulae" laborabam.
   ](http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf)
   (Menlo Roundtable, Autumno MMXVI)
 - [Performance Boost: Dynamically Improving a Home's Wi-Fi Signal
-  ](http://ieeexplore.ieee.org/abstract/document/7425403/)
-  (IEEE Potentials, a Martius ad Aprilem MMXVI)
+  ](http://ieeexplore.ieee.org/abstract/document/7425403/) (IEEE Potentials, a
+  Martius ad Aprilem MMXVI)
 - [A Dual Sensor System for Determining the Unique Oxygen Production Signature
-  of Plants ](http://www.cyberjournals.com/Papers/2015/01.pdf)
-  (Cyber Journals - Mechatronics, MMXV)
+  of Plants ](http://www.cyberjournals.com/Papers/2015/01.pdf) (Cyber Journals -
+  Mechatronics, MMXV)
 
 ### Inventions
 
 - Modular Media Player (US D769941 S1)
 - Multi-Person Straw for Sharing/Tasting Beverages (US 9186007 B2)
-- Apparatus and Method for Repairing a Surface Submerged in Liquid by Creating
-  a Workable Space (US 8925168 B2)
+- Apparatus and Method for Repairing a Surface Submerged in Liquid by Creating a
+  Workable Space (US 8925168 B2)
 - System, Methodology, and Product to Sort, Organize, and Store Toy
   Building/Construction Sets (US 7987990 B2)
 

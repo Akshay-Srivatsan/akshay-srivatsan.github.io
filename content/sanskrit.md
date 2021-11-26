@@ -12,15 +12,13 @@ js: [assets/js/sanskrit.js, assets/js/transliterate.js]
 
 [/ˈɐk.ʂɐj ɕriːˈʋɐt.sɐn/]{lang=sa-phonipa .ipa #ipa-name}
 
-tad: [Akshay Srivatsan]{lang=en} ca
-[[அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} ca]{#tamil-name}
-[[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran} ca]{#grantha-name}
-[[अक्षय् श्रीवत्सन्]{lang=sa} ca]{#devanagari-name}
-[[𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah} ca]{#brahmi-name}
-[[akṣay srīvatsan]{lang=sa-Latn} ca]{#iso-name style=display:none}
+tad: [Akshay Srivatsan]{lang=en} ca [[அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} ca]{#tamil-name}
+[[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran} ca]{#grantha-name} [[अक्षय् श्रीवत्सन्]{lang=sa}
+ca]{#devanagari-name} [[𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah} ca]{#brahmi-name} [[akṣay
+srīvatsan]{lang=sa-Latn} ca]{#iso-name style=display:none}
 
-ētad jālapr̥ṣṭhopalabhya [āṅglabhāṣayā](index.html) ca
-[tamiḻbhāṣayā](tamil.html) ca [lātinbhāṣayā](latin.html) asati.
+ētad jālapr̥ṣṭhopalabhya [āṅglabhāṣayā](index.html) ca [tamiḻbhāṣayā](tamil.html)
+ca [lātinbhāṣayā](latin.html) asati.
 
 ## namaskāra!
 
@@ -80,8 +78,8 @@ sarvō vivaraṇa [āṅglabhāṣāyām](index.html).
 
 [kārṭā](https://carta.stanford.edu) jālasthānaḥ kakṣāyābhyaś chātrebhya asti.
 
-[sṭējkāsṭ](https://taps.stanford.edu/stagecast) saṁvidhi naṭakebhyō viśtuṁ
-kōviḍ saṅkāmakē 'sti.
+[sṭējkāsṭ](https://taps.stanford.edu/stagecast) saṁvidhi naṭakebhyō viśtuṁ kōviḍ
+saṅkāmakē 'sti.
 
 ## udyōgā mama
 
@@ -98,11 +96,11 @@ kōviḍ saṅkāmakē 'sti.
   ](http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf)
   ([Menlo Roundtable]{lang=en}, śaradkālē 2016)
 - [[Performance Boost: Dynamically Improving a Home's Wi-Fi Signal]{lang=en}
-  ](http://ieeexplore.ieee.org/abstract/document/7425403/)
-  ([IEEE Potentials]{lang=en}, mārc–āpril 2016)
+  ](http://ieeexplore.ieee.org/abstract/document/7425403/) ([IEEE
+  Potentials]{lang=en}, mārc–āpril 2016)
 - [[A Dual Sensor System for Determining the Unique Oxygen Production Signature
-  of Plants]{lang=en}](http://www.cyberjournals.com/Papers/2015/01.pdf)
-  ([Cyber Journals - Mechatronics]{lang=en}, 2015)
+  of Plants]{lang=en}](http://www.cyberjournals.com/Papers/2015/01.pdf) ([Cyber
+  Journals - Mechatronics]{lang=en}, 2015)
 
 ### āviṣkārāḥ
 
@@ -110,8 +108,8 @@ kōviḍ saṅkāmakē 'sti.
 
 - Modular Media Player (US D769941 S1)
 - Multi-Person Straw for Sharing/Tasting Beverages (US 9186007 B2)
-- Apparatus and Method for Repairing a Surface Submerged in Liquid by Creating
-  a Workable Space (US 8925168 B2)
+- Apparatus and Method for Repairing a Surface Submerged in Liquid by Creating a
+  Workable Space (US 8925168 B2)
 - System, Methodology, and Product to Sort, Organize, and Store Toy
   Building/Construction Sets (US 7987990 B2)
 
