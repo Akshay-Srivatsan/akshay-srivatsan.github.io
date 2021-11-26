@@ -15,8 +15,8 @@ js: assets/js/date.js
 idem: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} et [अक्षय श्रीवत्सन]{lang=hi} et [𑌅𑌕𑍍𑌷𑌯𑍍
 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran} et [𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah}
 
-haec pagina praesto est in [Lingua Anglica](index.html), [Lingua
-Tamulica](tamil.html), et [Lingua Sanscrita](sanskrit.html).
+haec pagina praesto est in [Lingua Anglica](index.html),
+[Lingua Tamulica](tamil.html), et [Lingua Sanscrita](sanskrit.html).
 
 ## Salve!
 
@@ -89,17 +89,17 @@ Ludo Menloniensi studebam.
 [Carta](https://carta.stanford.edu): situs interretialis ad consilia cursuum
 facienda a studentibus. (MMXIX-MMXX)
 
-[Stagecast](https://taps.stanford.edu/stagecast): programma ad dramata agenda
-in interretiale dum COVID epidemia est. (MMXX-MMXXI)
+[Stagecast](https://taps.stanford.edu/stagecast): programma ad dramata agenda in
+interretiale dum COVID epidemia est. (MMXX-MMXXI)
 
 ## Negotia Mea
 
 ### Architectus Robotorum (Tiro): Aqua Satellite (Aestate MMXXI)
 
 in Aqua Satellite, modus programmandi statuebam et programmam initialem ad
-robotum movendum scribebam. roboto nostro nomen "Thaumas" est, simile deo
-Graeco miraculorum maris. Thaumas vehiculum automatum subaqueanum ad mare
-explorandum est.
+robotum movendum scribebam. roboto nostro nomen "Thaumas" est, simile deo Graeco
+miraculorum maris. Thaumas vehiculum automatum subaqueanum ad mare explorandum
+est.
 
 ### Administer Cursus: Stanford CS 140E (Vere MMXXI)
 
@@ -118,28 +118,25 @@ in manu "Flumen and Fabulae" laborabam.
 
 ### Investigationes Meae
 
-- [Making a Synchronous Motor
-  ](http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf)
-  (Menlo Roundtable, Autumno MMXVI)
-- [Performance Boost: Dynamically Improving a Home's Wi-Fi Signal
-  ](http://ieeexplore.ieee.org/abstract/document/7425403/) (IEEE Potentials, a
-  Martius ad Aprilem MMXVI)
-- [A Dual Sensor System for Determining the Unique Oxygen Production Signature
-  of Plants ](http://www.cyberjournals.com/Papers/2015/01.pdf) (Cyber Journals -
-  Mechatronics, MMXV)
+-   [Making a Synchronous Motor ](http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf)
+    (Menlo Roundtable, Autumno MMXVI)
+-   [Performance Boost: Dynamically Improving a Home's Wi-Fi Signal ](http://ieeexplore.ieee.org/abstract/document/7425403/)
+    (IEEE Potentials, a Martius ad Aprilem MMXVI)
+-   [A Dual Sensor System for Determining the Unique Oxygen Production Signature of Plants ](http://www.cyberjournals.com/Papers/2015/01.pdf)
+    (Cyber Journals - Mechatronics, MMXV)
 
 ### Inventions
 
-- Modular Media Player (US D769941 S1)
-- Multi-Person Straw for Sharing/Tasting Beverages (US 9186007 B2)
-- Apparatus and Method for Repairing a Surface Submerged in Liquid by Creating a
-  Workable Space (US 8925168 B2)
-- System, Methodology, and Product to Sort, Organize, and Store Toy
-  Building/Construction Sets (US 7987990 B2)
+-   Modular Media Player (US D769941 S1)
+-   Multi-Person Straw for Sharing/Tasting Beverages (US 9186007 B2)
+-   Apparatus and Method for Repairing a Surface Submerged in Liquid by Creating
+    a Workable Space (US 8925168 B2)
+-   System, Methodology, and Product to Sort, Organize, and Store Toy
+    Building/Construction Sets (US 7987990 B2)
 
 ### Links
 
-- [GitHub](https://github.com/Akshay-Srivatsan)
-- [LinkedIn](https://www.linkedin.com/in/akshay-srivatsan/)
-- [YouTube](https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA)
-- [mihi epistolam mitte](mailto:srivatsan.akshay+website@gmail.com)
+-   [GitHub](https://github.com/Akshay-Srivatsan)
+-   [LinkedIn](https://www.linkedin.com/in/akshay-srivatsan/)
+-   [YouTube](https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA)
+-   [mihi epistolam mitte](mailto:srivatsan.akshay+website@gmail.com)

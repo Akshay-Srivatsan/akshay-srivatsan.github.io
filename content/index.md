@@ -25,8 +25,8 @@ I'm a graduate student at Stanford University doing my masters in Computer
 Science. I focus mostly on computer systems and robotics nowadays, and I
 previously did my undergrad focusing on computer graphics and simulation. My
 experience ranges from raytracers to websites, but I mostly like working at the
-OS level and working with hardware. I've worked at Stanford,
-Facebook/Instagram, and Aqua Satellite.
+OS level and working with hardware. I've worked at Stanford, Facebook/Instagram,
+and Aqua Satellite.
 
 Outside of school/work, I'm also interested in analog and digital photography,
 playing the piano, and learning languages.
@@ -74,28 +74,25 @@ software used by the production engineering and software engineering teams.
 
 ### Research
 
-- [Making a Synchronous Motor
-  ](http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf)
-  (Menlo Roundtable, Fall 2016)
-- [Performance Boost: Dynamically Improving a Home's Wi-Fi Signal
-  ](http://ieeexplore.ieee.org/abstract/document/7425403/) (IEEE Potentials,
-  March--April 2016)
-- [A Dual Sensor System for Determining the Unique Oxygen Production Signature
-  of Plants ](http://www.cyberjournals.com/Papers/2015/01.pdf) (Cyber Journals -
-  Mechatronics, 2015)
+-   [Making a Synchronous Motor ](http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf)
+    (Menlo Roundtable, Fall 2016)
+-   [Performance Boost: Dynamically Improving a Home's Wi-Fi Signal ](http://ieeexplore.ieee.org/abstract/document/7425403/)
+    (IEEE Potentials, March--April 2016)
+-   [A Dual Sensor System for Determining the Unique Oxygen Production Signature of Plants ](http://www.cyberjournals.com/Papers/2015/01.pdf)
+    (Cyber Journals - Mechatronics, 2015)
 
 ### Inventions
 
-- Modular Media Player (US D769941 S1)
-- Multi-Person Straw for Sharing/Tasting Beverages (US 9186007 B2)
-- Apparatus and Method for Repairing a Surface Submerged in Liquid by Creating a
-  Workable Space (US 8925168 B2)
-- System, Methodology, and Product to Sort, Organize, and Store Toy
-  Building/Construction Sets (US 7987990 B2)
+-   Modular Media Player (US D769941 S1)
+-   Multi-Person Straw for Sharing/Tasting Beverages (US 9186007 B2)
+-   Apparatus and Method for Repairing a Surface Submerged in Liquid by Creating
+    a Workable Space (US 8925168 B2)
+-   System, Methodology, and Product to Sort, Organize, and Store Toy
+    Building/Construction Sets (US 7987990 B2)
 
 ### Links
 
-- [GitHub](https://github.com/Akshay-Srivatsan)
-- [LinkedIn](https://www.linkedin.com/in/akshay-srivatsan/)
-- [YouTube](https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA)
-- [Email](mailto:srivatsan.akshay+website@gmail.com)
+-   [GitHub](https://github.com/Akshay-Srivatsan)
+-   [LinkedIn](https://www.linkedin.com/in/akshay-srivatsan/)
+-   [YouTube](https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA)
+-   [Email](mailto:srivatsan.akshay+website@gmail.com)
