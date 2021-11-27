@@ -61,8 +61,8 @@ function set_document_script(type) {
 
 ![citraṁ mama sān frānsiskō nagarē](assets/img/portrait-small.jpg)
 
-sṭênforḍ viśvavidyālayē vijñānaṁ saṅgaṇakayantrāṇāṁ paṭhami. kāsaṁvidhāsu
-gavēṣaṇaṁ karōmi.
+mama nāmākṣayaḥ. sṭênforḍ viśvavidyālayē vijñānaṁ saṅgaṇakayantrāṇāṁ paṭhami.
+kāsaṁvidhāsu gavēṣaṇaṁ karōmi.
 
 vidyālayād vahiś chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatuṁ ca rōcē.
 
