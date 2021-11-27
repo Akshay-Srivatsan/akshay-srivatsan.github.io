@@ -78,7 +78,7 @@ sarvō vivaraṇa [āṅglabhāṣāyām](index.html).
 
 ## prakalpā mama
 
-[kārṭā](https://carta.stanford.edu) jālasthānaḥ kakṣāyābhyaś chātrebhya asti.
+[kārṭā](https://carta.stanford.edu) jālasthānaḥ kakṣāyābhyaś chātrebhyāsti.
 
 [sṭējkāsṭ](https://taps.stanford.edu/stagecast) saṁvidhi naṭakebhyō viśtuṁ kōviḍ
 saṅkāmakē 'sti.
