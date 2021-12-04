@@ -18,7 +18,7 @@ function set_script(name) {
 }
 
 function transcribe(to) {
-    transcribe_document('Tamil', to);
+    transcribe_document(to);
 }
 
 function tamil() {
@@ -30,7 +30,7 @@ function tamil() {
 
 function grantha() {
     reset();
-    transcribe('Grantha');
+    transcribe(mapping.to_grantha);
     document.documentElement.lang = 'ta-Gran';
     window.history.replaceState(
         '',
@@ -42,7 +42,7 @@ function grantha() {
 
 function brahmi() {
     reset();
-    transcribe('Brahmi');
+    transcribe(mapping.to_brahmi);
     document.documentElement.lang = 'ta-Brah';
     window.history.replaceState(
         '',
@@ -54,19 +54,19 @@ function brahmi() {
 
 function devanagari() {
     reset();
-    transcribe('Devanagari');
+    transcribe(mapping.to_devanagari);
     document.documentElement.lang = 'ta-Deva';
     window.history.replaceState(
         '',
         document.title,
-        window.location.pathname + '?tamil'
+        window.location.pathname + '?devanagari'
     );
     set_script('devanagari');
 }
 
 function iso() {
     reset();
-    transcribe('ISO');
+    transcribe(mapping.to_iso);
     document.documentElement.lang = 'sa-Latn';
     window.history.replaceState(
         '',
@@ -78,7 +78,7 @@ function iso() {
 
 function ipa() {
     reset();
-    transcribe('IPA-Tamil');
+    transcribe(mapping.to_ipa);
     document.documentElement.lang = 'sa-phonipa';
     window.history.replaceState(
         '',

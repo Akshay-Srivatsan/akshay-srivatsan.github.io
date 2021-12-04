@@ -5,7 +5,7 @@ image: assets/img/portrait-small.jpg
 image-alt: ஸான் ஃப்ரான்ஸிஸ்கோ முனாலில் எனுடைய புகைப்படம்
 lang: ta
 noto-sans: true
-js: [assets/js/tamil.js, assets/js/transliterate.js]
+js: [transliteration/tamil.js, assets/js/tamil.js, assets/js/transcribe.js]
 ---
 
 # அக்ஷய் ஶ்ரீவத்ஸன்

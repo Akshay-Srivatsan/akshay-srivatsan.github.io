@@ -6,7 +6,12 @@ image: assets/img/portrait-small.jpg
 image-alt: citraṁ mama sān frānsiskō nagarē
 lang: sa-Latn
 noto-sans: true
-js: [assets/js/sanskrit.js, assets/js/transliterate.js]
+js:
+    [
+        transliteration/sanskrit.js,
+        assets/js/sanskrit.js,
+        assets/js/transcribe.js,
+    ]
 ---
 
 # akṣay śrīvatsan

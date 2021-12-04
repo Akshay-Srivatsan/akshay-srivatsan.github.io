@@ -15,7 +15,11 @@ PANDOCFLAGS=--from markdown+bracketed_spans+fenced_divs\
 BASEURL=https://aks.io
 
 .PHONY: all
-all: $(HTML)
+all: $(HTML) mappings
+
+.PHONY: mappings
+mappings:
+	cd transliteration && python generate_maps.py
 
 %.html: content/%.md $(TEMPLATES) Makefile
 	pandoc $< --output $@ $(PANDOCFLAGS) --variable url="$(BASEURL)/$@"

@@ -18,7 +18,7 @@ function set_script(name) {
 }
 
 function transcribe(to) {
-    transcribe_document('ISO', to);
+    transcribe_document(to);
 }
 
 function iso() {
@@ -30,7 +30,7 @@ function iso() {
 
 function grantha() {
     reset();
-    transcribe('Grantha');
+    transcribe(mapping.to_grantha);
     document.documentElement.lang = 'sa-Gran';
     window.history.replaceState(
         '',
@@ -42,7 +42,7 @@ function grantha() {
 
 function brahmi() {
     reset();
-    transcribe('Brahmi');
+    transcribe(mapping.to_brahmi);
     document.documentElement.lang = 'sa-Brah';
     window.history.replaceState(
         '',
@@ -54,7 +54,7 @@ function brahmi() {
 
 function tamil() {
     reset();
-    transcribe('Tamil');
+    transcribe(mapping.to_tamil);
     document.documentElement.lang = 'sa-Taml';
     window.history.replaceState(
         '',
@@ -66,7 +66,7 @@ function tamil() {
 
 function devanagari() {
     reset();
-    transcribe('Devanagari');
+    transcribe(mapping.to_devanagari);
     document.documentElement.lang = 'sa';
     window.history.replaceState(
         '',
@@ -78,7 +78,7 @@ function devanagari() {
 
 function ipa() {
     reset();
-    transcribe('IPA-Sanskrit');
+    transcribe(mapping.to_ipa);
     document.documentElement.lang = 'sa-phonipa';
     window.history.replaceState(
         '',
