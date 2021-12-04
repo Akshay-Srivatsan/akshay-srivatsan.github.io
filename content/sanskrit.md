@@ -25,7 +25,7 @@ ca]{#brahmi-name} [[akṣay srīvatsan]{lang=sa-Latn} ca]{#iso-name
 style=display:none}
 
 ētad jālapr̥ṣṭhopalabhya [āṅglabhāṣayā](index.html) ca [tamiḻbhāṣayā](tamil.html)
-ca [lātinbhāṣayā](latin.html) asati.
+ca [lātinbhāṣayā](latin.html) asti.
 
 ## namaskāra!
 
