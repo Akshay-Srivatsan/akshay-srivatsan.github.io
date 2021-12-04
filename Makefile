@@ -20,6 +20,7 @@ all: $(HTML) mappings
 .PHONY: mappings
 mappings:
 	cd transliteration && python generate_maps.py
+	prettier --write transliteration/*.js
 
 %.html: content/%.md $(TEMPLATES) Makefile
 	pandoc $< --output $@ $(PANDOCFLAGS) --variable url="$(BASEURL)/$@"
