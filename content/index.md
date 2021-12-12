@@ -3,7 +3,6 @@ title: Akshay Srivatsan
 description: Systems Developer, Stanford MS CS '22
 image-alt: Portrait of Akshay Srivatsan with San Francisco in the background.
 lang: en
-noto-sans: true
 ---
 
 # Akshay Srivatsan

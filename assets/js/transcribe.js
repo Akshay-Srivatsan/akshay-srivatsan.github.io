@@ -23,7 +23,7 @@ function transcribe_node(node, mapping) {
         }
     } else if (node.nodeType === Node.ELEMENT_NODE) {
         if (node.lang !== '') return;
-        if (node.nodeName === 'script') return;
+        if (node.nodeName === 'SCRIPT') return;
         for (let i = 0; i < node.childNodes.length; i++) {
             let child = node.childNodes[i];
             transcribe_node(child, mapping);

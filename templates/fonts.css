@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 @font-face {
   font-family: 'Noto Sans Tamil';
   src: url('assets/fonts/NotoSansTamil-Regular.ttf') format('truetype');
@@ -22,76 +21,44 @@
   src: url('assets/fonts/NotoSansBrahmi-Regular.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Noto Serif Tamil';
-  src: url('assets/fonts/NotoSerifTamil-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Noto Serif Devanagari';
-  src: url('assets/fonts/NotoSerifDevanagari-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Noto Serif Grantha';
-  src: url('assets/fonts/NotoSerifGrantha-Regular.ttf') format('truetype');
+  font-family: 'Noto Sans Old Italic';
+  src: url('assets/fonts/NotoSansOldItalic-Regular.ttf') format('truetype');
 }
 
 :lang(en) {
-  $if(mainfont)$
-  font-family: $mainfont$, sans-serif;
-  $else$
   font-family: 'Montserrat', sans-serif;
-  $endif$
 }
 
-:lang(la) {
-  $if(mainfont)$
-  font-family: $mainfont$, sans-serif;
-  $else$
+:lang(la), :lang(la) * {
   font-family: 'Julius Sans One', sans-serif;
-  $endif$
 }
 
-:lang(la-Latg) {
-  $if(mainfont)$
-  font-family: $mainfont$, sans-serif;
-  $else$
+:lang(la-Latg), :lang(la-Latg) * {
   font-family: 'Uncial Antiqua', sans-serif;
-  $endif$
+}
+
+:lang(la-Ital) {
+  font-family: 'Noto Sans Old Italic', 'Noto Sans', sans-serif;
 }
 
 :lang(ta), :lang(sa-Taml) {
-  $if(noto-sans)$
-  font-family: 'Noto Sans Tamil', sans-serif;
-  $else$
-  font-family: 'Noto Serif Tamil', sans-serif;
-  $endif$
+  font-family: 'Noto Sans Tamil', 'Noto Sans', sans-serif;
 }
 
 :lang(sa), :lang(hi), :lang(ta-Deva) {
-  $if(noto-sans)$
-  font-family: 'Noto Sans Devanagari', sans-serif;
-  $else$
-  font-family: 'Noto Serif Devanagari', sans-serif;
-  $endif$
+  font-family: 'Noto Sans Devanagari', 'Noto Sans', sans-serif;
 }
 
 :lang(sa-Gran), :lang(ta-Gran) {
-  $if(noto-sans)$
-  font-family: 'Noto Sans Grantha', sans-serif;
-  $else$
-  font-family: 'Noto Serif Grantha', sans-serif;
-  $endif$
+  font-family: 'Noto Sans Grantha', 'Noto Sans', sans-serif;
 }
 
 :lang(sa-Latn), :lang(ta-Latn) {
-  $if(noto-sans)$
-  font-family: 'Noto Sans', sans-serif;
-  $else$
-  font-family: 'Noto Serif', sans-serif;
-  $endif$
+  font-family: 'Noto Sans', 'Noto Sans', sans-serif;
 }
 
 :lang(sa-Brah), :lang(ta-Brah) {
-  font-family: 'Noto Sans Brahmi', sans-serif;
+  font-family: 'Noto Sans Brahmi', 'Noto Sans', sans-serif;
 }
 
 :lang(en-phonipa), :lang(la-phonipa), :lang(sa-phonipa), :lang(ta-phonipa) {

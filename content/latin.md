@@ -5,7 +5,7 @@ description: programmator, Stanford MS CS MMXXII
 image: assets/img/portrait-small.jpg
 image-alt: photographema mei ante urbem Sanctum Franciscum
 lang: la
-js: assets/js/date.js
+js: [assets/js/transcribe.js, assets/js/latin.js, assets/js/date.js]
 ---
 
 # Akshay Srivatsan
@@ -21,7 +21,7 @@ haec pagina praesto est in [Lingua Anglica](index.html),
 ## Salve!
 
 <script>
-  documentum.scribe(`<b>hodie est:</b> ${hodie()} (${hodie_breve()})`);
+  documentum.scribe(`<b>hodie est:</b> ${hodie()} (${hodieBreve()})`);
 </script>
 
 salve! haec versio Latina situs interretialis mei est. si errata vidis, meum
@@ -30,38 +30,14 @@ note! quattor annos Latinam non scripsi, ergo multorum oblivisci; me paenitet.
 nota bene: hic situs interretialis non videbitur recte translatore Google;
 translator Google bene intellegere Latinam non potest.
 
-<div id="fonts" style="display:none">
-<label for="font">**speciem litterarum elige:**</label>
-<select name="font" id="font" onchange="setFont(this.value)">
-    <option value="capitals">capitales quadratae</option>
-    <option value="uncials">capitales unciales</option>
+<div id="species" style="display:none">
+<label for="speciesElige">**speciem litterarum elige:**</label>
+<select name="speciesElige" id="speciesElige" onchange="mutaSpeciem(this.value)">
+    <option value="capitales">capitales quadratae</option>
+    <option value="unciales">capitales unciales</option>
+    <option value="italica">capitales italica</option>
 </select>
 </div>
-
-<script>
-document.getElementById("fonts").style.display = "block";
-
-function setFont(type) {
-    if (type == "uncials")
-        uncials();
-    else if (type == "capitals")
-        capitals();
-}
-
-function capitals() {
-    font.selectedIndex = 0;
-    document.documentElement.lang='la';
-    window.history.replaceState("", document.title, window.location.pathname);
-}
-
-function uncials() {
-    font.selectedIndex = 1;
-    document.documentElement.lang='la-Latg';
-    window.history.replaceState("", document.title, window.location.pathname + "?uncials");
-}
-
-if (window.location.search === "?uncials") uncials();
-</script>
 
 ## De Me
 
@@ -101,10 +77,10 @@ robotum movendum scribebam. roboto nostro nomen "Thaumas" est, simile deo Graeco
 miraculorum maris. Thaumas vehiculum automatum subaqueanum ad mare explorandum
 est.
 
-### Administer Cursus: Stanford CS 140E (Vere MMXXI)
+### Administer Cursus: [Stanford CS 140E]{lang=en} (Vere MMXXI)
 
-cursu _CS 140E: Inventioque Constructioque Nucelorum Computatrorum_ adjuvebam.  
-in laboratorio discipulos juvebam, et interdum cursum docui.
+cursu _[CS 140E]{lang=en}: Inventioque Constructioque Nucelorum Computatrorum_
+adjuvebam. in laboratorio discipulos juvebam, et interdum cursum docui.
 
 ### Productio Ingeniarius (Tiro): Instagram (Aestate MMXX)
 
@@ -118,14 +94,16 @@ in manu "Flumen and Fabulae" laborabam.
 
 ### Investigationes Meae
 
--   [Making a Synchronous Motor ](http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf)
-    (Menlo Roundtable, Autumno MMXVI)
--   [Performance Boost: Dynamically Improving a Home's Wi-Fi Signal ](http://ieeexplore.ieee.org/abstract/document/7425403/)
-    (IEEE Potentials, a Martius ad Aprilem MMXVI)
--   [A Dual Sensor System for Determining the Unique Oxygen Production Signature of Plants ](http://www.cyberjournals.com/Papers/2015/01.pdf)
-    (Cyber Journals - Mechatronics, MMXV)
+-   [[Making a Synchronous Motor]{lang=en} ](http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf)
+    ([Menlo Roundtable,]{lang=en} Autumno MMXVI)
+-   [[Performance Boost: Dynamically Improving a Home's Wi-Fi Signal]{lang=en} ](http://ieeexplore.ieee.org/abstract/document/7425403/)
+    ([IEEE Potentials,]{lang=en} a Martius ad Aprilem MMXVI)
+-   [[A Dual Sensor System for Determining the Unique Oxygen Production Signature of Plants]{lang=en}](http://www.cyberjournals.com/Papers/2015/01.pdf)
+    ([Cyber Journals - Mechatronics,]{lang=en} MMXV)
 
-### Inventions
+### Inventiones Meae
+
+::: {lang=en}
 
 -   Modular Media Player (US D769941 S1)
 -   Multi-Person Straw for Sharing/Tasting Beverages (US 9186007 B2)
@@ -134,9 +112,17 @@ in manu "Flumen and Fabulae" laborabam.
 -   System, Methodology, and Product to Sort, Organize, and Store Toy
     Building/Construction Sets (US 7987990 B2)
 
-### Links
+:::
+
+### Nexus
 
 -   [GitHub](https://github.com/Akshay-Srivatsan)
 -   [LinkedIn](https://www.linkedin.com/in/akshay-srivatsan/)
 -   [YouTube](https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA)
 -   [mihi epistolam mitte](mailto:srivatsan.akshay+website@gmail.com)
+
+<script>
+species.aspectus.forma = TALEA;
+
+mutaSpeciem(fenestra.locus.quaesitum);
+</script>

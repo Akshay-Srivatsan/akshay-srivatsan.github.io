@@ -23,7 +23,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 @font-face {
   font-family: 'Noto Sans Tamil';
   src: url('assets/fonts/NotoSansTamil-Regular.ttf') format('truetype');
@@ -41,48 +40,44 @@
   src: url('assets/fonts/NotoSansBrahmi-Regular.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Noto Serif Tamil';
-  src: url('assets/fonts/NotoSerifTamil-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Noto Serif Devanagari';
-  src: url('assets/fonts/NotoSerifDevanagari-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Noto Serif Grantha';
-  src: url('assets/fonts/NotoSerifGrantha-Regular.ttf') format('truetype');
+  font-family: 'Noto Sans Old Italic';
+  src: url('assets/fonts/NotoSansOldItalic-Regular.ttf') format('truetype');
 }
 
 :lang(en) {
-    font-family: 'Montserrat', sans-serif;
-  }
+  font-family: 'Montserrat', sans-serif;
+}
 
-:lang(la) {
-    font-family: 'Julius Sans One', sans-serif;
-  }
+:lang(la), :lang(la) * {
+  font-family: 'Julius Sans One', sans-serif;
+}
 
-:lang(la-Latg) {
-    font-family: 'Uncial Antiqua', sans-serif;
-  }
+:lang(la-Latg), :lang(la-Latg) * {
+  font-family: 'Uncial Antiqua', sans-serif;
+}
+
+:lang(la-Ital) {
+  font-family: 'Noto Sans Old Italic', 'Noto Sans', sans-serif;
+}
 
 :lang(ta), :lang(sa-Taml) {
-    font-family: 'Noto Sans Tamil', sans-serif;
-  }
+  font-family: 'Noto Sans Tamil', 'Noto Sans', sans-serif;
+}
 
 :lang(sa), :lang(hi), :lang(ta-Deva) {
-    font-family: 'Noto Sans Devanagari', sans-serif;
-  }
+  font-family: 'Noto Sans Devanagari', 'Noto Sans', sans-serif;
+}
 
 :lang(sa-Gran), :lang(ta-Gran) {
-    font-family: 'Noto Sans Grantha', sans-serif;
-  }
+  font-family: 'Noto Sans Grantha', 'Noto Sans', sans-serif;
+}
 
 :lang(sa-Latn), :lang(ta-Latn) {
-    font-family: 'Noto Sans', sans-serif;
-  }
+  font-family: 'Noto Sans', 'Noto Sans', sans-serif;
+}
 
 :lang(sa-Brah), :lang(ta-Brah) {
-  font-family: 'Noto Sans Brahmi', sans-serif;
+  font-family: 'Noto Sans Brahmi', 'Noto Sans', sans-serif;
 }
 
 :lang(en-phonipa), :lang(la-phonipa), :lang(sa-phonipa), :lang(ta-phonipa) {
@@ -130,12 +125,12 @@ img {
     <h1 id="அகஷய-ஶரவதஸன">அக்ஷய் ஶ்ரீவத்ஸன்</h1>
     <p><span id="ipa-name" class="ipa" lang="ta-phonipa">/ak.ʂaj ɕɾiː.ʋat.san̪/</span></p>
     <p>வேறு எழுத்து முறைகளில்: <span lang="en">Akshay Srivatsan</span> உம் <span id="tamil-name" style="display:none"><span lang="ta">அக்ஷய் ஶ்ரீவத்ஸன்</span> உம்</span> <span id="grantha-name"><span lang="sa-Gran">𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍</span> உம்</span> <span id="devanagari-name"><span lang="sa">अक्षय् श्रीवत्सन्</span> உம்</span> <span id="brahmi-name"><span lang="sa-Brah">𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆</span> உம்</span> <span id="iso-name"><span lang="sa-Latn">akṣay srīvatsan</span> உம்</span></p>
-    <p>தமிழ் மொழியில் தவிர, இந்த இணையதளம் <a href="index.html">ஆங்கில மொழியிலும்</a>, <a href="latin.html">லடின் மொழியிலும்</a>, <a href="sanskrit.html">சம்ஸ்கிருத மொழியிலும்</a> கிடைக்கும்.</p>
+    <p>தமிழ் மொழியில் தவிர, இந்த இணையதளம் <a href="index.html">ஆங்கில மொழியிலும்</a>, <a href="latin.html">லாடின் மொழியிலும்</a>, <a href="sanskrit.html">சம்ஸ்கிருத மொழியிலும்</a> கிடைக்கும்.</p>
     <h2 id="வணககம">வணக்கம்!</h2>
     <p>வணக்கம்!</p>
     <p>என்னுடைய இணையதளத்துடைய தமிழ் திருப்புதலுக்கு வரவேற்பு! எனக்கு தமிழ் புரியும், பேசவும் தெரியும், ஆனால் இன்னும் சரியாக எழுதக் கற்றுக் கொண்டு இருக்கிறேன்; கொஞ்சம் தவறுகளை பார்த்தால், எனக்குச் சொல்லுங்கள்.</p>
     <div id="scripts" style="display:none">
-    <p><label for="script"><strong>எழுத்து முறையை தேர்வு பண்ணுங்கள்:</strong></label> <select name="script" id="script" onchange="set_document_script(this.value)"> <option value="tamil">தமிழ் (Tamil)</option> <option value="brahmi">பிராமி (Brahmi)</option> <option value="devanagari">தேவநாகரி (Devanagari)</option> <option value="grantha">கிரந்தம் (Grantha)</option> <option value="iso">லடின் (ISO 15919)</option> <option value="ipa">சர்வதேச (IPA)</option> </select></p>
+    <p><label for="script"><strong>எழுத்து முறையை தேர்வு பண்ணுங்கள்:</strong></label> <select name="script" id="script" onchange="set_document_script(this.value)"> <option value="tamil">தமிழ் (Tamil)</option> <option value="brahmi">பிராமி (Brahmi)</option> <option value="devanagari">தேவநாகரி (Devanagari)</option> <option value="grantha">கிரந்தம் (Grantha)</option> <option value="iso">லாடின் (ISO 15919)</option> <option value="ipa">சர்வதேச (IPA)</option> </select></p>
     </div>
     <script>
     document.getElementById("scripts").style.display = "block";
@@ -158,7 +153,7 @@ img {
     <h2 id="எனனப-பறற">என்னைப் பற்றி</h2>
     <p><img src="assets/img/portrait-small.jpg" alt="ஸான் ஃப்ரான்ஸிஸ்கோ முனாலில் எனுடைய புகைப்படம்" /></p>
     <p>என்னுடைய பெயர் அக்ஷய். ஸ்டான்ஃபோர்ட் யுனிவர்சிட்டியில் நான் கணினி அறிவியலைப் படிக்கிற மாணவன். இக்காலத்தில் நான் இயக்க அமைப்புகளைப் பற்றி கற்றுக் கொண்டு இருக்கிறேன்; இதற்கு முன்னால் நான் கணினி வரைகலைப் பற்றி கற்றுக் கொண்டு இருந்தேன்.</p>
-    <p>பள்ளிக்கு வெளியில், புகைப்படங்களை எடுக்கவும், பியானோவை வாசிக்கவும், மொழிகளைக் கற்றுக்கவும் எனக்குப் பிடிக்கும். எனக்கு ஆங்கிலமும், தமிழும், லடினும், கொஞ்சம் ஹிந்தியும், கொஞ்சம் சம்ஸ்கிருதமும் தெரியும்.</p>
+    <p>பள்ளிக்கு வெளியில், புகைப்படங்களை எடுக்கவும், பியானோவை வாசிக்கவும், மொழிகளைக் கற்றுக்கவும் எனக்குப் பிடிக்கும். எனக்கு ஆங்கிலமும், தமிழும், லாடினும், கொஞ்சம் ஹிந்தியும், கொஞ்சம் சம்ஸ்கிருதமும் தெரியும்.</p>
     <h2 id="எனனடய-படபபகள">என்னுடைய படிப்புகள்</h2>
     <p>இப்பொழுது, நான் ஸ்டான்ஃபோர்டில் ஒரு பட்டதாரி மாணவனாக இருக்கிறேன் (௨௦௨௦–௨௦௨௨). இதற்கு முன், நான் ஸ்டான்ஃபோர்டிலே ஒரு இளங்கலை மாணவனாக இருந்தேன் (௨௦௧௭–௨௦௨௧). அதற்கு முன், நான் மென்லோ ஸ்கூலில் படித்துக் கொண்டு இருந்தேன் (௨௦௧௩–௨௦௧௭).</p>
     <h2 id="எனனடய-பரஜகடகள">என்னுடைய புராஜக்ட்கள்</h2>

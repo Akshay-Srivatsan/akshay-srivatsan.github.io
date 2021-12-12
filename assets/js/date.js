@@ -231,10 +231,6 @@ function hodie() {
     return roman_date(new Date());
 }
 
-function hodie_breve() {
+function hodieBreve() {
     return shortRomanDate(new Date());
 }
-
-fenestra = window;
-fenestra.documentum = document;
-fenestra.documentum.scribe = document.write;

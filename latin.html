@@ -24,7 +24,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 @font-face {
   font-family: 'Noto Sans Tamil';
   src: url('assets/fonts/NotoSansTamil-Regular.ttf') format('truetype');
@@ -42,48 +41,44 @@
   src: url('assets/fonts/NotoSansBrahmi-Regular.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Noto Serif Tamil';
-  src: url('assets/fonts/NotoSerifTamil-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Noto Serif Devanagari';
-  src: url('assets/fonts/NotoSerifDevanagari-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Noto Serif Grantha';
-  src: url('assets/fonts/NotoSerifGrantha-Regular.ttf') format('truetype');
+  font-family: 'Noto Sans Old Italic';
+  src: url('assets/fonts/NotoSansOldItalic-Regular.ttf') format('truetype');
 }
 
 :lang(en) {
-    font-family: 'Montserrat', sans-serif;
-  }
+  font-family: 'Montserrat', sans-serif;
+}
 
-:lang(la) {
-    font-family: 'Julius Sans One', sans-serif;
-  }
+:lang(la), :lang(la) * {
+  font-family: 'Julius Sans One', sans-serif;
+}
 
-:lang(la-Latg) {
-    font-family: 'Uncial Antiqua', sans-serif;
-  }
+:lang(la-Latg), :lang(la-Latg) * {
+  font-family: 'Uncial Antiqua', sans-serif;
+}
+
+:lang(la-Ital) {
+  font-family: 'Noto Sans Old Italic', 'Noto Sans', sans-serif;
+}
 
 :lang(ta), :lang(sa-Taml) {
-    font-family: 'Noto Serif Tamil', sans-serif;
-  }
+  font-family: 'Noto Sans Tamil', 'Noto Sans', sans-serif;
+}
 
 :lang(sa), :lang(hi), :lang(ta-Deva) {
-    font-family: 'Noto Serif Devanagari', sans-serif;
-  }
+  font-family: 'Noto Sans Devanagari', 'Noto Sans', sans-serif;
+}
 
 :lang(sa-Gran), :lang(ta-Gran) {
-    font-family: 'Noto Serif Grantha', sans-serif;
-  }
+  font-family: 'Noto Sans Grantha', 'Noto Sans', sans-serif;
+}
 
 :lang(sa-Latn), :lang(ta-Latn) {
-    font-family: 'Noto Serif', sans-serif;
-  }
+  font-family: 'Noto Sans', 'Noto Sans', sans-serif;
+}
 
 :lang(sa-Brah), :lang(ta-Brah) {
-  font-family: 'Noto Sans Brahmi', sans-serif;
+  font-family: 'Noto Sans Brahmi', 'Noto Sans', sans-serif;
 }
 
 :lang(en-phonipa), :lang(la-phonipa), :lang(sa-phonipa), :lang(ta-phonipa) {
@@ -123,7 +118,9 @@ img {
     display: block;
   }
 }    </style>
-            <script type="text/javascript" src="assets/js/date.js"></script>
+            <script type="text/javascript" src="assets/js/transcribe.js"></script>
+        <script type="text/javascript" src="assets/js/latin.js"></script>
+        <script type="text/javascript" src="assets/js/date.js"></script>
       </head>
   <body>
     <h1 id="akshay-srivatsan">Akshay Srivatsan</h1>
@@ -132,37 +129,13 @@ img {
     <p>haec pagina praesto est in <a href="index.html">Lingua Anglica</a>, <a href="tamil.html">Lingua Tamulica</a>, et <a href="sanskrit.html">Lingua Sanscrita</a>.</p>
     <h2 id="salve">Salve!</h2>
     <script>
-      documentum.scribe(`<b>hodie est:</b> ${hodie()} (${hodie_breve()})`);
+      documentum.scribe(`<b>hodie est:</b> ${hodie()} (${hodieBreve()})`);
     </script>
     <p>salve! haec versio Latina situs interretialis mei est. si errata vidis, meum note! quattor annos Latinam non scripsi, ergo multorum oblivisci; me paenitet.</p>
     <p>nota bene: hic situs interretialis non videbitur recte translatore Google; translator Google bene intellegere Latinam non potest.</p>
-    <div id="fonts" style="display:none">
-    <p><label for="font"><strong>speciem litterarum elige:</strong></label> <select name="font" id="font" onchange="setFont(this.value)"> <option value="capitals">capitales quadratae</option> <option value="uncials">capitales unciales</option> </select></p>
+    <div id="species" style="display:none">
+    <p><label for="speciesElige"><strong>speciem litterarum elige:</strong></label> <select name="speciesElige" id="speciesElige" onchange="mutaSpeciem(this.value)"> <option value="capitales">capitales quadratae</option> <option value="unciales">capitales unciales</option> <option value="italica">capitales italica</option> </select></p>
     </div>
-    <script>
-    document.getElementById("fonts").style.display = "block";
-
-    function setFont(type) {
-        if (type == "uncials")
-            uncials();
-        else if (type == "capitals")
-            capitals();
-    }
-
-    function capitals() {
-        font.selectedIndex = 0;
-        document.documentElement.lang='la';
-        window.history.replaceState("", document.title, window.location.pathname);
-    }
-
-    function uncials() {
-        font.selectedIndex = 1;
-        document.documentElement.lang='la-Latg';
-        window.history.replaceState("", document.title, window.location.pathname + "?uncials");
-    }
-
-    if (window.location.search === "?uncials") uncials();
-    </script>
     <h2 id="de-me">De Me</h2>
     <p><img src="assets/img/portrait-small.jpg" alt="photographema mei ante urbem Sanctum Franciscum" /></p>
     <p>ego discipulus in Universitate Stanfordiensi sum. scientiam computatralis studio. nunc organizationem computatrorum et robotos studio, et prius graphicam et simulationem computatralem studebam. in ludo secundo, situm interretialem pro <em>Menlo JCL</em> feci, et gregem ad Latinam loquendum institui. anno quarto ludi secundi, pro <em>California JCL</em> situm interretialem gubernabam.</p>
@@ -175,9 +148,8 @@ img {
     <h2 id="negotia-mea">Negotia Mea</h2>
     <h3 id="architectus-robotorum-tiro-aqua-satellite-aestate-mmxxi">Architectus Robotorum (Tiro): Aqua Satellite (Aestate MMXXI)</h3>
     <p>in Aqua Satellite, modus programmandi statuebam et programmam initialem ad robotum movendum scribebam. roboto nostro nomen “Thaumas” est, simile deo Graeco miraculorum maris. Thaumas vehiculum automatum subaqueanum ad mare explorandum est.</p>
-    <h3 id="administer-cursus-stanford-cs-140e-vere-mmxxi">Administer Cursus: Stanford CS 140E (Vere MMXXI)</h3>
-    <p>cursu <em>CS 140E: Inventioque Constructioque Nucelorum Computatrorum</em> adjuvebam.<br />
-    in laboratorio discipulos juvebam, et interdum cursum docui.</p>
+    <h3 id="administer-cursus-stanford-cs-140e-vere-mmxxi">Administer Cursus: <span lang="en">Stanford CS 140E</span> (Vere MMXXI)</h3>
+    <p>cursu <em><span lang="en">CS 140E</span>: Inventioque Constructioque Nucelorum Computatrorum</em> adjuvebam. in laboratorio discipulos juvebam, et interdum cursum docui.</p>
     <h3 id="productio-ingeniarius-tiro-instagram-aestate-mmxx">Productio Ingeniarius (Tiro): Instagram (Aestate MMXX)</h3>
     <p>in manu “Instagram Intellectus Machinalis” laborabam.</p>
     <h3 id="productio-ingeniarius-tiro-facebook-aestate-mmxix">Productio Ingeniarius (Tiro): Facebook (Aestate MMXIX)</h3>
@@ -185,24 +157,31 @@ img {
     <h2 id="publicationes-meae">Publicationes Meae</h2>
     <h3 id="investigationes-meae">Investigationes Meae</h3>
     <ul>
-    <li><a href="http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf">Making a Synchronous Motor</a> (Menlo Roundtable, Autumno MMXVI)</li>
-    <li><a href="http://ieeexplore.ieee.org/abstract/document/7425403/">Performance Boost: Dynamically Improving a Home’s Wi-Fi Signal</a> (IEEE Potentials, a Martius ad Aprilem MMXVI)</li>
-    <li><a href="http://www.cyberjournals.com/Papers/2015/01.pdf">A Dual Sensor System for Determining the Unique Oxygen Production Signature of Plants</a> (Cyber Journals - Mechatronics, MMXV)</li>
+    <li><a href="http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf"><span lang="en">Making a Synchronous Motor</span></a> (<span lang="en">Menlo Roundtable,</span> Autumno MMXVI)</li>
+    <li><a href="http://ieeexplore.ieee.org/abstract/document/7425403/"><span lang="en">Performance Boost: Dynamically Improving a Home’s Wi-Fi Signal</span></a> (<span lang="en">IEEE Potentials,</span> a Martius ad Aprilem MMXVI)</li>
+    <li><a href="http://www.cyberjournals.com/Papers/2015/01.pdf"><span lang="en">A Dual Sensor System for Determining the Unique Oxygen Production Signature of Plants</span></a> (<span lang="en">Cyber Journals - Mechatronics,</span> MMXV)</li>
     </ul>
-    <h3 id="inventions">Inventions</h3>
+    <h3 id="inventiones-meae">Inventiones Meae</h3>
+    <div lang="en">
     <ul>
     <li>Modular Media Player (US D769941 S1)</li>
     <li>Multi-Person Straw for Sharing/Tasting Beverages (US 9186007 B2)</li>
     <li>Apparatus and Method for Repairing a Surface Submerged in Liquid by Creating a Workable Space (US 8925168 B2)</li>
     <li>System, Methodology, and Product to Sort, Organize, and Store Toy Building/Construction Sets (US 7987990 B2)</li>
     </ul>
-    <h3 id="links">Links</h3>
+    </div>
+    <h3 id="nexus">Nexus</h3>
     <ul>
     <li><a href="https://github.com/Akshay-Srivatsan">GitHub</a></li>
     <li><a href="https://www.linkedin.com/in/akshay-srivatsan/">LinkedIn</a></li>
     <li><a href="https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA">YouTube</a></li>
     <li><a href="mailto:srivatsan.akshay+website@gmail.com">mihi epistolam mitte</a></li>
     </ul>
+    <script>
+    species.aspectus.forma = TALEA;
+
+    mutaSpeciem(fenestra.locus.quaesitum);
+    </script>
     <p lang="en">
           &copy; 2021 Akshay Srivatsan
         </p>

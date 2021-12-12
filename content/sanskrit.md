@@ -5,7 +5,6 @@ description:
 image: assets/img/portrait-small.jpg
 image-alt: citraṁ mama sān frānsiskō nagarē
 lang: sa-Latn
-noto-sans: true
 js:
     [
         transliteration/sanskrit.js,
@@ -16,7 +15,7 @@ js:
 
 # akṣay śrīvatsan
 
-[/ˈɐk.ʂɐj ɕriːˈʋɐt.sɐn/]{lang=sa-phonipa .ipa #ipa-name}
+[/ɐk.ʂɐj ɕriː.ʋɐt.sɐn/]{lang=sa-phonipa .ipa #ipa-name}
 
 tad: [Akshay Srivatsan]{lang=en} ca [[அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta}
 ca]{#tamil-name} [[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran} ca]{#grantha-name} [[अक्षय्
