@@ -17,9 +17,10 @@ BASEURL=https://aks.io
 .PHONY: all
 all: $(HTML) mappings
 
-.PHONY: mappings
-mappings:
-	cd transliteration && python generate_maps.py
+
+PYTHON = $(wildcard transliteration/*.py)
+mappings: $(PYTHON)
+	cd transliteration && python3 generate_maps.py
 	prettier --write transliteration/*.js
 
 %.html: content/%.md $(TEMPLATES) Makefile
