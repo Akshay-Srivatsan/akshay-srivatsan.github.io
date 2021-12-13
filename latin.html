@@ -129,12 +129,12 @@ img {
     <p>haec pagina praesto est in <a href="index.html">Lingua Anglica</a>, <a href="tamil.html">Lingua Tamulica</a>, et <a href="sanskrit.html">Lingua Sanscrita</a>.</p>
     <h2 id="salve">Salve!</h2>
     <script>
-      documentum.scribe(`<b>hodie est:</b> ${hodie()} (${hodieBreve()})`);
+      document.write(`<b>hodie est:</b> ${hodie()} (${hodieBreve()})`);
     </script>
     <p>salve! haec versio Latina situs interretialis mei est. si errata vidis, meum note! quattor annos Latinam non scripsi, ergo multorum oblivisci; me paenitet.</p>
     <p>nota bene: hic situs interretialis non videbitur recte translatore Google; translator Google bene intellegere Latinam non potest.</p>
-    <div id="species" style="display:none">
-    <p><label for="speciesElige"><strong>speciem litterarum elige:</strong></label> <select name="speciesElige" id="speciesElige" onchange="mutaSpeciem(this.value)"> <option value="capitales">capitales quadratae</option> <option value="unciales">capitales unciales</option> <option value="italica">capitales italica</option> </select></p>
+    <div id="font" style="display:none">
+    <p><label for="change_font"><strong>speciem litterarum elige:</strong></label> <select name="change_font" id="change_font" onchange="changeFont(this.value)"> <option value="capitals">capitales quadratae</option> <option value="uncials">capitales unciales</option> <option value="italics">capitales italica</option> </select></p>
     </div>
     <h2 id="de-me">De Me</h2>
     <p><img src="assets/img/portrait-small.jpg" alt="photographema mei ante urbem Sanctum Franciscum" /></p>
@@ -148,8 +148,8 @@ img {
     <h2 id="negotia-mea">Negotia Mea</h2>
     <h3 id="architectus-robotorum-tiro-aqua-satellite-aestate-mmxxi">Architectus Robotorum (Tiro): Aqua Satellite (Aestate MMXXI)</h3>
     <p>in Aqua Satellite, modus programmandi statuebam et programmam initialem ad robotum movendum scribebam. roboto nostro nomen “Thaumas” est, simile deo Graeco miraculorum maris. Thaumas vehiculum automatum subaqueanum ad mare explorandum est.</p>
-    <h3 id="administer-cursus-stanford-cs-140e-vere-mmxxi">Administer Cursus: <span lang="en">Stanford CS 140E</span> (Vere MMXXI)</h3>
-    <p>cursu <em><span lang="en">CS 140E</span>: Inventioque Constructioque Nucelorum Computatrorum</em> adjuvebam. in laboratorio discipulos juvebam, et interdum cursum docui.</p>
+    <h3 id="administer-cursus-stanford-cs-140e-vere-mmxxi">Administer Cursus: Stanford CS 140E (Vere MMXXI)</h3>
+    <p>cursu <em>CS 140E: Inventioque Constructioque Nucelorum Computatrorum</em> adjuvebam. in laboratorio discipulos juvebam, et interdum cursum docui.</p>
     <h3 id="productio-ingeniarius-tiro-instagram-aestate-mmxx">Productio Ingeniarius (Tiro): Instagram (Aestate MMXX)</h3>
     <p>in manu “Instagram Intellectus Machinalis” laborabam.</p>
     <h3 id="productio-ingeniarius-tiro-facebook-aestate-mmxix">Productio Ingeniarius (Tiro): Facebook (Aestate MMXIX)</h3>
@@ -178,9 +178,9 @@ img {
     <li><a href="mailto:srivatsan.akshay+website@gmail.com">mihi epistolam mitte</a></li>
     </ul>
     <script>
-    species.aspectus.forma = TALEA;
+    font.style.display = "block";
 
-    mutaSpeciem(fenestra.locus.quaesitum);
+    changeFont(window.location.search);
     </script>
     <p lang="en">
           &copy; 2021 Akshay Srivatsan

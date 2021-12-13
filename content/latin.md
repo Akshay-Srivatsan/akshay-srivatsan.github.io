@@ -21,7 +21,7 @@ haec pagina praesto est in [Lingua Anglica](index.html),
 ## Salve!
 
 <script>
-  documentum.scribe(`<b>hodie est:</b> ${hodie()} (${hodieBreve()})`);
+  document.write(`<b>hodie est:</b> ${hodie()} (${hodieBreve()})`);
 </script>
 
 salve! haec versio Latina situs interretialis mei est. si errata vidis, meum
@@ -30,12 +30,12 @@ note! quattor annos Latinam non scripsi, ergo multorum oblivisci; me paenitet.
 nota bene: hic situs interretialis non videbitur recte translatore Google;
 translator Google bene intellegere Latinam non potest.
 
-<div id="species" style="display:none">
-<label for="speciesElige">**speciem litterarum elige:**</label>
-<select name="speciesElige" id="speciesElige" onchange="mutaSpeciem(this.value)">
-    <option value="capitales">capitales quadratae</option>
-    <option value="unciales">capitales unciales</option>
-    <option value="italica">capitales italica</option>
+<div id="font" style="display:none">
+<label for="change_font">**speciem litterarum elige:**</label>
+<select name="change_font" id="change_font" onchange="changeFont(this.value)">
+    <option value="capitals">capitales quadratae</option>
+    <option value="uncials">capitales unciales</option>
+    <option value="italics">capitales italica</option>
 </select>
 </div>
 
@@ -77,10 +77,10 @@ robotum movendum scribebam. roboto nostro nomen "Thaumas" est, simile deo Graeco
 miraculorum maris. Thaumas vehiculum automatum subaqueanum ad mare explorandum
 est.
 
-### Administer Cursus: [Stanford CS 140E]{lang=en} (Vere MMXXI)
+### Administer Cursus: Stanford CS 140E (Vere MMXXI)
 
-cursu _[CS 140E]{lang=en}: Inventioque Constructioque Nucelorum Computatrorum_
-adjuvebam. in laboratorio discipulos juvebam, et interdum cursum docui.
+cursu _CS 140E: Inventioque Constructioque Nucelorum Computatrorum_ adjuvebam.
+in laboratorio discipulos juvebam, et interdum cursum docui.
 
 ### Productio Ingeniarius (Tiro): Instagram (Aestate MMXX)
 
@@ -122,7 +122,7 @@ in manu "Flumen and Fabulae" laborabam.
 -   [mihi epistolam mitte](mailto:srivatsan.akshay+website@gmail.com)
 
 <script>
-species.aspectus.forma = TALEA;
+font.style.display = "block";
 
-mutaSpeciem(fenestra.locus.quaesitum);
+changeFont(window.location.search);
 </script>

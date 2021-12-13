@@ -1,51 +1,25 @@
-var fenestra = window;
-fenestra.documentum = document;
-fenestra.documentum.scribe = document.write;
-fenestra.locus = window.location;
-fenestra.locus.quaesitum = window.location.search;
-
-function aliasProperty(type, old, alias, setter) {
-    let obj = {};
-    obj[alias] = {
-        get: function () {
-            return this[old];
-        },
-    };
-    if (setter) {
-        obj[alias]['set'] = function (val) {
-            this[old] = val;
-        };
-    }
-    type.prototype = Object.defineProperties(type.prototype, obj);
-}
-
-aliasProperty(HTMLDivElement, 'style', 'aspectus');
-aliasProperty(CSS2Properties, 'display', 'forma', true);
-
-var TALEA = 'block';
-
-function mutaSpeciem(type) {
+function changeFont(type) {
     if (type && type[0] === '?') type = type.substr(1);
-    if (type == 'unciales') unciales();
-    else if (type == 'capitales') capitales();
-    else if (type == 'italica') italica();
+    if (type == 'uncials') uncials();
+    else if (type == 'capitals') capitals();
+    else if (type == 'italics') italics();
 }
 
-function capitales() {
+function capitals() {
     reset();
-    speciesElige.selectedIndex = 0;
+    change_font.selectedIndex = 0;
     document.documentElement.lang = 'la';
     window.history.replaceState('', document.title, window.location.pathname);
 }
 
-function unciales() {
+function uncials() {
     reset();
-    speciesElige.selectedIndex = 1;
+    change_font.selectedIndex = 1;
     document.documentElement.lang = 'la-Latg';
     window.history.replaceState(
         '',
         document.title,
-        window.location.pathname + '?unciales'
+        window.location.pathname + '?uncials'
     );
 }
 
@@ -161,14 +135,14 @@ let ital = [
 ];
 let to_italics = Object.fromEntries(latn.map((k, i) => [k, ital[i]]));
 
-function italica() {
+function italics() {
     reset();
     transcribe_document(to_italics);
-    speciesElige.selectedIndex = 2;
+    change_font.selectedIndex = 2;
     document.documentElement.lang = 'la-Ital';
     window.history.replaceState(
         '',
         document.title,
-        window.location.pathname + '?italica'
+        window.location.pathname + '?italics'
     );
 }

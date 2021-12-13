@@ -14,12 +14,14 @@ PANDOCFLAGS=--from markdown+bracketed_spans+fenced_divs\
 
 BASEURL=https://aks.io
 
+JS = transliteration/sanskrit.js transliteration/tamil.js
+
 .PHONY: all
-all: $(HTML) mappings
+all: $(HTML) $(JS)
 
 
 PYTHON = $(wildcard transliteration/*.py)
-mappings: $(PYTHON)
+$(JS): $(PYTHON)
 	cd transliteration && python3 generate_maps.py
 	prettier --write transliteration/*.js
 
