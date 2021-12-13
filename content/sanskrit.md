@@ -26,9 +26,10 @@ style=display:none}
 ētad jālapr̥ṣṭhopalabhya [āṅglabhāṣayā](index.html) ca [tamiḻbhāṣayā](tamil.html)
 ca [lātinbhāṣayā](latin.html) asti.
 
-## namaskāra!
+## namaskāraḥ!
 
-namaskāra! saṁskr̥tamēkaṁ varṣaṁ viśvavidyalayē 'paṭham. dōṣēbhyaḥ kṣamyatām.
+namaskāraś ca svāgatam. saṁskr̥tamēkaṁ varṣaṁ viśvavidyalayē 'paṭham. dōṣēbhyaḥ
+kṣamyatām.
 
 <div id="scripts" style="display:none">
 <label for="script">**lipiṁ cinō—**</label>
@@ -68,7 +69,7 @@ function set_document_script(type) {
 mama nāmākṣayaḥ. sṭênforḍ viśvavidyālayē vijñānaṁ saṅgaṇakayantrāṇāṁ paṭhami.
 kāsaṁvidhāsu gavēṣaṇaṁ karōmi.
 
-vidyālayād vahiś chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatuṁ ca rōcē.
+vidyālayād bahiś chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatuṁ ca rōcē.
 
 sarvō vivaraṇa [āṅglabhāṣāyām](index.html).
 
