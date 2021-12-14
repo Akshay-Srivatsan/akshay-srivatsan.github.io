@@ -24,8 +24,8 @@ haec pagina praesto est in [Lingua Anglica](index.html),
   document.write(`<b>hodie est:</b> ${hodie()} (${hodieBreve()})`);
 </script>
 
-salve! haec versio Latina situs interretialis mei est. si errata vidis, meum
-note! quattor annos Latinam non scripsi, ergo multorum oblivisci; me paenitet.
+salve! haec versio Latina situs interretialis mei est. si errata vidis, me note!
+quattor annos Latinam non scripsi, ergo multorum oblivisci; me paenitet.
 
 nota bene: hic situs interretialis non videbitur recte translatore Google;
 translator Google bene intellegere Latinam non potest.
