@@ -31,3 +31,31 @@ $(JS): $(PYTHON)
 .PHONY: clean
 clean:
 	rm -rf $(HTML)
+
+.PHONY: serve
+serve:
+	miniserve .
+
+.PHONY: watch
+watch:
+	sh -c "trap 'kill 0' SIGINT; while true; do inotifywait -emodify -r .; $(MAKE) dev; done"
+
+.PHONY: run
+run:
+	sh -c "trap 'kill 0' SIGINT; $(MAKE) serve & $(MAKE) watch & wait"
+
+.PHONY: dev
+dev: all
+	$(MAKE) refresh
+
+.PHONY: refresh
+refresh:
+	$(eval CID := $(shell xdotool getwindowfocus))
+	$(eval WID := $(shell xdotool search --name "Mozilla Firefox"))
+	$(MAKE) $(patsubst %,%.refresh,$(WID))
+	xdotool windowactivate $(CID)
+
+.PHONY: %.refresh
+%.refresh:
+	xdotool windowactivate $*
+	xdotool key F5
