@@ -68,7 +68,8 @@ function tamil() {
 
 function tamil_grantha() {
     reset();
-    transcribe(mapping.to_tamil_grantha);
+    document.title = transcribe_string(title, mapping.to_tamil);
+    transcribe_node(document.body, mapping.to_tamil_grantha);
     document.documentElement.lang = 'sa-Xaaa';
     window.history.replaceState(
         '',
