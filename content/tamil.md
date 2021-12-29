@@ -31,13 +31,14 @@ js: [transliteration/tamil.js, assets/js/tamil.js, assets/js/transcribe.js]
 
 <div id="scripts" style="display:none">
 <label for="script">**எழுத்து முறையை தேர்வு பண்ணுங்கள்:**</label>
-<select name="script" id="script" onchange="set_document_script(this.value)">
-    <option value="tamil">தமிழ் (Tamil)</option>
-    <option value="brahmi">பிராமி (Brahmi)</option>
-    <option value="devanagari">தேவநாகரி (Devanagari)</option>
-    <option value="grantha">கிரந்தம் (Grantha)</option>
-    <option value="iso">லாடின் (ISO 15919)</option>
-    <option value="ipa">சர்வதேச (IPA)</option>
+<select lang="ta" name="script" id="script" 
+onchange="set_document_script(this.value)">
+    <option value="tamil">தமிழ்</option>
+    <option value="brahmi">பிராமி</option>
+    <option value="devanagari">தேவநாகரி</option>
+    <option value="grantha">கிரந்தம்</option>
+    <option value="iso">லாடின்</option>
+    <option value="ipa">சர்வதேச</option>
 </select>
 </div>
 

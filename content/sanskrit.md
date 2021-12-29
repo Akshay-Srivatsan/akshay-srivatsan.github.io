@@ -33,7 +33,8 @@ dōṣēbhyaḥ kṣamyatām.
 
 <div id="scripts" style="display:none">
 <label for="script">**lipiṁ cinō—**</label>
-<select name="script" id="script" onchange="set_document_script(this.value)">
+<select lang="sa-Latn" name="script" id="script" 
+onchange="set_document_script(this.value)">
     <option value="iso">lātin</option>
     <option value="devanagari">dēvanāgarī</option>
     <option value="grantha">grantha</option>

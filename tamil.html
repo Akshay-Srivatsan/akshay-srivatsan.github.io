@@ -147,7 +147,8 @@ img {
     <p>வணக்கம்!</p>
     <p>என்னுடைய இணையதளத்துடைய தமிழ் திருப்புதலுக்கு வரவேற்பு! எனக்கு தமிழ் புரியும், பேசவும் தெரியும், ஆனால் இன்னும் சரியாக எழுதக் கற்றுக் கொண்டு இருக்கிறேன்; கொஞ்சம் தவறுகளை பார்த்தால், எனக்குச் சொல்லுங்கள்.</p>
     <div id="scripts" style="display:none">
-    <p><label for="script"><strong>எழுத்து முறையை தேர்வு பண்ணுங்கள்:</strong></label> <select name="script" id="script" onchange="set_document_script(this.value)"> <option value="tamil">தமிழ் (Tamil)</option> <option value="brahmi">பிராமி (Brahmi)</option> <option value="devanagari">தேவநாகரி (Devanagari)</option> <option value="grantha">கிரந்தம் (Grantha)</option> <option value="iso">லாடின் (ISO 15919)</option> <option value="ipa">சர்வதேச (IPA)</option> </select></p>
+    <p><label for="script"><strong>எழுத்து முறையை தேர்வு பண்ணுங்கள்:</strong></label> <select lang="ta" name="script" id="script" 
+    onchange="set_document_script(this.value)"> <option value="tamil">தமிழ்</option> <option value="brahmi">பிராமி</option> <option value="devanagari">தேவநாகரி</option> <option value="grantha">கிரந்தம்</option> <option value="iso">லாடின்</option> <option value="ipa">சர்வதேச</option> </select></p>
     </div>
     <script>
     document.getElementById("scripts").style.display = "block";
