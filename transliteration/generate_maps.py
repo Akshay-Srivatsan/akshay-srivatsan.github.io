@@ -249,7 +249,8 @@ def mapping_same(start, end):
 
 
 def fix_str(s, m):
-    s = unicodedata.normalize("NFD", s)
+    if m != TAMIL_GRANTHA:
+        s = unicodedata.normalize("NFD", s)
     s = s.replace("◌", "")
     s = s.replace("ː̃", "◌̃ː")
     s = s.replace("◌", "")
@@ -265,6 +266,8 @@ def fix_str(s, m):
         s = s.replace("³" + v, v + "³")
         s = s.replace("⁴" + v, v + "⁴")
     s = s.replace("◌", "")
+    if m == TAMIL_GRANTHA:
+        return s
     return unicodedata.normalize("NFC", s)
 
 
@@ -299,7 +302,7 @@ with open("tamil.js", "w") as tamil:
         "to_ipa": generate_mapping(TAMIL, TAMIL_IPA),
         "to_devanagari": generate_mapping(TAMIL, DEVANAGARI),
         "to_grantha": generate_mapping(TAMIL, GRANTHA),
-        "to_brahmi": generate_mapping(TAMIL, BRAHMI),
+        "to_brahmi": generate_mapping(TAMIL, TAMIL_BRAHMI),
     }
     tamil.write(
         "let mapping = " + json.dumps(data, indent=4) + ";",
@@ -311,6 +314,7 @@ with open("sanskrit.js", "w") as sanskrit:
         "to_ipa": generate_mapping(ISO, SANSKRIT_IPA),
         "to_tamil": generate_mapping(ISO, TAMIL_EXT),
         "to_grantha": generate_mapping(ISO, GRANTHA),
+        "to_tamil_grantha": generate_mapping(ISO, TAMIL_GRANTHA),
         "to_brahmi": generate_mapping(ISO, BRAHMI),
     }
     sanskrit.write(

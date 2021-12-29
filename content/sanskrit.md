@@ -28,8 +28,8 @@ ca [lātinbhāṣayā](latin.html) asti.
 
 ## namaskāraḥ!
 
-namaskāraś ca svāgatam. saṁskr̥tamēkaṁ varṣaṁ viśvavidyalayē 'paṭham. dōṣēbhyaḥ
-kṣamyatām.
+namaskāraś ca svāgatam. saṁskr̥tamēkaṁ varṣaṁ viśvavidyalayē &apos;paṭham.  
+dōṣēbhyaḥ kṣamyatām.
 
 <div id="scripts" style="display:none">
 <label for="script">**lipiṁ cinō—**</label>
@@ -39,6 +39,7 @@ kṣamyatām.
     <option value="grantha">grantha</option>
     <option value="brahmi">brāhmī</option>
     <option value="tamil">tamiḻ</option>
+    <option value="tamil-grantha">tamiḻ-grantha</option>
     <option value="ipa">sarvadēśīya</option>
 </select>
 </div>
@@ -57,6 +58,8 @@ function set_document_script(type) {
         brahmi();
     else if (type == "tamil")
         tamil();
+    else if (type == "tamil-grantha")
+        tamil_grantha();
     else if (type == "ipa")
         ipa();
 }
@@ -86,7 +89,7 @@ sarvō vivaraṇa [āṅglabhāṣāyām](index.html).
 [kārṭā](https://carta.stanford.edu) jālasthānaḥ kakṣāyābhyaś chātrebhyāsti.
 
 [sṭējkāsṭ](https://taps.stanford.edu/stagecast) saṁvidhi naṭakebhyō viśtuṁ kōviḍ
-saṅkāmakē 'sti.
+saṅkāmakē &apos;sti.
 
 ## udyōgā mama
 
@@ -102,7 +105,7 @@ saṅkāmakē 'sti.
 
 -   [[Making a Synchronous Motor]{lang=en} ](http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf)
     ([Menlo Roundtable]{lang=en}, śaradkālē 2016)
--   [[Performance Boost: Dynamically Improving a Home's Wi-Fi Signal]{lang=en} ](http://ieeexplore.ieee.org/abstract/document/7425403/)
+-   [[Performance Boost: Dynamically Improving a Home&apos;s Wi-Fi Signal]{lang=en} ](http://ieeexplore.ieee.org/abstract/document/7425403/)
     ([IEEE Potentials]{lang=en}, mārc–āpril 2016)
 -   [[A Dual Sensor System for Determining the Unique Oxygen Production Signature of Plants]{lang=en}](http://www.cyberjournals.com/Papers/2015/01.pdf)
     ([Cyber Journals - Mechatronics]{lang=en}, 2015)

@@ -6,13 +6,15 @@ function set_script(name) {
     document.getElementById('iso-name').style.display = 'inline';
     document.getElementById('ipa-name').style.display = 'inline';
 
-    document.getElementById(name + '-name').style.display = 'none';
+    let name_elem = document.getElementById(name + '-name');
+    if (name_elem) name_elem.style.display = 'none';
     script.selectedIndex = [
         'iso',
         'devanagari',
         'grantha',
         'brahmi',
         'tamil',
+        'tamil-grantha',
         'ipa',
     ].indexOf(name);
 }
@@ -62,6 +64,18 @@ function tamil() {
         window.location.pathname + '?tamil'
     );
     set_script('tamil');
+}
+
+function tamil_grantha() {
+    reset();
+    transcribe(mapping.to_tamil_grantha);
+    document.documentElement.lang = 'sa-Xaaa';
+    window.history.replaceState(
+        '',
+        document.title,
+        window.location.pathname + '?tamil-grantha'
+    );
+    set_script('tamil-grantha');
 }
 
 function devanagari() {
