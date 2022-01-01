@@ -14,7 +14,7 @@ PANDOCFLAGS=--from markdown+bracketed_spans+fenced_divs\
 
 BASEURL=https://aks.io
 
-JS = transliteration/sanskrit.js transliterate/tamil.js
+JS = transliterate/sanskrit.js transliterate/tamil.js
 
 TRANSLITERATE=transliterate/target/release/transliterate
 RUST = $(wildcard transliterate/src/*.rs)
