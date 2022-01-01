@@ -11,7 +11,6 @@ function set_script(name) {
         'tamil',
         'brahmi',
         'devanagari',
-        'grantha',
         'iso',
         'ipa',
     ].indexOf(name);
@@ -26,18 +25,6 @@ function tamil() {
     document.documentElement.lang = 'ta';
     window.history.replaceState('', document.title, window.location.pathname);
     set_script('tamil');
-}
-
-function grantha() {
-    reset();
-    transcribe(mapping.to_grantha);
-    document.documentElement.lang = 'ta-Gran';
-    window.history.replaceState(
-        '',
-        document.title,
-        window.location.pathname + '?grantha'
-    );
-    set_script('grantha');
 }
 
 function brahmi() {

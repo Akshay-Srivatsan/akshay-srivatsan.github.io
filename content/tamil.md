@@ -4,12 +4,12 @@ description: பட்டதாரி மாணவன், ஸ்டான்ஃ�
 image: assets/img/portrait-small.jpg
 image-alt: ஸான் ஃப்ரான்ஸிஸ்கோ முனாலில் எனுடைய புகைப்படம்
 lang: ta
-js: [transliteration/tamil.js, assets/js/tamil.js, assets/js/transcribe.js]
+js: [transliterate/tamil.js, assets/js/tamil.js, assets/js/transcribe.js]
 ---
 
 # அக்ஷய் ஶ்ரீவத்ஸன்
 
-[/ak.ʂaj ɕɾiː.ʋat.san̪/]{lang=ta-phonipa .ipa #ipa-name}
+[/akʂaj ɕɾiːʋat̪san/]{lang=ta-phonipa .ipa #ipa-name}
 
 வேறு எழுத்து முறைகளில்: [Akshay Srivatsan]{lang=en} உம் [[அக்ஷய்
 ஶ்ரீவத்ஸன்]{lang=ta} உம்]{#tamil-name style=display:none} [[𑌅𑌕𑍍𑌷𑌯𑍍
@@ -36,7 +36,6 @@ onchange="set_document_script(this.value)">
     <option value="tamil">தமிழ்</option>
     <option value="brahmi">பிராமி</option>
     <option value="devanagari">தேவநாகரி</option>
-    <option value="grantha">கிரந்தம்</option>
     <option value="iso">லாடின்</option>
     <option value="ipa">சர்வதேச</option>
 </select>
@@ -48,8 +47,6 @@ document.getElementById("scripts").style.display = "block";
 function set_document_script(type) {
     if (type == "tamil")
         tamil();
-    else if (type == "grantha")
-        grantha();
     else if (type == "brahmi")
         brahmi();
     else if (type == "devanagari")

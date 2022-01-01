@@ -14,16 +14,24 @@ PANDOCFLAGS=--from markdown+bracketed_spans+fenced_divs\
 
 BASEURL=https://aks.io
 
-JS = transliteration/sanskrit.js transliteration/tamil.js
+JS = transliteration/sanskrit.js transliterate/tamil.js
+
+TRANSLITERATE=transliterate/target/release/transliterate
+RUST = $(wildcard transliterate/src/*.rs)
 
 .PHONY: all
 all: $(HTML) $(JS)
 
+$(TRANSLITERATE): $(RUST) transliterate/Cargo.toml
+	cd transliterate && cargo build --release
 
 PYTHON = $(wildcard transliteration/*.py)
-$(JS): $(PYTHON)
+transliteration/sanskrit.js: $(PYTHON)
 	cd transliteration && python3 generate_maps.py
 	prettier --write transliteration/*.js
+
+transliterate/%.js: transliterate/%.yaml $(TRANSLITERATE)
+	$(TRANSLITERATE) --input $< --output $@
 
 %.html: content/%.md $(TEMPLATES) Makefile
 	pandoc $< --output $@ $(PANDOCFLAGS) --variable url="$(BASEURL)/$@"
