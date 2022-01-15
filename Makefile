@@ -34,6 +34,10 @@ transliterate/%.js: transliterate/%.yaml $(TRANSLITERATE)
 clean:
 	rm -rf $(HTML)
 
+.PHONY: format
+format:
+	prettier --write .
+
 .PHONY: serve
 serve:
 	miniserve .

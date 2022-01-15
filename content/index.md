@@ -47,6 +47,14 @@ and actors to rehearse and perform shows online during the COVID-19 pandemic.
 
 ## Experience
 
+### Course Assistant: Stanford CS 140E (Winter 2022)
+
+I'm currently assisting with _CS 140E: Operating Systems Design and
+Implementation_.
+
+For more info, go to the [GitHub](https://github.com/dddrrreee/cs140e-22win)
+repo.
+
 ### Robotics Intern: Aqua Satellite (Summer 2021)
 
 At Aqua Satellite, I set up the development infrastructure and wrote the initial
@@ -54,10 +62,13 @@ control and simulation software for Thaumas, an automated underwater vehicle.
 
 ### Course Assistant: Stanford CS 140E (Spring 2021)
 
-I assisted with _CS 140E: Operating Systems Design and Implementation_. As part
-of my responsibilities, I reviewed lesson plans, refined assignment
-specifications, held office hours, assisted students in biweekly lab sessions,
-and evaluated student work.
+I was the sole course assistant for _CS 140E: Operating Systems Design and
+Implementation_. As part of my responsibilities, I reviewed lesson plans,
+refined assignment specifications, held office hours, assisted students in
+biweekly lab sessions, and evaluated student work.
+
+For more info, go to the [GitHub](https://github.com/dddrrreee/cs140e-21spr)
+repo.
 
 ### Production Engineering Intern: Instagram (Summer 2020)
 

@@ -70,6 +70,14 @@ interretiale dum COVID epidemia est. (MMXX-MMXXI)
 
 ## Negotia Mea
 
+### Administer Cursus: Stanford CS 140E (Hieme MMXXII)
+
+ego et unus administer alius cursu _CS 140E: Inventioque Constructioque
+Nucelorum Computatrorum_ adjuvemus. in laboratoriis discipulos juvemus.
+
+si plures discere vis, repositorium in
+[GitHub](https://github.com/dddrrreee/cs140e-22win) vide.
+
 ### Architectus Robotorum (Tiro): Aqua Satellite (Aestate MMXXI)
 
 in Aqua Satellite, modus programmandi statuebam et programmam initialem ad
@@ -80,7 +88,10 @@ est.
 ### Administer Cursus: Stanford CS 140E (Vere MMXXI)
 
 cursu _CS 140E: Inventioque Constructioque Nucelorum Computatrorum_ adjuvebam.
-in laboratorio discipulos juvebam, et interdum cursum docui.
+in laboratoriis discipulos juvebam, et interdum cursum docui.
+
+si plures discere vis, repositorium in
+[GitHub](https://github.com/dddrrreee/cs140e-21spr) vide.
 
 ### Productio Ingeniarius (Tiro): Instagram (Aestate MMXX)
 
