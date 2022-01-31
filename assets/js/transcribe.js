@@ -1,4 +1,4 @@
-function transcribe_string(s, map) {
+function real_transcribe_string(s, map) {
     s = s.normalize();
     let keys = Object.keys(map)
         .filter((x) => x.length > 0)
@@ -42,4 +42,8 @@ function transcribe_document(mapping) {
 
 function reset() {
     transcribe_document(null, null);
+}
+
+if (!transcribe_string) {
+    var transcribe_string = real_transcribe_string;
 }

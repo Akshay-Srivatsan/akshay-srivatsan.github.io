@@ -5,7 +5,13 @@ description: programmator, Stanford MS CS MMXXII
 image: assets/img/portrait-small.jpg
 image-alt: photographema mei ante urbem Sanctum Franciscum
 lang: la
-js: [assets/js/transcribe.js, assets/js/latin.js, assets/js/date.js]
+js:
+    [
+        transliterate/latin.js,
+        assets/js/latin.js,
+        assets/js/transcribe.js,
+        assets/js/date.js,
+    ]
 ---
 
 # Akshay Srivatsan

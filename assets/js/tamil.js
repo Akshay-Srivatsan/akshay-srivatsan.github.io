@@ -1,3 +1,58 @@
+let replacement_words = {
+    akshay: 'Akshay',
+    srivadhsan: 'Srivatsan',
+    ɕɾiːʋadsan: 'ɕɾiːʋatsan',
+    kanini: 'ganini',
+    kaɳini: 'gaɳini',
+    robaadigs: 'robotics',
+    robaadai: 'robotai',
+    robaadu: 'robot',
+    sdaanfordu: 'Stanford',
+    sdaanford: 'Stanford',
+    menlo: 'Menlo',
+    sgool: 'School',
+    insdaagiram: 'Instagram',
+    feskbukku: 'Facebook',
+    yunivarsittiyil: 'Universityil',
+    kaardaa: 'Carta',
+    sdejgaasdu: 'Stagecast',
+    aaguvaa: 'Aqua',
+    saattelaittu: 'Satellite',
+    thaumas: 'Thaumas',
+    kidhubu: 'GitHub',
+    kidhub: 'GitHub',
+    rebaasidoriy: 'repository',
+    lingadin: 'LinkedIn',
+    yoodyoobu: 'YouTube',
+    aangila: 'Aangila',
+    laattin: 'Latin',
+    samsgirudha: 'Samskritha',
+    thamizh: 'Tamil',
+    hindhi: 'Hindi',
+    kandubidi: 'kandupidi',
+};
+
+function transcribe_string(s, map) {
+    s = ' ' + s;
+    let startingCharacters = ['(', '—', '-', '"', '“'];
+    for (let i = 0; i < startingCharacters.length; i++) {
+        s = s.replaceAll(startingCharacters[i], startingCharacters[i] + ' ');
+    }
+    let result = real_transcribe_string(s, map);
+    for (let i = startingCharacters.length - 1; i >= 0; i--) {
+        result = result.replaceAll(
+            startingCharacters[i] + ' ',
+            startingCharacters[i]
+        );
+    }
+    result = result.substring(1);
+    for (let key in replacement_words) {
+        result = result.replaceAll(key, replacement_words[key]);
+    }
+
+    return result;
+}
+
 function set_script(name) {
     document.getElementById('grantha-name').style.display = 'inline';
     document.getElementById('devanagari-name').style.display = 'inline';
@@ -13,6 +68,7 @@ function set_script(name) {
         'devanagari',
         'iso',
         'ipa',
+        'english',
     ].indexOf(name);
 }
 
@@ -54,7 +110,7 @@ function devanagari() {
 function iso() {
     reset();
     transcribe(mapping.to_iso);
-    document.documentElement.lang = 'sa-Latn';
+    document.documentElement.lang = 'ta-Latn';
     window.history.replaceState(
         '',
         document.title,
@@ -66,11 +122,23 @@ function iso() {
 function ipa() {
     reset();
     transcribe(mapping.to_ipa);
-    document.documentElement.lang = 'sa-phonipa';
+    document.documentElement.lang = 'ta-phonipa';
     window.history.replaceState(
         '',
         document.title,
         window.location.pathname + '?ipa'
     );
     set_script('ipa');
+}
+
+function english() {
+    reset();
+    transcribe(mapping.to_english);
+    document.documentElement.lang = 'ta-Latn';
+    window.history.replaceState(
+        '',
+        document.title,
+        window.location.pathname + '?english'
+    );
+    set_script('english');
 }

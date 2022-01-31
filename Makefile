@@ -16,7 +16,7 @@ BASEURL=https://aks.io
 
 TRANSLITERATE=transliterate/target/release/transliterate
 RUST = $(wildcard transliterate/src/*.rs)
-JS = transliterate/sanskrit.js transliterate/tamil.js
+JS = $(wildcard transliterate/*.js)
 
 .PHONY: all
 all: $(HTML) $(JS)
