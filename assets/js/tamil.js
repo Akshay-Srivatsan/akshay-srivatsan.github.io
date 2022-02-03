@@ -1,7 +1,8 @@
 let replacement_words = {
     akshay: 'Akshay',
-    srivadhsan: 'Srivatsan',
+    sreevadhsan: 'Srivatsan',
     ɕɾiːʋadsan: 'ɕɾiːʋatsan',
+    श्रीवत्सऩ्: 'श्रीवत्सन्',
     kanini: 'ganini',
     kaɳini: 'gaɳini',
     robaadigs: 'robotics',
@@ -11,8 +12,8 @@ let replacement_words = {
     sdaanford: 'Stanford',
     menlo: 'Menlo',
     sgool: 'School',
-    insdaagiram: 'Instagram',
-    feskbukku: 'Facebook',
+    insdaagiraam: 'Instagram',
+    fesbukku: 'Facebook',
     yunivarsittiyil: 'Universityil',
     kaardaa: 'Carta',
     sdejgaasdu: 'Stagecast',
@@ -25,11 +26,13 @@ let replacement_words = {
     lingadin: 'LinkedIn',
     yoodyoobu: 'YouTube',
     aangila: 'Aangila',
-    laattin: 'Latin',
+    lattheen: 'Latin',
     samsgirudha: 'Samskritha',
     thamizh: 'Tamil',
     hindhi: 'Hindi',
     kandubidi: 'kandupidi',
+    maars: 'March',
+    ebral: 'April',
 };
 
 function transcribe_string(s, map) {
