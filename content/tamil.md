@@ -9,7 +9,7 @@ js: [transliterate/tamil.js, assets/js/tamil.js, assets/js/transcribe.js]
 
 # அக்ஷய் ஶ்ரீவத்ஸன்
 
-[/akʂaj ɕɾiːʋat̪san/]{lang=ta-phonipa .ipa #ipa-name}
+[/ʌkʂʌj ɕɾiːʋʌdsʌn/]{lang=ta-phonipa .ipa #ipa-name}
 
 வேறு எழுத்து முறைகளில்: [[Akshay Srivatsan]{lang=en} உம்]{#english-name}
 [[அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} உம்]{#tamil-name style=display:none} [[𑌅𑌕𑍍𑌷𑌯𑍍

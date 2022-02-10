@@ -99,14 +99,14 @@ digits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 name: ipa
 style: alphabet
 vowels:
-  - [a, aː, i, iː, u, uː]
-  - [e, eː, aɪ, o, oː, aʊ]
+  - [ʌ, ɑː, i, iː, u, uː]
+  - [e, eː, ʌj, o, oː, ʌʋ]
 modifiers:
   - ["", ◌̃]
 consonants:
   - [g, s, ɖ, d, b, r]
   - [" k", " s", " ʈ", " t", " p", " r"]
-  - ["k k", "tɕ tɕ", "t t", "p p"]
+  - [" k", " tɕ", " t", " p"]
   - [kː, tɕː, ʈː, tː, pː, tːr]
   - [rk, rp, ɲdʑ]
   - [ŋ, ɲ, ɳ, n̪, m, n]
