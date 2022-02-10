@@ -68,6 +68,9 @@ Ludo Menloniensi studebam.
 
 ## Coepta Mea
 
+[[சொற்கள்]{lang=ta}](https://aks.io/tamil-wordle/): ludus verborum Tamulicorum,
+Wordle ipsi similis.
+
 [Carta](https://carta.stanford.edu): situs interretialis ad consilia cursuum
 facienda a studentibus. (MMXIX-MMXX)
 

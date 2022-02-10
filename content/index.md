@@ -39,6 +39,9 @@ I went to Menlo School for high school.
 
 ## Projects
 
+[[சொற்கள்]{lang=ta}](https://aks.io/tamil-wordle/): a Tamil word game, à la
+Wordle.
+
 [Carta](https://carta.stanford.edu): a course-planning website for Stanford
 students.
 

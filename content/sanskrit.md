@@ -82,6 +82,8 @@ sarvo vivaraṇa [āṅglabhāṣāyām](index.html).
 
 ## prakalpā mama
 
+[corkaḷ](https://aks.io/tamil-wordle/): khelā śabdānāṁ drāviḍānām.
+
 [kārṭā](https://carta.stanford.edu) jālasthānaḥ kakṣāyābhyaś chātrebhyāsti.
 
 [sṭejkāsṭ](https://taps.stanford.edu/stagecast) saṁvidhi naṭakebhyo viśtuṁ koviḍ
