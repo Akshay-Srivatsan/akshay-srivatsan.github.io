@@ -23,7 +23,7 @@ ca [lātinbhāṣayā](latin.html) asti.
 
 ## namaskāraḥ!
 
-namaskāraś ca svāgatam. saṁskr̥tamekaṁ varṣaṁ viśvavidyalaye &apos;paṭham.  
+namaskāraś ca svāgatam. saṁskr̥tamekaṁ varṣaṁ viśvavidyālaye &apos;paṭham.  
 doṣebhyaḥ kṣamyatām.
 
 <div id="scripts" style="display:none">
