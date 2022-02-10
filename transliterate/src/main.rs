@@ -85,7 +85,7 @@ fn main() {
         );
     }
     let conversions = serde_json::to_string_pretty(&conversions).expect("Unable to serialize.");
-    let conversions = format!("let mapping = {};", conversions);
+    let conversions = format!("let mapping = {};\n", conversions);
     fs::write(args.output, conversions).expect("Could not write to file.");
 }
 
@@ -177,7 +177,6 @@ fn map_alphabet_abugida(source: ParsedScript, target: ParsedScript) -> HashMap<S
             {
                 let s = format!("{}{}{}", source_consonant, source_vowel, source_nasal);
                 let t = format!("{}{}{}", target_consonant, target_vowel, target_nasal);
-                println!("{}, {}", s, t);
                 map.insert(s, t);
             }
         }
