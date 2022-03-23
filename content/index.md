@@ -21,11 +21,10 @@ This page is also available in [Latin](latin.html), [Tamil](tamil.html), and
 background.](assets/img/portrait-small.jpg)
 
 I'm a graduate student at Stanford University doing my masters in Computer
-Science. I focus mostly on computer systems and robotics nowadays, and I
-previously did my undergrad focusing on computer graphics and simulation. My
-experience ranges from raytracers to websites, but I mostly like working at the
-OS level and working with hardware. I've worked at Stanford, Facebook/Instagram,
-and Aqua Satellite.
+Science. I focus mostly on computer systems nowadays, and I previously did my
+undergrad focusing on computer graphics. My experience ranges from raytracers to
+websites, but I mostly like working at the OS level and working with hardware.
+I've worked at Stanford, Facebook/Instagram, and Aqua Satellite.
 
 Outside of school/work, I'm also interested in analog and digital photography,
 playing the piano, and learning languages.
@@ -50,10 +49,17 @@ and actors to rehearse and perform shows online during the COVID-19 pandemic.
 
 ## Experience
 
+### Course Assistant: Stanford CS 240LX (Spring 2022)
+
+I'm a course assistant for _CS 240LX: Advanced Systems Laboratory, Accelerated_.
+This course is a continuation of _CS 140E_, and the course is being offered for
+the second time (the first was Spring 2020, when I took it).
+
 ### Course Assistant: Stanford CS 140E (Winter 2022)
 
-I'm currently assisting with _CS 140E: Operating Systems Design and
-Implementation_.
+I was a course assistant for _CS 140E: Operating Systems Design and
+Implementation_. I helped students debug during biweekly lab sessions, ran
+office hours, redesigned the filesystems lab, and helped with final projects.
 
 For more info, go to the [GitHub](https://github.com/dddrrreee/cs140e-22win)
 repo.

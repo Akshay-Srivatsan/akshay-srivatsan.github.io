@@ -79,10 +79,15 @@ interretiale dum COVID epidemia est. (MMXX-MMXXI)
 
 ## Negotia Mea
 
+### Administer Cursus: Stanford CS 240LX (Vere MMXXII)
+
+cursu _CS 240LX: laboratorium systemorum internum, acceleratum_ adjuvemus.
+praeter annum MMXXII, haec classis in anno MMXX solo oblata est.
+
 ### Administer Cursus: Stanford CS 140E (Hieme MMXXII)
 
-ego et unus administer alius cursu _CS 140E: Inventioque Constructioque
-Nucelorum Computatrorum_ adjuvemus. in laboratoriis discipulos juvemus.
+cursu _CS 140E: Inventioque Constructioque Nucelorum Computatrorum_ adjuvi. in
+laboratoriis discipulos juvi.
 
 si plures discere vis, repositorium in
 [GitHub](https://github.com/dddrrreee/cs140e-22win) vide.
