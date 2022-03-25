@@ -37,6 +37,7 @@ onchange="set_document_script(this.value)">
     <option value="tamil">tamiḻ</option>
     <option value="tamil-grantha">tamiḻ-grantha</option>
     <option value="ipa">sarvadeśīya</option>
+    <option value="english">āṅglabhāśā</option>
 </select>
 </div>
 
@@ -129,6 +130,8 @@ function set_document_script(type) {
         tamil_grantha();
     else if (type == "ipa")
         ipa();
+    else if (type == "english")
+        english();
 }
 
 if (window.location.search) set_document_script(window.location.search.slice(1));

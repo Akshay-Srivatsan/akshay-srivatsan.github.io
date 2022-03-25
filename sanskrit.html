@@ -147,7 +147,7 @@ img {
     doṣebhyaḥ kṣamyatām.</p>
     <div id="scripts" style="display:none">
     <p><label for="script"><strong>lipiṁ cino—</strong></label> <select lang="sa-Latn" name="script" id="script" 
-    onchange="set_document_script(this.value)"> <option value="iso">lātin</option> <option value="devanagari">devanāgarī</option> <option value="grantha">grantha</option> <option value="brahmi">brāhmī</option> <option value="tamil">tamiḻ</option> <option value="tamil-grantha">tamiḻ-grantha</option> <option value="ipa">sarvadeśīya</option> </select></p>
+    onchange="set_document_script(this.value)"> <option value="iso">lātin</option> <option value="devanagari">devanāgarī</option> <option value="grantha">grantha</option> <option value="brahmi">brāhmī</option> <option value="tamil">tamiḻ</option> <option value="tamil-grantha">tamiḻ-grantha</option> <option value="ipa">sarvadeśīya</option> <option value="english">āṅglabhāśā</option> </select></p>
     </div>
     <h2 id="hatihāsa-mama">hatihāsa mama</h2>
     <p><img src="assets/img/portrait-small.jpg" alt="citraṁ mama sān frānsisko nagare" /></p>
@@ -214,6 +214,8 @@ img {
             tamil_grantha();
         else if (type == "ipa")
             ipa();
+        else if (type == "english")
+            english();
     }
 
     if (window.location.search) set_document_script(window.location.search.slice(1));

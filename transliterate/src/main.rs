@@ -202,6 +202,9 @@ fn map_alphabets(source: ParsedScript, target: ParsedScript) -> HashMap<String, 
     for (source_vowel, target_vowel) in source.vowels.iter().zip(target.vowels) {
         map.insert(source_vowel.into(), target_vowel.into());
     }
+    for (source_modifier, target_modifier) in source.modifiers.iter().zip(target.modifiers) {
+        map.insert(source_modifier, target_modifier);
+    }
     for (source_consonant, target_consonant) in source.consonants.iter().zip(target.consonants) {
         map.insert(source_consonant, target_consonant);
     }

@@ -16,6 +16,7 @@ function set_script(name) {
         'tamil',
         'tamil-grantha',
         'ipa',
+        'english',
     ].indexOf(name);
 }
 
@@ -101,4 +102,16 @@ function ipa() {
         window.location.pathname + '?ipa'
     );
     set_script('ipa');
+}
+
+function english() {
+    reset();
+    transcribe(mapping.to_english);
+    document.documentElement.lang = 'sa-Latn';
+    window.history.replaceState(
+        '',
+        document.title,
+        window.location.pathname + '?english'
+    );
+    set_script('english');
 }
