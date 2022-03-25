@@ -12,13 +12,13 @@ lang: en
 Also: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta}, [अक्षय श्रीवत्सन]{lang=hi}, [𑌅𑌕𑍍𑌷𑌯𑍍
 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran}, and [𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah}
 
-This page is also available in [Latin](latin.html), [Tamil](tamil.html), and
-[Sanskrit](sanskrit.html).
+This page is also available in [Latin][latin], [Tamil][tamil], and
+[Sanskrit][sanskrit].
 
 ## About
 
 ![A portrait of me with the San Francisco skyline in the 
-background.](assets/img/portrait-small.jpg)
+background.][portrait]
 
 I'm a graduate student at Stanford University doing my masters in Computer
 Science. I focus mostly on computer systems nowadays, and I previously did my
@@ -38,14 +38,12 @@ I went to Menlo School for high school.
 
 ## Projects
 
-[[சொற்கள்]{lang=ta}](https://aks.io/tamil-wordle/): a Tamil word game, à la
-Wordle.
+[[சொற்கள்]{lang=ta}][chorkal]: a Tamil word game, à la Wordle.
 
-[Carta](https://carta.stanford.edu): a course-planning website for Stanford
-students.
+[Carta][carta]: a course-planning website for Stanford students.
 
-[Stagecast](https://taps.stanford.edu/stagecast): software to allow musicians
-and actors to rehearse and perform shows online during the COVID-19 pandemic.
+[Stagecast][stagecast]: software to allow musicians and actors to rehearse and
+perform shows online during the COVID-19 pandemic.
 
 ## Experience
 
@@ -61,8 +59,7 @@ I was a course assistant for _CS 140E: Operating Systems Design and
 Implementation_. I helped students debug during biweekly lab sessions, ran
 office hours, redesigned the filesystems lab, and helped with final projects.
 
-For more info, go to the [GitHub](https://github.com/dddrrreee/cs140e-22win)
-repo.
+For more info, go to the [GitHub][cs140e-22win] repo.
 
 ### Robotics Intern: Aqua Satellite (Summer 2021)
 
@@ -76,8 +73,7 @@ Implementation_. As part of my responsibilities, I reviewed lesson plans,
 refined assignment specifications, held office hours, assisted students in
 biweekly lab sessions, and evaluated student work.
 
-For more info, go to the [GitHub](https://github.com/dddrrreee/cs140e-21spr)
-repo.
+For more info, go to the [GitHub][cs140e-21spr] repo.
 
 ### Production Engineering Intern: Instagram (Summer 2020)
 
@@ -93,12 +89,11 @@ software used by the production engineering and software engineering teams.
 
 ### Research
 
--   [Making a Synchronous Motor ](http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf)
-    (Menlo Roundtable, Fall 2016)
--   [Performance Boost: Dynamically Improving a Home's Wi-Fi Signal ](http://ieeexplore.ieee.org/abstract/document/7425403/)
-    (IEEE Potentials, March--April 2016)
--   [A Dual Sensor System for Determining the Unique Oxygen Production Signature of Plants ](http://www.cyberjournals.com/Papers/2015/01.pdf)
-    (Cyber Journals - Mechatronics, 2015)
+-   [Making a Synchronous Motor][motor] (Menlo Roundtable, Fall 2016)
+-   [Performance Boost: Dynamically Improving a Home's Wi-Fi Signal][wifi] (IEEE
+    Potentials, March--April 2016)
+-   [A Dual Sensor System for Determining the Unique Oxygen Production Signature
+    of Plants][oxygen] (Cyber Journals - Mechatronics, 2015)
 
 ### Inventions
 
@@ -111,7 +106,7 @@ software used by the production engineering and software engineering teams.
 
 ### Links
 
--   [GitHub](https://github.com/Akshay-Srivatsan)
--   [LinkedIn](https://www.linkedin.com/in/akshay-srivatsan/)
--   [YouTube](https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA)
--   [Email](mailto:srivatsan.akshay+website@gmail.com)
+-   [GitHub][github]
+-   [LinkedIn][linkedin]
+-   [YouTube][youtube]
+-   [Email][email]

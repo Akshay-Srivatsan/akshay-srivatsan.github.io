@@ -1,7 +1,8 @@
 HTML_TEMPLATE=templates/index.html
 TEMPLATES=$(wildcard templates/*)
 
-SOURCE=$(wildcard content/*.md)
+SOURCE=content/index.md content/tamil.md content/latin.md content/sanskrit.md
+LINKS=content/links.md
 HTML=$(patsubst content/%.md,%.html,$(SOURCE))
 
 PANDOCFLAGS=--from markdown+bracketed_spans+fenced_divs\
@@ -27,8 +28,8 @@ $(TRANSLITERATE): $(RUST) transliterate/Cargo.toml
 transliterate/%.js: transliterate/%.yaml $(TRANSLITERATE)
 	$(TRANSLITERATE) --input $< --output $@
 
-%.html: content/%.md $(TEMPLATES) Makefile
-	pandoc $< --output $@ $(PANDOCFLAGS) --variable url="$(BASEURL)/$@"
+%.html: content/%.md $(TEMPLATES) Makefile $(LINKS)
+	pandoc $< $(LINKS) --output $@ $(PANDOCFLAGS) --variable url="$(BASEURL)/$@"
 
 .PHONY: clean
 clean:

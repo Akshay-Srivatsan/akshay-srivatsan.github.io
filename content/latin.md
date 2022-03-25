@@ -21,8 +21,8 @@ js:
 idem: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} et [अक्षय श्रीवत्सन]{lang=hi} et [𑌅𑌕𑍍𑌷𑌯𑍍
 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran} et [𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah}
 
-haec pagina praesto est in [Lingua Anglica](index.html),
-[Lingua Tamulica](tamil.html), et [Lingua Sanscrita](sanskrit.html).
+haec pagina praesto est in [Lingua Anglica][english], [Lingua Tamulica][tamil],
+et [Lingua Sanscrita][sanskrit].
 
 ## Salve!
 
@@ -48,7 +48,7 @@ translator Google bene intellegere Latinam non potest.
 ## De Me
 
 ![photographema mei ante urbem Sanctum
-Franciscum](assets/img/portrait-small.jpg)
+Franciscum][portrait]
 
 ego discipulus in Universitate Stanfordiensi sum. scientiam computatralis
 studio. nunc organizationem computatrorum et robotos studio, et prius graphicam
@@ -68,14 +68,13 @@ Ludo Menloniensi studebam.
 
 ## Coepta Mea
 
-[[சொற்கள்]{lang=ta}](https://aks.io/tamil-wordle/): ludus verborum Tamulicorum,
-Wordle ipsi similis.
+[[சொற்கள்]{lang=ta}][chorkal]: ludus verborum Tamulicorum, Wordle ipsi similis.
 
-[Carta](https://carta.stanford.edu): situs interretialis ad consilia cursuum
-facienda a studentibus. (MMXIX-MMXX)
+[Carta][carta]: situs interretialis ad consilia cursuum facienda a studentibus.
+(MMXIX-MMXX)
 
-[Stagecast](https://taps.stanford.edu/stagecast): programma ad dramata agenda in
-interretiale dum COVID epidemia est. (MMXX-MMXXI)
+[Stagecast][stagecast]: programma ad dramata agenda in interretiale dum COVID
+epidemia est. (MMXX-MMXXI)
 
 ## Negotia Mea
 
@@ -89,8 +88,7 @@ annum MMXXII, haec classis in anno MMXX solo oblata est.
 cursu _CS 140E: Inventioque Constructioque Nucelorum Computatrorum_ adjuvi. in
 laboratoriis discipulos juvi.
 
-si plures discere vis, repositorium in
-[GitHub](https://github.com/dddrrreee/cs140e-22win) vide.
+si plures discere vis, repositorium in [GitHub][cs140e-22win] vide.
 
 ### Architectus Robotorum (Tiro): Aqua Satellite (Aestate MMXXI)
 
@@ -104,8 +102,7 @@ est.
 cursu _CS 140E: Inventioque Constructioque Nucelorum Computatrorum_ adjuvebam.
 in laboratoriis discipulos juvebam, et interdum cursum docui.
 
-si plures discere vis, repositorium in
-[GitHub](https://github.com/dddrrreee/cs140e-21spr) vide.
+si plures discere vis, repositorium in [GitHub][cs140e-21spr] vide.
 
 ### Productio Ingeniarius (Tiro): Instagram (Aestate MMXX)
 
@@ -119,12 +116,14 @@ in manu "Flumen and Fabulae" laborabam.
 
 ### Investigationes Meae
 
--   [[Making a Synchronous Motor]{lang=en} ](http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf)
-    ([Menlo Roundtable,]{lang=en} Autumno MMXVI)
--   [[Performance Boost: Dynamically Improving a Home's Wi-Fi Signal]{lang=en} ](http://ieeexplore.ieee.org/abstract/document/7425403/)
-    ([IEEE Potentials,]{lang=en} a Martius ad Aprilem MMXVI)
--   [[A Dual Sensor System for Determining the Unique Oxygen Production Signature of Plants]{lang=en}](http://www.cyberjournals.com/Papers/2015/01.pdf)
-    ([Cyber Journals - Mechatronics,]{lang=en} MMXV)
+-   [[Making a Synchronous Motor]{lang=en}][motor] ([Menlo Roundtable,]{lang=en}
+    Autumno MMXVI)
+-   [[Performance Boost: Dynamically Improving a Home's Wi-Fi
+    Signal]{lang=en}][wifi] ([IEEE Potentials,]{lang=en} a Martius ad Aprilem
+    MMXVI)
+-   [[A Dual Sensor System for Determining the Unique Oxygen Production
+    Signature of Plants]{lang=en}][oxygen] ([Cyber Journals -
+    Mechatronics,]{lang=en} MMXV)
 
 ### Inventiones Meae
 
@@ -141,10 +140,10 @@ in manu "Flumen and Fabulae" laborabam.
 
 ### Nexus
 
--   [GitHub](https://github.com/Akshay-Srivatsan)
--   [LinkedIn](https://www.linkedin.com/in/akshay-srivatsan/)
--   [YouTube](https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA)
--   [mihi epistolam mitte](mailto:srivatsan.akshay+website@gmail.com)
+-   [GitHub][github]
+-   [LinkedIn][linkedin]
+-   [YouTube][youtube]
+-   [mihi epistolam mitte][email]
 
 <script>
 font.style.display = "block";

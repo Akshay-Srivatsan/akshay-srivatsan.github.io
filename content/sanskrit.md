@@ -18,8 +18,8 @@ ca]{#tamil-name} [[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨
 ca]{#brahmi-name} [[akṣay srīvatsan]{lang=sa-Latn} ca]{#iso-name
 style=display:none}
 
-etad jālapr̥ṣṭhopalabhya [āṅglabhāṣayā](index.html) ca [tamiḷbhāṣayā](tamil.html)
-ca [lātinbhāṣayā](latin.html) asti.
+etad jālapr̥ṣṭhopalabhya [āṅglabhāṣayā][english] ca [tamiḷbhāṣayā][tamil] ca
+[lātinbhāṣayā][latin] asti.
 
 ## namaskāraḥ!
 
@@ -42,14 +42,14 @@ onchange="set_document_script(this.value)">
 
 ## hatihāsa mama
 
-![citraṁ mama sān frānsisko nagare](assets/img/portrait-small.jpg)
+![citraṁ mama sān frānsisko nagare][portrait]
 
 mama nāmākṣayaḥ. sṭenforḍ viśvavidyālaye vijñānaṁ saṅgaṇakayantrāṇāṁ paṭhami.
 kāsaṁvidhāsu gaveṣaṇaṁ karomi.
 
 vidyālayād bahiś chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatuṁ ca roce.
 
-sarvo vivaraṇa [āṅglabhāṣāyām](index.html).
+sarvo vivaraṇa [āṅglabhāṣāyām][english].
 
 ## śikṣaṇa mama
 
@@ -61,12 +61,11 @@ sarvo vivaraṇa [āṅglabhāṣāyām](index.html).
 
 ## prakalpā mama
 
-[corkaḷ](https://aks.io/tamil-wordle/): khelā śabdānāṁ drāviḍānām.
+[corkaḷ][chorkal]: khelā śabdānāṁ drāviḍānām.
 
-[kārṭā](https://carta.stanford.edu) jālasthānaḥ kakṣāyābhyaś chātrebhyāsti.
+[kārṭā][carta] jālasthānaḥ kakṣāyābhyaś chātrebhyāsti.
 
-[sṭejkāsṭ](https://taps.stanford.edu/stagecast) saṁvidhi naṭakebhyo viśtuṁ koviḍ
-saṅkāmake &apos;sti.
+[sṭejkāsṭ][stagecast] saṁvidhi naṭakebhyo viśtuṁ koviḍ saṅkāmake &apos;sti.
 
 ## udyogā mama
 
@@ -84,12 +83,13 @@ saṅkāmake &apos;sti.
 
 ### śodhāḥ
 
--   [[Making a Synchronous Motor]{lang=en} ](http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf)
-    ([Menlo Roundtable]{lang=en}, śaradkāle 2016)
--   [[Performance Boost: Dynamically Improving a Home&apos;s Wi-Fi Signal]{lang=en} ](http://ieeexplore.ieee.org/abstract/document/7425403/)
-    ([IEEE Potentials]{lang=en}, mārc–āpril 2016)
--   [[A Dual Sensor System for Determining the Unique Oxygen Production Signature of Plants]{lang=en}](http://www.cyberjournals.com/Papers/2015/01.pdf)
-    ([Cyber Journals - Mechatronics]{lang=en}, 2015)
+-   [[Making a Synchronous Motor]{lang=en}][motor] ([Menlo Roundtable]{lang=en},
+    śaradkāle 2016)
+-   [[Performance Boost: Dynamically Improving a Home&apos;s Wi-Fi
+    Signal]{lang=en}][wifi] ([IEEE Potentials]{lang=en}, mārc–āpril 2016)
+-   [[A Dual Sensor System for Determining the Unique Oxygen Production
+    Signature of Plants]{lang=en}][oxygen] ([Cyber Journals -
+    Mechatronics]{lang=en}, 2015)
 
 ### āviṣkārāḥ
 
@@ -106,10 +106,10 @@ saṅkāmake &apos;sti.
 
 ### pariśabdāḥ
 
--   [vidhilekha](https://github.com/Akshay-Srivatsan)
--   [linkḍin](https://www.linkedin.com/in/akshay-srivatsan/)
--   [yūṭyūb](https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA)
--   [īpatra](mailto:srivatsan.akshay+website@gmail.com)
+-   [vidhilekha][github]
+-   [linkḍin][linkedin]
+-   [yūṭyūb][youtube]
+-   [īpatra][email]
 
 <script>
 document.getElementById("scripts").style.display = "block";
