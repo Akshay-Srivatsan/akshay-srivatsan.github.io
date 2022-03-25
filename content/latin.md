@@ -81,8 +81,8 @@ interretiale dum COVID epidemia est. (MMXX-MMXXI)
 
 ### Administer Cursus: Stanford CS 240LX (Vere MMXXII)
 
-cursu _CS 240LX: laboratorium systemorum internum, acceleratum_ adjuvemus.
-praeter annum MMXXII, haec classis in anno MMXX solo oblata est.
+cursu _CS 240LX: laboratorium systemorum internum, acceleratum_ adjuvo. praeter
+annum MMXXII, haec classis in anno MMXX solo oblata est.
 
 ### Administer Cursus: Stanford CS 140E (Hieme MMXXII)
 

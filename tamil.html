@@ -149,24 +149,6 @@ img {
     <p><label for="script"><strong>எழுத்து முறையை தேர்வு பண்ணுங்கள்:</strong></label> <select lang="ta" name="script" id="script" 
     onchange="set_document_script(this.value)"> <option value="tamil">தமிழ்</option> <option value="brahmi">பிராமி</option> <option value="devanagari">தேவநாகரி</option> <option value="iso">லத்தீன்</option> <option value="ipa">சர்வதேச</option> <option value="english">ஆங்கிலம்</option> </select></p>
     </div>
-    <script>
-    document.getElementById("scripts").style.display = "block";
-
-    function set_document_script(type) {
-        if (type == "tamil")
-            tamil();
-        else if (type == "brahmi")
-            brahmi();
-        else if (type == "devanagari")
-            devanagari();
-        else if (type == "iso")
-            iso();
-        else if (type == "ipa")
-            ipa();
-        else if (type == "english")
-            english();
-    }
-    </script>
     <h2 id="எனனப-பறற">என்னைப் பற்றி</h2>
     <p><img src="assets/img/portrait-small.jpg" alt="ஸான் ஃப்ரான்ஸிஸ்கோ முனாலில் எனுடைய புகைப்படம்" /></p>
     <p>என்னுடைய பெயர் அக்ஷய். ஸ்டான்ஃபோர்டு யுனிவர்சிட்டியில் நான் கணினி அறிவியலைப் படிக்கிற மாணவன். இக்காலத்தில் நான் இயக்குத்தளங்களைப் பற்றி கற்றுக் கொண்டு இருக்கிறேன்; இதற்கு முன்னால் நான் கணினி வரைகலைப் பற்றி கற்றுக் கொண்டு இருந்தேன்.</p>
@@ -216,6 +198,23 @@ img {
     <li><a href="mailto:srivatsan.akshay+website@gmail.com">மின்னஞ்சலை அனுப்புங்கள்</a></li>
     </ul>
     <script>
+    document.getElementById("scripts").style.display = "block";
+
+    function set_document_script(type) {
+        if (type == "tamil")
+            tamil();
+        else if (type == "brahmi")
+            brahmi();
+        else if (type == "devanagari")
+            devanagari();
+        else if (type == "iso")
+            iso();
+        else if (type == "ipa")
+            ipa();
+        else if (type == "english")
+            english();
+    }
+
     if (window.location.search) set_document_script(window.location.search.slice(1));
     </script>
     <p lang="en">

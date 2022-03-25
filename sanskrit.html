@@ -149,26 +149,6 @@ img {
     <p><label for="script"><strong>lipiṁ cino—</strong></label> <select lang="sa-Latn" name="script" id="script" 
     onchange="set_document_script(this.value)"> <option value="iso">lātin</option> <option value="devanagari">devanāgarī</option> <option value="grantha">grantha</option> <option value="brahmi">brāhmī</option> <option value="tamil">tamiḻ</option> <option value="tamil-grantha">tamiḻ-grantha</option> <option value="ipa">sarvadeśīya</option> </select></p>
     </div>
-    <script>
-    document.getElementById("scripts").style.display = "block";
-
-    function set_document_script(type) {
-        if (type == "iso")
-            iso();
-        else if (type == "devanagari")
-            devanagari();
-        else if (type == "grantha")
-            grantha();
-        else if (type == "brahmi")
-            brahmi();
-        else if (type == "tamil")
-            tamil();
-        else if (type == "tamil-grantha")
-            tamil_grantha();
-        else if (type == "ipa")
-            ipa();
-    }
-    </script>
     <h2 id="hatihāsa-mama">hatihāsa mama</h2>
     <p><img src="assets/img/portrait-small.jpg" alt="citraṁ mama sān frānsisko nagare" /></p>
     <p>mama nāmākṣayaḥ. sṭenforḍ viśvavidyālaye vijñānaṁ saṅgaṇakayantrāṇāṁ paṭhami. kāsaṁvidhāsu gaveṣaṇaṁ karomi.</p>
@@ -217,6 +197,25 @@ img {
     <li><a href="mailto:srivatsan.akshay+website@gmail.com">īpatra</a></li>
     </ul>
     <script>
+    document.getElementById("scripts").style.display = "block";
+
+    function set_document_script(type) {
+        if (type == "iso")
+            iso();
+        else if (type == "devanagari")
+            devanagari();
+        else if (type == "grantha")
+            grantha();
+        else if (type == "brahmi")
+            brahmi();
+        else if (type == "tamil")
+            tamil();
+        else if (type == "tamil-grantha")
+            tamil_grantha();
+        else if (type == "ipa")
+            ipa();
+    }
+
     if (window.location.search) set_document_script(window.location.search.slice(1));
     </script>
     <p lang="en">

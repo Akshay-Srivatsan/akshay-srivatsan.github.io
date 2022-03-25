@@ -40,27 +40,6 @@ onchange="set_document_script(this.value)">
 </select>
 </div>
 
-<script>
-document.getElementById("scripts").style.display = "block";
-
-function set_document_script(type) {
-    if (type == "iso")
-        iso();
-    else if (type == "devanagari")
-        devanagari();
-    else if (type == "grantha")
-        grantha();
-    else if (type == "brahmi")
-        brahmi();
-    else if (type == "tamil")
-        tamil();
-    else if (type == "tamil-grantha")
-        tamil_grantha();
-    else if (type == "ipa")
-        ipa();
-}
-</script>
-
 ## hatihāsa mama
 
 ![citraṁ mama sān frānsisko nagare](assets/img/portrait-small.jpg)
@@ -133,5 +112,24 @@ saṅkāmake &apos;sti.
 -   [īpatra](mailto:srivatsan.akshay+website@gmail.com)
 
 <script>
+document.getElementById("scripts").style.display = "block";
+
+function set_document_script(type) {
+    if (type == "iso")
+        iso();
+    else if (type == "devanagari")
+        devanagari();
+    else if (type == "grantha")
+        grantha();
+    else if (type == "brahmi")
+        brahmi();
+    else if (type == "tamil")
+        tamil();
+    else if (type == "tamil-grantha")
+        tamil_grantha();
+    else if (type == "ipa")
+        ipa();
+}
+
 if (window.location.search) set_document_script(window.location.search.slice(1));
 </script>

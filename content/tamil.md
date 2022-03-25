@@ -42,25 +42,6 @@ onchange="set_document_script(this.value)">
 </select>
 </div>
 
-<script>
-document.getElementById("scripts").style.display = "block";
-
-function set_document_script(type) {
-    if (type == "tamil")
-        tamil();
-    else if (type == "brahmi")
-        brahmi();
-    else if (type == "devanagari")
-        devanagari();
-    else if (type == "iso")
-        iso();
-    else if (type == "ipa")
-        ipa();
-    else if (type == "english")
-        english();
-}
-</script>
-
 ## என்னைப் பற்றி
 
 ![ஸான் ஃப்ரான்ஸிஸ்கோ முனாலில் எனுடைய புகைப்படம்](assets/img/portrait-small.jpg)
@@ -162,5 +143,22 @@ function set_document_script(type) {
 -   [மின்னஞ்சலை அனுப்புங்கள்](mailto:srivatsan.akshay+website@gmail.com)
 
 <script>
+document.getElementById("scripts").style.display = "block";
+
+function set_document_script(type) {
+    if (type == "tamil")
+        tamil();
+    else if (type == "brahmi")
+        brahmi();
+    else if (type == "devanagari")
+        devanagari();
+    else if (type == "iso")
+        iso();
+    else if (type == "ipa")
+        ipa();
+    else if (type == "english")
+        english();
+}
+
 if (window.location.search) set_document_script(window.location.search.slice(1));
 </script>
