@@ -8,7 +8,7 @@ lang: sa-Latn
 js: [transliterate/sanskrit.js, assets/js/sanskrit.js, assets/js/transcribe.js]
 ---
 
-# akṣay śrīvatsan
+# akṣay śrīvatsaṉ
 
 [/ɐk.ʂɐj ɕriː.ʋɐt.sɐn/]{lang=sa-phonipa .ipa #ipa-name}
 
