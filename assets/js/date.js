@@ -1,75 +1,75 @@
 let months_accusative = [
     '',
-    'Ianuarias',
-    'Februarias',
-    'Martias',
-    'Apriles',
-    'Maias',
-    'Iunias',
-    'Iulias',
-    'Augustas',
-    'Septembres',
-    'Octobres',
-    'Novembres',
-    'Decembres',
-    'Ianuarias',
+    'Jānuāriās',
+    'Februāriās',
+    'Mārtiās',
+    'Aprīlēs',
+    'Maiās',
+    'Jūniās',
+    'Jūlia',
+    'Augustās',
+    'Septembrēs',
+    'Octōbrēs',
+    'Novembrēs',
+    'Decembrēs',
+    'Jānuāriās',
 ];
 let months_ablative = [
     '',
-    'Ianuariis',
-    'Februariis',
-    'Martiis',
-    'Aprilibus',
-    'Maiis',
-    'Iuniis',
-    'Iuliis',
-    'Augustis',
-    'Septembribus',
-    'Octobribus',
-    'Novembribus',
-    'Decembribus',
-    'Ianuariis',
+    'Jānuāriīs',
+    'Februāriīs',
+    'Mārtiīs',
+    'Aprīlēs',
+    'Maiīs',
+    'Jūniīs',
+    'Jūlia',
+    'Augustīs',
+    'Septembrēs',
+    'Octōbrēs',
+    'Novembrēs',
+    'Decembrēs',
+    'Jānuāriīs',
 ];
 
 let numbers_accusative = [
     'nihil',
-    'primum',
+    'prīmum',
     'secundum',
     'tertium',
-    'quartum',
-    'quintum',
+    'quārtum',
+    'quīntum',
     'sextum',
     'septimum',
-    'octavum',
-    'nonum',
+    'octāvum',
+    'nōnum',
     'decimum',
-    'undecimum',
+    'ūndecimum',
     'duodecimum',
     'tertium decimum',
-    'quartum decimum',
-    'quintum decimum',
+    'quārtum decimum',
+    'quīntum decimum',
     'sextum decimum',
     'septimum decimum',
-    'duodevicesimum',
-    'undevicesimum',
-    'vicesimum',
+    'duodēvicēsimus',
+    'ūndēvīcēsimus',
+    'vīcēsimus',
 ];
 
 let months_short = [
     '',
-    'Ian.',
+    'Iān.',
     'Feb.',
-    'Mar.',
+    'Mār.',
     'Apr.',
     'Mai.',
-    'Iun.',
-    'Iul.',
+    'Iūn.',
+    'Iūl.',
     'Aug.',
     'Sept.',
     'Oct.',
     'Nov.',
     'Dec.',
-    'Ian.',
+    'Iān.',
 ];
 
 let numbers_short = [
@@ -112,35 +112,35 @@ function roman_date(date) {
     }
 
     if (day == kalends) {
-        return `Kalendis ${months_ablative[month]}`;
+        return `kalendīs ${months_ablative[month]}`;
     }
 
     if (day > kalends && day < nones - 1) {
-        return `ante diem ${numbers_accusative[nones - day + 1]} Nonas ${
+        return `ante diem ${numbers_accusative[nones - day + 1]} nōnās ${
             months_accusative[month]
         }`;
     }
 
     if (day == nones - 1) {
-        return `pridie Nonas ${months_accusative[month]}`;
+        return `prīdiē nōnas ${months_accusative[month]}`;
     }
 
     if (day == nones) {
-        return `Nonis ${months_ablative[month]}`;
+        return `nōnīs ${months_ablative[month]}`;
     }
 
     if (day > nones && day < ides - 1) {
-        return `ante diem ${numbers_accusative[ides - day + 1]} Idus ${
+        return `ante diem ${numbers_accusative[ides - day + 1]} īdūs ${
             months_accusative[month]
         }`;
     }
 
     if (day == ides - 1) {
-        return `pridie Idus ${months_accusative[month]}`;
+        return `prīdiē īdūs ${months_accusative[month]}`;
     }
 
     if (day == ides) {
-        return `Idibus ${months_ablative[month]}`;
+        return `īdibus ${months_ablative[month]}`;
     }
 
     if (day > ides && day < last_day_of_month) {
@@ -150,7 +150,7 @@ function roman_date(date) {
     }
 
     if (day == last_day_of_month) {
-        return `pridie Kalendas ${months_accusative[month + 1]}`;
+        return `prīdiē kalendās ${months_accusative[month + 1]}`;
     }
 }
 
@@ -170,54 +170,54 @@ function shortRomanDate(date) {
     }
 
     if (day == kalends) {
-        return 'Kal. ' + months_short[month];
+        return 'kal. ' + months_short[month];
     }
 
     if (day > kalends && day < nones - 1) {
         return (
             'a.d. ' +
             numbers_short[nones - day + 1] +
-            ' Non. ' +
+            ' nōn. ' +
             months_short[month]
         );
     }
 
     if (day == nones - 1) {
-        return 'Prid. Non. ' + months_short[month];
+        return 'prīd. nōn. ' + months_short[month];
     }
 
     if (day == nones) {
-        return 'Non. ' + months_short[month];
+        return 'nōn. ' + months_short[month];
     }
 
     if (day > nones && day < ides - 1) {
         return (
             'a.d. ' +
             numbers_short[ides - day + 1] +
-            ' Eid. ' +
+            ' eīd. ' +
             months_short[month]
         );
     }
 
     if (day == ides - 1) {
-        return 'Prid. Eid. ' + months_short[month];
+        return 'prīd. eīd. ' + months_short[month];
     }
 
     if (day == ides) {
-        return 'Eid. ' + months_short[month];
+        return 'eīd. ' + months_short[month];
     }
 
     if (day > ides && day < lastDayOfMonth) {
         return (
             'a.d. ' +
             numbers_short[lastDayOfMonth + 1 - day + 1] +
-            ' Kal. ' +
+            ' kal. ' +
             months_short[month + 1]
         );
     }
 
     if (day == lastDayOfMonth) {
-        return 'Prid. Kal. ' + months_short[month + 1];
+        return 'prīd. kal. ' + months_short[month + 1];
     }
 }
 

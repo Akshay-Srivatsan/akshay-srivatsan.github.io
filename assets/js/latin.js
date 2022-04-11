@@ -14,6 +14,7 @@ function capitals() {
 
 function uncials() {
     reset();
+    transcribe_document(mapping.to_ascii);
     change_font.selectedIndex = 1;
     document.documentElement.lang = 'la-Latg';
     window.history.replaceState(

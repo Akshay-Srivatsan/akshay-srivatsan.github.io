@@ -1,9 +1,9 @@
 ---
-title: Akshay Srivatsan (situs interretialis)
-title-meta: situs interretialis de Akshay Srivatsan
+title: Akshay Srivatsan (situs interrētiālis)
+title-meta: situs interrētiālis dē Akshay Srivatsan
 description: programmator, Stanford MS CS MMXXII
 image: assets/img/portrait-small.jpg
-image-alt: photographema mei ante urbem Sanctum Franciscum
+image-alt: photographema meī ante urbem Sanctum Franciscum
 lang: la
 js:
     [
@@ -18,114 +18,114 @@ js:
 
 [/ak.sei̯ sriː.wat.san/]{lang=la-phonipa .ipa}
 
-idem: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} et [अक्षय श्रीवत्सन]{lang=hi} et [𑌅𑌕𑍍𑌷𑌯𑍍
+īdem: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} et [अक्षय श्रीवत्सन]{lang=hi} et [𑌅𑌕𑍍𑌷𑌯𑍍
 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran} et [𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah}
 
-haec pagina praesto est in [Lingua Anglica][english], [Lingua Tamulica][tamil],
-et [Lingua Sanscrita][sanskrit].
+praestō est haec pāgina in [Linguā Anglicā][english], [Linguā Tamulicā][tamil],
+et [Linguā Sanscritā][sanskrit].
 
-## Salve!
+## salvē!
 
 <script>
   document.write(`<b>hodie est:</b> ${hodie()} (${hodieBreve()})`);
 </script>
 
-salve! haec versio Latina situs interretialis mei est. si errata vidis, me note!
-quattor annos Latinam non scripsi, ergo multorum oblivisci; me paenitet.
+salvē! haec est versiō Latina situs interrētiālis meī. sī errāta vidēs, mē nōtē!
+quinque annōs Latinam nōn scrīpsī, ergō multōrum oblīvīscī; mē paenitet.
 
-nota bene: hic situs interretialis non videbitur recte translatore Google;
-translator Google bene intellegere Latinam non potest.
+notā bene: hīc situs interrētiālis nōn vidēbitur rēctē trānslātorē Google;
+trānslātor Google bene intellegēre Latinam nōn potest.
 
 <div id="font" style="display:none">
-<label for="change_font">**speciem litterarum elige:**</label>
+<label for="change_font">**speciēm litterārum ēligē:**</label>
 <select name="change_font" id="change_font" onchange="changeFont(this.value)">
-    <option value="capitals">capitales quadratae</option>
-    <option value="uncials">capitales unciales</option>
-    <option value="italics">capitales italica</option>
+    <option value="capitals">capitālēs quadrātae</option>
+    <option value="uncials">capitālēs unciālēs</option>
+    <option value="italics">capitālēs italica</option>
 </select>
 </div>
 
-## De Me
+## dē mē
 
-![photographema mei ante urbem Sanctum
+![photographema meī ante urbem Sanctum
 Franciscum][portrait]
 
-ego discipulus in Universitate Stanfordiensi sum. scientiam computatralis
-studio. nunc organizationem computatrorum et robotos studio, et prius graphicam
-et simulationem computatralem studebam. in ludo secundo, situm interretialem pro
-_Menlo JCL_ feci, et gregem ad Latinam loquendum institui. anno quarto ludi
-secundi, pro _California JCL_ situm interretialem gubernabam.
+ego discipulus in Ūniversitātē Stanfordiēnsī sum. scientiam computātrālis
+studiō. nunc organizatiōnem computātrōrum et robotōs studiō, et prius graphicam
+et simulatiōnem computātrālem studēbam. in lūdō secundō, situm interrētialem prō
+_Menlo JCL_ fēcī, et gregem ad Latinam loquendum īnstituī. annō quartō ludī
+secundī, prō _California JCL_ situm interrētiālem gubernābam.
 
-extra ludum et opus, mihi photographia, clavile cantare, et linguas discere
-placet. linguas Anglicam, Latinam, Tamulicam, Hindicam, et Sanscritam aliquid
-scio.
+extrā lūdum et opus, mihi photographia, clāvile cantāre, et linguās discere
+placet. linguās Anglicam, Latinam, Tamulicam, Hindicam, et Sanscritam aliquid
+sciō.
 
-## Eruditio Mea
+## ērudītiō mea
 
-in Universitate Stanfordiensi pro Diplomate Magistri in Scientia Computatrali
-studio. Baccalaureus quoque in Stanford perfeci (a MMXVII ad MMXXI). prius, in
-Ludo Menloniensi studebam.
+prō Diplōmate Magistrī in Scientiā Computātrālī in Ūniversitātē Stanfordiēnsī
+studiō. Baccalaureus quōque in Stanford perfēcī (ā MMXVII ad MMXXI). prius, in
+Lūdō Menloniēnsī studēbam.
 
-## Coepta Mea
+## coepta mea
 
-[[சொற்கள்]{lang=ta}][chorkal]: ludus verborum Tamulicorum, Wordle ipsi similis.
+[[சொற்கள்]{lang=ta}][chorkal]: lūdus verbōrum Tamulicōrum, Wordle ipsī similis.
 
-[Carta][carta]: situs interretialis ad consilia cursuum facienda a studentibus.
+[Carta][carta]: situs interrētiālis ad cōnsilia cursuum facienda ā studentibus.
 (MMXIX-MMXX)
 
-[Stagecast][stagecast]: programma ad dramata agenda in interretiale dum COVID
+[Stagecast][stagecast]: programma ad drāmata agenda in interrētiālē dum COVID
 epidemia est. (MMXX-MMXXI)
 
-## Negotia Mea
+## negōtia mea
 
-### Administer Cursus: Stanford CS 240LX (Vere MMXXII)
+### administer cursūs: Stanford CS 240LX (vēre MMXXII)
 
-cursu _CS 240LX: laboratorium systemorum internum, acceleratum_ adjuvo. praeter
-annum MMXXII, haec classis in anno MMXX solo oblata est.
+cursū _CS 240LX: labōrātōrium systēmatum internōrum, accelerātum_ adjuvō.
+praeter annum MMXXII, haec classis in annō MMXX sōlō oblātā est.
 
-### Administer Cursus: Stanford CS 140E (Hieme MMXXII)
+### administer cursūs: Stanford CS 140E (hieme MMXXII)
 
-cursu _CS 140E: Inventioque Constructioque Nucelorum Computatrorum_ adjuvi. in
-laboratoriis discipulos juvi.
+cursu _CS 140E: inventiōque cōnstrūctiōque nucelōrum computātrōrum_ adjuvī. in
+labōrātōriīs discipulōs juvī.
 
-si plures discere vis, repositorium in [GitHub][cs140e-22win] vide.
+sī plūrēs discere vīs, repositōrium in [GitHub][cs140e-22win] vidē.
 
-### Architectus Robotorum (Tiro): Aqua Satellite (Aestate MMXXI)
+### architectus robotōrum (tīrō): Aqua Satellite (aestāte MMXXI)
 
-in Aqua Satellite, modus programmandi statuebam et programmam initialem ad
-robotum movendum scribebam. roboto nostro nomen "Thaumas" est, simile deo Graeco
-miraculorum maris. Thaumas vehiculum automatum subaqueanum ad mare explorandum
+in Aquā Satellite, modum programmandī statuēbam et programmam initiālem ad
+robotum movendum scrībēbam. nōmen robotō nostrō "Thaumas" est, simile deō Graecō
+mīrāculōrum maris. Thaumas vehiculum automatum subaqueanum ad mare explōrandum
 est.
 
-### Administer Cursus: Stanford CS 140E (Vere MMXXI)
+### administer cursūs: Stanford CS 140E (vēre MMXXI)
 
-cursu _CS 140E: Inventioque Constructioque Nucelorum Computatrorum_ adjuvebam.
-in laboratoriis discipulos juvebam, et interdum cursum docui.
+cursu _CS 140E: inventiōque cōnstrūctiōque nucelōrum computātrōrum_ adjuvēbam.
+in labōrātōriīs discipulōs juvēbam, et interdum cursum docuī.
 
-si plures discere vis, repositorium in [GitHub][cs140e-21spr] vide.
+sī plūrēs discere vīs, repositōrium in [GitHub][cs140e-21spr] vidē.
 
-### Productio Ingeniarius (Tiro): Instagram (Aestate MMXX)
+### prōductiō ingeniārius (tīrō): Instagram (aestāte MMXX)
 
-in manu "Instagram Intellectus Machinalis" laborabam.
+in manū "Instagram intellēctus māchinālis" labōrābam.
 
-### Productio Ingeniarius (Tiro): Facebook (Aestate MMXIX)
+### prōductiō ingeniārius (tīrō): Facebook (aestāte MMXIX)
 
-in manu "Flumen and Fabulae" laborabam.
+in manū "flūmen et fābulae" labōrābam.
 
-## Publicationes Meae
+## pūblicātiōnēs meae
 
-### Investigationes Meae
+### investīgātiōnēs meae
 
 -   [[Making a Synchronous Motor]{lang=en}][motor] ([Menlo Roundtable,]{lang=en}
-    Autumno MMXVI)
+    autumnō MMXVI)
 -   [[Performance Boost: Dynamically Improving a Home's Wi-Fi
-    Signal]{lang=en}][wifi] ([IEEE Potentials,]{lang=en} a Martius ad Aprilem
+    Signal]{lang=en}][wifi] ([IEEE Potentials,]{lang=en} ā mārtius ad Aprīlem
     MMXVI)
 -   [[A Dual Sensor System for Determining the Unique Oxygen Production
     Signature of Plants]{lang=en}][oxygen] ([Cyber Journals -
     Mechatronics,]{lang=en} MMXV)
 
-### Inventiones Meae
+### inventiōnēs meae
 
 ::: {lang=en}
 
@@ -138,12 +138,12 @@ in manu "Flumen and Fabulae" laborabam.
 
 :::
 
-### Nexus
+### nexus
 
 -   [GitHub][github]
 -   [LinkedIn][linkedin]
 -   [YouTube][youtube]
--   [mihi epistolam mitte][email]
+-   [mihī epistolam mitte][email]
 
 <script>
 font.style.display = "block";

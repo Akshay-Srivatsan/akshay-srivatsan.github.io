@@ -2,6 +2,24 @@ name: latin
 style: alphabet
 vowels:
   - [a, e, i, o, u]
+  - [ā, ē, ī, ō, ū]
+  - [A, E, I, O, U]
+  - [Ā, Ē, Ī, Ō, Ū]
+modifiers:
+  - []
+consonants:
+  - [b, c, d, f, g, h, j, k, l, m, n, p, q, r, s, t, v, w, x, y, z]
+  - [B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z]
+punctuation:
+  - []
+digits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+---
+name: ascii
+style: alphabet
+vowels:
+  - [a, e, i, o, u]
+  - [a, e, i, o, u]
+  - [A, E, I, O, U]
   - [A, E, I, O, U]
 modifiers:
   - []
@@ -15,6 +33,8 @@ digits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 name: italics
 style: alphabet
 vowels:
+  - [𐌀, 𐌄, 𐌉, 𐌏, 𐌖]
+  - [𐌀, 𐌄, 𐌉, 𐌏, 𐌖]
   - [𐌀, 𐌄, 𐌉, 𐌏, 𐌖]
   - [𐌀, 𐌄, 𐌉, 𐌏, 𐌖]
 modifiers:
