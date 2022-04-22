@@ -47,8 +47,7 @@ trānslātor Google bene intellegēre Latinam nōn potest.
 
 ## dē mē
 
-![photographema meī ante urbem Sanctum
-Franciscum][portrait]
+![photographema meī ante urbem Sanctum Franciscum][portrait]
 
 ego discipulus in Ūniversitātē Stanfordiēnsī sum. scientiam computātrālis
 studiō. nunc organizatiōnem computātrōrum et robotōs studiō, et prius graphicam
@@ -58,7 +57,7 @@ secundī, prō _California JCL_ situm interrētiālem gubernābam.
 
 extrā lūdum et opus, mihi photographia, clāvile cantāre, et linguās discere
 placet. linguās Anglicam, Latinam, Tamulicam, Hindicam, et Sanscritam aliquid
-sciō.
+sciō. linguam Francogallicam nunc discō.
 
 ## ērudītiō mea
 

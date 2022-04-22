@@ -50,6 +50,9 @@ kāsaṁvidhāsu gaveṣaṇaṁ karomi.
 
 vidyālayād bahiś chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatuṁ ca roce.
 
+āṅglabhāṣāṁ ca tamiḷbhāṣāṁ ca lātinbhāṣāṁ ca hindībhāṣāṁ ca saṁskr̥tabhāṣāṁ ca
+jānāmi. frānsbhāṣāṁ ca śikṣami.
+
 sarvo vivaraṇa [āṅglabhāṣāyām][english].
 
 ## śikṣaṇa mama
@@ -62,9 +65,9 @@ sarvo vivaraṇa [āṅglabhāṣāyām][english].
 
 ## prakalpā mama
 
-[corkaḷ][chorkal]: khelā śabdānāṁ drāviḍānām.
+[corkaḷ][chorkal] khelā śabdānāṁ drāviḍānām asti.
 
-[kārṭā][carta] jālasthānaḥ kakṣāyābhyaś chātrebhyāsti.
+[kārṭā][carta] jālasthānaḥ kakṣāyābhyaś chātrebhyo 'sti.
 
 [sṭejkāsṭ][stagecast] saṁvidhi naṭakebhyo viśtuṁ koviḍ saṅkāmake &apos;sti.
 
