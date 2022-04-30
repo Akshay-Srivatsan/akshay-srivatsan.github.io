@@ -84,7 +84,7 @@ praeter annum MMXXII, haec classis in annō MMXX sōlō oblātā est.
 
 ### administer cursūs: Stanford CS 140E (hieme MMXXII)
 
-cursu _CS 140E: inventiōque cōnstrūctiōque nucelōrum computātrōrum_ adjuvī. in
+cursu _CS 140E: inventiōque cōnstrūctiōque nucleōrum computātrōrum_ adjuvī. in
 labōrātōriīs discipulōs juvī.
 
 sī plūrēs discere vīs, repositōrium in [GitHub][cs140e-22win] vidē.
@@ -98,7 +98,7 @@ est.
 
 ### administer cursūs: Stanford CS 140E (vēre MMXXI)
 
-cursu _CS 140E: inventiōque cōnstrūctiōque nucelōrum computātrōrum_ adjuvēbam.
+cursu _CS 140E: inventiōque cōnstrūctiōque nucleōrum computātrōrum_ adjuvēbam.
 in labōrātōriīs discipulōs juvēbam, et interdum cursum docuī.
 
 sī plūrēs discere vīs, repositōrium in [GitHub][cs140e-21spr] vidē.
