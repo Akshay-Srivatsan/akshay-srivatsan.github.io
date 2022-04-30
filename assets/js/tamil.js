@@ -30,6 +30,7 @@ let replacement_words = {
     samsgirudha: 'Samskritha',
     thamizh: 'Tamil',
     hindhi: 'Hindi',
+    piranj: 'French',
     kandubidi: 'kandupidi',
     maars: 'March',
     ebral: 'April',
