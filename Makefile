@@ -17,10 +17,11 @@ BASEURL=https://aks.io
 
 TRANSLITERATE=transliterate/target/release/transliterate
 RUST = $(wildcard transliterate/src/*.rs)
-JS = $(wildcard transliterate/*.js)
+YAML = $(wildcard transliterate/*.yaml)
+JS = $(YAML:.yaml=.js)
 
 .PHONY: all
-all: $(HTML) $(JS)
+all: $(HTML)
 
 $(TRANSLITERATE): $(RUST) transliterate/Cargo.toml
 	cd transliterate && cargo build --release
@@ -28,12 +29,13 @@ $(TRANSLITERATE): $(RUST) transliterate/Cargo.toml
 transliterate/%.js: transliterate/%.yaml $(TRANSLITERATE)
 	$(TRANSLITERATE) --input $< --output $@
 
-%.html: content/%.md $(TEMPLATES) Makefile $(LINKS)
+%.html: content/%.md $(TEMPLATES) Makefile $(LINKS) $(JS)
 	pandoc $< $(LINKS) --output $@ $(PANDOCFLAGS) --variable url="$(BASEURL)/$@"
 
 .PHONY: clean
 clean:
-	rm -rf $(HTML)
+	rm -rf $(HTML) $(JS)
+	cd transliterate && cargo clean
 
 .PHONY: format
 format:
