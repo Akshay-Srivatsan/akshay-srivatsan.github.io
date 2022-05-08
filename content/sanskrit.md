@@ -23,7 +23,7 @@ etad jālapr̥ṣṭhopalabhya [āṅglabhāṣayā][english] ca [tamiḷbhāṣ
 
 ## namaskāraḥ!
 
-namaskāraś ca svāgatam. saṁskr̥tamekaṁ varṣaṁ viśvavidyālaye &apos;paṭham.  
+namaskāraś ca svāgatam. saṁskr̥tamekamekaṁ varṣaṁ viśvavidyālaye &apos;paṭham.  
 doṣebhyaḥ kṣamyatām.
 
 <div id="scripts" style="display:none">
@@ -46,7 +46,7 @@ onchange="set_document_script(this.value)">
 ![citraṁ mama sān frānsisko nagare][portrait]
 
 mama nāmākṣayaḥ. sṭenforḍ viśvavidyālaye vijñānaṁ saṅgaṇakayantrāṇāṁ paṭhami.
-kāsaṁvidhāsu gaveṣaṇaṁ karomi.
+kāsaṁvidhāsu gaveṣaṇaṁ karomi. citraṇam pūrvamapaṭhaṁ ca kāsaṁvidhās nu paṭhami.
 
 vidyālayād bahiś chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatuṁ ca roce.
 
