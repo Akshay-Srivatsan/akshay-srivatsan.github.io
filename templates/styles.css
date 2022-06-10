@@ -39,3 +39,18 @@ img {
     display: block;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color: #FAFAFA;
+    background: #212121;
+  }
+
+  a {
+    color: #03A9F4;
+  }
+
+  a:visited {
+    color: #B39DDB;
+  }
+}
