@@ -1,240 +1,442 @@
 <!DOCTYPE html>
 <html lang="ta">
-  <head>
-    <title>அக்ஷயுடைய இணையத்தளம்</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, 
-                user-scalable=yes" />
-    <meta charset="utf-8" />
+    <head>
+        <title>அக்ஷயுடைய இணையத்தளம்</title>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, 
+                user-scalable=yes"
+        />
+        <meta charset="utf-8" />
         <link rel="icon" href="assets/img/favicon.png" />
-            <meta property="og:url" content="https://aks.io/tamil.html" />
-                <meta property="og:description" content="பட்டதாரி மாணவன், ஸ்டான்ஃபோர்ட் ௨௦௨௨" />
-            <meta property="og:image" content="assets/img/portrait-small.jpg" />
-            <meta property="og:image:alt" content="ஸான் ஃப்ரான்ஸிஸ்கோ முனாலில் எனுடைய புகைப்படம்" />
-    
+        <meta property="og:url" content="https://aks.io/tamil.html" />
+        <meta
+            property="og:description"
+            content="பட்டதாரி மாணவன், ஸ்டான்ஃபோர்ட் ௨௦௨௨"
+        />
+        <meta property="og:image" content="assets/img/portrait-small.jpg" />
+        <meta
+            property="og:image:alt"
+            content="ஸான் ஃப்ரான்ஸிஸ்கோ முனாலில் எனுடைய புகைப்படம்"
+        />
+
         <meta name="author" content="Akshay Srivatsan" />
-                    <meta name="description" content="பட்டதாரி மாணவன், ஸ்டான்ஃபோர்ட் ௨௦௨௨" />
+        <meta
+            name="description"
+            content="பட்டதாரி மாணவன், ஸ்டான்ஃபோர்ட் ௨௦௨௨"
+        />
         <meta name="generator" content="pandoc" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat&family=Uncial+Antiqua&display=swap" rel="stylesheet">     <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap');
-/* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-@font-face {
-  font-family: 'Noto Sans Tamil';
-  src: url('assets/fonts/NotoSansTamil-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Noto Sans Devanagari';
-  src: url('assets/fonts/NotoSansDevanagari-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Noto Sans Grantha';
-  src: url('assets/fonts/NotoSansGrantha-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Noto Sans Brahmi';
-  src: url('assets/fonts/NotoSansBrahmi-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Noto Sans Old Italic';
-  src: url('assets/fonts/NotoSansOldItalic-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Adinatha';
-  src: url('assets/fonts/Adinatha-Tamil-Brahmi.otf') format('opentype');
-}
-@font-face {
-  font-family: 'Agastya';
-  src: url('assets/fonts/agastya_sans.otf') format('opentype');
-}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat&family=Uncial+Antiqua&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap');
+            /* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap'); */
+            @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+            @font-face {
+                font-family: 'Noto Sans Tamil';
+                src: url('assets/fonts/NotoSansTamil-Regular.ttf')
+                    format('truetype');
+            }
+            @font-face {
+                font-family: 'Noto Sans Devanagari';
+                src: url('assets/fonts/NotoSansDevanagari-Regular.ttf')
+                    format('truetype');
+            }
+            @font-face {
+                font-family: 'Noto Sans Grantha';
+                src: url('assets/fonts/NotoSansGrantha-Regular.ttf')
+                    format('truetype');
+            }
+            @font-face {
+                font-family: 'Noto Sans Brahmi';
+                src: url('assets/fonts/NotoSansBrahmi-Regular.ttf')
+                    format('truetype');
+            }
+            @font-face {
+                font-family: 'Noto Sans Old Italic';
+                src: url('assets/fonts/NotoSansOldItalic-Regular.ttf')
+                    format('truetype');
+            }
+            @font-face {
+                font-family: 'Adinatha';
+                src: url('assets/fonts/Adinatha-Tamil-Brahmi.otf')
+                    format('opentype');
+            }
+            @font-face {
+                font-family: 'Agastya';
+                src: url('assets/fonts/agastya_sans.otf') format('opentype');
+            }
 
-:lang(en) {
-  font-family: 'Montserrat', sans-serif;
-}
+            :lang(en) {
+                font-family: 'Montserrat', sans-serif;
+            }
 
-:lang(la), :lang(la) * {
-  font-family: 'Libre Baskerville', sans-serif;
-}
+            :lang(la),
+            :lang(la) * {
+                font-family: 'Libre Baskerville', sans-serif;
+            }
 
-:lang(la-Latg), :lang(la-Latg) * {
-  font-family: 'Uncial Antiqua', sans-serif;
-}
+            :lang(la-Latg),
+            :lang(la-Latg) * {
+                font-family: 'Uncial Antiqua', sans-serif;
+            }
 
-:lang(la-Ital) {
-  font-family: 'Noto Sans Old Italic', 'Noto Sans', sans-serif;
-}
+            :lang(la-Ital) {
+                font-family: 'Noto Sans Old Italic', 'Noto Sans', sans-serif;
+            }
 
-:lang(ta), :lang(sa-Taml) {
-  font-family: 'Noto Sans Tamil', 'Noto Sans', sans-serif;
-}
+            :lang(ta),
+            :lang(sa-Taml) {
+                font-family: 'Noto Sans Tamil', 'Noto Sans', sans-serif;
+            }
 
-:lang(sa), :lang(hi), :lang(ta-Deva) {
-  font-family: 'Noto Sans Devanagari', 'Noto Sans', sans-serif;
-}
+            :lang(sa),
+            :lang(hi),
+            :lang(ta-Deva) {
+                font-family: 'Noto Sans Devanagari', 'Noto Sans', sans-serif;
+            }
 
-:lang(sa-Gran) {
-  font-family: 'Noto Sans Grantha', 'Noto Sans', sans-serif;
-}
+            :lang(sa-Gran) {
+                font-family: 'Noto Sans Grantha', 'Noto Sans', sans-serif;
+            }
 
-:lang(sa-Latn), :lang(ta-Latn) {
-  font-family: 'Noto Sans', 'Noto Sans', sans-serif;
-}
+            :lang(sa-Latn),
+            :lang(ta-Latn) {
+                font-family: 'Noto Sans', 'Noto Sans', sans-serif;
+            }
 
-:lang(sa-Brah), :lang(ta-Brah) {
-  font-family: 'Noto Sans Brahmi', 'Noto Sans', sans-serif;
-}
+            :lang(sa-Brah),
+            :lang(ta-Brah) {
+                font-family: 'Noto Sans Brahmi', 'Noto Sans', sans-serif;
+            }
 
-:lang(ta-Brah) {
-  font-family: 'Adinatha', 'Noto Sans Brahmi', 'Noto Sans', sans-serif;
-}
+            :lang(ta-Brah) {
+                font-family: 'Adinatha', 'Noto Sans Brahmi', 'Noto Sans',
+                    sans-serif;
+            }
 
-:lang(sa-Xaaa) {
-  font-family: 'Agastya', 'Noto Sans Tamil', 'Noto Sans', sans-serif;
-}
+            :lang(sa-Xaaa) {
+                font-family: 'Agastya', 'Noto Sans Tamil', 'Noto Sans',
+                    sans-serif;
+            }
 
-:lang(en-phonipa), :lang(la-phonipa), :lang(sa-phonipa), :lang(ta-phonipa) {
-  font-family: "Voces", sans-serif;
-  font-weight: 400;
-}
+            :lang(en-phonipa),
+            :lang(la-phonipa),
+            :lang(sa-phonipa),
+            :lang(ta-phonipa) {
+                font-family: 'Voces', sans-serif;
+                font-weight: 400;
+            }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-      margin: 0 auto;
-  max-width: 720px;
-}
+            body {
+                font-family: 'Montserrat', sans-serif;
+                margin: 0 auto;
+                max-width: 720px;
+            }
 
-img {
-  float: right;
-  max-width: 240px;
-  border-radius: 100%;
-  margin: 10px;
-}
+            img {
+                float: right;
+                max-width: 240px;
+                border-radius: 100%;
+                margin: 10px;
+            }
 
-.ipa {
-  font-size: 1.25em;
-}
+            .ipa {
+                font-size: 1.25em;
+            }
 
-@media only screen and (max-width: 720px) {
-  h1, h2 {
-    text-align: center;
-  }
-  body {
-    max-width: inherit;
-    margin: 25px;
-  }
-  img {
-    max-width: 196px;
-    float: none;
-    margin: 0 auto;
-    display: block;
-  }
-}
+            @media only screen and (max-width: 720px) {
+                h1,
+                h2 {
+                    text-align: center;
+                }
+                body {
+                    max-width: inherit;
+                    margin: 25px;
+                }
+                img {
+                    max-width: 196px;
+                    float: none;
+                    margin: 0 auto;
+                    display: block;
+                }
+            }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color: #FAFAFA;
-    background: #212121;
-  }
+            @media (prefers-color-scheme: dark) {
+                html {
+                    color: #fafafa;
+                    background: #212121;
+                }
 
-  a {
-    color: #03A9F4;
-  }
+                a {
+                    color: #03a9f4;
+                }
 
-  a:visited {
-    color: #B39DDB;
-  }
-}    </style>
-            <script type="text/javascript" src="transliterate/tamil.js"></script>
+                a:visited {
+                    color: #b39ddb;
+                }
+            }
+        </style>
+        <script type="text/javascript" src="transliterate/tamil.js"></script>
         <script type="text/javascript" src="assets/js/tamil.js"></script>
         <script type="text/javascript" src="assets/js/transcribe.js"></script>
-      </head>
-  <body>
-    <h1 id="அகஷய-ஶரவதஸன">அக்ஷய் ஶ்ரீவத்ஸன்</h1>
-    <p><span id="ipa-name" class="ipa" lang="ta-phonipa">/ʌkʂʌj ɕɾiːʋʌdsʌn/</span></p>
-    <p>வேறு எழுத்து முறைகளில்: <span id="english-name"><span lang="en">Akshay Srivatsan</span> உம்</span> <span id="tamil-name" style="display:none"><span lang="ta">அக்ஷய் ஶ்ரீவத்ஸன்</span> உம்</span> <span id="grantha-name"><span lang="sa-Gran">𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍</span> உம்</span> <span id="devanagari-name"><span lang="sa">अक्षय् श्रीवत्सन्</span> உம்</span> <span id="brahmi-name"><span lang="sa-Brah">𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆</span> உம்</span> <span id="iso-name"><span lang="sa-Latn">akṣay srīvatsan</span> உம்</span></p>
-    <p>தமிழ் மொழியில் தவிர, இந்த இணையத்தளம் <a href="index.html">ஆங்கில மொழியிலும்</a>, <a href="latin.html">லத்தீன் மொழியிலும்</a>, <a href="sanskrit.html">சம்ஸ்கிருத மொழியிலும்</a> கிடைக்கும்.</p>
-    <h2 id="வணககம">வணக்கம்!</h2>
-    <p>வணக்கம்!</p>
-    <p>என்னுடைய இணையத்தளத்துடைய தமிழ் திருப்புதலுக்கு வரவேற்பு! எனக்கு தமிழ் புரியும், பேசவும் தெரியும், ஆனால் இன்னும் சரியாக எழுதக் கற்றுக் கொண்டு இருக்கிறேன்; கொஞ்சம் தவறுகளை பார்த்தால், எனக்குச் சொல்லுங்கள்.</p>
-    <div id="scripts" style="display:none">
-    <p><label for="script"><strong>எழுத்து முறையை தேர்வு பண்ணுங்கள்:</strong></label> <select lang="ta" name="script" id="script" 
-    onchange="set_document_script(this.value)"> <option value="tamil">தமிழ்</option> <option value="brahmi">பிராமி</option> <option value="devanagari">தேவநாகரி</option> <option value="iso">லத்தீன்</option> <option value="ipa">சர்வதேச</option> <option value="english">ஆங்கிலம்</option> </select></p>
-    </div>
-    <h2 id="எனனப-பறற">என்னைப் பற்றி</h2>
-    <p><img src="assets/img/portrait-small.jpg" alt="ஸான் ஃப்ரான்ஸிஸ்கோ முனாலில் எனுடைய புகைப்படம்" /></p>
-    <p>என்னுடைய பெயர் அக்ஷய். ஸ்டான்ஃபோர்டு யுனிவர்சிட்டியில் நான் கணினி அறிவியலைப் படிக்கிற மாணவன். இக்காலத்தில் நான் இயக்குத்தளங்களைப் பற்றி கற்றுக் கொண்டு இருக்கிறேன்; இதற்கு முன்னால் நான் கணினி வரைகலைப் பற்றி கற்றுக் கொண்டு இருந்தேன்.</p>
-    <p>பள்ளிக்கு வெளியில், புகைப்படங்களை எடுக்கவும், பியானோவை வாசிக்கவும், மொழிகளைக் கற்றுக்கவும் எனக்குப் பிடிக்கும். எனக்கு ஆங்கிலமும், தமிழும், லத்தீனும், கொஞ்சம் ஹிந்தியும், கொஞ்சம் சம்ஸ்கிருதமும் தெரியும். பிரஞ்சையும் இப்போழுது கற்றுக் கொண்டிருக்கிறேன்.</p>
-    <h2 id="எனனடய-படபபகள">என்னுடைய படிப்புகள்</h2>
-    <p>இப்பொழுது, நான் ஸ்டான்ஃபோர்டில் ஒரு பட்டதாரி மாணவனாக இருக்கிறேன் (௨௦௨௦–௨௦௨௨). இதற்கு முன், நான் ஸ்டான்ஃபோர்டிலே ஒரு இளங்கலை மாணவனாக இருந்தேன் (௨௦௧௭–௨௦௨௧). அதற்கு முன், நான் மென்லோ ஸ்கூலில் படித்துக் கொண்டு இருந்தேன் (௨௦௧௩–௨௦௧௭).</p>
-    <h2 id="எனனடய-பரஜகடகள">என்னுடைய புராஜக்ட்கள்</h2>
-    <p><a href="https://aks.io/tamil-wordle/">சொற்கள்</a>: தமிழில் ஒரு “வொர்டுல்” விளையாட்டு.</p>
-    <p><a href="https://carta.stanford.edu">கார்டா</a>: ஸ்டான்ஃபோர்டில் இருக்கிற மாணவர்களுக்காக வகுப்புத் தேர்வு பண்ண ஒரு இணையத்தளம்.</p>
-    <p><a href="https://taps.stanford.edu/stagecast">ஸ்டேஜ்காஸ்டு</a>: நடிகர்களுக்காகவும் இசைப்பாடகர்களுக்காகவும் கோவிட் இருக்கும் பொழுது இணையம் மூலம் நாடகங்களை நடக்க வைக்கிற நிரல்.</p>
-    <h2 id="எனனடய-வலகள">என்னுடைய வேலைகள்</h2>
-    <h3 id="ஸடனஃபரட-cs-240lx-ஆசரயர-உதவயள-இளவனறகலம-௨௦௨௨">ஸ்டான்ஃபோர்டு <span lang="en">CS 240LX</span>: ஆசிரியர் உதவியாள் (இளவேனிற்காலம் ௨௦௨௨)</h3>
-    <p>நான் “<span lang="en">CS 240LX</span>: அமைப்பு ஆய்வகம்” வகுப்பிற்கு உதவுகிறேன். இந்த வகுப்பு <span lang="en">CS 140E</span>யுக்குப் பிறகு வரகிறது. ௨௦௨௨க்கு முன்னால், இந்த வகுப்பு ஒரு முறை தான் நடந்தது.</p>
-    <h3 id="ஸடனஃபரட-cs-140e-ஆசரயர-உதவயள-களரகலம-௨௦௨௨">ஸ்டான்ஃபோர்டு <span lang="en">CS 140E</span>: ஆசிரியர் உதவியாள் (குளிர்காலம் ௨௦௨௨)</h3>
-    <p>நான் “<span lang="en">CS 140E</span>: இயக்குத்தளங்கள்” வகுப்புக்காக உதவி பண்ணிக் கொண்டு இருந்தேன். நான் அலுவலக நேரங்களை நடத்தினேன். புதிய கோப்பு முறைமைகள் ஆய்வக வகுப்பீடை எழுதினேன்.</p>
-    <p>இதை விட அதிகமாக கற்றுக்க வேண்டும் என்றால், வகுப்பின் <a href="https://github.com/dddrrreee/cs140e-22win">கிட்ஹுபு ரெபாஸிடோரியுக்கு</a> செல்லுங்கள்.</p>
-    <h3 id="ஆகவ-சடடலடட-ரபடகஸ-பறயள-கடககலம-௨௦௨௧">ஆகுவா சாட்டெலைட்டு: ரோபாடிக்ஸ் பொறியாள் (கோடைக்காலம் ௨௦௨௧)</h3>
-    <p>நான் ரோபாடை ஓட்டுகிற முதல் நிரல் எழதினேன். இந்த ரோபாடு, “தௌமஸ்”, கடலில் ஆய்வு பண்ணப் போகிறது.</p>
-    <h3 id="ஸடனஃபரட-cs-140e-ஆசரயர-உதவயள-இளவனறகலம-௨௦௨௧">ஸ்டான்ஃபோர்டு <span lang="en">CS 140E</span>: ஆசிரியர் உதவியாள் (இளவேனிற்காலம் ௨௦௨௧)</h3>
-    <p>நான் “<span lang="en">CS 140E</span>: இயக்குத்தளங்கள்” வகுப்புக்காக உதவி பண்ணிக் கொண்டு இருந்தேன்.</p>
-    <p>இதை விட அதிகமாக கற்றுக்க வேண்டும் என்றால், வகுப்பின் <a href="https://github.com/dddrrreee/cs140e-21spr">கிட்ஹுபு ரெபாஸிடோரியுக்கு</a> செல்லுங்கள்.</p>
-    <h3 id="இனஸடகரம-உறபதத-பறயள-கடககலம-௨௦௨௦">இன்ஸ்டாகிராம்: உற்பத்தி பொறியாள் (கோடைக்காலம் ௨௦௨௦)</h3>
-    <p>நான் இன்ஸ்டாகிராம் பொறி கற்றல் குழுவில் வேலையை பண்ணிக் கொண்டு இருந்தேன.</p>
-    <h3 id="ஃபஸபகக-உறபதத-பறயள-கடககலம-௨௦௧௯">ஃபேஸ்புக்கு: உற்பத்தி பொறியாள் (கோடைக்காலம் ௨௦௧௯)</h3>
-    <p>நான் ஊட்டலும் கதைகளும் குழுவில் வேலை பண்ணிக் கொண்டு இருந்தேன்.</p>
-    <h2 id="எனனடய-வளயடகள">என்னுடைய வெளியிடுகள்</h2>
-    <h3 id="ஆயவகள">ஆய்வுகள்</h3>
-    <ul>
-    <li><a href="http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf"><span lang="en">Making a Synchronous Motor</span></a> (<span lang="en">Menlo Roundtable</span>, இலையுதிர்காலம் ௨௦௧௬)</li>
-    <li><a href="http://ieeexplore.ieee.org/abstract/document/7425403/"><span lang="en">Performance Boost: Dynamically Improving a Home’s Wi-Fi Signal</span></a> (<span lang="en">IEEE Potentials</span>, மார்ச்–ஏப்ரல் ௨௦௧௬)</li>
-    <li><a href="http://www.cyberjournals.com/Papers/2015/01.pdf"><span lang="en">A Dual Sensor System for Determining the Unique Oxygen Production Signature of Plants</span></a> (<span lang="en">Cyber Journals - Mechatronics</span>, ௨௦௧௫)</li>
-    </ul>
-    <h3 id="கணடபடபபகள">கண்டுபிடிப்புகள்</h3>
-    <div lang="en">
-    <ul>
-    <li>Modular Media Player (US D769941 S1)</li>
-    <li>Multi-Person Straw for Sharing/Tasting Beverages (US 9186007 B2)</li>
-    <li>Apparatus and Method for Repairing a Surface Submerged in Liquid by Creating a Workable Space (US 8925168 B2)</li>
-    <li>System, Methodology, and Product to Sort, Organize, and Store Toy Building/Construction Sets (US 7987990 B2)</li>
-    </ul>
-    </div>
-    <h3 id="இணபபகள">இணைப்புகள்</h3>
-    <ul>
-    <li><a href="https://github.com/Akshay-Srivatsan">கிட்ஹுபில் கணினி நிரல்கள்</a></li>
-    <li><a href="https://www.linkedin.com/in/akshay-srivatsan/">லிங்கடின்</a></li>
-    <li><a href="https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA">யூட்யூபு</a></li>
-    <li><a href="mailto:srivatsan.akshay+website@gmail.com">மின்னஞ்சலை அனுப்புங்கள்</a></li>
-    </ul>
-    <script>
-    document.getElementById("scripts").style.display = "block";
-
-    function set_document_script(type) {
-        if (type == "tamil")
-            tamil();
-        else if (type == "brahmi")
-            brahmi();
-        else if (type == "devanagari")
-            devanagari();
-        else if (type == "iso")
-            iso();
-        else if (type == "ipa")
-            ipa();
-        else if (type == "english")
-            english();
-    }
-
-    if (window.location.search) set_document_script(window.location.search.slice(1));
-    </script>
-    <p lang="en">
-          &copy; 2022 Akshay Srivatsan
+    </head>
+    <body>
+        <h1 id="அகஷய-ஶரவதஸன">அக்ஷய் ஶ்ரீவத்ஸன்</h1>
+        <p>
+            <span id="ipa-name" class="ipa" lang="ta-phonipa"
+                >/ʌkʂʌj ɕɾiːʋʌdsʌn/</span
+            >
         </p>
-  </body>
+        <p>
+            வேறு எழுத்து முறைகளில்:
+            <span id="english-name"
+                ><span lang="en">Akshay Srivatsan</span> உம்</span
+            >
+            <span id="tamil-name" style="display: none"
+                ><span lang="ta">அக்ஷய் ஶ்ரீவத்ஸன்</span> உம்</span
+            >
+            <span id="grantha-name"
+                ><span lang="sa-Gran">𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍</span> உம்</span
+            >
+            <span id="devanagari-name"
+                ><span lang="sa">अक्षय् श्रीवत्सन्</span> உம்</span
+            >
+            <span id="brahmi-name"
+                ><span lang="sa-Brah">𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆</span> உம்</span
+            >
+            <span id="iso-name"
+                ><span lang="sa-Latn">akṣay srīvatsan</span> உம்</span
+            >
+        </p>
+        <p>
+            தமிழ் மொழியில் தவிர, இந்த இணையத்தளம்
+            <a href="index.html">ஆங்கில மொழியிலும்</a>,
+            <a href="latin.html">லத்தீன் மொழியிலும்</a>,
+            <a href="sanskrit.html">சம்ஸ்கிருத மொழியிலும்</a> கிடைக்கும்.
+        </p>
+        <h2 id="வணககம">வணக்கம்!</h2>
+        <p>வணக்கம்!</p>
+        <p>
+            என்னுடைய இணையத்தளத்துடைய தமிழ் திருப்புதலுக்கு வரவேற்பு! எனக்கு
+            தமிழ் புரியும், பேசவும் தெரியும், ஆனால் இன்னும் சரியாக எழுதக்
+            கற்றுக் கொண்டு இருக்கிறேன்; கொஞ்சம் தவறுகளை பார்த்தால், எனக்குச்
+            சொல்லுங்கள்.
+        </p>
+        <div id="scripts" style="display: none">
+            <p>
+                <label for="script"
+                    ><strong>எழுத்து முறையை தேர்வு பண்ணுங்கள்:</strong></label
+                >
+                <select
+                    lang="ta"
+                    name="script"
+                    id="script"
+                    onchange="set_document_script(this.value)"
+                >
+                    <option value="tamil">தமிழ்</option>
+                    <option value="brahmi">பிராமி</option>
+                    <option value="devanagari">தேவநாகரி</option>
+                    <option value="iso">லத்தீன்</option>
+                    <option value="ipa">சர்வதேச</option>
+                    <option value="english">ஆங்கிலம்</option>
+                </select>
+            </p>
+        </div>
+        <h2 id="எனனப-பறற">என்னைப் பற்றி</h2>
+        <p>
+            <img
+                src="assets/img/portrait-small.jpg"
+                alt="ஸான் ஃப்ரான்ஸிஸ்கோ முனாலில் எனுடைய புகைப்படம்"
+            />
+        </p>
+        <p>
+            என்னுடைய பெயர் அக்ஷய். ஜூனிற்கு முன், ஸ்டான்ஃபோர்டு
+            யுனிவர்சிட்டியில் நான் கணினி அறிவியலைப் படிக்கிற மாணவன்.
+            இக்காலத்தில் நான் இயக்குத்தளங்களைப் பற்றி கற்றுக் கொண்டு
+            இருக்கிறேன்; இதற்கு முன்னால் நான் கணினி வரைகலைப் பற்றி கற்றுக்
+            கொண்டு இருந்தேன்.
+        </p>
+        <p>
+            பள்ளிக்கு வெளியில், புகைப்படங்களை எடுக்கவும், பியானோவை வாசிக்கவும்,
+            மொழிகளைக் கற்றுக்கவும் எனக்குப் பிடிக்கும். எனக்கு ஆங்கிலமும்,
+            தமிழும், லத்தீனும், கொஞ்சம் ஹிந்தியும், கொஞ்சம் சம்ஸ்கிருதமும்
+            தெரியும். பிரஞ்சையும் இப்போழுது கற்றுக் கொண்டிருக்கிறேன்.
+        </p>
+        <h2 id="எனனடய-படபபகள">என்னுடைய படிப்புகள்</h2>
+        <p>
+            இப்பொழுது, நான் ஸ்டான்ஃபோர்டில் ஒரு முதுகலை பட்டத்தை முடித்தேன்
+            (௨௦௨௦–௨௦௨௨). இதற்கு முன், நான் ஸ்டான்ஃபோர்டிலே ஒரு இளங்கலை மாணவனாக
+            இருந்தேன் (௨௦௧௭–௨௦௨௧). அதற்கு முன், நான் மென்லோ ஸ்கூலில் படித்துக்
+            கொண்டு இருந்தேன் (௨௦௧௩–௨௦௧௭).
+        </p>
+        <h2 id="எனனடய-பரஜகடகள">என்னுடைய புராஜக்ட்கள்</h2>
+        <p>
+            <a href="https://aks.io/tamil-wordle/">சொற்கள்</a>: தமிழில் ஒரு
+            “வொர்டுல்” விளையாட்டு.
+        </p>
+        <p>
+            <a href="https://carta.stanford.edu">கார்டா</a>: ஸ்டான்ஃபோர்டில்
+            இருக்கிற மாணவர்களுக்காக வகுப்புத் தேர்வு பண்ண ஒரு இணையத்தளம்.
+        </p>
+        <p>
+            <a href="https://taps.stanford.edu/stagecast">ஸ்டேஜ்காஸ்டு</a>:
+            நடிகர்களுக்காகவும் இசைப்பாடகர்களுக்காகவும் கோவிட் இருக்கும் பொழுது
+            இணையம் மூலம் நாடகங்களை நடக்க வைக்கிற நிரல்.
+        </p>
+        <h2 id="எனனடய-வலகள">என்னுடைய வேலைகள்</h2>
+        <h3 id="ஸடனஃபரட-cs-240lx-ஆசரயர-உதவயள-இளவனறகலம-௨௦௨௨">
+            ஸ்டான்ஃபோர்டு <span lang="en">CS 240LX</span>: ஆசிரியர் உதவியாள்
+            (இளவேனிற்காலம் ௨௦௨௨)
+        </h3>
+        <p>
+            நான் “<span lang="en">CS 240LX</span>: அமைப்பு ஆய்வகம்” வகுப்பிற்கு
+            உதவினேன். இந்த வகுப்பு <span lang="en">CS 240LX</span>உக்குப் பிறகு
+            வரகிறது. ௨௦௨௨க்கு முன்னால், இந்த வகுப்பு ஒரு முறை தான் நடந்தது.
+        </p>
+        <h3 id="ஸடனஃபரட-cs-140e-ஆசரயர-உதவயள-களரகலம-௨௦௨௨">
+            ஸ்டான்ஃபோர்டு <span lang="en">CS 140E</span>: ஆசிரியர் உதவியாள்
+            (குளிர்காலம் ௨௦௨௨)
+        </h3>
+        <p>
+            நான் “<span lang="en">CS 140E</span>: இயக்குத்தளங்கள்” வகுப்புக்காக
+            உதவி பண்ணிக் கொண்டு இருந்தேன். நான் அலுவலக நேரங்களை நடத்தினேன்.
+            புதிய கோப்பு முறைமைகள் ஆய்வக வகுப்பீடை எழுதினேன்.
+        </p>
+        <p>
+            இதை விட அதிகமாக கற்றுக்க வேண்டும் என்றால், வகுப்பின்
+            <a href="https://github.com/dddrrreee/cs140e-22win"
+                >கிட்ஹுபு ரெபாஸிடோரியுக்கு</a
+            >
+            செல்லுங்கள்.
+        </p>
+        <h3 id="ஆகவ-சடடலடட-ரபடகஸ-பறயள-கடககலம-௨௦௨௧">
+            ஆகுவா சாட்டெலைட்டு: ரோபாடிக்ஸ் பொறியாள் (கோடைக்காலம் ௨௦௨௧)
+        </h3>
+        <p>
+            நான் ரோபாடை ஓட்டுகிற முதல் நிரல் எழதினேன். இந்த ரோபாடு, “தௌமஸ்”,
+            கடலில் ஆய்வு பண்ணப் போகிறது.
+        </p>
+        <h3 id="ஸடனஃபரட-cs-140e-ஆசரயர-உதவயள-இளவனறகலம-௨௦௨௧">
+            ஸ்டான்ஃபோர்டு <span lang="en">CS 140E</span>: ஆசிரியர் உதவியாள்
+            (இளவேனிற்காலம் ௨௦௨௧)
+        </h3>
+        <p>
+            நான் “<span lang="en">CS 140E</span>: இயக்குத்தளங்கள்” வகுப்புக்காக
+            உதவி பண்ணிக் கொண்டு இருந்தேன்.
+        </p>
+        <p>
+            இதை விட அதிகமாக கற்றுக்க வேண்டும் என்றால், வகுப்பின்
+            <a href="https://github.com/dddrrreee/cs140e-21spr"
+                >கிட்ஹுபு ரெபாஸிடோரியுக்கு</a
+            >
+            செல்லுங்கள்.
+        </p>
+        <h3 id="இனஸடகரம-உறபதத-பறயள-கடககலம-௨௦௨௦">
+            இன்ஸ்டாகிராம்: உற்பத்தி பொறியாள் (கோடைக்காலம் ௨௦௨௦)
+        </h3>
+        <p>
+            நான் இன்ஸ்டாகிராம் பொறி கற்றல் குழுவில் வேலையை பண்ணிக் கொண்டு
+            இருந்தேன.
+        </p>
+        <h3 id="ஃபஸபகக-உறபதத-பறயள-கடககலம-௨௦௧௯">
+            ஃபேஸ்புக்கு: உற்பத்தி பொறியாள் (கோடைக்காலம் ௨௦௧௯)
+        </h3>
+        <p>நான் ஊட்டலும் கதைகளும் குழுவில் வேலை பண்ணிக் கொண்டு இருந்தேன்.</p>
+        <h2 id="எனனடய-வளயடகள">என்னுடைய வெளியிடுகள்</h2>
+        <h3 id="ஆயவகள">ஆய்வுகள்</h3>
+        <ul>
+            <li>
+                <a
+                    href="http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf"
+                    ><span lang="en">Making a Synchronous Motor</span></a
+                >
+                (<span lang="en">Menlo Roundtable</span>, இலையுதிர்காலம் ௨௦௧௬)
+            </li>
+            <li>
+                <a href="http://ieeexplore.ieee.org/abstract/document/7425403/"
+                    ><span lang="en"
+                        >Performance Boost: Dynamically Improving a Home’s Wi-Fi
+                        Signal</span
+                    ></a
+                >
+                (<span lang="en">IEEE Potentials</span>, மார்ச்–ஏப்ரல் ௨௦௧௬)
+            </li>
+            <li>
+                <a href="http://www.cyberjournals.com/Papers/2015/01.pdf"
+                    ><span lang="en"
+                        >A Dual Sensor System for Determining the Unique Oxygen
+                        Production Signature of Plants</span
+                    ></a
+                >
+                (<span lang="en">Cyber Journals - Mechatronics</span>, ௨௦௧௫)
+            </li>
+        </ul>
+        <h3 id="கணடபடபபகள">கண்டுபிடிப்புகள்</h3>
+        <div lang="en">
+            <ul>
+                <li>Modular Media Player (US D769941 S1)</li>
+                <li>
+                    Multi-Person Straw for Sharing/Tasting Beverages (US 9186007
+                    B2)
+                </li>
+                <li>
+                    Apparatus and Method for Repairing a Surface Submerged in
+                    Liquid by Creating a Workable Space (US 8925168 B2)
+                </li>
+                <li>
+                    System, Methodology, and Product to Sort, Organize, and
+                    Store Toy Building/Construction Sets (US 7987990 B2)
+                </li>
+            </ul>
+        </div>
+        <h3 id="இணபபகள">இணைப்புகள்</h3>
+        <ul>
+            <li>
+                <a href="https://github.com/Akshay-Srivatsan"
+                    >கிட்ஹுபில் கணினி நிரல்கள்</a
+                >
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/akshay-srivatsan/"
+                    >லிங்கடின்</a
+                >
+            </li>
+            <li>
+                <a
+                    href="https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA"
+                    >யூட்யூபு</a
+                >
+            </li>
+            <li>
+                <a href="mailto:srivatsan.akshay+website@gmail.com"
+                    >மின்னஞ்சலை அனுப்புங்கள்</a
+                >
+            </li>
+        </ul>
+        <script>
+            document.getElementById('scripts').style.display = 'block';
+
+            function set_document_script(type) {
+                if (type == 'tamil') tamil();
+                else if (type == 'brahmi') brahmi();
+                else if (type == 'devanagari') devanagari();
+                else if (type == 'iso') iso();
+                else if (type == 'ipa') ipa();
+                else if (type == 'english') english();
+            }
+
+            if (window.location.search)
+                set_document_script(window.location.search.slice(1));
+        </script>
+        <p lang="en">&copy; 2022 Akshay Srivatsan</p>
+    </body>
 </html>

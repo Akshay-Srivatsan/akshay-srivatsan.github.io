@@ -20,8 +20,8 @@ This page is also available in [Latin][latin], [Tamil][tamil], and
 ![A portrait of me with the San Francisco skyline in the 
 background.][portrait]
 
-I'm a graduate student at Stanford University doing my masters in Computer
-Science. I focus mostly on computer systems nowadays, and I previously did my
+I'm a recent graduate of the Stanford University Department of Computer Science.
+I just finished my masters focusing on computer systems, and I previously did my
 undergrad focusing on computer graphics. My experience ranges from raytracers to
 websites, but I mostly like working at the OS level and working with hardware.
 I've worked at Stanford, Facebook/Instagram, and Aqua Satellite.
@@ -31,7 +31,7 @@ playing the piano, and learning languages.
 
 ## Education
 
-I'm currently pursuing a masters degree at Stanford University, focusing on
+I recently finished a masters degree at Stanford University, focusing on
 computer systems within the Department of Computer Science. I also did my
 undergrad at Stanford (2017--2021), focusing on computer graphics. Before that,
 I went to Menlo School for high school.

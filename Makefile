@@ -67,4 +67,5 @@ refresh:
 .PHONY: %.refresh
 %.refresh:
 	xdotool windowactivate $*
+	sleep 0.1
 	xdotool key F5

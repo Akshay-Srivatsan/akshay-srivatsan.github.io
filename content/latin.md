@@ -49,11 +49,12 @@ trānslātor Google bene intellegēre Latinam nōn potest.
 
 ![photographema meī ante urbem Sanctum Franciscum][portrait]
 
-ego discipulus in Ūniversitātē Stanfordiēnsī sum. scientiam computātrālis
-studiō. nunc organizatiōnem computātrōrum et robotōs studiō, et prius graphicam
-et simulatiōnem computātrālem studēbam. in lūdō secundō, situm interrētialem prō
-_Menlo JCL_ fēcī, et gregem ad Latinam loquendum īnstituī. annō quartō ludī
-secundī, prō _California JCL_ situm interrētiālem gubernābam.
+usque ad Jūnium MMXXII, ego scientiam computātrālis studiens discipulus in
+Ūniversitātē Stanfordiēnsī eram. organizatiōnem computātrōrum et robotōs studuī,
+et prius graphicam et simulatiōnem computātrālem studēbam. in lūdō secundō,
+situm interrētialem prō _Menlo JCL_ fēcī, et gregem ad Latinam loquendum
+īnstituī. annō quartō ludī secundī, prō _California JCL_ situm interrētiālem
+gubernābam.
 
 extrā lūdum et opus, mihi photographia, clāvile cantāre, et linguās discere
 placet. linguās Anglicam, Latinam, Tamulicam, Hindicam, et Sanscritam aliquid
@@ -62,8 +63,8 @@ sciō. linguam Francogallicam nunc discō.
 ## ērudītiō mea
 
 prō Diplōmate Magistrī in Scientiā Computātrālī in Ūniversitātē Stanfordiēnsī
-studiō. Baccalaureus quōque in Stanford perfēcī (ā MMXVII ad MMXXI). prius, in
-Lūdō Menloniēnsī studēbam.
+studuī (ā MMXX ad MMXXII). Baccalaureus quōque in Stanford perfēcī (ā MMXVII ad
+MMXXI). prius, in Lūdō Menloniēnsī studēbam.
 
 ## coepta mea
 
@@ -79,7 +80,7 @@ epidemia est. (MMXX-MMXXI)
 
 ### administer cursūs: Stanford CS 240LX (vēre MMXXII)
 
-cursū _CS 240LX: labōrātōrium systēmatum internōrum, accelerātum_ adjuvō.
+cursū _CS 240LX: labōrātōrium systēmatum internōrum, accelerātum_ adjuvī.
 praeter annum MMXXII, haec classis in annō MMXX sōlō oblātā est.
 
 ### administer cursūs: Stanford CS 140E (hieme MMXXII)
