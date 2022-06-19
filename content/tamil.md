@@ -1,6 +1,6 @@
 ---
 title: அக்ஷயுடைய இணையத்தளம்
-description: பட்டதாரி மாணவன், ஸ்டான்ஃபோர்ட் ௨௦௨௨
+description: கணினி விஞ்ஞானி, ஸ்டான்ஃபோர்ட் ௨௦௨௨
 image: assets/img/portrait-small.jpg
 image-alt: ஸான் ஃப்ரான்ஸிஸ்கோ முனாலில் எனுடைய புகைப்படம்
 lang: ta

@@ -1,7 +1,6 @@
 ---
 title: akṣayasya jālasthāna
-description:
-    viśleṣako vijñānasya saṅgaṇakayantrāṇāṁ stenfārd viśvavidyalaye 2022
+description: vaijñānikaḥ saṅgaṇakāṇāṁ stenfārd viśvavidyalaye 2022
 image: assets/img/portrait-small.jpg
 image-alt: citraṁ mama sān frānsisko nagare
 lang: sa-Latn

@@ -1,7 +1,7 @@
 ---
 title: Akshay Srivatsan (situs interrētiālis)
 title-meta: situs interrētiālis dē Akshay Srivatsan
-description: programmator, Stanford MS CS MMXXII
+description: physicus ordinatralis, Stanford MS CS MMXXII
 image: assets/img/portrait-small.jpg
 image-alt: photographema meī ante urbem Sanctum Franciscum
 lang: la
