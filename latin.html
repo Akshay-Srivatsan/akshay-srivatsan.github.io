@@ -190,7 +190,7 @@
             }
         </style>
         <script type="text/javascript" src="transliterate/latin.js"></script>
-        <script type="text/javascript" src="assets/js/latin.js"></script>
+        <script type="text/javascript" src="assets/js/common.js"></script>
         <script type="text/javascript" src="assets/js/transcribe.js"></script>
         <script type="text/javascript" src="assets/js/date.js"></script>
     </head>
@@ -226,14 +226,8 @@
                 <label for="change_font"
                     ><strong>speciēm litterārum ēligē:</strong></label
                 >
-                <select
-                    name="change_font"
-                    id="change_font"
-                    onchange="changeFont(this.value)"
-                >
-                    <option value="capitals">capitālēs quadrātae</option>
-                    <option value="uncials">capitālēs unciālēs</option>
-                    <option value="italics">capitālēs italica</option>
+                <select name="change_font" id="change_font">
+                    <!-- filled from JS -->
                 </select>
             </p>
         </div>
@@ -403,9 +397,25 @@
             </li>
         </ul>
         <script>
-            font.style.display = 'block';
-
-            changeFont(window.location.search);
+            setup(
+                document.getElementById('font'),
+                document.getElementById('change_font'),
+                [
+                    ['capitālēs quadrātae', '', 'la', null],
+                    [
+                        'capitālēs unciālēs',
+                        'uncials',
+                        'la-Latg',
+                        mapping.to_ascii,
+                    ],
+                    [
+                        'capitālēs italica',
+                        'italics',
+                        'la-Ital',
+                        mapping.to_italics,
+                    ],
+                ]
+            );
         </script>
         <p lang="en">&copy; 2022 Akshay Srivatsan</p>
     </body>

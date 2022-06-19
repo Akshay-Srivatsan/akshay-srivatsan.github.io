@@ -186,7 +186,7 @@
             }
         </style>
         <script type="text/javascript" src="transliterate/tamil.js"></script>
-        <script type="text/javascript" src="assets/js/tamil.js"></script>
+        <script type="text/javascript" src="assets/js/common.js"></script>
         <script type="text/javascript" src="assets/js/transcribe.js"></script>
     </head>
     <body>
@@ -236,18 +236,8 @@
                 <label for="script"
                     ><strong>எழுத்து முறையை தேர்வு பண்ணுங்கள்:</strong></label
                 >
-                <select
-                    lang="ta"
-                    name="script"
-                    id="script"
-                    onchange="set_document_script(this.value)"
-                >
-                    <option value="tamil">தமிழ்</option>
-                    <option value="brahmi">பிராமி</option>
-                    <option value="devanagari">தேவநாகரி</option>
-                    <option value="iso">லத்தீன்</option>
-                    <option value="ipa">சர்வதேச</option>
-                    <option value="english">ஆங்கிலம்</option>
+                <select lang="ta" name="script" id="script">
+                    <!-- Filled from JS -->
                 </select>
             </p>
         </div>
@@ -260,8 +250,8 @@
         </p>
         <p>
             என்னுடைய பெயர் அக்ஷய். ஜூனிற்கு முன், ஸ்டான்ஃபோர்டு
-            யுனிவர்சிட்டியில் நான் கணினி அறிவியலைப் படிக்கிற மாணவன்.
-            இக்காலத்தில் நான் இயக்குத்தளங்களைப் பற்றி கற்றுக் கொண்டு
+            யுனிவர்சிட்டியில் நான் கணினி அறிவியலைப் படித்துக் கொண்டிருந்து
+            மாணவன். இக்காலத்தில் நான் இயக்குத்தளங்களைப் பற்றி கற்றுக் கொண்டு
             இருக்கிறேன்; இதற்கு முன்னால் நான் கணினி வரைகலைப் பற்றி கற்றுக்
             கொண்டு இருந்தேன்.
         </p>
@@ -273,7 +263,7 @@
         </p>
         <h2 id="எனனடய-படபபகள">என்னுடைய படிப்புகள்</h2>
         <p>
-            இப்பொழுது, நான் ஸ்டான்ஃபோர்டில் ஒரு முதுகலை பட்டத்தை முடித்தேன்
+            இப்பொழுது, நான் ஸ்டான்ஃபோர்டில் முதுகலை பட்டத்தை முடித்தேன்
             (௨௦௨௦–௨௦௨௨). இதற்கு முன், நான் ஸ்டான்ஃபோர்டிலே ஒரு இளங்கலை மாணவனாக
             இருந்தேன் (௨௦௧௭–௨௦௨௧). அதற்கு முன், நான் மென்லோ ஸ்கூலில் படித்துக்
             கொண்டு இருந்தேன் (௨௦௧௩–௨௦௧௭).
@@ -423,19 +413,86 @@
             </li>
         </ul>
         <script>
-            document.getElementById('scripts').style.display = 'block';
+            let replacement_words = {
+                akshay: 'Akshay',
+                sreevadhsan: 'Srivatsan',
+                ɕɾiːʋadsan: 'ɕɾiːʋatsan',
+                श्रीवत्सऩ्: 'श्रीवत्सन्',
+                kanini: 'ganini',
+                kaɳini: 'gaɳini',
+                robaadigs: 'robotics',
+                robaadai: 'robotai',
+                robaadu: 'robot',
+                sdaanfordu: 'Stanford',
+                sdaanford: 'Stanford',
+                menlo: 'Menlo',
+                sgool: 'School',
+                insdaagiraam: 'Instagram',
+                fesbukku: 'Facebook',
+                yunivarsittiyil: 'Universityil',
+                kaardaa: 'Carta',
+                sdejgaasdu: 'Stagecast',
+                aaguvaa: 'Aqua',
+                saattelaittu: 'Satellite',
+                thaumas: 'Thaumas',
+                kidhubu: 'GitHub',
+                kidhub: 'GitHub',
+                rebaasidoriy: 'repository',
+                lingadin: 'LinkedIn',
+                yoodyoobu: 'YouTube',
+                aangila: 'Aangila',
+                lattheen: 'Latin',
+                samsgirudha: 'Samskirutha',
+                thamizh: 'Tamil',
+                hindhi: 'Hindi',
+                piranj: 'French',
+                kandubidi: 'kandupidi',
+                maars: 'March',
+                ebral: 'April',
+                joon: 'June',
+            };
 
-            function set_document_script(type) {
-                if (type == 'tamil') tamil();
-                else if (type == 'brahmi') brahmi();
-                else if (type == 'devanagari') devanagari();
-                else if (type == 'iso') iso();
-                else if (type == 'ipa') ipa();
-                else if (type == 'english') english();
+            function transcribe_string(s, map) {
+                s = ' ' + s;
+                let startingCharacters = ['(', '—', '-', '"', '“'];
+                for (let i = 0; i < startingCharacters.length; i++) {
+                    s = s.replaceAll(
+                        startingCharacters[i],
+                        startingCharacters[i] + ' '
+                    );
+                }
+                let result = real_transcribe_string(s, map);
+                for (let i = startingCharacters.length - 1; i >= 0; i--) {
+                    result = result.replaceAll(
+                        startingCharacters[i] + ' ',
+                        startingCharacters[i]
+                    );
+                }
+                result = result.substring(1);
+                for (let key in replacement_words) {
+                    result = result.replaceAll(key, replacement_words[key]);
+                }
+
+                return result;
             }
 
-            if (window.location.search)
-                set_document_script(window.location.search.slice(1));
+            setup(
+                document.getElementById('scripts'),
+                document.getElementById('script'),
+                [
+                    ['தமிழ்', 'tamil', 'ta', null],
+                    ['பிராமி', 'brahmi', 'ta-Brah', mapping.to_brahmi],
+                    [
+                        'தேவநாகரி',
+                        'devanagari',
+                        'ta-Deva',
+                        mapping.to_devanagari,
+                    ],
+                    ['லத்தீன்', 'iso', 'ta-Latn', mapping.to_iso],
+                    ['சர்வதேச', 'ipa', 'ta-phonipa', mapping.to_ipa],
+                    ['ஆங்கிலம்', 'english', 'ta-Latn', mapping.to_english],
+                ]
+            );
         </script>
         <p lang="en">&copy; 2022 Akshay Srivatsan</p>
     </body>

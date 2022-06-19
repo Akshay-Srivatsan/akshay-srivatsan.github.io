@@ -1,208 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Akshay Srivatsan</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, 
-                user-scalable=yes" />
-    <meta charset="utf-8" />
+    <head>
+        <title>Akshay Srivatsan</title>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, 
+                user-scalable=yes"
+        />
+        <meta charset="utf-8" />
         <link rel="icon" href="assets/img/favicon.png" />
-            <meta property="og:url" content="https://aks.io/index.html" />
-                <meta property="og:description" content="Systems Developer, Stanford MS CS ’22" />
-            <meta property="og:image" content="assets/img/portrait-small.jpg" />
-            <meta property="og:image:alt" content="Portrait of Akshay Srivatsan with San Francisco in the background." />
-    
+        <meta property="og:url" content="https://aks.io/index.html" />
+        <meta
+            property="og:description"
+            content="Systems Developer, Stanford MS CS ’22"
+        />
+        <meta property="og:image" content="assets/img/portrait-small.jpg" />
+        <meta
+            property="og:image:alt"
+            content="Portrait of Akshay Srivatsan with San Francisco in the background."
+        />
+
         <meta name="author" content="Akshay Srivatsan" />
-                    <meta name="description" content="Systems Developer, Stanford MS CS ’22" />
+        <meta
+            name="description"
+            content="Systems Developer, Stanford MS CS ’22"
+        />
         <meta name="generator" content="pandoc" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat&family=Uncial+Antiqua&display=swap" rel="stylesheet">     <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap');
-/* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-@font-face {
-  font-family: 'Noto Sans Tamil';
-  src: url('assets/fonts/NotoSansTamil-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Noto Sans Devanagari';
-  src: url('assets/fonts/NotoSansDevanagari-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Noto Sans Grantha';
-  src: url('assets/fonts/NotoSansGrantha-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Noto Sans Brahmi';
-  src: url('assets/fonts/NotoSansBrahmi-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Noto Sans Old Italic';
-  src: url('assets/fonts/NotoSansOldItalic-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Adinatha';
-  src: url('assets/fonts/Adinatha-Tamil-Brahmi.otf') format('opentype');
-}
-@font-face {
-  font-family: 'Agastya';
-  src: url('assets/fonts/agastya_sans.otf') format('opentype');
-}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat&family=Uncial+Antiqua&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap');
+            /* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap'); */
+            @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+            @font-face {
+                font-family: 'Noto Sans Tamil';
+                src: url('assets/fonts/NotoSansTamil-Regular.ttf')
+                    format('truetype');
+            }
+            @font-face {
+                font-family: 'Noto Sans Devanagari';
+                src: url('assets/fonts/NotoSansDevanagari-Regular.ttf')
+                    format('truetype');
+            }
+            @font-face {
+                font-family: 'Noto Sans Grantha';
+                src: url('assets/fonts/NotoSansGrantha-Regular.ttf')
+                    format('truetype');
+            }
+            @font-face {
+                font-family: 'Noto Sans Brahmi';
+                src: url('assets/fonts/NotoSansBrahmi-Regular.ttf')
+                    format('truetype');
+            }
+            @font-face {
+                font-family: 'Noto Sans Old Italic';
+                src: url('assets/fonts/NotoSansOldItalic-Regular.ttf')
+                    format('truetype');
+            }
+            @font-face {
+                font-family: 'Adinatha';
+                src: url('assets/fonts/Adinatha-Tamil-Brahmi.otf')
+                    format('opentype');
+            }
+            @font-face {
+                font-family: 'Agastya';
+                src: url('assets/fonts/agastya_sans.otf') format('opentype');
+            }
 
-:lang(en) {
-  font-family: 'Montserrat', sans-serif;
-}
+            :lang(en) {
+                font-family: 'Montserrat', sans-serif;
+            }
 
-:lang(la), :lang(la) * {
-  font-family: 'Libre Baskerville', sans-serif;
-}
+            :lang(la),
+            :lang(la) * {
+                font-family: 'Libre Baskerville', sans-serif;
+            }
 
-:lang(la-Latg), :lang(la-Latg) * {
-  font-family: 'Uncial Antiqua', sans-serif;
-}
+            :lang(la-Latg),
+            :lang(la-Latg) * {
+                font-family: 'Uncial Antiqua', sans-serif;
+            }
 
-:lang(la-Ital) {
-  font-family: 'Noto Sans Old Italic', 'Noto Sans', sans-serif;
-}
+            :lang(la-Ital) {
+                font-family: 'Noto Sans Old Italic', 'Noto Sans', sans-serif;
+            }
 
-:lang(ta), :lang(sa-Taml) {
-  font-family: 'Noto Sans Tamil', 'Noto Sans', sans-serif;
-}
+            :lang(ta),
+            :lang(sa-Taml) {
+                font-family: 'Noto Sans Tamil', 'Noto Sans', sans-serif;
+            }
 
-:lang(sa), :lang(hi), :lang(ta-Deva) {
-  font-family: 'Noto Sans Devanagari', 'Noto Sans', sans-serif;
-}
+            :lang(sa),
+            :lang(hi),
+            :lang(ta-Deva) {
+                font-family: 'Noto Sans Devanagari', 'Noto Sans', sans-serif;
+            }
 
-:lang(sa-Gran) {
-  font-family: 'Noto Sans Grantha', 'Noto Sans', sans-serif;
-}
+            :lang(sa-Gran) {
+                font-family: 'Noto Sans Grantha', 'Noto Sans', sans-serif;
+            }
 
-:lang(sa-Latn), :lang(ta-Latn) {
-  font-family: 'Noto Sans', 'Noto Sans', sans-serif;
-}
+            :lang(sa-Latn),
+            :lang(ta-Latn) {
+                font-family: 'Noto Sans', 'Noto Sans', sans-serif;
+            }
 
-:lang(sa-Brah), :lang(ta-Brah) {
-  font-family: 'Noto Sans Brahmi', 'Noto Sans', sans-serif;
-}
+            :lang(sa-Brah),
+            :lang(ta-Brah) {
+                font-family: 'Noto Sans Brahmi', 'Noto Sans', sans-serif;
+            }
 
-:lang(ta-Brah) {
-  font-family: 'Adinatha', 'Noto Sans Brahmi', 'Noto Sans', sans-serif;
-}
+            :lang(ta-Brah) {
+                font-family: 'Adinatha', 'Noto Sans Brahmi', 'Noto Sans',
+                    sans-serif;
+            }
 
-:lang(sa-Xaaa) {
-  font-family: 'Agastya', 'Noto Sans Tamil', 'Noto Sans', sans-serif;
-}
+            :lang(sa-Xaaa) {
+                font-family: 'Agastya', 'Noto Sans Tamil', 'Noto Sans',
+                    sans-serif;
+            }
 
-:lang(en-phonipa), :lang(la-phonipa), :lang(sa-phonipa), :lang(ta-phonipa) {
-  font-family: "Voces", sans-serif;
-  font-weight: 400;
-}
+            :lang(en-phonipa),
+            :lang(la-phonipa),
+            :lang(sa-phonipa),
+            :lang(ta-phonipa) {
+                font-family: 'Voces', sans-serif;
+                font-weight: 400;
+            }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-      margin: 0 auto;
-  max-width: 720px;
-}
+            body {
+                font-family: 'Montserrat', sans-serif;
+                margin: 0 auto;
+                max-width: 720px;
+            }
 
-img {
-  float: right;
-  max-width: 240px;
-  border-radius: 100%;
-  margin: 10px;
-}
+            img {
+                float: right;
+                max-width: 240px;
+                border-radius: 100%;
+                margin: 10px;
+            }
 
-.ipa {
-  font-size: 1.25em;
-}
+            .ipa {
+                font-size: 1.25em;
+            }
 
-@media only screen and (max-width: 720px) {
-  h1, h2 {
-    text-align: center;
-  }
-  body {
-    max-width: inherit;
-    margin: 25px;
-  }
-  img {
-    max-width: 196px;
-    float: none;
-    margin: 0 auto;
-    display: block;
-  }
-}
+            @media only screen and (max-width: 720px) {
+                h1,
+                h2 {
+                    text-align: center;
+                }
+                body {
+                    max-width: inherit;
+                    margin: 25px;
+                }
+                img {
+                    max-width: 196px;
+                    float: none;
+                    margin: 0 auto;
+                    display: block;
+                }
+            }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color: #FAFAFA;
-    background: #212121;
-  }
+            @media (prefers-color-scheme: dark) {
+                html {
+                    color: #fafafa;
+                    background: #212121;
+                }
 
-  a {
-    color: #03A9F4;
-  }
+                a {
+                    color: #03a9f4;
+                }
 
-  a:visited {
-    color: #B39DDB;
-  }
-}    </style>
-          </head>
-  <body>
-    <h1 id="akshay-srivatsan">Akshay Srivatsan</h1>
-    <p><span class="ipa" lang="en-phonipa">/əˈkʃeɪ ʃɹiˈvʌθ.sən/</span></p>
-    <p>Also: <span lang="ta">அக்ஷய் ஶ்ரீவத்ஸன்</span>, <span lang="hi">अक्षय श्रीवत्सन</span>, <span lang="sa-Gran">𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍</span>, and <span lang="sa-Brah">𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆</span></p>
-    <p>This page is also available in <a href="latin.html">Latin</a>, <a href="tamil.html">Tamil</a>, and <a href="sanskrit.html">Sanskrit</a>.</p>
-    <h2 id="about">About</h2>
-    <p><img src="assets/img/portrait-small.jpg" alt="A portrait of me with the San Francisco skyline in the background." /></p>
-    <p>I’m a recent graduate of the Stanford University Department of Computer Science. I just finished my masters focusing on computer systems, and I previously did my undergrad focusing on computer graphics. My experience ranges from raytracers to websites, but I mostly like working at the OS level and working with hardware. I’ve worked at Stanford, Facebook/Instagram, and Aqua Satellite.</p>
-    <p>Outside of school/work, I’m also interested in analog and digital photography, playing the piano, and learning languages.</p>
-    <h2 id="education">Education</h2>
-    <p>I recently finished a masters degree at Stanford University, focusing on computer systems within the Department of Computer Science. I also did my undergrad at Stanford (2017–2021), focusing on computer graphics. Before that, I went to Menlo School for high school.</p>
-    <h2 id="projects">Projects</h2>
-    <p><a href="https://aks.io/tamil-wordle/"><span lang="ta">சொற்கள்</span></a>: a Tamil word game, à la Wordle.</p>
-    <p><a href="https://carta.stanford.edu">Carta</a>: a course-planning website for Stanford students.</p>
-    <p><a href="https://taps.stanford.edu/stagecast">Stagecast</a>: software to allow musicians and actors to rehearse and perform shows online during the COVID-19 pandemic.</p>
-    <h2 id="experience">Experience</h2>
-    <h3 id="course-assistant-stanford-cs-240lx-spring-2022">Course Assistant: Stanford CS 240LX (Spring 2022)</h3>
-    <p>I’m a course assistant for <em>CS 240LX: Advanced Systems Laboratory, Accelerated</em>. This course is a continuation of <em>CS 140E</em>, and the course is being offered for the second time (the first was Spring 2020, when I took it).</p>
-    <h3 id="course-assistant-stanford-cs-140e-winter-2022">Course Assistant: Stanford CS 140E (Winter 2022)</h3>
-    <p>I was a course assistant for <em>CS 140E: Operating Systems Design and Implementation</em>. I helped students debug during biweekly lab sessions, ran office hours, redesigned the filesystems lab, and helped with final projects.</p>
-    <p>For more info, go to the <a href="https://github.com/dddrrreee/cs140e-22win">GitHub</a> repo.</p>
-    <h3 id="robotics-intern-aqua-satellite-summer-2021">Robotics Intern: Aqua Satellite (Summer 2021)</h3>
-    <p>At Aqua Satellite, I set up the development infrastructure and wrote the initial control and simulation software for Thaumas, an automated underwater vehicle.</p>
-    <h3 id="course-assistant-stanford-cs-140e-spring-2021">Course Assistant: Stanford CS 140E (Spring 2021)</h3>
-    <p>I was the sole course assistant for <em>CS 140E: Operating Systems Design and Implementation</em>. As part of my responsibilities, I reviewed lesson plans, refined assignment specifications, held office hours, assisted students in biweekly lab sessions, and evaluated student work.</p>
-    <p>For more info, go to the <a href="https://github.com/dddrrreee/cs140e-21spr">GitHub</a> repo.</p>
-    <h3 id="production-engineering-intern-instagram-summer-2020">Production Engineering Intern: Instagram (Summer 2020)</h3>
-    <p>At Instagram, I interned on the Instagram Machine Learning Team (IGML) and developed software used by teams across Instagram and Facebook.</p>
-    <h3 id="production-engineering-intern-facebook-summer-2019">Production Engineering Intern: Facebook (Summer 2019)</h3>
-    <p>At Facebook, I interned on the Feed and Stories Team (FAST) and developed software used by the production engineering and software engineering teams.</p>
-    <h2 id="publications">Publications</h2>
-    <h3 id="research">Research</h3>
-    <ul>
-    <li><a href="http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf">Making a Synchronous Motor</a> (Menlo Roundtable, Fall 2016)</li>
-    <li><a href="http://ieeexplore.ieee.org/abstract/document/7425403/">Performance Boost: Dynamically Improving a Home’s Wi-Fi Signal</a> (IEEE Potentials, March–April 2016)</li>
-    <li><a href="http://www.cyberjournals.com/Papers/2015/01.pdf">A Dual Sensor System for Determining the Unique Oxygen Production Signature of Plants</a> (Cyber Journals - Mechatronics, 2015)</li>
-    </ul>
-    <h3 id="inventions">Inventions</h3>
-    <ul>
-    <li>Modular Media Player (US D769941 S1)</li>
-    <li>Multi-Person Straw for Sharing/Tasting Beverages (US 9186007 B2)</li>
-    <li>Apparatus and Method for Repairing a Surface Submerged in Liquid by Creating a Workable Space (US 8925168 B2)</li>
-    <li>System, Methodology, and Product to Sort, Organize, and Store Toy Building/Construction Sets (US 7987990 B2)</li>
-    </ul>
-    <h3 id="links">Links</h3>
-    <ul>
-    <li><a href="https://github.com/Akshay-Srivatsan">GitHub</a></li>
-    <li><a href="https://www.linkedin.com/in/akshay-srivatsan/">LinkedIn</a></li>
-    <li><a href="https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA">YouTube</a></li>
-    <li><a href="mailto:srivatsan.akshay+website@gmail.com">Email</a></li>
-    </ul>
-    <p lang="en">
-          &copy; 2022 Akshay Srivatsan
+                a:visited {
+                    color: #b39ddb;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="akshay-srivatsan">Akshay Srivatsan</h1>
+        <p><span class="ipa" lang="en-phonipa">/əˈkʃeɪ ʃɹiˈvʌθ.sən/</span></p>
+        <p>
+            Also: <span lang="ta">அக்ஷய் ஶ்ரீவத்ஸன்</span>,
+            <span lang="hi">अक्षय श्रीवत्सन</span>,
+            <span lang="sa-Gran">𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍</span>, and
+            <span lang="sa-Brah">𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆</span>
         </p>
-  </body>
+        <p>
+            This page is also available in <a href="latin.html">Latin</a>,
+            <a href="tamil.html">Tamil</a>, and
+            <a href="sanskrit.html">Sanskrit</a>.
+        </p>
+        <h2 id="about">About</h2>
+        <p>
+            <img
+                src="assets/img/portrait-small.jpg"
+                alt="A portrait of me with the San Francisco skyline in the background."
+            />
+        </p>
+        <p>
+            I’m a recent graduate of the Stanford University Department of
+            Computer Science. I just finished my masters focusing on computer
+            systems, and I previously did my undergrad focusing on computer
+            graphics. My experience ranges from raytracers to websites, but I
+            mostly like working at the OS level and working with hardware. I’ve
+            worked at Stanford, Facebook/Instagram, and Aqua Satellite.
+        </p>
+        <p>
+            Outside of school/work, I’m also interested in analog and digital
+            photography, playing the piano, and learning languages.
+        </p>
+        <h2 id="education">Education</h2>
+        <p>
+            I recently finished a masters degree at Stanford University,
+            focusing on computer systems within the Department of Computer
+            Science. I also did my undergrad at Stanford (2017–2021), focusing
+            on computer graphics. Before that, I went to Menlo School for high
+            school.
+        </p>
+        <h2 id="projects">Projects</h2>
+        <p>
+            <a href="https://aks.io/tamil-wordle/"
+                ><span lang="ta">சொற்கள்</span></a
+            >: a Tamil word game, à la Wordle.
+        </p>
+        <p>
+            <a href="https://carta.stanford.edu">Carta</a>: a course-planning
+            website for Stanford students.
+        </p>
+        <p>
+            <a href="https://taps.stanford.edu/stagecast">Stagecast</a>:
+            software to allow musicians and actors to rehearse and perform shows
+            online during the COVID-19 pandemic.
+        </p>
+        <h2 id="experience">Experience</h2>
+        <h3 id="course-assistant-stanford-cs-240lx-spring-2022">
+            Course Assistant: Stanford CS 240LX (Spring 2022)
+        </h3>
+        <p>
+            I’m a course assistant for
+            <em>CS 240LX: Advanced Systems Laboratory, Accelerated</em>. This
+            course is a continuation of <em>CS 140E</em>, and the course is
+            being offered for the second time (the first was Spring 2020, when I
+            took it).
+        </p>
+        <h3 id="course-assistant-stanford-cs-140e-winter-2022">
+            Course Assistant: Stanford CS 140E (Winter 2022)
+        </h3>
+        <p>
+            I was a course assistant for
+            <em>CS 140E: Operating Systems Design and Implementation</em>. I
+            helped students debug during biweekly lab sessions, ran office
+            hours, redesigned the filesystems lab, and helped with final
+            projects.
+        </p>
+        <p>
+            For more info, go to the
+            <a href="https://github.com/dddrrreee/cs140e-22win">GitHub</a> repo.
+        </p>
+        <h3 id="robotics-intern-aqua-satellite-summer-2021">
+            Robotics Intern: Aqua Satellite (Summer 2021)
+        </h3>
+        <p>
+            At Aqua Satellite, I set up the development infrastructure and wrote
+            the initial control and simulation software for Thaumas, an
+            automated underwater vehicle.
+        </p>
+        <h3 id="course-assistant-stanford-cs-140e-spring-2021">
+            Course Assistant: Stanford CS 140E (Spring 2021)
+        </h3>
+        <p>
+            I was the sole course assistant for
+            <em>CS 140E: Operating Systems Design and Implementation</em>. As
+            part of my responsibilities, I reviewed lesson plans, refined
+            assignment specifications, held office hours, assisted students in
+            biweekly lab sessions, and evaluated student work.
+        </p>
+        <p>
+            For more info, go to the
+            <a href="https://github.com/dddrrreee/cs140e-21spr">GitHub</a> repo.
+        </p>
+        <h3 id="production-engineering-intern-instagram-summer-2020">
+            Production Engineering Intern: Instagram (Summer 2020)
+        </h3>
+        <p>
+            At Instagram, I interned on the Instagram Machine Learning Team
+            (IGML) and developed software used by teams across Instagram and
+            Facebook.
+        </p>
+        <h3 id="production-engineering-intern-facebook-summer-2019">
+            Production Engineering Intern: Facebook (Summer 2019)
+        </h3>
+        <p>
+            At Facebook, I interned on the Feed and Stories Team (FAST) and
+            developed software used by the production engineering and software
+            engineering teams.
+        </p>
+        <h2 id="publications">Publications</h2>
+        <h3 id="research">Research</h3>
+        <ul>
+            <li>
+                <a
+                    href="http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf"
+                    >Making a Synchronous Motor</a
+                >
+                (Menlo Roundtable, Fall 2016)
+            </li>
+            <li>
+                <a href="http://ieeexplore.ieee.org/abstract/document/7425403/"
+                    >Performance Boost: Dynamically Improving a Home’s Wi-Fi
+                    Signal</a
+                >
+                (IEEE Potentials, March–April 2016)
+            </li>
+            <li>
+                <a href="http://www.cyberjournals.com/Papers/2015/01.pdf"
+                    >A Dual Sensor System for Determining the Unique Oxygen
+                    Production Signature of Plants</a
+                >
+                (Cyber Journals - Mechatronics, 2015)
+            </li>
+        </ul>
+        <h3 id="inventions">Inventions</h3>
+        <ul>
+            <li>Modular Media Player (US D769941 S1)</li>
+            <li>
+                Multi-Person Straw for Sharing/Tasting Beverages (US 9186007 B2)
+            </li>
+            <li>
+                Apparatus and Method for Repairing a Surface Submerged in Liquid
+                by Creating a Workable Space (US 8925168 B2)
+            </li>
+            <li>
+                System, Methodology, and Product to Sort, Organize, and Store
+                Toy Building/Construction Sets (US 7987990 B2)
+            </li>
+        </ul>
+        <h3 id="links">Links</h3>
+        <ul>
+            <li><a href="https://github.com/Akshay-Srivatsan">GitHub</a></li>
+            <li>
+                <a href="https://www.linkedin.com/in/akshay-srivatsan/"
+                    >LinkedIn</a
+                >
+            </li>
+            <li>
+                <a
+                    href="https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA"
+                    >YouTube</a
+                >
+            </li>
+            <li>
+                <a href="mailto:srivatsan.akshay+website@gmail.com">Email</a>
+            </li>
+        </ul>
+        <p lang="en">&copy; 2022 Akshay Srivatsan</p>
+    </body>
 </html>

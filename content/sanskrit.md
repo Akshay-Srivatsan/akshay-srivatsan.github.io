@@ -5,7 +5,7 @@ description:
 image: assets/img/portrait-small.jpg
 image-alt: citraṁ mama sān frānsisko nagare
 lang: sa-Latn
-js: [transliterate/sanskrit.js, assets/js/sanskrit.js, assets/js/transcribe.js]
+js: [transliterate/sanskrit.js, assets/js/transcribe.js, assets/js/common.js]
 ---
 
 # akṣay śrīvatsaṉ
@@ -28,16 +28,8 @@ doṣebhyaḥ kṣamyatām.
 
 <div id="scripts" style="display:none">
 <label for="script">**lipiṁ cino—**</label>
-<select lang="sa-Latn" name="script" id="script" 
-onchange="set_document_script(this.value)">
-    <option value="iso">lātin</option>
-    <option value="devanagari">devanāgarī</option>
-    <option value="grantha">grantha</option>
-    <option value="brahmi">brāhmī</option>
-    <option value="tamil">tamiḻ</option>
-    <option value="tamil-grantha">tamiḻ-grantha</option>
-    <option value="ipa">sarvadeśīya</option>
-    <option value="english">āṅglabhāśā</option>
+<select lang="sa-Latn" name="script" id="script">
+<!-- filled from JS -->
 </select>
 </div>
 
@@ -116,26 +108,19 @@ sarvo vivaraṇa [āṅglabhāṣāyām][english].
 -   [īpatra][email]
 
 <script>
-document.getElementById("scripts").style.display = "block";
-
-function set_document_script(type) {
-    if (type == "iso")
-        iso();
-    else if (type == "devanagari")
-        devanagari();
-    else if (type == "grantha")
-        grantha();
-    else if (type == "brahmi")
-        brahmi();
-    else if (type == "tamil")
-        tamil();
-    else if (type == "tamil-grantha")
-        tamil_grantha();
-    else if (type == "ipa")
-        ipa();
-    else if (type == "english")
-        english();
-}
-
-if (window.location.search) set_document_script(window.location.search.slice(1));
+setup(
+    document.getElementById("scripts"),
+    document.getElementById("script"),
+    [
+        ["lātin", "iso", "sa-Latn", null],
+        ["devanāgarī", "devanagari", "sa", mapping.to_devanagari],
+        ["tamiḻ", "tamil", "sa-Taml", mapping.to_tamil],
+        ["tamiḻ-grantha", "tamil-grantha", "sa-Xaaa", mapping.to_tamil_grantha],
+        ["grantha", "grantha", "sa-Gran", mapping.to_grantha],
+        ["brāhmī", "brahmi", "sa-Brah", mapping.to_brahmi],
+        ["śāradā", "sharada", "sa-Shrd", mapping.to_sharada],
+        ["sarvadeśīya", "ipa", "sa-phonipa", mapping.to_ipa],
+        ["āṅglabhāśā", "english", "sa-Latn", mapping.to_english],
+    ]
+);
 </script>

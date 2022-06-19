@@ -8,7 +8,7 @@ lang: la
 js:
     [
         transliterate/latin.js,
-        assets/js/latin.js,
+        assets/js/common.js,
         assets/js/transcribe.js,
         assets/js/date.js,
     ]
@@ -38,10 +38,8 @@ trānslātor Google bene intellegēre Latinam nōn potest.
 
 <div id="font" style="display:none">
 <label for="change_font">**speciēm litterārum ēligē:**</label>
-<select name="change_font" id="change_font" onchange="changeFont(this.value)">
-    <option value="capitals">capitālēs quadrātae</option>
-    <option value="uncials">capitālēs unciālēs</option>
-    <option value="italics">capitālēs italica</option>
+<select name="change_font" id="change_font">
+<!-- filled from JS -->
 </select>
 </div>
 
@@ -146,7 +144,14 @@ in manū "flūmen et fābulae" labōrābam.
 -   [mihī epistolam mitte][email]
 
 <script>
-font.style.display = "block";
 
-changeFont(window.location.search);
+setup(
+    document.getElementById("font"),
+    document.getElementById("change_font"),
+    [
+        ["capitālēs quadrātae", "", "la", null],
+        ["capitālēs unciālēs", "uncials", "la-Latg", mapping.to_ascii],
+        ["capitālēs italica", "italics", "la-Ital", mapping.to_italics],
+    ]
+);
 </script>

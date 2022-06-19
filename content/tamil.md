@@ -4,7 +4,7 @@ description: பட்டதாரி மாணவன், ஸ்டான்ஃ�
 image: assets/img/portrait-small.jpg
 image-alt: ஸான் ஃப்ரான்ஸிஸ்கோ முனாலில் எனுடைய புகைப்படம்
 lang: ta
-js: [transliterate/tamil.js, assets/js/tamil.js, assets/js/transcribe.js]
+js: [transliterate/tamil.js, assets/js/common.js, assets/js/transcribe.js]
 ---
 
 # அக்ஷய் ஶ்ரீவத்ஸன்
@@ -30,14 +30,8 @@ js: [transliterate/tamil.js, assets/js/tamil.js, assets/js/transcribe.js]
 
 <div id="scripts" style="display:none">
 <label for="script">**எழுத்து முறையை தேர்வு பண்ணுங்கள்:**</label>
-<select lang="ta" name="script" id="script" 
-onchange="set_document_script(this.value)">
-    <option value="tamil">தமிழ்</option>
-    <option value="brahmi">பிராமி</option>
-    <option value="devanagari">தேவநாகரி</option>
-    <option value="iso">லத்தீன்</option>
-    <option value="ipa">சர்வதேச</option>
-    <option value="english">ஆங்கிலம்</option>
+<select lang="ta" name="script" id="script">
+<!-- Filled from JS -->
 </select>
 </div>
 
@@ -46,9 +40,9 @@ onchange="set_document_script(this.value)">
 ![ஸான் ஃப்ரான்ஸிஸ்கோ முனாலில் எனுடைய புகைப்படம்][portrait]
 
 என்னுடைய பெயர் அக்ஷய். ஜூனிற்கு முன், ஸ்டான்ஃபோர்டு யுனிவர்சிட்டியில் நான் கணினி
-அறிவியலைப் படிக்கிற மாணவன். இக்காலத்தில் நான் இயக்குத்தளங்களைப் பற்றி கற்றுக்
-கொண்டு இருக்கிறேன்; இதற்கு முன்னால் நான் கணினி வரைகலைப் பற்றி கற்றுக் கொண்டு
-இருந்தேன்.
+அறிவியலைப் படித்துக் கொண்டிருந்து மாணவன். இக்காலத்தில் நான் இயக்குத்தளங்களைப்
+பற்றி கற்றுக் கொண்டு இருக்கிறேன்; இதற்கு முன்னால் நான் கணினி வரைகலைப் பற்றி
+கற்றுக் கொண்டு இருந்தேன்.
 
 பள்ளிக்கு வெளியில், புகைப்படங்களை எடுக்கவும், பியானோவை வாசிக்கவும், மொழிகளைக்
 கற்றுக்கவும் எனக்குப் பிடிக்கும். எனக்கு ஆங்கிலமும், தமிழும், லத்தீனும், கொஞ்சம்
@@ -57,9 +51,9 @@ onchange="set_document_script(this.value)">
 
 ## என்னுடைய படிப்புகள்
 
-இப்பொழுது, நான் ஸ்டான்ஃபோர்டில் ஒரு முதுகலை பட்டத்தை முடித்தேன் (௨௦௨௦–௨௦௨௨).
-இதற்கு முன், நான் ஸ்டான்ஃபோர்டிலே ஒரு இளங்கலை மாணவனாக இருந்தேன் (௨௦௧௭–௨௦௨௧).
-அதற்கு முன், நான் மென்லோ ஸ்கூலில் படித்துக் கொண்டு இருந்தேன் (௨௦௧௩–௨௦௧௭).
+இப்பொழுது, நான் ஸ்டான்ஃபோர்டில் முதுகலை பட்டத்தை முடித்தேன் (௨௦௨௦–௨௦௨௨). இதற்கு
+முன், நான் ஸ்டான்ஃபோர்டிலே ஒரு இளங்கலை மாணவனாக இருந்தேன் (௨௦௧௭–௨௦௨௧). அதற்கு
+முன், நான் மென்லோ ஸ்கூலில் படித்துக் கொண்டு இருந்தேன் (௨௦௧௩–௨௦௧௭).
 
 ## என்னுடைய புராஜக்ட்கள்
 
@@ -142,22 +136,76 @@ onchange="set_document_script(this.value)">
 -   [மின்னஞ்சலை அனுப்புங்கள்][email]
 
 <script>
-document.getElementById("scripts").style.display = "block";
+let replacement_words = {
+    akshay: 'Akshay',
+    sreevadhsan: 'Srivatsan',
+    ɕɾiːʋadsan: 'ɕɾiːʋatsan',
+    श्रीवत्सऩ्: 'श्रीवत्सन्',
+    kanini: 'ganini',
+    kaɳini: 'gaɳini',
+    robaadigs: 'robotics',
+    robaadai: 'robotai',
+    robaadu: 'robot',
+    sdaanfordu: 'Stanford',
+    sdaanford: 'Stanford',
+    menlo: 'Menlo',
+    sgool: 'School',
+    insdaagiraam: 'Instagram',
+    fesbukku: 'Facebook',
+    yunivarsittiyil: 'Universityil',
+    kaardaa: 'Carta',
+    sdejgaasdu: 'Stagecast',
+    aaguvaa: 'Aqua',
+    saattelaittu: 'Satellite',
+    thaumas: 'Thaumas',
+    kidhubu: 'GitHub',
+    kidhub: 'GitHub',
+    rebaasidoriy: 'repository',
+    lingadin: 'LinkedIn',
+    yoodyoobu: 'YouTube',
+    aangila: 'Aangila',
+    lattheen: 'Latin',
+    samsgirudha: 'Samskirutha',
+    thamizh: 'Tamil',
+    hindhi: 'Hindi',
+    piranj: 'French',
+    kandubidi: 'kandupidi',
+    maars: 'March',
+    ebral: 'April',
+    joon: 'June',
+};
 
-function set_document_script(type) {
-    if (type == "tamil")
-        tamil();
-    else if (type == "brahmi")
-        brahmi();
-    else if (type == "devanagari")
-        devanagari();
-    else if (type == "iso")
-        iso();
-    else if (type == "ipa")
-        ipa();
-    else if (type == "english")
-        english();
+function transcribe_string(s, map) {
+    s = ' ' + s;
+    let startingCharacters = ['(', '—', '-', '"', '“'];
+    for (let i = 0; i < startingCharacters.length; i++) {
+        s = s.replaceAll(startingCharacters[i], startingCharacters[i] + ' ');
+    }
+    let result = real_transcribe_string(s, map);
+    for (let i = startingCharacters.length - 1; i >= 0; i--) {
+        result = result.replaceAll(
+            startingCharacters[i] + ' ',
+            startingCharacters[i]
+        );
+    }
+    result = result.substring(1);
+    for (let key in replacement_words) {
+        result = result.replaceAll(key, replacement_words[key]);
+    }
+
+    return result;
 }
 
-if (window.location.search) set_document_script(window.location.search.slice(1));
+setup(
+    document.getElementById("scripts"),
+    document.getElementById("script"),
+    [
+        ["தமிழ்", "tamil", "ta", null],
+        ["பிராமி", "brahmi", "ta-Brah", mapping.to_brahmi],
+        ["தேவநாகரி", "devanagari", "ta-Deva", mapping.to_devanagari],
+        ["லத்தீன்", "iso", "ta-Latn", mapping.to_iso],
+        ["சர்வதேச", "ipa", "ta-phonipa", mapping.to_ipa],
+        ["ஆங்கிலம்", "english", "ta-Latn", mapping.to_english],
+    ]
+);
 </script>
