@@ -81,6 +81,8 @@ epidemia est. (MMXX-MMXXI)
 cursū _CS 240LX: labōrātōrium systēmatum internōrum, accelerātum_ adjuvī.
 praeter annum MMXXII, haec classis in annō MMXX sōlō oblātā est.
 
+sī plūrēs discere vīs, repositōrium in [GitHub][cs240lx-22spr] vidē.
+
 ### administer cursūs: Stanford CS 140E (hieme MMXXII)
 
 cursu _CS 140E: inventiōque cōnstrūctiōque nucleōrum computātrōrum_ adjuvī. in

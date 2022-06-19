@@ -8,6 +8,7 @@
 [stagecast]: https://taps.stanford.edu/stagecast
 [cs140e-22win]: https://github.com/dddrrreee/cs140e-22win
 [cs140e-21spr]: https://github.com/dddrrreee/cs140e-21spr
+[cs240lx-22spr]: https://github.com/dddrrreee/cs240lx-22spr
 [motor]:
     http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf
 [wifi]: http://ieeexplore.ieee.org/abstract/document/7425403/

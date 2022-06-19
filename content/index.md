@@ -53,6 +53,8 @@ I'm a course assistant for _CS 240LX: Advanced Systems Laboratory, Accelerated_.
 This course is a continuation of _CS 140E_, and the course is being offered for
 the second time (the first was Spring 2020, when I took it).
 
+For more info, go to the [GitHub][cs240lx-22spr] repo.
+
 ### Course Assistant: Stanford CS 140E (Winter 2022)
 
 I was a course assistant for _CS 140E: Operating Systems Design and
