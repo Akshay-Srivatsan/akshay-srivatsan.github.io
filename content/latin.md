@@ -22,7 +22,7 @@ js:
 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran} et [𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah}
 
 praestō est haec pāgina in [Linguā Anglicā][english], [Linguā Tamulicā][tamil],
-et [Linguā Sanscritā][sanskrit].
+[Linguā Sanscritā][sanskrit], et [Linguā Hindicā][hindi].
 
 ## salvē!
 
@@ -56,7 +56,7 @@ gubernābam.
 
 extrā lūdum et opus, mihi photographia, clāvile cantāre, et linguās discere
 placet. linguās Anglicam, Latinam, Tamulicam, Hindicam, et Sanscritam aliquid
-sciō. linguam Francogallicam nunc discō.
+sciō.
 
 ## ērudītiō mea
 

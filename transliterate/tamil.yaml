@@ -127,8 +127,8 @@ modifiers:
 consonants:
   - [g, s, d, dh, b, r]
   - [" k", " s", " t", " th", " p", " r"]
-  - ["k k", "ch ch", "th th", "p p"]
-  - [kk, cch, tt, tth, pp, tr]
+  - [" k", " ch", " th", " p"]
+  - [kk, cch, tt, tth, pp, tth]
   - [rk, rp, nj]
   - [n, n, n, n, m, n]
   - [y, r, l, v, zh, l]

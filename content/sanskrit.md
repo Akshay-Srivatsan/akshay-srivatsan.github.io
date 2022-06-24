@@ -7,18 +7,18 @@ lang: sa-Latn
 js: [transliterate/sanskrit.js, assets/js/transcribe.js, assets/js/common.js]
 ---
 
-# akṣay śrīvatsaṉ
+# akṣay śrīvatsan
 
 [/ɐk.ʂɐj ɕriː.ʋɐt.sɐn/]{lang=sa-phonipa .ipa #ipa-name}
 
-tad: [Akshay Srivatsan]{lang=en} ca [[அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta}
+anyāṣu lipiṣu: [Akshay Srivatsan]{lang=en} ca [[அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta}
 ca]{#tamil-name} [[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran} ca]{#grantha-name} [[अक्षय्
 श्रीवत्सन्]{lang=sa} ca]{#devanagari-name} [[𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah}
 ca]{#brahmi-name} [[akṣay srīvatsan]{lang=sa-Latn} ca]{#iso-name
 style=display:none}
 
 etad jālapr̥ṣṭhopalabhya [āṅglabhāṣayā][english] ca [tamiḷbhāṣayā][tamil] ca
-[lātinbhāṣayā][latin] asti.
+[lātinbhāṣayā][latin] ca [hindībhāṣayā][hindi] asti.
 
 ## namaskāraḥ!
 
@@ -42,7 +42,7 @@ kāsaṁvidhāsu gaveṣaṇaṁ karomi. citraṇam pūrvamapaṭhaṁ ca kāsa�
 vidyālayād bahiś chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatuṁ ca roce.
 
 āṅglabhāṣāṁ ca tamiḷbhāṣāṁ ca lātinbhāṣāṁ ca hindībhāṣāṁ ca saṁskr̥tabhāṣāṁ ca
-jānāmi. frānsbhāṣāṁ ca śikṣami.
+jānāmi.
 
 sarvo vivaraṇa [āṅglabhāṣāyām][english].
 

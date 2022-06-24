@@ -18,11 +18,10 @@ js: [transliterate/tamil.js, assets/js/common.js, assets/js/transcribe.js]
 [[akṣay srīvatsan]{lang=sa-Latn} உம்]{#iso-name}
 
 தமிழ் மொழியில் தவிர, இந்த இணையத்தளம் [ஆங்கில மொழியிலும்][english], [லத்தீன்
-மொழியிலும்][latin], [சம்ஸ்கிருத மொழியிலும்][sanskrit] கிடைக்கும்.
+மொழியிலும்][latin], [சம்ஸ்கிருத மொழியிலும்][sanskrit], [ஹிந்தி
+மொழியிலும்][hindi] கிடைக்கும்.
 
 ## வணக்கம்!
-
-வணக்கம்!
 
 என்னுடைய இணையத்தளத்துடைய தமிழ் திருப்புதலுக்கு வரவேற்பு! எனக்கு தமிழ் புரியும்,
 பேசவும் தெரியும், ஆனால் இன்னும் சரியாக எழுதக் கற்றுக் கொண்டு இருக்கிறேன்;
@@ -46,8 +45,7 @@ js: [transliterate/tamil.js, assets/js/common.js, assets/js/transcribe.js]
 
 பள்ளிக்கு வெளியில், புகைப்படங்களை எடுக்கவும், பியானோவை வாசிக்கவும், மொழிகளைக்
 கற்றுக்கவும் எனக்குப் பிடிக்கும். எனக்கு ஆங்கிலமும், தமிழும், லத்தீனும், கொஞ்சம்
-ஹிந்தியும், கொஞ்சம் சம்ஸ்கிருதமும் தெரியும். பிரஞ்சையும் இப்போழுது கற்றுக்
-கொண்டிருக்கிறேன்.
+ஹிந்தியும், கொஞ்சம் சம்ஸ்கிருதமும் தெரியும்.
 
 ## என்னுடைய படிப்புகள்
 
@@ -70,8 +68,8 @@ js: [transliterate/tamil.js, assets/js/common.js, assets/js/transcribe.js]
 ### ஸ்டான்ஃபோர்டு [CS 240LX]{lang=en}: ஆசிரியர் உதவியாள் (இளவேனிற்காலம் ௨௦௨௨)
 
 நான் "[CS 240LX]{lang=en}: அமைப்பு ஆய்வகம்" வகுப்பிற்கு உதவினேன். இந்த வகுப்பு
-[CS 240LX]{lang=en}உக்குப் பிறகு வரகிறது. ௨௦௨௨க்கு முன்னால், இந்த வகுப்பு ஒரு
-முறை தான் நடந்தது.
+[CS 140E]{lang=en}யுக்குப் பிறகு வரகிறது. ௨௦௨௨க்கு முன்னால், இந்த வகுப்பு ஒரு
+முறை தான் நடந்தது (௨௦௨௦இல், நான் எடுத்துக் கொண்டிருந்து பொழுது).
 
 இதை விட அதிகமாக கற்றுக்க வேண்டும் என்றால், வகுப்பின் [கிட்ஹுபு
 ரெபாஸிடோரியுக்கு][cs240lx-22spr] செல்லுங்கள்.
@@ -139,7 +137,7 @@ js: [transliterate/tamil.js, assets/js/common.js, assets/js/transcribe.js]
 -   [மின்னஞ்சலை அனுப்புங்கள்][email]
 
 <script>
-let replacement_words = {
+var replacement_words = {
     akshay: 'Akshay',
     sreevadhsan: 'Srivatsan',
     ɕɾiːʋadsan: 'ɕɾiːʋatsan',
@@ -155,7 +153,7 @@ let replacement_words = {
     sgool: 'School',
     insdaagiraam: 'Instagram',
     fesbukku: 'Facebook',
-    yunivarsittiyil: 'Universityil',
+    yunivarsittiy: 'University',
     kaardaa: 'Carta',
     sdejgaasdu: 'Stagecast',
     aaguvaa: 'Aqua',
@@ -176,28 +174,9 @@ let replacement_words = {
     maars: 'March',
     ebral: 'April',
     joon: 'June',
+    puraajagd: 'project',
+    vordul: 'Wordle',
 };
-
-function transcribe_string(s, map) {
-    s = ' ' + s;
-    let startingCharacters = ['(', '—', '-', '"', '“'];
-    for (let i = 0; i < startingCharacters.length; i++) {
-        s = s.replaceAll(startingCharacters[i], startingCharacters[i] + ' ');
-    }
-    let result = real_transcribe_string(s, map);
-    for (let i = startingCharacters.length - 1; i >= 0; i--) {
-        result = result.replaceAll(
-            startingCharacters[i] + ' ',
-            startingCharacters[i]
-        );
-    }
-    result = result.substring(1);
-    for (let key in replacement_words) {
-        result = result.replaceAll(key, replacement_words[key]);
-    }
-
-    return result;
-}
 
 setup(
     document.getElementById("scripts"),

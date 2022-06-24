@@ -102,7 +102,14 @@ fn map_abuguidas(source: ParsedScript, target: ParsedScript) -> HashMap<String, 
     assert!(source.style == Style::Abugida && target.style == Style::Abugida);
     let mut map = HashMap::new();
     for (source_vowel, target_vowel) in source.vowels.iter().zip(target.vowels) {
-        map.insert(source_vowel.into(), target_vowel.into());
+        map.insert(source_vowel.clone().into(), target_vowel.clone().into());
+        for (source_nasal, target_nasal) in
+            source.modifiers.iter().zip(target.modifiers.clone())
+        {
+            let s = format!("{}{}", source_vowel, source_nasal);
+            let t = format!("{}{}", target_vowel, target_nasal);
+            map.insert(s, t);
+        }
     }
     for (source_consonant, target_consonant) in source.consonants.iter().zip(target.consonants) {
         for (source_vowel, target_vowel) in source.diacritics.iter().zip(target.diacritics.clone())
@@ -136,7 +143,14 @@ fn map_abuguida_alphabet(source: ParsedScript, target: ParsedScript) -> HashMap<
     assert!(source.style == Style::Abugida && target.style == Style::Alphabet);
     let mut map = HashMap::new();
     for (source_vowel, target_vowel) in source.vowels.iter().zip(target.vowels.clone()) {
-        map.insert(source_vowel.into(), target_vowel.into());
+        map.insert(source_vowel.clone().into(), target_vowel.clone().into());
+        for (source_nasal, target_nasal) in
+                source.modifiers.iter().zip(target.modifiers.clone())
+            {
+                let s = format!("{}{}", source_vowel, source_nasal);
+                let t = format!("{}{}", target_vowel, target_nasal);
+                map.insert(s, t);
+            }
     }
     for (source_consonant, target_consonant) in source.consonants.iter().zip(target.consonants) {
         for (source_vowel, target_vowel) in source.diacritics.iter().zip(target.vowels.clone()) {

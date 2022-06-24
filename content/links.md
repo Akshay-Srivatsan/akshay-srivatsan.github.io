@@ -3,6 +3,7 @@
 [tamil]: tamil.html
 [latin]: latin.html
 [sanskrit]: sanskrit.html
+[hindi]: hindi.html
 [chorkal]: https://aks.io/tamil-wordle/
 [carta]: https://carta.stanford.edu
 [stagecast]: https://taps.stanford.edu/stagecast

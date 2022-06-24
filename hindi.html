@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="hi">
+    <head>
+        <title>अक्षय श्रीवत्सन</title>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, 
+                user-scalable=yes"
+        />
+        <meta charset="utf-8" />
+        <link rel="icon" href="assets/img/favicon.png" />
+        <meta property="og:url" content="https://aks.io/hindi.html" />
+        <meta
+            property="og:description"
+            content="कमप्युटर वैज्ञानिक, स्टान्फ़ोर्ड ’22"
+        />
+        <meta property="og:image" content="assets/img/portrait-small.jpg" />
+        <meta
+            property="og:image:alt"
+            content="सैन फ़्रांसिस्को के सामने मेरी तस्वीर"
+        />
+
+        <meta name="author" content="Akshay Srivatsan" />
+        <meta
+            name="description"
+            content="कमप्युटर वैज्ञानिक, स्टान्फ़ोर्ड ’22"
+        />
+        <meta name="generator" content="pandoc" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat&family=Uncial+Antiqua&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap');
+            /* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap'); */
+            @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+            @font-face {
+                font-family: 'Noto Sans Tamil';
+                src: url('assets/fonts/NotoSansTamil-Regular.ttf')
+                    format('truetype');
+            }
+            @font-face {
+                font-family: 'Noto Sans Devanagari';
+                src: url('assets/fonts/NotoSansDevanagari-Regular.ttf')
+                    format('truetype');
+            }
+            @font-face {
+                font-family: 'Noto Sans Grantha';
+                src: url('assets/fonts/NotoSansGrantha-Regular.ttf')
+                    format('truetype');
+            }
+            @font-face {
+                font-family: 'Noto Sans Brahmi';
+                src: url('assets/fonts/NotoSansBrahmi-Regular.ttf')
+                    format('truetype');
+            }
+            @font-face {
+                font-family: 'Noto Sans Old Italic';
+                src: url('assets/fonts/NotoSansOldItalic-Regular.ttf')
+                    format('truetype');
+            }
+            @font-face {
+                font-family: 'Adinatha';
+                src: url('assets/fonts/Adinatha-Tamil-Brahmi.otf')
+                    format('opentype');
+            }
+            @font-face {
+                font-family: 'Agastya';
+                src: url('assets/fonts/agastya_sans.otf') format('opentype');
+            }
+
+            :lang(en) {
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            :not(:lang(en)) :lang(en) {
+                font-family: 'Noto Sans', sans-serif;
+            }
+
+            :lang(la),
+            :lang(la) :lang(en) {
+                font-family: 'Libre Baskerville', sans-serif;
+            }
+
+            :lang(ta) {
+                font-family: 'Noto Sans Tamil', 'Noto Sans', sans-serif;
+            }
+
+            :lang(sa),
+            :lang(hi) {
+                font-family: 'Noto Sans Devanagari', 'Noto Sans', sans-serif;
+            }
+
+            :lang(la-Latg),
+            :lang(la-Latg) * {
+                font-family: 'Uncial Antiqua', sans-serif;
+            }
+
+            :lang(la-Ital) {
+                font-family: 'Noto Sans Old Italic', 'Noto Sans', sans-serif;
+            }
+
+            :lang(ta-Deva) {
+                font-family: 'Noto Sans Devanagari', 'Noto Sans', sans-serif;
+            }
+
+            :lang(sa-Taml),
+            :lang(hi-Taml) {
+                font-family: 'Noto Sans Tamil', 'Noto Sans', sans-serif;
+            }
+
+            :lang(sa-Gran) {
+                font-family: 'Noto Sans Grantha', 'Noto Sans', sans-serif;
+            }
+
+            :lang(sa-Latn),
+            :lang(ta-Latn),
+            :lang(hi-Latn) {
+                font-family: 'Noto Sans', sans-serif;
+            }
+
+            :lang(sa-Brah),
+            :lang(ta-Brah) {
+                font-family: 'Noto Sans Brahmi', 'Noto Sans', sans-serif;
+            }
+
+            :lang(ta-Brah) {
+                font-family: 'Adinatha', 'Noto Sans Brahmi', 'Noto Sans',
+                    sans-serif;
+            }
+
+            :lang(sa-Xaaa) {
+                font-family: 'Agastya', 'Noto Sans Tamil', 'Noto Sans',
+                    sans-serif;
+            }
+
+            :lang(en-phonipa),
+            :lang(la-phonipa),
+            :lang(sa-phonipa),
+            :lang(ta-phonipa),
+            :lang(hi-phonipa) {
+                font-family: 'Voces', sans-serif;
+                font-weight: 400;
+            }
+
+            body {
+                font-family: 'Montserrat', sans-serif;
+                margin: 0 auto;
+                max-width: 720px;
+            }
+
+            img {
+                float: right;
+                max-width: 240px;
+                border-radius: 100%;
+                margin: 10px;
+            }
+
+            .ipa {
+                font-size: 1.25em;
+            }
+
+            @media only screen and (max-width: 720px) {
+                h1,
+                h2 {
+                    text-align: center;
+                }
+                body {
+                    max-width: inherit;
+                    margin: 25px;
+                }
+                img {
+                    max-width: 196px;
+                    float: none;
+                    margin: 0 auto;
+                    display: block;
+                }
+            }
+
+            @media (prefers-color-scheme: dark) {
+                html {
+                    color: #fafafa;
+                    background: #212121;
+                }
+
+                a {
+                    color: #03a9f4;
+                }
+
+                a:visited {
+                    color: #b39ddb;
+                }
+            }
+        </style>
+        <script type="text/javascript" src="transliterate/hindi.js"></script>
+        <script type="text/javascript" src="assets/js/common.js"></script>
+        <script type="text/javascript" src="assets/js/transcribe.js"></script>
+    </head>
+    <body>
+        <h1 id="अकषय-शरवतसन">अक्षय श्रीवत्सन</h1>
+        <p>
+            <span id="ipa-name" class="ipa" lang="hi-phonipa"
+                >/əkʂəy ʃrɪʋətsən/</span
+            >
+        </p>
+        <p>
+            अन्य लिपि में:
+            <span id="english-name"
+                ><span lang="en">Akshay Srivatsan</span>,</span
+            >
+            <span id="tamil-name"
+                ><span lang="ta">அக்ஷய் ஶ்ரீவத்ஸன்</span>,</span
+            >
+            <span id="grantha-name"
+                ><span lang="hi-Gran">𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍</span>,</span
+            >
+            <span id="devanagari-name" style="display: none"
+                ><span lang="hi">अक्षय् श्रीवत्सन्</span>,</span
+            >
+            <span id="brahmi-name"
+                ><span lang="hi-Brah">𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆</span>,</span
+            >
+            <span id="iso-name"
+                ><span lang="sa-Latn">akṣay srīvatsan</span>,</span
+            >
+            वगैरह।
+        </p>
+        <p>
+            यह पृष्ठ <a href="index.html">आंग्रेज़ी में</a>,
+            <a href="latin.html">लातिन में</a>,
+            <a href="tamil.html">तमिल में</a>, और
+            <a href="sanskrit.html">संस्कृत में</a> भी मिल सक्ता है।
+        </p>
+        <h2 id="नमसत">नमस्ते!</h2>
+        <p>
+            मेरे वेबसाइट के हिन्दी संस्करण में आपका स्वागत है! मैंने सिर्फ़ दो
+            साल के लिये हिन्दी पढ़ी है, तो अगर मैंने यहां कुछ गलतीयां कीं, माफ़
+            किजीये।
+        </p>
+        <div id="scripts" style="display: none">
+            <p>
+                <label for="script"
+                    ><strong>लिपि का फ़ैसला करें:</strong></label
+                >
+                <select lang="hi" name="script" id="script">
+                    <!-- Filled from JS -->
+                </select>
+            </p>
+        </div>
+        <h2 id="मर-बर-म">मेरे बारे में</h2>
+        <p>
+            <img
+                src="assets/img/portrait-small.jpg"
+                alt="सैन फ़्रांसिस्को शहर के सामने मेरी तस्वीर"
+            />
+        </p>
+        <p>
+            मैने अपना ग्रैडूऐट डिग्री स्टैंफ़ोर्ड यूनिवेर्सिटी में अभी खत्म किया
+            है। मैं कमप्यूटर विज्ञान के डिपार्ट्मेंट में प्रचालन तंत्रों के बारे
+            में पढ़ रहा था। उसके पहले, मैं कमप्यूटर चित्रलेख अध्ययन पढ़ रहा था।
+            मेरा अनुभव बहुत विश्यों में है, पर मुझे निम्न स्तर के प्रोग्राम सबसे
+            अच्छे लगते हैं। मैंने फ़ैसबुक, इंस्टाग्राम, और अक्वा साटेल्लाईट में
+            काम किया है।
+        </p>
+        <p>
+            काम के अलावा, मुझे तसवीरें कींचना, पियानो बजाना, और भाषाएं सीखना
+            पसंद हैं। मुझे आंग्रेज़ी, तमिल, लातिन, संस्कृत, और हिनदी अभी आती है।
+        </p>
+        <h2 id="मर-शकश">मेरी शिकशा</h2>
+        <p>
+            मैं २०१७ से स्टैंफ़ोर्ड यूनिवेर्सिटी में अपना डिग्रीयाँ कर रहा हुँ।
+            २०२० से २०२१ तक, मैंने सिस्टेमस में अपनी मास्टेर्स डिग्री कमप्यूटर
+            विज्ञान में की। २०१७ से २०२१ तक, मैंने अपनी बाचेलोर्स डिग्री भी
+            कमप्यूटर विज्ञान में की। उच्च विध्यालय के लिये, मैं मेनलो स्कूल गया।
+        </p>
+        <h2 id="मर-परयजनए">मेरी परियोजनाएँ</h2>
+        <p>
+            <a href="https://aks.io/tamil-wordle/">चोरकळ</a>: तमिल के शब्दों का
+            खेल, वोर्डल के समान।
+        </p>
+        <p>
+            <a href="https://carta.stanford.edu">कारटा</a>: जो वेबसाइट पर
+            सटैंफ़ोर्ड के छात्र अपने ककशाएं के फ़ैसला करते हैं।
+        </p>
+        <p>
+            <a href="https://taps.stanford.edu/stagecast">स्टेजकास्ट</a>: जिस
+            सोफ़्टवैर पर कोविड-१९ महामारी के दौरान अभिनेते और सनगीतकार अबयास कर
+            सकते हैं।
+        </p>
+        <h2 id="मर-अनभव">मेरा अनुभव</h2>
+        <h3 id="शकशण-सहयक-सटफरड-cs-240lx-वसत-२०२२">
+            शिकशण सहायक: स्टैंफ़ोर्ड <span lang="en">CS 240LX</span> (वसंत २०२२)
+        </h3>
+        <p>
+            मैं “<span lang="en">CS 240LX</span>: ओपरेटिंग सिस्टम लैब” के
+            छात्रों की मदद कर रहा था। यह कक्षा <span lang="en">CS 140E</span> के
+            बाद आती है. २०२२ के पहले, यह कक्षा सिर्फ़ एक बार हुआ है (वसंत २०२०,
+            जब मैने यह ली).
+        </p>
+        <p>
+            ज़्यादा जानकारी के लिये,
+            <a href="https://github.com/dddrrreee/cs240lx-22spr">गिटहुब</a>
+            देखिये।
+        </p>
+        <h3 id="शकशण-सहयक-सटफरड-cs-140e-सरद-२०२१">
+            शिकशण सहायक: स्टैंफ़ोर्ड <span lang="en">CS 140E</span> (सरदी २०२१)
+        </h3>
+        <p>
+            मैं “<span lang="en">CS 140E</span>: ओपरेटिंग सिस्टम डिज़ाइन और
+            कार्यान्वयन” के छात्रों की मदद कर रहा था। मैंने सप्ताह में दो बार
+            होते प्रयोगशालों के लिये मदद की, और मैंने कार्य समय चलाया।
+        </p>
+        <p>
+            ज़्यादा जानकारी के लिये,
+            <a href="https://github.com/dddrrreee/cs140e-22win">गिटहुब</a>
+            देखिये।
+        </p>
+        <h3 id="रबटकस-इटरन-अकव-सटललईट-गरम-2021">
+            रोबोटिक्स इंटर्न: अक्वा साटेल्लाईट (गरमी 2021)
+        </h3>
+        <p>
+            अक्वा साटेल्लाईट में, मैने पहला रोबोट चलाता हुआ प्रोग्राम लिखा। हमरा
+            रोबोट का नाम “तौमस” था, और वह समुद्र में यात्रा करता है।
+        </p>
+        <h3 id="शकशण-सहयक-सटफरड-cs-140e-सरद-२०२१-1">
+            शिकशण सहायक: स्टैंफ़ोर्ड <span lang="en">CS 140E</span> (सरदी २०२१)
+        </h3>
+        <p>
+            मैं “<span lang="en">CS 140E</span>: ओपरेटिंग सिस्टम डिज़ाइन और
+            कार्यान्वयन” के छात्रों की मदद कर रहा था। मैंने सप्ताह में दो बार
+            होते प्रयोगशालों के लिये मदद की, और मैंने कार्य समय चलाया।
+        </p>
+        <p>
+            ज़्यादा जानकारी के लिये,
+            <a href="https://github.com/dddrrreee/cs140e-21spr">गिटहुब</a>
+            देखिये।
+        </p>
+        <h3 id="परडकशन-इजनयरग-इटरन-इसटगरम-गरम-२०२०">
+            प्रोडक्शन इंजीनियरिंग इंटर्न: इंस्टाग्राम (गरमी २०२०)
+        </h3>
+        <p>मैंने इंस्टाग्राम यंत्र अधिगम का टीम पर काम किया।</p>
+        <h3 id="परडकशन-इजनयरग-इटरन-फसबक-गरम-२०१९">
+            प्रोडक्शन इंजीनियरिंग इंटर्न: फ़ैसबुक (गरमी २०१९)
+        </h3>
+        <p>मैंने फ़ैसबुक फ़ीड और कहानियां का टीम पर काम किया।</p>
+        <h2 id="मर-परकशन">मेरे प्रकाशन</h2>
+        <h3 id="अनसधन">अनुसंधान</h3>
+        <ul>
+            <li>
+                <a
+                    href="http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf"
+                    ><span lang="en">Making a Synchronous Motor</span></a
+                >
+                (<span lang="en">Menlo Roundtable</span>, पतझड़ २०१६)
+            </li>
+            <li>
+                <a href="http://ieeexplore.ieee.org/abstract/document/7425403/"
+                    ><span lang="en"
+                        >Performance Boost: Dynamically Improving a Home’s Wi-Fi
+                        Signal</span
+                    ></a
+                >
+                (<span lang="en">IEEE Potentials</span>, मार्च–अप्रैल २०१६)
+            </li>
+            <li>
+                <a href="http://www.cyberjournals.com/Papers/2015/01.pdf"
+                    ><span lang="en"
+                        >A Dual Sensor System for Determining the Unique Oxygen
+                        Production Signature of Plants</span
+                    ></a
+                >
+                (<span lang="en">Cyber Journals - Mechatronics</span>, २०१५)
+            </li>
+        </ul>
+        <h3 id="आवषकर">आविष्कार</h3>
+        <div lang="en">
+            <ul>
+                <li>Modular Media Player (US D769941 S1)</li>
+                <li>
+                    Multi-Person Straw for Sharing/Tasting Beverages (US 9186007
+                    B2)
+                </li>
+                <li>
+                    Apparatus and Method for Repairing a Surface Submerged in
+                    Liquid by Creating a Workable Space (US 8925168 B2)
+                </li>
+                <li>
+                    System, Methodology, and Product to Sort, Organize, and
+                    Store Toy Building/Construction Sets (US 7987990 B2)
+                </li>
+            </ul>
+        </div>
+        <h3 id="अनय-वबसईट">अन्य वेबसाईट</h3>
+        <ul>
+            <li><a href="https://github.com/Akshay-Srivatsan">गिटहुब</a></li>
+            <li>
+                <a href="https://www.linkedin.com/in/akshay-srivatsan/"
+                    >लिंकिडिन</a
+                >
+            </li>
+            <li>
+                <a
+                    href="https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA"
+                    >यूट्यूब</a
+                >
+            </li>
+            <li>
+                <a href="mailto:srivatsan.akshay+website@gmail.com">ई-पत्र</a>
+            </li>
+        </ul>
+        <script>
+            var replacement_words = {
+                akshay: 'Akshay',
+                shreevatsan: 'Srivatsan',
+                vebsaait: 'website',
+                prograam: 'program',
+                stainford: 'Stanford',
+                yooniversiti: 'University',
+                graidooait: 'graduate',
+                baacelors: 'bachelors',
+                maasters: 'masters',
+                digri: 'degree',
+                digree: 'degree',
+                kamapyootar: 'computer',
+                aangrezi: 'Angrezi',
+                laatin: 'Latin',
+                tamil: 'Tamil',
+                hindi: 'Hindi',
+                sanskrit: 'Sanskrit',
+                dipaartment: 'department',
+                kaarta: 'Carta',
+                corakal: 'Chorkal',
+                vordal: 'Wordle',
+                stejkaast: 'Stagecast',
+                'opreting sistam': 'operating system',
+                laib: 'lab',
+                dizaain: 'design',
+                faisbuk: 'Facebook',
+                softavair: 'software',
+                instaagraam: 'Instagram',
+                'robotiks intarn': 'Robotics Intern',
+                'prodakshan injeeniyaring intarn': 'Production Engineering',
+                teem: 'team',
+                'akva saatellaaeet': 'Aqua Satellite',
+                piyaano: 'piano',
+                menlo: 'Menlo',
+                skool: 'School',
+                github: 'GitHub',
+                linkidin: 'LinkedIn',
+                yootyoob: 'YouTube',
+                'ee-patr': 'e-patr',
+                maarca: 'March',
+                aprail: 'April',
+            };
+
+            function fix_hindi_a(s) {
+                const VOWELS = 'अआइईउऊऋॠऌॡएऐओऔ';
+                const DIACRITICS = '◌◌ा◌ि◌ी◌ु◌ू◌ृ◌ॄ◌ॢ◌ॣ◌े◌ै◌ो◌ौ'.replaceAll(
+                    '◌',
+                    ''
+                );
+                const VOCALICS = VOWELS + DIACRITICS;
+                const CONSONANTS = 'कखगघङचछजझञटठडढणतथदधनपफबभमयरलवळशषसहफ़ऩड़ढ़ज़';
+                const HALANT = '्'.replaceAll('◌', '');
+
+                const PUNCTUATION = '.,()–-“”:।';
+
+                for (let i = 0; i < PUNCTUATION.length; i++) {
+                    s = s.replaceAll(
+                        PUNCTUATION[i],
+                        ' ' + PUNCTUATION[i] + ' '
+                    );
+                }
+
+                let words = s.split(' ');
+                words = words.map((word) => {
+                    if (word.length == 0) return word;
+                    if (word.length == 1) return word;
+                    let first_syllable_ending = -1;
+                    for (let i = 0; i < word.length; i++) {
+                        let current = word[i];
+                        first_syllable_ending = i;
+                        if (VOCALICS.includes(current)) {
+                            break;
+                        }
+                        let next = word[i + 1];
+                        if (
+                            CONSONANTS.includes(current) &&
+                            CONSONANTS.includes(next)
+                        ) {
+                            break;
+                        }
+                    }
+
+                    // Using rules vaguely based on https://aclanthology.org/W04-0103.pdf.
+
+                    // Don't mess with monosyllables.
+                    if (first_syllable_ending === word.length - 1) return word;
+
+                    // Rule 1: multisyllabic words always lose their final schwa.
+                    // - with some exceptions for conjuncts
+                    if (CONSONANTS.includes(word[word.length - 1])) {
+                        let ending = word.substring(word.length - 3);
+                        let EXCEPTIONS = ['न्य', 'त्र'];
+                        if (!EXCEPTIONS.includes(ending)) {
+                            word = word + HALANT;
+                        }
+                    }
+
+                    // Rule 2: infinitives (or similar) lose the schwa before their ending.
+                    if (word.endsWith('ना') || word.endsWith('ने')) {
+                        console.log(word);
+                        let ending = word.substring(word.length - 2);
+                        let beginning = word.substring(0, word.length - 2);
+                        console.log(
+                            word,
+                            beginning,
+                            ending,
+                            first_syllable_ending
+                        );
+                        if (beginning.length >= first_syllable_ending) {
+                            let previous = word[beginning.length - 1];
+                            if (CONSONANTS.includes(previous)) {
+                                word = beginning + HALANT + ending;
+                            }
+                            console.log(word);
+                        }
+                    }
+
+                    // Rule 3: delete schwas in the environment VC_CV.
+                    // - applies from left to right
+                    // - does not apply to first syllable
+                    for (let i = word.length; i >= first_syllable_ending; i--) {
+                        let a = word[i];
+                        let b = word[i + 1];
+                        let c = word[i + 2];
+                        let d = word[i + 3];
+
+                        if (
+                            VOCALICS.includes(a) &&
+                            CONSONANTS.includes(b) &&
+                            CONSONANTS.includes(c) &&
+                            d !== HALANT
+                        ) {
+                            word =
+                                word.substring(0, i + 2) +
+                                HALANT +
+                                word.substring(i + 2);
+                        }
+                    }
+                    return word;
+                });
+
+                s = words.join(' ');
+
+                for (let i = 0; i < PUNCTUATION.length; i++) {
+                    s = s.replaceAll(
+                        ' ' + PUNCTUATION[i] + ' ',
+                        PUNCTUATION[i]
+                    );
+                }
+                return s;
+            }
+
+            function transcribe_string(s, map) {
+                let result = transcribe_string_without_replacements(
+                    fix_hindi_a(s),
+                    map
+                );
+
+                const PUNCTUATION = '.,()–-“:';
+                for (let i = 0; i < PUNCTUATION.length; i++) {
+                    result = result.replaceAll(
+                        PUNCTUATION[i],
+                        ' ' + PUNCTUATION[i] + ' '
+                    );
+                }
+
+                let words = result.split(' ');
+                words = words.map((word) => {
+                    if (word.endsWith('aa'))
+                        return word.substring(0, word.length - 2) + 'a';
+                    if (word.endsWith('ee'))
+                        return word.substring(0, word.length - 2) + 'i';
+                    if (word.endsWith('oo'))
+                        return word.substring(0, word.length - 2) + 'u';
+                    return word;
+                });
+
+                result = words.join(' ');
+                for (let i = 0; i < PUNCTUATION.length; i++) {
+                    result = result.replaceAll(
+                        ' ' + PUNCTUATION[i] + ' ',
+                        PUNCTUATION[i]
+                    );
+                }
+                return apply_replacements(result);
+            }
+
+            setup(
+                document.getElementById('scripts'),
+                document.getElementById('script'),
+                [
+                    ['देवनागरी', 'devanagari', 'hi', null],
+                    ['तमिल', 'tamil', 'hi-Taml', mapping.to_tamil],
+                    ['लातिन', 'iso', 'hi-Latn', mapping.to_iso],
+                    ['ध्वन्यात्मक', 'ipa', 'hi-phonipa', mapping.to_ipa],
+                    ['आंग्रेज़ी', 'english', 'hi-Latn', mapping.to_english],
+                ]
+            );
+        </script>
+        <p lang="en">&copy; 2022 Akshay Srivatsan</p>
+    </body>
+</html>

@@ -12,8 +12,8 @@ lang: en
 Also: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta}, [अक्षय श्रीवत्सन]{lang=hi}, [𑌅𑌕𑍍𑌷𑌯𑍍
 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran}, and [𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah}
 
-This page is also available in [Latin][latin], [Tamil][tamil], and
-[Sanskrit][sanskrit].
+This page is also available in [Latin][latin], [Tamil][tamil],
+[Sanskrit][sanskrit], and [Hindi][hindi].
 
 ## About
 
@@ -49,9 +49,9 @@ perform shows online during the COVID-19 pandemic.
 
 ### Course Assistant: Stanford CS 240LX (Spring 2022)
 
-I'm a course assistant for _CS 240LX: Advanced Systems Laboratory, Accelerated_.
-This course is a continuation of _CS 140E_, and the course is being offered for
-the second time (the first was Spring 2020, when I took it).
+I was a course assistant for _CS 240LX: Advanced Systems Laboratory,
+Accelerated_. This course is a continuation of _CS 140E_, and the course is
+being offered for the second time (the first was Spring 2020, when I took it).
 
 For more info, go to the [GitHub][cs240lx-22spr] repo.
 

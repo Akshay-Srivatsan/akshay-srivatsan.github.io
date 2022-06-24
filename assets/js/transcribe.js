@@ -1,4 +1,5 @@
 function real_transcribe_string(s, map) {
+    s = ' ' + s + ' ';
     s = s.normalize();
     let keys = Object.keys(map)
         .filter((x) => x.length > 0)
@@ -6,7 +7,86 @@ function real_transcribe_string(s, map) {
     keys.forEach((key) => {
         s = s.replaceAll(key, map[key]);
     });
+    return s.substring(1, s.length - 1);
+}
+
+function fix_tamil_variants(s) {
+    let zipped = s
+        .split('')
+        .map((c, i) => [s[i - 1] || ' ', c, s[i + 1] || ' ']);
+    let result = zipped.map(([previous, current, next]) => {
+        if (current !== 'ந') return current;
+        if (previous === ' ') return 'ந';
+        if (next === 'த') return 'ந';
+        return 'ன';
+    });
+    return result.join('');
+}
+
+function apply_replacements(s) {
+    for (let key in replacement_words) {
+        s = s.replaceAll(key, replacement_words[key]);
+    }
     return s;
+}
+
+function transcribe_string_without_replacements(s, map) {
+    s = ' ' + s + ' ';
+    let startingCharacters = ['(', '—', '-', '"', '“', ':'];
+    for (let i = 0; i < startingCharacters.length; i++) {
+        s = s.replaceAll(startingCharacters[i], startingCharacters[i] + ' ');
+    }
+    let endingCharacters = [')', '—', '-', '"', '“', ':', '.', '।'];
+    for (let i = 0; i < endingCharacters.length; i++) {
+        s = s.replaceAll(endingCharacters[i], ' ' + endingCharacters[i]);
+    }
+    let result = real_transcribe_string(s, map);
+    for (let i = endingCharacters.length - 1; i >= 0; i--) {
+        result = result.replaceAll(
+            ' ' + endingCharacters[i],
+            endingCharacters[i]
+        );
+    }
+    for (let i = startingCharacters.length - 1; i >= 0; i--) {
+        result = result.replaceAll(
+            startingCharacters[i] + ' ',
+            startingCharacters[i]
+        );
+    }
+    result = result.substring(1, result.length - 1);
+    return fix_tamil_variants(result);
+}
+
+function transcribe_string_with_replacements(s, map) {
+    s = ' ' + s + ' ';
+    let startingCharacters = ['(', '—', '-', '"', '“', ':'];
+    for (let i = 0; i < startingCharacters.length; i++) {
+        s = s.replaceAll(startingCharacters[i], startingCharacters[i] + ' ');
+    }
+    let endingCharacters = [')', '—', '-', '"', '“', ':', '.', '।'];
+    for (let i = 0; i < endingCharacters.length; i++) {
+        s = s.replaceAll(endingCharacters[i], ' ' + endingCharacters[i]);
+    }
+    let result = real_transcribe_string(s, map);
+    for (let i = endingCharacters.length - 1; i >= 0; i--) {
+        result = result.replaceAll(
+            ' ' + endingCharacters[i],
+            endingCharacters[i]
+        );
+    }
+    for (let i = startingCharacters.length - 1; i >= 0; i--) {
+        result = result.replaceAll(
+            startingCharacters[i] + ' ',
+            startingCharacters[i]
+        );
+    }
+    result = result.substring(1, result.length - 1);
+
+    if (mapping.to_english === map) {
+        result = apply_replacements(result);
+    }
+
+    return fix_tamil_variants(result);
 }
 
 let title = document.title;
@@ -45,5 +125,9 @@ function reset() {
 }
 
 if (!transcribe_string) {
-    var transcribe_string = real_transcribe_string;
+    var transcribe_string = transcribe_string_with_replacements;
+}
+
+if (!replacement_words) {
+    var replacement_words = {};
 }

@@ -38,8 +38,20 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-:lang(la), :lang(la) * {
+:not(:lang(en)) :lang(en) {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+:lang(la), :lang(la) :lang(en) {
   font-family: 'Libre Baskerville', sans-serif;
+}
+
+:lang(ta) {
+  font-family: 'Noto Sans Tamil', 'Noto Sans', sans-serif;
+}
+
+:lang(sa), :lang(hi) {
+  font-family: 'Noto Sans Devanagari', 'Noto Sans', sans-serif;
 }
 
 :lang(la-Latg), :lang(la-Latg) * {
@@ -50,20 +62,20 @@
   font-family: 'Noto Sans Old Italic', 'Noto Sans', sans-serif;
 }
 
-:lang(ta), :lang(sa-Taml) {
-  font-family: 'Noto Sans Tamil', 'Noto Sans', sans-serif;
+:lang(ta-Deva) {
+  font-family: 'Noto Sans Devanagari', 'Noto Sans', sans-serif;
 }
 
-:lang(sa), :lang(hi), :lang(ta-Deva) {
-  font-family: 'Noto Sans Devanagari', 'Noto Sans', sans-serif;
+:lang(sa-Taml), :lang(hi-Taml) {
+  font-family: 'Noto Sans Tamil', 'Noto Sans', sans-serif;
 }
 
 :lang(sa-Gran) {
   font-family: 'Noto Sans Grantha', 'Noto Sans', sans-serif;
 }
 
-:lang(sa-Latn), :lang(ta-Latn) {
-  font-family: 'Noto Sans', 'Noto Sans', sans-serif;
+:lang(sa-Latn), :lang(ta-Latn), :lang(hi-Latn) {
+  font-family: 'Noto Sans', sans-serif;
 }
 
 :lang(sa-Brah), :lang(ta-Brah) {
@@ -78,7 +90,7 @@
   font-family: 'Agastya', 'Noto Sans Tamil', 'Noto Sans', sans-serif;
 }
 
-:lang(en-phonipa), :lang(la-phonipa), :lang(sa-phonipa), :lang(ta-phonipa) {
+:lang(en-phonipa), :lang(la-phonipa), :lang(sa-phonipa), :lang(ta-phonipa), :lang(hi-phonipa) {
   font-family: "Voces", sans-serif;
   font-weight: 400;
 }

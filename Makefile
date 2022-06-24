@@ -1,7 +1,7 @@
 HTML_TEMPLATE=templates/index.html
 TEMPLATES=$(wildcard templates/*)
 
-SOURCE=content/index.md content/tamil.md content/latin.md content/sanskrit.md
+SOURCE=content/index.md content/tamil.md content/latin.md content/sanskrit.md content/hindi.md
 LINKS=content/links.md
 HTML=$(patsubst content/%.md,%.html,$(SOURCE))
 
