@@ -175,6 +175,8 @@ var replacement_words = {
     'ee-patr': 'e-patr',
     'maarca': 'March',
     'aprail': 'April',
+    'சோர்கள்': 'சொற்கள்',
+    'தமில்': 'தமிழ்',
 };
 
 function fix_hindi_a(s) {

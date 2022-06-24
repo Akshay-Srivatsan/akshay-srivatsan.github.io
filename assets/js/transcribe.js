@@ -25,18 +25,26 @@ function fix_tamil_variants(s) {
 
 function apply_replacements(s) {
     for (let key in replacement_words) {
-        s = s.replaceAll(key, replacement_words[key]);
+        s = s.replaceAll(
+            key.replaceAll('◌', ''),
+            replacement_words[key].replaceAll('◌', '')
+        );
     }
     return s;
 }
 
 function transcribe_string_without_replacements(s, map) {
+    // extra whitespace interferes with Tamil cross-word sandhi
+    s = s.replaceAll(/\s+/g, ' ');
+
+    // lack of leading whitespace or trailing whitespace interferes with Tamil allophones
     s = ' ' + s + ' ';
-    let startingCharacters = ['(', '—', '-', '"', '“', ':'];
+
+    let startingCharacters = ['(', '—', '-', '"', '“'];
     for (let i = 0; i < startingCharacters.length; i++) {
         s = s.replaceAll(startingCharacters[i], startingCharacters[i] + ' ');
     }
-    let endingCharacters = [')', '—', '-', '"', '“', ':', '.', '।'];
+    let endingCharacters = [')', '—', '-', '"', '“', ':', '.', '।', ','];
     for (let i = 0; i < endingCharacters.length; i++) {
         s = s.replaceAll(endingCharacters[i], ' ' + endingCharacters[i]);
     }
@@ -58,31 +66,9 @@ function transcribe_string_without_replacements(s, map) {
 }
 
 function transcribe_string_with_replacements(s, map) {
-    s = ' ' + s + ' ';
-    let startingCharacters = ['(', '—', '-', '"', '“', ':'];
-    for (let i = 0; i < startingCharacters.length; i++) {
-        s = s.replaceAll(startingCharacters[i], startingCharacters[i] + ' ');
-    }
-    let endingCharacters = [')', '—', '-', '"', '“', ':', '.', '।'];
-    for (let i = 0; i < endingCharacters.length; i++) {
-        s = s.replaceAll(endingCharacters[i], ' ' + endingCharacters[i]);
-    }
-    let result = real_transcribe_string(s, map);
-    for (let i = endingCharacters.length - 1; i >= 0; i--) {
-        result = result.replaceAll(
-            ' ' + endingCharacters[i],
-            endingCharacters[i]
-        );
-    }
-    for (let i = startingCharacters.length - 1; i >= 0; i--) {
-        result = result.replaceAll(
-            startingCharacters[i] + ' ',
-            startingCharacters[i]
-        );
-    }
-    result = result.substring(1, result.length - 1);
+    let result = transcribe_string_without_replacements(s, map);
 
-    if (mapping.to_english === map) {
+    if (mapping.to_ipa !== map) {
         result = apply_replacements(result);
     }
 
