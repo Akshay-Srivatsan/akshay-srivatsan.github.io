@@ -8,7 +8,7 @@ js: [transliterate/hindi.js, assets/js/common.js, assets/js/transcribe.js]
 
 # अक्षय श्रीवत्सन
 
-[/əkʂəy ʃrɪʋətsən/]{lang=hi-phonipa .ipa #ipa-name}
+[/əkʂəy ʃriːʋətsən/]{lang=hi-phonipa .ipa #ipa-name}
 
 अन्य लिपि में: [[Akshay Srivatsan]{lang=en}, ]{#english-name} [[அக்ஷய்
 ஶ்ரீவத்ஸன்]{lang=ta}, ]{#tamil-name} [[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=hi-Gran},
