@@ -47,12 +47,11 @@ trānslātor Google bene intellegēre Latinam nōn potest.
 
 ![photographema meī ante urbem Sanctum Franciscum][portrait]
 
-usque ad Jūnium MMXXII, ego scientiam computātrālis studiens discipulus in
-Ūniversitātē Stanfordiēnsī eram. organizatiōnem computātrōrum et robotōs studuī,
-et prius graphicam et simulatiōnem computātrālem studēbam. in lūdō secundō,
-situm interrētialem prō _Menlo JCL_ fēcī, et gregem ad Latinam loquendum
-īnstituī. annō quartō ludī secundī, prō _California JCL_ situm interrētiālem
-gubernābam.
+ego scientiam computātrālis studiens discipulus in Ūniversitātē Stanfordiēnsī
+sum. organizatiōnem computātrōrum et robotōs studuī, et prius graphicam et
+simulatiōnem computātrālem studēbam. in lūdō secundō, situm interrētialem prō
+_Menlo JCL_ fēcī, et gregem ad Latinam loquendum īnstituī. annō quartō ludī
+secundī, prō _California JCL_ situm interrētiālem gubernābam.
 
 extrā lūdum et opus, mihi photographia, clāvile cantāre, et linguās discere
 placet. linguās Anglicam, Latinam, Tamulicam, Hindicam, et Sanscritam aliquid
@@ -60,9 +59,10 @@ sciō.
 
 ## ērudītiō mea
 
-prō Diplōmate Magistrī in Scientiā Computātrālī in Ūniversitātē Stanfordiēnsī
-studuī (ā MMXX ad MMXXII). Baccalaureus quōque in Stanford perfēcī (ā MMXVII ad
-MMXXI). prius, in Lūdō Menloniēnsī studēbam.
+ego Ūniversitātē Stanfordiēnsī studeō ut Philosophiae Doctōr fīam. antequam, prō
+Diplōmate Magistrī in Scientiā Computātrālī in Ūniversitātē Stanfordiēnsī
+studēbam (ā MMXX ad MMXXII). Baccalaureus quōque in Stanford perfēcī (ā MMXVII
+ad MMXXI). prius, in Lūdō Menloniēnsī studēbam.
 
 ## coepta mea
 

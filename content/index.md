@@ -20,21 +20,21 @@ This page is also available in [Latin][latin], [Tamil][tamil],
 ![A portrait of me with the San Francisco skyline in the 
 background.][portrait]
 
-I'm a recent graduate of the Stanford University Department of Computer Science.
-I just finished my masters focusing on computer systems, and I previously did my
-undergrad focusing on computer graphics. My experience ranges from raytracers to
-websites, but I mostly like working at the OS level and working with hardware.
-I've worked at Stanford, Facebook/Instagram, and Aqua Satellite.
+I'm a PhD student at the Stanford University Department of Computer Science. I'm
+interested in computer systems (especially operating systems) and robotics, as
+well as the intersection of computer science and other subjects (i.e., the
+arts).
 
-Outside of school/work, I'm also interested in analog and digital photography,
+Outside of school, I'm also interested in analog and digital photography,
 playing the piano, and learning languages.
 
 ## Education
 
-I recently finished a masters degree at Stanford University, focusing on
-computer systems within the Department of Computer Science. I also did my
-undergrad at Stanford (2017--2021), focusing on computer graphics. Before that,
-I went to Menlo School for high school.
+I'm currently a PhD student at the Stanford University Computer Science
+Department. I recently finished a masters degree focusing on computer systems
+(2020--2022), and before that I also did my undergrad at Stanford (2017--2021),
+focusing on computer graphics. Before that, I went to Menlo School for high
+school.
 
 ## Projects
 

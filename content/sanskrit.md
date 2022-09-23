@@ -48,6 +48,8 @@ sarvo vivaraṇa [āṅglabhāṣāyām][english].
 
 ## śikṣaṇa mama
 
+-   vidyāvāridhyupādhi vijñāne saṅgaṇakayantrāṇāṁ sṭenforḍ viśvavidyalaye
+    (kāsaṁvidhā, 2022--nu)
 -   ācāryopādhi vijñāne saṅgaṇakayantrāṇāṁ sṭenforḍ viśvavidyalaye (kāsaṁvidhā,
     2020--2022)
 -   śāstryupādhi vijñāne saṅgaṇakayantrāṇāṁ sṭenforḍ viśvavidyalaye (citraṇa,
@@ -107,6 +109,11 @@ sarvo vivaraṇa [āṅglabhāṣāyām][english].
 -   [īpatra][email]
 
 <script>
+var replacement_words = {
+    akshay: 'Akshay',
+    shreevatsan: 'Srivatsan',
+};
+
 setup(
     document.getElementById("scripts"),
     document.getElementById("script"),
