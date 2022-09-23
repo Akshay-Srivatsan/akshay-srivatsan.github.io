@@ -296,7 +296,7 @@ setup(
         ["तमिल", "tamil", "hi-Taml", mapping.to_tamil],
         ["लातिन", "iso", "hi-Latn", mapping.to_iso],
         ["ध्वन्यात्मक", "ipa", "hi-phonipa", mapping.to_ipa],
-        ["आंग्रेज़ी", "english", "hi-Latn", mapping.to_english],
+        ["आंग्रेज़ी", "angrezi", "hi-Latn", mapping.to_english],
     ]
 );
 </script>

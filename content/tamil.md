@@ -187,7 +187,7 @@ setup(
         ["தேவநாகரி", "devanagari", "ta-Deva", mapping.to_devanagari],
         ["லத்தீன்", "iso", "ta-Latn", mapping.to_iso],
         ["சர்வதேச", "ipa", "ta-phonipa", mapping.to_ipa],
-        ["ஆங்கிலம்", "english", "ta-Latn", mapping.to_english],
+        ["ஆங்கிலம்", "aangilam", "ta-Latn", mapping.to_english],
     ]
 );
 </script>
