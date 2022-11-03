@@ -91,6 +91,8 @@ software used by the production engineering and software engineering teams.
 
 ### Research
 
+-   [The Convergence of Efficiency and Scalability in Ocean Data
+    Platforms][aquasatellite] (OCEANS 2021)
 -   [Making a Synchronous Motor][motor] (Menlo Roundtable, Fall 2016)
 -   [Performance Boost: Dynamically Improving a Home's Wi-Fi Signal][wifi] (IEEE
     Potentials, March--April 2016)

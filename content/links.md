@@ -12,9 +12,10 @@
 [cs240lx-22spr]: https://github.com/dddrrreee/cs240lx-22spr
 [motor]:
     http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf
-[wifi]: http://ieeexplore.ieee.org/abstract/document/7425403/
+[wifi]: https://doi.org/10.1109/MPOT.2015.2396534
 [oxygen]: http://www.cyberjournals.com/Papers/2015/01.pdf
 [github]: https://github.com/Akshay-Srivatsan
 [linkedin]: https://www.linkedin.com/in/akshay-srivatsan/
 [youtube]: https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA
 [email]: mailto:srivatsan.akshay+website@gmail.com
+[aquasatellite]: https://doi.org/10.23919/OCEANS44145.2021.9705697

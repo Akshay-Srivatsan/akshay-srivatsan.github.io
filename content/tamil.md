@@ -108,6 +108,8 @@ js: [transliterate/tamil.js, assets/js/common.js, assets/js/transcribe.js]
 
 ### ஆய்வுகள்
 
+-   [[The Convergence of Efficiency and Scalability in Ocean Data
+    Platforms]{lang=en}][aquasatellite] ([OCEANS]{lang=en} ௨௦௨௧)
 -   [[Making a Synchronous Motor]{lang=en}][motor] ([Menlo Roundtable]{lang=en},
     இலையுதிர்காலம் ௨௦௧௬)
 -   [[Performance Boost: Dynamically Improving a Home's Wi-Fi
