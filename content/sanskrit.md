@@ -66,12 +66,13 @@ sarvo vivaraṇa [āṅglabhāṣāyām][english].
 
 ## udyogā mama
 
--   adhyāpakāyaḥ sahāyaka sṭenforḍ [CS 240LX]{lang=en} kāsaṁvidhāṇāṁ
+-   śodha sahāyaka sṭenforḍ vijñāne saṅgaṇakayantrāṇāṁ (śaradāyām 2022)
+-   adhyāpakāya sahāyaka sṭenforḍ [CS 240LX]{lang=en} kāsaṁvidhāṇāṁ
     prayogaśālām (hemante 2022)
--   adhyāpakāyaḥ sahāyaka sṭenforḍ [CS 140E]{lang=en} kāsaṁvidhāṇām
+-   adhyāpakāya sahāyaka sṭenforḍ [CS 140E]{lang=en} kāsaṁvidhāṇām
     (vasante 2022)
 -   bhr̥tyaśāstropagrahe samudre (grīṣmakāle 2021)
--   adhyāpakāyaḥ sahāyaka sṭenforḍ [CS 140E]{lang=en} kāsaṁvidhāṇām
+-   adhyāpakāya sahāyaka sṭenforḍ [CS 140E]{lang=en} kāsaṁvidhāṇām
     (vasante 2021)
 -   tantrāṁśābhiyantensṭagrāmi (grīṣmakāle 2020)
 -   tantrāṁśābhiyantā fesbuki (grīṣmakāle 2019)

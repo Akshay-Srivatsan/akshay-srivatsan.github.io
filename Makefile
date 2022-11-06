@@ -55,7 +55,7 @@ run:
 
 .PHONY: dev
 dev: all
-	$(MAKE) refresh
+#	$(MAKE) refresh
 
 .PHONY: refresh
 refresh:

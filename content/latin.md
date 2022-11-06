@@ -76,6 +76,10 @@ epidemia est. (MMXX-MMXXI)
 
 ## negōtia mea
 
+### administer disquīsītiōnis: Stanford CS (autumnō MMXXII)
+
+nunc in labōrātōriō _disquīsītiō systēmatumque rētiumque_ labōrō. [novam versiōnem Stagecastis][proleptic] faciō.  hāc cantōrēs clavilis interrētē simul cantāre poterunt.
+
 ### administer cursūs: Stanford CS 240LX (vēre MMXXII)
 
 cursū _CS 240LX: labōrātōrium systēmatum internōrum, accelerātum_ adjuvī.

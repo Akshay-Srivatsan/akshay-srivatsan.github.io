@@ -47,6 +47,10 @@ perform shows online during the COVID-19 pandemic.
 
 ## Experience
 
+### Research Assistant: Stanford CS (Autumn 2022)
+
+I'm currently a research assistant in the Systems and Network Research lab, working on [the next generation of Stagecast][proleptic]. This updated version is designed to allow piano players to play duets simultaneously over the Internet, even when faced with network latency that would normally make it difficult to stay in sync.
+
 ### Course Assistant: Stanford CS 240LX (Spring 2022)
 
 I was a course assistant for _CS 240LX: Advanced Systems Laboratory,

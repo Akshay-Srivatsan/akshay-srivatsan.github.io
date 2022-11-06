@@ -35,7 +35,7 @@ srīvatsan]{lang=sa-Latn}, ]{#iso-name} वगैरह।
 
 ![सैन फ़्रांसिस्को शहर के सामने मेरी तस्वीर][portrait]
 
-मैने स्टैंंफ़ोर्ड विश्वविध्यालय में पी एच डी छात्र हूँ। मैं कमप्यूटर विज्ञान के
+मैने स्टैंफ़ोर्ड विश्वविध्यालय में पी एच डी छात्र हूँ। मैं कमप्यूटर विज्ञान के
 डिपार्ट्मेंट में प्रचालन तंत्रों के बारे में पढ़ रहा था। उसके पहले, मैं कमप्यूटर
 चित्रलेख अध्ययन पढ़ रहा था। मेरा अनुभव बहुत विश्यों में है, पर मुझे निम्न स्तर
 के प्रोग्राम सबसे अच्छे लगते हैं। मैंने फ़ैसबुक, इंस्टाग्राम, और अक्वा
@@ -62,6 +62,10 @@ srīvatsan]{lang=sa-Latn}, ]{#iso-name} वगैरह।
 सनगीतकार अबयास कर सकते हैं।
 
 ## मेरा अनुभव
+
+### शोध शायक: स्टैंफ़ोर्ड कमप्यूटर विज्ञान (पतझड़ २०२२)
+
+अब मैं सिस्टम और नेटवर्क अनुसंधान प्रयोगशाले में काम कर रहा हुँ। जो [स्टेजकास्ट का नया संस्कारण][proleptic] हम बना रहे हैं, वह पियानो बजानेवालों को इनटरनेट पर एक साथ बजा देगा।
 
 ### शिकशण सहायक: स्टैंफ़ोर्ड [CS 240LX]{lang=en} (वसंत २०२२)
 
@@ -158,7 +162,9 @@ var replacement_words = {
     'corakal': 'Chorkal',
     'vordal': 'Wordle',
     'stejkaast': 'Stagecast',
-    'opreting sistam': 'operating system',
+    'kovid': 'COVID',
+    'opreting': 'operating',
+    'sistam': 'system',
     'laib': 'lab',
     'dizaain': 'design',
     'faisbuk': 'Facebook',
@@ -179,6 +185,8 @@ var replacement_words = {
     'maarca': 'March',
     'aprail': 'April',
     'pi ec di': 'PhD',
+    'netvark': 'network',
+    'intaranet': 'internet',
     'சோர்கள்': 'சொற்கள்',
     'தமில்': 'தமிழ்',
 };
@@ -198,6 +206,7 @@ function fix_hindi_a(s) {
 
     let words = s.split(' ');
     words = words.map(word => {
+        word = word.trim();
         if (word.length == 0) return word;
         if (word.length == 1) return word;
         let first_syllable_ending = -1;
@@ -229,17 +238,15 @@ function fix_hindi_a(s) {
         }
 
         // Rule 2: infinitives (or similar) lose the schwa before their ending.
+        // - but not if there's only one syllable before the ending
         if (word.endsWith("ना") || word.endsWith("ने")) {
-            console.log(word);
             let ending = word.substring(word.length - 2);
             let beginning = word.substring(0, word.length - 2);
-            console.log(word, beginning, ending, first_syllable_ending);
-            if (beginning.length >= first_syllable_ending) {
+            if (beginning.length >= first_syllable_ending && beginning.length >= 2) {
                 let previous = word[beginning.length - 1];
                 if (CONSONANTS.includes(previous)) {
                     word = beginning + HALANT + ending;
                 }
-                console.log(word);
             }
         }
 
