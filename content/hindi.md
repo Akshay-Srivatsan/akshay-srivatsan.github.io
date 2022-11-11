@@ -35,10 +35,9 @@ srīvatsan]{lang=sa-Latn}, ]{#iso-name} वगैरह।
 
 ![सैन फ़्रांसिस्को शहर के सामने मेरी तस्वीर][portrait]
 
-मैने स्टैंफ़ोर्ड विश्वविध्यालय में पी एच डी छात्र हूँ। मैं कमप्यूटर विज्ञान के
-डिपार्ट्मेंट में प्रचालन तंत्रों के बारे में पढ़ रहा था। उसके पहले, मैं कमप्यूटर
-चित्रलेख अध्ययन पढ़ रहा था। मेरा अनुभव बहुत विश्यों में है, पर मुझे निम्न स्तर
-के प्रोग्राम सबसे अच्छे लगते हैं। मैंने फ़ैसबुक, इंस्टाग्राम, और अक्वा
+मैं स्टैंफ़ोर्ड विश्वविध्यालय में पी एच डी छात्र हूँ। कमप्यूटर विज्ञान के
+डिपार्ट्मेंट में प्रचालन तंत्रों के बारे में शोध कर रहा हूँ। उसके पहले, मैं कमप्यूटर
+चित्रलेख अध्ययन पढ़ रहा था। मेरा अनुभव बहुत विश्यों में है, पर आम तौर पर मैं निम्न स्तर में काम करता हूँ। मैंने फ़ैसबुक, इंस्टाग्राम, और अक्वा
 साटेल्लाईट में काम किया है।
 
 काम के अलावा, मुझे तसवीरें कींचना, पियानो बजाना, और भाषाएं सीखना पसंद हैं। मुझे
@@ -251,15 +250,15 @@ function fix_hindi_a(s) {
         }
 
         // Rule 3: delete schwas in the environment VC_CV.
-        // - applies from left to right
+        // - applies from right to left
         // - does not apply to first syllable
-        for (let i = word.length; i >= first_syllable_ending; i--) {
+        for (let i = word.length; i >= first_syllable_ending - 2; i--) {
             let a = word[i]
             let b = word[i + 1];
             let c = word[i + 2];
             let d = word[i + 3];
-
-            if (VOCALICS.includes(a) && CONSONANTS.includes(b) && CONSONANTS.includes(c) && d !== HALANT) {
+            
+            if ((VOCALICS.includes(a) || CONSONANTS.includes(a)) && CONSONANTS.includes(b) && CONSONANTS.includes(c) && d !== HALANT) {
                 word = word.substring(0, i + 2) + HALANT + word.substring(i + 2);
             }
         }
