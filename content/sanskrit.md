@@ -39,7 +39,7 @@ doṣebhyaḥ kṣamyatām.
 mama nāmākṣayaḥ. sṭenforḍ viśvavidyālaye vijñānaṁ saṅgaṇakayantrāṇāṁ paṭhami.
 kāsaṁvidhāsu gaveṣaṇaṁ karomi. citraṇam pūrvamapaṭhaṁ ca kāsaṁvidhās nu paṭhami.
 
-vidyālayād bahiś chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatuṁ ca roce.
+vidyālayād bahiś chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatuṁ ca nr̥tyaṁ kartuṁ ca roce.
 
 āṅglabhāṣāṁ ca tamiḷbhāṣāṁ ca lātinbhāṣāṁ ca hindībhāṣāṁ ca saṁskr̥tabhāṣāṁ ca
 jānāmi.

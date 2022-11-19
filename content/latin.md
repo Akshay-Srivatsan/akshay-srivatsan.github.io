@@ -51,7 +51,7 @@ interrētialem prō _Menlo JCL_ fēcī, et gregem ad Latinam loquendum īnstitu�
 annō quartō ludī secundī, prō _California JCL_ situm interrētiālem gubernābam.
 
 extrā lūdum et opus, mihi photographia, clāvile cantāre, et linguās discere
-placet. linguās Anglicam, Latinam, Tamulicam, Hindicam, et Sanscritam sciō.
+placet. linguās Anglicam, Latinam, Tamulicam, Hindicam, et Sanscritam sciō.  mihi saltāre sociāle quoque placet.
 
 ## ērudītiō mea
 
