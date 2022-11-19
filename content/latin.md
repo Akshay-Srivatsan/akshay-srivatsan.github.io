@@ -33,9 +33,6 @@ praestō est haec pāgina in [Linguā Anglicā][english], [Linguā Tamulicā][ta
 salvē! haec est versiō Latina situs interrētiālis meī. sī errāta vidēs, mē nōtē!
 quinque annōs Latinam nōn scrīpsī, ergō multōrum oblīvīscī; mē paenitet.
 
-notā bene: hīc situs interrētiālis nōn vidēbitur rēctē trānslātorē Google;
-trānslātor Google bene intellegēre Latinam nōn potest.
-
 <div id="font" style="display:none">
 <label for="change_font">**speciēm litterārum ēligē:**</label>
 <select name="change_font" id="change_font">
@@ -48,14 +45,13 @@ trānslātor Google bene intellegēre Latinam nōn potest.
 ![photographema meī ante urbem Sanctum Franciscum][portrait]
 
 ego scientiam computātrālis studiens discipulus in Ūniversitātē Stanfordiēnsī
-sum. organizatiōnem computātrōrum et robotōs studuī, et prius graphicam et
-simulatiōnem computātrālem studēbam. in lūdō secundō, situm interrētialem prō
-_Menlo JCL_ fēcī, et gregem ad Latinam loquendum īnstituī. annō quartō ludī
-secundī, prō _California JCL_ situm interrētiālem gubernābam.
+sum. nunc systēmās operātōriās et rēticula computātrālia studeō, et prius
+graphicam et simulatiōnem computātrālem studēbam. in lūdō secundō, situm
+interrētialem prō _Menlo JCL_ fēcī, et gregem ad Latinam loquendum īnstituī.
+annō quartō ludī secundī, prō _California JCL_ situm interrētiālem gubernābam.
 
 extrā lūdum et opus, mihi photographia, clāvile cantāre, et linguās discere
-placet. linguās Anglicam, Latinam, Tamulicam, Hindicam, et Sanscritam aliquid
-sciō.
+placet. linguās Anglicam, Latinam, Tamulicam, Hindicam, et Sanscritam sciō.
 
 ## ērudītiō mea
 
@@ -78,7 +74,9 @@ epidemia est. (MMXX-MMXXI)
 
 ### administer disquīsītiōnis: Stanford CS (autumnō MMXXII)
 
-nunc in labōrātōriō _disquīsītiō systēmatumque rētiumque_ labōrō. [novam versiōnem Stagecastis][proleptic] faciō.  hāc cantōrēs clavilis interrētē simul cantāre poterunt.
+nunc in labōrātōriō _disquīsītiō systēmatumque rētiumque_ labōrō. [novam
+versiōnem Stagecastis][proleptic] faciō. hāc cantōrēs clavilis interrētē simul
+cantāre poterunt.
 
 ### administer cursūs: Stanford CS 240LX (vēre MMXXII)
 
@@ -125,8 +123,7 @@ in manū "flūmen et fābulae" labōrābam.
 -   [[Making a Synchronous Motor]{lang=en}][motor] ([Menlo Roundtable,]{lang=en}
     autumnō MMXVI)
 -   [[Performance Boost: Dynamically Improving a Home's Wi-Fi
-    Signal]{lang=en}][wifi] ([IEEE Potentials,]{lang=en} ā mārtius ad Aprīlem
-    MMXVI)
+    Signal]{lang=en}][wifi] ([IEEE Potentials,]{lang=en} ā mārtius MMXVI ad Aprīlem)
 -   [[A Dual Sensor System for Determining the Unique Oxygen Production
     Signature of Plants]{lang=en}][oxygen] ([Cyber Journals -
     Mechatronics,]{lang=en} MMXV)
