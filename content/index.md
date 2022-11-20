@@ -1,6 +1,6 @@
 ---
 title: Akshay Srivatsan
-description: Computer Scientist, Stanford MS CS '22
+description: Ph.D. Student, Stanford CS
 image-alt: Portrait of Akshay Srivatsan with San Francisco in the background.
 lang: en
 ---
@@ -21,9 +21,9 @@ This page is also available in [Latin][latin], [Tamil][tamil],
 background.][portrait]
 
 I'm a PhD student at the Stanford University Department of Computer Science. I'm
-interested in computer systems (especially operating systems) and robotics, as
-well as the intersection of computer science and other subjects (i.e., the
-arts).
+interested in computer systems and networking, especially operating systems. I
+also like using computer science to support/enable other subjects (e.g.,
+[Stagecast][stagecast] for theatre and [Proleptic][proleptic] for music).
 
 Outside of school, I'm also interested in analog and digital photography,
 playing the piano, and learning languages.
@@ -42,14 +42,18 @@ school.
 
 [Carta][carta]: a course-planning website for Stanford students.
 
-[Stagecast][stagecast]: software to allow musicians and actors to rehearse and
-perform shows online during the COVID-19 pandemic.
+[Stagecast][stagecast] and [Proleptic][proleptic]: software to allow musicians
+and actors to rehearse and perform shows over the internet.
 
 ## Experience
 
 ### Research Assistant: Stanford CS (Autumn 2022)
 
-I'm currently a research assistant in the Systems and Network Research lab, working on [the next generation of Stagecast][proleptic]. This updated version is designed to allow piano players to play duets simultaneously over the Internet, even when faced with network latency that would normally make it difficult to stay in sync.
+I'm currently a research assistant in the Systems and Network Research lab,
+working on [Proleptic][proleptic], the next generation of Stagecast. This
+updated version is designed to allow piano players to play duets simultaneously
+over the Internet, even when faced with network latency that would normally make
+it difficult to stay in sync.
 
 ### Course Assistant: Stanford CS 240LX (Spring 2022)
 

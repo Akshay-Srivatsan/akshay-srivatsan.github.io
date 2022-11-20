@@ -1,7 +1,8 @@
 ---
 title: Akshay Srivatsan (situs interrētiālis)
 title-meta: situs interrētiālis dē Akshay Srivatsan
-description: physicus ordinatralis, Stanford MS CS MMXXII
+description:
+    ūniversitātē stanfordiēnsī discipulus doctōrālis scientiae computātrālis.
 image: assets/img/portrait-small.jpg
 image-alt: photographema meī ante urbem Sanctum Franciscum
 lang: la
@@ -49,9 +50,12 @@ sum. nunc systēmās operātōriās et rēticula computātrālia studeō, et pri
 graphicam et simulatiōnem computātrālem studēbam. in lūdō secundō, situm
 interrētialem prō _Menlo JCL_ fēcī, et gregem ad Latinam loquendum īnstituī.
 annō quartō ludī secundī, prō _California JCL_ situm interrētiālem gubernābam.
+volō utī scientiam computātrālis prō artibus, ut [Stagecast][stagecast] et
+[Proleptic][proleptic].
 
 extrā lūdum et opus, mihi photographia, clāvile cantāre, et linguās discere
-placet. linguās Anglicam, Latinam, Tamulicam, Hindicam, et Sanscritam sciō.  mihi saltāre sociāle quoque placet.
+placet. linguās Anglicam, Latinam, Tamulicam, Hindicam, et Sanscritam sciō. mihi
+saltāre sociāle quoque placet.
 
 ## ērudītiō mea
 
@@ -65,10 +69,9 @@ ad MMXXI). prius, in Lūdō Menloniēnsī studēbam.
 [[சொற்கள்]{lang=ta}][chorkal]: lūdus verbōrum Tamulicōrum, Wordle ipsī similis.
 
 [Carta][carta]: situs interrētiālis ad cōnsilia cursuum facienda ā studentibus.
-(MMXIX-MMXX)
 
-[Stagecast][stagecast]: programma ad drāmata agenda in interrētiālē dum COVID
-epidemia est. (MMXX-MMXXI)
+[Stagecast][stagecast] et [Proleptic][proleptic]: programmata quae permittunt ut
+drāmata et mūsicae interrētiālē agantur.
 
 ## negōtia mea
 
@@ -123,7 +126,8 @@ in manū "flūmen et fābulae" labōrābam.
 -   [[Making a Synchronous Motor]{lang=en}][motor] ([Menlo Roundtable,]{lang=en}
     autumnō MMXVI)
 -   [[Performance Boost: Dynamically Improving a Home's Wi-Fi
-    Signal]{lang=en}][wifi] ([IEEE Potentials,]{lang=en} ā mārtius MMXVI ad Aprīlem)
+    Signal]{lang=en}][wifi] ([IEEE Potentials,]{lang=en} ā mārtius MMXVI ad
+    Aprīlem)
 -   [[A Dual Sensor System for Determining the Unique Oxygen Production
     Signature of Plants]{lang=en}][oxygen] ([Cyber Journals -
     Mechatronics,]{lang=en} MMXV)

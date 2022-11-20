@@ -1,6 +1,6 @@
 ---
 title: akṣayasya jālasthāna
-description: vaijñānikaḥ saṅgaṇakāṇāṁ stenfārd viśvavidyalaye 2022
+description: chātra saṅgaṇakāṇāṁ stenfārd viśvavidyalaye
 image: assets/img/portrait-small.jpg
 image-alt: citraṁ mama sān frānsisko nagare
 lang: sa-Latn
@@ -22,7 +22,7 @@ etad jālapr̥ṣṭhopalabhya [āṅglabhāṣayā][english] ca [tamiḷbhāṣ
 
 ## namaskāraḥ!
 
-namaskāraś ca svāgatam. saṁskr̥tamekamekaṁ varṣaṁ viśvavidyālaye &apos;paṭham.  
+namaskāraś ca svāgatam. saṁskr̥tamekaṁ varṣaṁ viśvavidyālaye &apos;paṭham.  
 doṣebhyaḥ kṣamyatām.
 
 <div id="scripts" style="display:none">
@@ -39,7 +39,8 @@ doṣebhyaḥ kṣamyatām.
 mama nāmākṣayaḥ. sṭenforḍ viśvavidyālaye vijñānaṁ saṅgaṇakayantrāṇāṁ paṭhami.
 kāsaṁvidhāsu gaveṣaṇaṁ karomi. citraṇam pūrvamapaṭhaṁ ca kāsaṁvidhās nu paṭhami.
 
-vidyālayād bahiś chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatuṁ ca nr̥tyaṁ kartuṁ ca roce.
+vidyālayād bahiś chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatuṁ ca nr̥tyaṁ
+kartuṁ ca roce.
 
 āṅglabhāṣāṁ ca tamiḷbhāṣāṁ ca lātinbhāṣāṁ ca hindībhāṣāṁ ca saṁskr̥tabhāṣāṁ ca
 jānāmi.
@@ -67,8 +68,8 @@ sarvo vivaraṇa [āṅglabhāṣāyām][english].
 ## udyogā mama
 
 -   śodha sahāyaka sṭenforḍ vijñāne saṅgaṇakayantrāṇāṁ (śaradāyām 2022)
--   adhyāpakāya sahāyaka sṭenforḍ [CS 240LX]{lang=en} kāsaṁvidhāṇāṁ
-    prayogaśālām (hemante 2022)
+-   adhyāpakāya sahāyaka sṭenforḍ [CS 240LX]{lang=en} kāsaṁvidhāṇāṁ prayogaśālām
+    (hemante 2022)
 -   adhyāpakāya sahāyaka sṭenforḍ [CS 140E]{lang=en} kāsaṁvidhāṇām
     (vasante 2022)
 -   bhr̥tyaśāstropagrahe samudre (grīṣmakāle 2021)
