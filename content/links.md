@@ -10,6 +10,7 @@
 [cs140e-22win]: https://github.com/dddrrreee/cs140e-22win
 [cs140e-21spr]: https://github.com/dddrrreee/cs140e-21spr
 [cs240lx-22spr]: https://github.com/dddrrreee/cs240lx-22spr
+[cs240lx-23spr]: https://github.com/dddrrreee/cs240lx-23spr
 [motor]:
     http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf
 [wifi]: https://doi.org/10.1109/MPOT.2015.2396534
@@ -19,4 +20,6 @@
 [youtube]: https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA
 [email]: mailto:srivatsan.akshay+website@gmail.com
 [aquasatellite]: https://doi.org/10.23919/OCEANS44145.2021.9705697
-[proleptic]: https://github.com/stanford-stagecast/proleptic 
+[proleptic]: https://github.com/stanford-stagecast/proleptic
+[cs45]: https://cs45.stanford.edu
+[cs140e]: https://cs140e.stanford.edu

@@ -53,6 +53,11 @@ annō quartō ludī secundī, prō _California JCL_ situm interrētiālem gubern
 volō utī scientiam computātrālis prō artibus, ut [Stagecast][stagecast] et
 [Proleptic][proleptic].
 
+MMXXIII annī hieme nōvum cursum, _[[CS 45][cs45]]{lang=en}: programmatae
+computātrālēs quae sciendae sunt programmātoribus omnibus_, docēbō. cursū
+_[[CS 140E][cs140e]]{lang=en}: inventiōque cōnstrūctiōque nucleōrum
+computātrōrum_ quoque tertio adjuvābō.
+
 extrā lūdum et opus, mihi photographia, clāvile cantāre, et linguās discere
 placet. linguās Anglicam, Latinam, Tamulicam, Hindicam, et Sanscritam sciō. mihi
 saltāre sociāle quoque placet.
@@ -77,9 +82,9 @@ drāmata et mūsicae interrētiālē agantur.
 
 ### administer disquīsītiōnis: Stanford CS (autumnō MMXXII)
 
-nunc in labōrātōriō _disquīsītiō systēmatumque rētiumque_ labōrō. [novam
-versiōnem Stagecastis][proleptic] faciō. hāc cantōrēs clavilis interrētē simul
-cantāre poterunt.
+in labōrātōriō _disquīsītiō systēmatumque rētiumque_ labōrābam. [novam versiōnem
+Stagecastis][proleptic] facebam. hāc cantōrēs clavilis interrētē simul cantāre
+poterunt.
 
 ### administer cursūs: Stanford CS 240LX (vēre MMXXII)
 
@@ -90,7 +95,7 @@ sī plūrēs discere vīs, repositōrium in [GitHub][cs240lx-22spr] vidē.
 
 ### administer cursūs: Stanford CS 140E (hieme MMXXII)
 
-cursu _CS 140E: inventiōque cōnstrūctiōque nucleōrum computātrōrum_ adjuvī. in
+cursū _CS 140E: inventiōque cōnstrūctiōque nucleōrum computātrōrum_ adjuvī. in
 labōrātōriīs discipulōs juvī.
 
 sī plūrēs discere vīs, repositōrium in [GitHub][cs140e-22win] vidē.
@@ -104,7 +109,7 @@ est.
 
 ### administer cursūs: Stanford CS 140E (vēre MMXXI)
 
-cursu _CS 140E: inventiōque cōnstrūctiōque nucleōrum computātrōrum_ adjuvēbam.
+cursū _CS 140E: inventiōque cōnstrūctiōque nucleōrum computātrōrum_ adjuvēbam.
 in labōrātōriīs discipulōs juvēbam, et interdum cursum docuī.
 
 sī plūrēs discere vīs, repositōrium in [GitHub][cs140e-21spr] vidē.

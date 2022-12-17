@@ -21,9 +21,13 @@ This page is also available in [Latin][latin], [Tamil][tamil],
 background.][portrait]
 
 I'm a PhD student at the Stanford University Department of Computer Science. I'm
-interested in computer systems and networking, especially operating systems. I
-also like using computer science to support/enable other subjects (e.g.,
+interested in computer systems and networking, and especially operating systems.
+I also like using computer science to support/enable other subjects (e.g.,
 [Stagecast][stagecast] for theatre and [Proleptic][proleptic] for music).
+
+In Winter 2023, I will be co-teaching the new course [CS 45][cs45]: _Software
+Tools Every Programmer Should Know_, and I'll be continuing to assist with [CS
+140E][cs140e]: _Operating Systems Design and Implementation_ for the 3rd year.
 
 Outside of school, I'm also interested in analog and digital photography,
 playing the piano, and learning languages.
@@ -49,11 +53,11 @@ and actors to rehearse and perform shows over the internet.
 
 ### Research Assistant: Stanford CS (Autumn 2022)
 
-I'm currently a research assistant in the Systems and Network Research lab,
-working on [Proleptic][proleptic], the next generation of Stagecast. This
-updated version is designed to allow piano players to play duets simultaneously
-over the Internet, even when faced with network latency that would normally make
-it difficult to stay in sync.
+I worked as a research assistant in the Systems and Network Research lab on
+[Proleptic][proleptic], the next generation of Stagecast. This updated version
+is designed to allow piano players to play duets simultaneously over the
+Internet, even when faced with network latency that would normally make it
+difficult to stay in sync.
 
 ### Course Assistant: Stanford CS 240LX (Spring 2022)
 

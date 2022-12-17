@@ -39,6 +39,9 @@ doṣebhyaḥ kṣamyatām.
 mama nāmākṣayaḥ. sṭenforḍ viśvavidyālaye vijñānaṁ saṅgaṇakayantrāṇāṁ paṭhami.
 kāsaṁvidhāsu gaveṣaṇaṁ karomi. citraṇam pūrvamapaṭhaṁ ca kāsaṁvidhās nu paṭhami.
 
+hemante 2023 navasya [[CS 45][cs45]]{lang=en} vargaya adhyāpakaḥ bhavasyami.
+[[CS 140E][cs140e]]{lang=en} vargena ca saha sāhāyyaṁ kariṣyāmi.
+
 vidyālayād bahiś chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatuṁ ca nr̥tyaṁ
 kartuṁ ca roce.
 
@@ -69,9 +72,9 @@ sarvo vivaraṇa [āṅglabhāṣāyām][english].
 
 -   śodha sahāyaka sṭenforḍ vijñāne saṅgaṇakayantrāṇāṁ (śaradāyām 2022)
 -   adhyāpakāya sahāyaka sṭenforḍ [CS 240LX]{lang=en} kāsaṁvidhāṇāṁ prayogaśālām
-    (hemante 2022)
--   adhyāpakāya sahāyaka sṭenforḍ [CS 140E]{lang=en} kāsaṁvidhāṇām
     (vasante 2022)
+-   adhyāpakāya sahāyaka sṭenforḍ [CS 140E]{lang=en} kāsaṁvidhāṇām
+    (hemante 2022)
 -   bhr̥tyaśāstropagrahe samudre (grīṣmakāle 2021)
 -   adhyāpakāya sahāyaka sṭenforḍ [CS 140E]{lang=en} kāsaṁvidhāṇām
     (vasante 2021)
