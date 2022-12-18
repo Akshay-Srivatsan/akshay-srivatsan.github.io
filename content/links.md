@@ -19,7 +19,10 @@
 [linkedin]: https://www.linkedin.com/in/akshay-srivatsan/
 [youtube]: https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA
 [email]: mailto:srivatsan.akshay+website@gmail.com
-[aquasatellite]: https://doi.org/10.23919/OCEANS44145.2021.9705697
+[aquasatellite]: https://aquasatellite.com/
+[thaumas]: https://doi.org/10.23919/OCEANS44145.2021.9705697
 [proleptic]: https://github.com/stanford-stagecast/proleptic
 [cs45]: https://cs45.stanford.edu
 [cs140e]: https://cs140e.stanford.edu
+[orcid]: https://orcid.org/0000-0003-2238-2065
+[orcid-icon]: https://orcid.org/sites/default/files/images/orcid_16x16.png

@@ -77,8 +77,9 @@ For more info, go to the [GitHub][cs140e-22win] repo.
 
 ### Robotics Intern: Aqua Satellite (Summer 2021)
 
-At Aqua Satellite, I set up the development infrastructure and wrote the initial
-control and simulation software for Thaumas, an automated underwater vehicle.
+At [Aqua Satellite][aquasatellite], I set up the development infrastructure and
+wrote the initial control and simulation software for Thaumas, an automated
+underwater vehicle.
 
 ### Course Assistant: Stanford CS 140E (Spring 2021)
 
@@ -104,7 +105,7 @@ software used by the production engineering and software engineering teams.
 ### Research
 
 -   [The Convergence of Efficiency and Scalability in Ocean Data
-    Platforms][aquasatellite] (OCEANS 2021)
+    Platforms][thaumas] (OCEANS 2021)
 -   [Making a Synchronous Motor][motor] (Menlo Roundtable, Fall 2016)
 -   [Performance Boost: Dynamically Improving a Home's Wi-Fi Signal][wifi] (IEEE
     Potentials, March--April 2016)

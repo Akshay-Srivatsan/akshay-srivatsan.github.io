@@ -75,7 +75,7 @@ sarvo vivaraṇa [āṅglabhāṣāyām][english].
     (vasante 2022)
 -   adhyāpakāya sahāyaka sṭenforḍ [CS 140E]{lang=en} kāsaṁvidhāṇām
     (hemante 2022)
--   bhr̥tyaśāstropagrahe samudre (grīṣmakāle 2021)
+-   [bhr̥tyaśāstropagrahe samudre][aquasatellite] (grīṣmakāle 2021)
 -   adhyāpakāya sahāyaka sṭenforḍ [CS 140E]{lang=en} kāsaṁvidhāṇām
     (vasante 2021)
 -   tantrāṁśābhiyantensṭagrāmi (grīṣmakāle 2020)
@@ -86,7 +86,7 @@ sarvo vivaraṇa [āṅglabhāṣāyām][english].
 ### śodhāḥ
 
 -   [[The Convergence of Efficiency and Scalability in Ocean Data
-    Platforms]{lang=en}][aquasatellite] ([OCEANS]{lang=en} २०२१)
+    Platforms]{lang=en}][thaumas] ([OCEANS]{lang=en} २०२१)
 -   [[Making a Synchronous Motor]{lang=en}][motor] ([Menlo Roundtable]{lang=en},
     śaradkāle 2016)
 -   [[Performance Boost: Dynamically Improving a Home&apos;s Wi-Fi

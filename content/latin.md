@@ -102,10 +102,10 @@ sī plūrēs discere vīs, repositōrium in [GitHub][cs140e-22win] vidē.
 
 ### architectus robotōrum (tīrō): Aqua Satellite (aestāte MMXXI)
 
-in Aquā Satellite, modum programmandī statuēbam et programmam initiālem ad
-robotum movendum scrībēbam. nōmen robotō nostrō "Thaumas" est, simile deō Graecō
-mīrāculōrum maris. Thaumas vehiculum automatum subaqueanum ad mare explōrandum
-est.
+in [Aquā Satellite][aquasatellite], modum programmandī statuēbam et programmam
+initiālem ad robotum movendum scrībēbam. nōmen robotō nostrō "Thaumas" est,
+simile deō Graecō mīrāculōrum maris. Thaumas vehiculum automatum subaqueanum ad
+mare explōrandum est.
 
 ### administer cursūs: Stanford CS 140E (vēre MMXXI)
 
@@ -127,7 +127,7 @@ in manū "flūmen et fābulae" labōrābam.
 ### investīgātiōnēs meae
 
 -   [[The Convergence of Efficiency and Scalability in Ocean Data
-    Platforms]{lang=en}][aquasatellite] ([OCEANS]{lang=en} MMXXI)
+    Platforms]{lang=en}][thaumas] ([OCEANS]{lang=en} MMXXI)
 -   [[Making a Synchronous Motor]{lang=en}][motor] ([Menlo Roundtable,]{lang=en}
     autumnō MMXVI)
 -   [[Performance Boost: Dynamically Improving a Home's Wi-Fi
