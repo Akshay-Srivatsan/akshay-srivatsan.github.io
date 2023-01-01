@@ -23,7 +23,7 @@ etad jālapr̥ṣṭhopalabhya [āṅglabhāṣayā][english] ca [tamiḷbhāṣ
 ## namaskāraḥ!
 
 namaskāraś ca svāgatam. saṁskr̥tamekaṁ varṣaṁ viśvavidyālaye &apos;paṭham.  
-doṣebhyaḥ kṣamyatām.
+vācaka doṣaḥ kṣantavyaḥ.
 
 <div id="scripts" style="display:none">
 <label for="script">**lipiṁ cino—**</label>
