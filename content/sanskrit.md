@@ -39,8 +39,8 @@ vācaka doṣaḥ kṣantavyaḥ.
 mama nāmākṣayaḥ. sṭenforḍ viśvavidyālaye vijñānaṁ saṅgaṇakayantrāṇāṁ paṭhami.
 kāsaṁvidhāsu gaveṣaṇaṁ karomi. citraṇam pūrvamapaṭhaṁ ca kāsaṁvidhās nu paṭhami.
 
-hemante 2023 navasya [[CS 45][cs45]]{lang=en} vargaya adhyāpakaḥ bhavasyami.
-[[CS 140E][cs140e]]{lang=en} vargena ca saha sāhāyyaṁ kariṣyāmi.
+hemante 2023 navasya [[CS 45][cs45]]{lang=en} vargaya adhyāpakaḥ asmi.
+[[CS 140E][cs140e]]{lang=en} vargena ca saha sāhāyyaṁ karomi.
 
 vidyālayād bahiś chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatuṁ ca nr̥tyaṁ
 kartuṁ ca roce.

@@ -25,8 +25,8 @@ interested in computer systems and networking, and especially operating systems.
 I also like using computer science to support/enable other subjects (e.g.,
 [Stagecast][stagecast] for theatre and [Proleptic][proleptic] for music).
 
-In Winter 2023, I will be co-teaching the new course [CS 45][cs45]: _Software
-Tools Every Programmer Should Know_, and I'll be continuing to assist with [CS
+In Winter 2023, I am co-teaching the new course [CS 45][cs45]: _Software Tools
+Every Programmer Should Know_, and I'm continuing to assist with [CS
 140E][cs140e]: _Operating Systems Design and Implementation_ for the 3rd year.
 
 Outside of school, I'm also interested in analog and digital photography,
@@ -34,8 +34,8 @@ playing the piano, and learning languages.
 
 ## Education
 
-I'm currently a PhD student at the Stanford University Computer Science
-Department. I recently finished a masters degree focusing on computer systems
+I'm currently a PhD student in the Stanford University Computer Science
+Department. I recently finished my masters degree focusing on computer systems
 (2020--2022), and before that I also did my undergrad at Stanford (2017--2021),
 focusing on computer graphics. Before that, I went to Menlo School for high
 school.

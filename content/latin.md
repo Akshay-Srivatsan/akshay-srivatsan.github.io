@@ -54,9 +54,9 @@ volō utī scientiam computātrālis prō artibus, ut [Stagecast][stagecast] et
 [Proleptic][proleptic].
 
 MMXXIII annī hieme nōvum cursum, _[[CS 45][cs45]]{lang=en}: programmatae
-computātrālēs quae sciendae sunt programmātoribus omnibus_, docēbō. cursū
+computātrālēs quae sciendae sunt programmātoribus omnibus_, doceō. cursū
 _[[CS 140E][cs140e]]{lang=en}: inventiōque cōnstrūctiōque nucleōrum
-computātrōrum_ quoque tertio adjuvābō.
+computātrōrum_ quoque tertio adjuvō.
 
 extrā lūdum et opus, mihi photographia, clāvile cantāre, et linguās discere
 placet. linguās Anglicam, Latinam, Tamulicam, Hindicam, et Sanscritam sciō. mihi
