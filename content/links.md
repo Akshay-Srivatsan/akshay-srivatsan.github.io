@@ -2,15 +2,26 @@
 [english]: index.html
 [tamil]: tamil.html
 [latin]: latin.html
-[sanskrit]: sanskrit.html
 [hindi]: hindi.html
+[sachour]: https://www.sara-achour.me/
+[engler]: https://web.stanford.edu/~engler/
+[keithw]: https://cs.stanford.edu/~keithw/
+[jcm]: https://theory.stanford.edu/people/jcm/
+[hanrahan]: https://graphics.stanford.edu/~hanrahan/
+[adrazen]: https://www.linkedin.com/in/ayelet-drazen
+[jdkula]: https://www.jdkula.dev
 [chorkal]: https://aks.io/tamil-wordle/
 [carta]: https://carta.stanford.edu
 [stagecast]: https://taps.stanford.edu/stagecast
+[proleptic]: https://github.com/stanford-stagecast/proleptic
+[cs140e]: https://cs140e.stanford.edu
 [cs140e-22win]: https://github.com/dddrrreee/cs140e-22win
 [cs140e-21spr]: https://github.com/dddrrreee/cs140e-21spr
+[cs140e-23win]: https://github.com/dddrrreee/cs140e-23win
 [cs240lx-22spr]: https://github.com/dddrrreee/cs240lx-22spr
-[cs240lx-23spr]: https://github.com/dddrrreee/cs240lx-23spr
+[cs45]: https://cs45.stanford.edu
+[cs45-23win]: https://web.stanford.edu/class/archive/cs/cs45/cs45.1234
+[missing-semester]: https://missing.csail.mit.edu/
 [motor]:
     http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf
 [wifi]: https://doi.org/10.1109/MPOT.2015.2396534
@@ -21,8 +32,5 @@
 [email]: mailto:srivatsan.akshay+website@gmail.com
 [aquasatellite]: https://aquasatellite.com/
 [thaumas]: https://doi.org/10.23919/OCEANS44145.2021.9705697
-[proleptic]: https://github.com/stanford-stagecast/proleptic
-[cs45]: https://cs45.stanford.edu
-[cs140e]: https://cs140e.stanford.edu
 [orcid]: https://orcid.org/0000-0003-2238-2065
 [orcid-icon]: https://orcid.org/sites/default/files/images/orcid_16x16.png

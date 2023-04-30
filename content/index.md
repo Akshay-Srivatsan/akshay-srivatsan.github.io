@@ -1,7 +1,8 @@
 ---
 title: Akshay Srivatsan
 description: Ph.D. Student, Stanford CS
-image-alt: Portrait of Akshay Srivatsan with San Francisco in the background.
+image: assets/img/portrait-small.jpg
+image-alt: Portrait of Akshay Srivatsan.
 lang: en
 ---
 
@@ -12,118 +13,59 @@ lang: en
 Also: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta}, [अक्षय श्रीवत्सन]{lang=hi}, [𑌅𑌕𑍍𑌷𑌯𑍍
 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran}, and [𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah}
 
-This page is also available in [Latin][latin], [Tamil][tamil],
-[Sanskrit][sanskrit], and [Hindi][hindi].
+This page is also available in [Latin][latin], [Tamil][tamil], and
+[Hindi][hindi].
 
-## About
+## About Me
 
-![A portrait of me with the San Francisco skyline in the 
-background.][portrait]
+![An image of me][portrait]
 
-I'm a PhD student at the Stanford University Department of Computer Science. I'm
-interested in computer systems and networking, and especially operating systems.
-I also like using computer science to support/enable other subjects (e.g.,
-[Stagecast][stagecast] for theatre and [Proleptic][proleptic] for music).
+I'm a first-year Ph.D. student in Computer Science at Stanford University. I'm
+currently doing my first-year research rotations in computer systems,
+specifically focusing on verification and computer networking. Outside of
+school, I'm interested in analog and digital photography, playing the piano, and
+learning languages.
 
-In Winter 2023, I am co-teaching the new course [CS 45][cs45]: _Software Tools
-Every Programmer Should Know_, and I'm continuing to assist with [CS
-140E][cs140e]: _Operating Systems Design and Implementation_ for the 3rd year.
+I'm grateful for the support and advice of the following professors, although
+this is by no means an exhaustive list:
 
-Outside of school, I'm also interested in analog and digital photography,
-playing the piano, and learning languages.
+-   Professor [Sara Achour][sachour], my Spring Quarter rotation advisor
+-   Professor [Dawson Engler][engler], my Winter Quarter rotation advisor
+-   Professor [Keith Winstein][keithw], my Autumn Quarter rotation advisor
+-   Professor [John Mitchell][jcm], who supported my work on Carta
+-   Professor [Pat Hanrahan][hanrahan], my undergraduate advisor
+
+## Teaching
+
+I'm currently co-teaching [CS 45: Software Tools Every Programmer Should
+Know][cs45] with [Ayelet Drazen][adrazen] and [Jonathan Kula][jdkula]. This is
+the second offering of the course; we previously also developed and taught the
+[premiere offering in Winter 2023][cs45-23win]. We designed this course to cover
+all the basic tools and concepts programmers (both software engineers and CS
+students) are required to know, but which never get taught in CS classes; it's
+inspired by [MIT's Missing Semester course][missing-semester], but strives to go
+more in-depth and cover the conceptual background underlying the tools.
+
+I've been involved in teaching [CS 140E: Operating Systems Design and
+Implementation][cs140e] for several years. I TAed the course in [Spring
+2021][cs140e-21spr], [Winter 2022][cs140e-22win], and [Winter
+2023][cs140e-23win]. I also TAed the next course in the sequence, [CS
+240LX][cs240lx-22spr], in Spring 2022. CS 140E is a hands-on approach to
+operating system development, starting from baremetal assembly code running on a
+Raspberry Pi and working up to a small UNIX-style operating system, with a
+strong focus on correctness testing and verification. CS 240LX extends the base
+OS built in CS 140E to include many additional checking/verification tools like
+a race detector and various memory checkers.
 
 ## Education
 
-I'm currently a PhD student in the Stanford University Computer Science
-Department. I recently finished my masters degree focusing on computer systems
-(2020--2022), and before that I also did my undergrad at Stanford (2017--2021),
-focusing on computer graphics. Before that, I went to Menlo School for high
-school.
+I did my M.S. and B.S. at Stanford, in 2022 and 2021 respectively. My
+undergraduate specialization was computer graphics, and my masters
+specialization was computer systems. Before that, I went to high school at Menlo
+School.
 
-## Projects
+## Links
 
-[[சொற்கள்]{lang=ta}][chorkal]: a Tamil word game, à la Wordle.
-
-[Carta][carta]: a course-planning website for Stanford students.
-
-[Stagecast][stagecast] and [Proleptic][proleptic]: software to allow musicians
-and actors to rehearse and perform shows over the internet.
-
-## Experience
-
-### Research Assistant: Stanford CS (Autumn 2022)
-
-I worked as a research assistant in the Systems and Network Research lab on
-[Proleptic][proleptic], the next generation of Stagecast. This updated version
-is designed to allow piano players to play duets simultaneously over the
-Internet, even when faced with network latency that would normally make it
-difficult to stay in sync.
-
-### Course Assistant: Stanford CS 240LX (Spring 2022)
-
-I was a course assistant for _CS 240LX: Advanced Systems Laboratory,
-Accelerated_. This course is a continuation of _CS 140E_, and the course is
-being offered for the second time (the first was Spring 2020, when I took it).
-
-For more info, go to the [GitHub][cs240lx-22spr] repo.
-
-### Course Assistant: Stanford CS 140E (Winter 2022)
-
-I was a course assistant for _CS 140E: Operating Systems Design and
-Implementation_. I helped students debug during biweekly lab sessions, ran
-office hours, redesigned the filesystems lab, and helped with final projects.
-
-For more info, go to the [GitHub][cs140e-22win] repo.
-
-### Robotics Intern: Aqua Satellite (Summer 2021)
-
-At [Aqua Satellite][aquasatellite], I set up the development infrastructure and
-wrote the initial control and simulation software for Thaumas, an automated
-underwater vehicle.
-
-### Course Assistant: Stanford CS 140E (Spring 2021)
-
-I was the sole course assistant for _CS 140E: Operating Systems Design and
-Implementation_. As part of my responsibilities, I reviewed lesson plans,
-refined assignment specifications, held office hours, assisted students in
-biweekly lab sessions, and evaluated student work.
-
-For more info, go to the [GitHub][cs140e-21spr] repo.
-
-### Production Engineering Intern: Instagram (Summer 2020)
-
-At Instagram, I interned on the Instagram Machine Learning Team (IGML) and
-developed software used by teams across Instagram and Facebook.
-
-### Production Engineering Intern: Facebook (Summer 2019)
-
-At Facebook, I interned on the Feed and Stories Team (FAST) and developed
-software used by the production engineering and software engineering teams.
-
-## Publications
-
-### Research
-
--   [The Convergence of Efficiency and Scalability in Ocean Data
-    Platforms][thaumas] (OCEANS 2021)
--   [Making a Synchronous Motor][motor] (Menlo Roundtable, Fall 2016)
--   [Performance Boost: Dynamically Improving a Home's Wi-Fi Signal][wifi] (IEEE
-    Potentials, March--April 2016)
--   [A Dual Sensor System for Determining the Unique Oxygen Production Signature
-    of Plants][oxygen] (Cyber Journals - Mechatronics, 2015)
-
-### Inventions
-
--   Modular Media Player (US D769941 S1)
--   Multi-Person Straw for Sharing/Tasting Beverages (US 9186007 B2)
--   Apparatus and Method for Repairing a Surface Submerged in Liquid by Creating
-    a Workable Space (US 8925168 B2)
--   System, Methodology, and Product to Sort, Organize, and Store Toy
-    Building/Construction Sets (US 7987990 B2)
-
-### Links
-
+-   [Email][email]
 -   [GitHub][github]
 -   [LinkedIn][linkedin]
--   [YouTube][youtube]
--   [Email][email]
