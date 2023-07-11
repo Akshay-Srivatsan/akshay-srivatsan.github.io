@@ -75,7 +75,7 @@ Diplōmate Magistrī in Scientiā Computātrālī in Ūniversitātē Stanfordiē
 studēbam (ā MMXX ad MMXXII). Baccalaureus quōque in Stanford perfēcī (ā MMXVII
 ad MMXXI). prius, in Lūdō Menloniēnsī studēbam.
 
-### et cētera
+## et cētera
 
 -   [recommendātiōnes meae classium][courses]
 -   [opera][jobs]
