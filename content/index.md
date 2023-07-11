@@ -20,31 +20,30 @@ This page is also available in [Latin][latin], [Tamil][tamil], and
 
 ![An image of me][portrait]
 
-I'm a first-year Ph.D. student in Computer Science at Stanford University. I'm
-currently doing my first-year research rotations in computer systems,
-specifically focusing on verification and computer networking. Outside of
-school, I'm interested in analog and digital photography, playing the piano, and
-learning languages.
+I'm a first-year Ph.D. student in Computer Science at Stanford University,
+advised by Professors [Keith Winstein][keithw] and [Dawson Engler][engler]. I'm
+currently working on [functional operating systems][fix] in the Systems and
+Networking Research Lab. Outside of school, I'm interested in analog and digital
+photography, playing the piano, and learning languages.
 
-I'm grateful for the support and advice of the following professors, although
-this is by no means an exhaustive list:
+In addition to my PhD advisors, I've also had the privilege to work with:
 
--   Professor [Sara Achour][sachour], my Spring Quarter rotation advisor
--   Professor [Dawson Engler][engler], my Winter Quarter rotation advisor
--   Professor [Keith Winstein][keithw], my Autumn Quarter rotation advisor
--   Professor [John Mitchell][jcm], who supported my work on Carta
+-   Professor [Sara Achour][sachour] on mixed-signal circuit verification
+    (rotation project)
+-   Professor [John Mitchell][jcm] on [Carta][carta]
+    ([CartaLab][cartalab]/Pathways Lab)
 -   Professor [Pat Hanrahan][hanrahan], my undergraduate advisor
 
 ## Teaching
 
-I'm currently co-teaching [CS 45: Software Tools Every Programmer Should
-Know][cs45] with [Ayelet Drazen][adrazen] and [Jonathan Kula][jdkula]. This is
-the second offering of the course; we previously also developed and taught the
-[premiere offering in Winter 2023][cs45-23win]. We designed this course to cover
-all the basic tools and concepts programmers (both software engineers and CS
-students) are required to know, but which never get taught in CS classes; it's
-inspired by [MIT's Missing Semester course][missing-semester], but strives to go
-more in-depth and cover the conceptual background underlying the tools.
+I recently co-taught [CS 45: Software Tools Every Programmer Should Know][cs45]
+with [Ayelet Drazen][adrazen] and [Jonathan Kula][jdkula]. We also developed and
+taught the [premiere offering in Winter 2023][cs45-23win]. We designed this
+course to cover all the basic tools and concepts programmers (both software
+engineers and CS students) are required to know, but which never get taught in
+CS classes; it's inspired by [MIT's Missing Semester course][missing-semester],
+but strives to go more in-depth and cover the conceptual background underlying
+the tools.
 
 I've been involved in teaching [CS 140E: Operating Systems Design and
 Implementation][cs140e] for several years. I TAed the course in [Spring
@@ -64,8 +63,11 @@ undergraduate specialization was computer graphics, and my masters
 specialization was computer systems. Before that, I went to high school at Menlo
 School.
 
-## Links
+## `/etc`
 
+-   [Course Recommendations][courses]
+-   [Experience][jobs]
+-   [Shows][shows]
 -   [Email][email]
 -   [GitHub][github]
 -   [LinkedIn][linkedin]

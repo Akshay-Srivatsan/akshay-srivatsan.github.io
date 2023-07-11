@@ -1,11 +1,11 @@
 HTML_TEMPLATE=templates/index.html
 TEMPLATES=$(wildcard templates/*)
 
-SOURCE=content/index.md content/tamil.md content/latin.md content/hindi.md
+SOURCE=content/index.md content/tamil.md content/latin.md content/hindi.md content/courses.md content/jobs.md content/shows.md
 LINKS=content/links.md
 HTML=$(patsubst content/%.md,%.html,$(SOURCE))
 
-PANDOCFLAGS=--from markdown+bracketed_spans+fenced_divs\
+PANDOCFLAGS=--from gfm+bracketed_spans+fenced_divs \
 			--standalone\
 			--template=$(HTML_TEMPLATE)\
 			-fmarkdown-implicit_figures\

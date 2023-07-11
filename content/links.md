@@ -3,6 +3,9 @@
 [tamil]: tamil.html
 [latin]: latin.html
 [hindi]: hindi.html
+[courses]: courses.html
+[jobs]: jobs.html
+[shows]: shows.html
 [sachour]: https://www.sara-achour.me/
 [engler]: https://web.stanford.edu/~engler/
 [keithw]: https://cs.stanford.edu/~keithw/
@@ -12,13 +15,16 @@
 [jdkula]: https://www.jdkula.dev
 [chorkal]: https://aks.io/tamil-wordle/
 [carta]: https://carta.stanford.edu
+[cartalab]: https://cartalab.stanford.edu
 [stagecast]: https://taps.stanford.edu/stagecast
 [proleptic]: https://github.com/stanford-stagecast/proleptic
+[fix]: https://github.com/fix-project/fix
 [cs140e]: https://cs140e.stanford.edu
 [cs140e-22win]: https://github.com/dddrrreee/cs140e-22win
 [cs140e-21spr]: https://github.com/dddrrreee/cs140e-21spr
 [cs140e-23win]: https://github.com/dddrrreee/cs140e-23win
 [cs240lx-22spr]: https://github.com/dddrrreee/cs240lx-22spr
+[cs240lx]: https://github.com/dddrrreee/cs240lx-23spr
 [cs45]: https://cs45.stanford.edu
 [cs45-23win]: https://web.stanford.edu/class/archive/cs/cs45/cs45.1234
 [missing-semester]: https://missing.csail.mit.edu/

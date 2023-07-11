@@ -39,34 +39,33 @@ et [Linguā Hindicā][hindi].
 ![photographema meī][portrait]
 
 sum scientiam computātrālis studens discipulus doctorālis in Ūniversitātē
-Stanfordiēnsī. nunc rotātiōnem meam prīmī annī fāciō in systēmās computātrālis,
-praesertim in verificātiōnē systēmārum et rēticulīs computātrālibus. extrā lūdum
-et opus, mihi photographia, clāvile cantāre, et linguās discere placet. linguās
-Anglicam, Latinam, Tamulicam, Hindicam, et Sanscritam sciō. mihi saltāre sociāle
-quoque placet.
+Stanfordiēnsī. [Keith Winstein][keithw] et [Dawson Engler][engler] sunt
+advīsōrēs meī. in labōratōrium investīgātiōnis systēmatumque rētiumque labōrō ad
+fāciendum [systēma functiōnālem operandī][fix]. extrā lūdum et opus, mihi
+photographia, clāvile cantāre, et linguās discere placet. linguās Anglicam,
+Latinam, Tamulicam, Hindicam, et Sanscritam sciō. mihi saltāre sociāle quoque
+placet.
 
 hīs professōribus grātiās agō ob cōnsilium et auxilium hōrum:
 
 -   professōr [Sara Achour][sachour] cōnsuāsor mea rotātiōnālis
--   professōr [Dawson Engler][engler] cōnsuāsor meus rotātiōnālis
--   professōr [Keith Winstein][keithw] cōnsuāsor meus rotātiōnālis
 -   professōr [John Mitchell][jcm] investīgātor prīncipālis Cartae
 -   professōr [Pat Hanrahan][hanrahan] cōnsuāsor meus baccalaureālis
 
 ## doctrīna mea
 
-nunc ego, [Ayelet Drazen][adrazen], et [Jonathan Kula][jdkula] docēmus [CS 45:
+vēre ego, [Ayelet Drazen][adrazen], et [Jonathan Kula][jdkula] docuimus [CS XLV:
 programmatae computātrālēs quae sciendae sunt programmātoribus omnibus][cs45].
 haec iterātio secunda huius classis; antea in hiemē [iterātiōnem
 prīmam][cs45-23win] creāvimus et obtulimus. haec classem est ad docendum
 programmatās et conceptōs quī scīendī est in industriā et academiā, sed nōn est
 doctī.
 
-trēs annōs auxilior in [CS 140E: inventiōque cōnstrūctiōque nucleōrum
+trēs annōs auxiliātus sum in [CS CXL-e: inventiōque cōnstrūctiōque nucleōrum
 computātrōrum][cs140e]. auxiliātus sum in [verē MMXXI][cs140e-21spr], [hiemē
-MMXXII][cs140e-22win], et [hiemē MMXXIII][cs140e-23win]. auxiliātum sum in
-classē secundā, [CS 240LX][cs240lx-22spr] in verē MMXXII. in CS 140E
-labōrātōriō, discipulī faciunt nucleum parvum similis ŪNĪCĪ. in CS 240LX,
+MMXXII][cs140e-22win], et [hiemē MMXXIII][cs140e-23win]. auxiliātus sum in
+classē secundā, [CS CCXL-lx][cs240lx-22spr] in verē MMXXII. in CS CXL-e
+labōrātōriō, discipulī faciunt nucleum parvum similis ŪNĪCĪ. in CS CCXL-lx,
 discupulī addunt systemātās prō verificātiōnē nucleīs suīs.
 
 ## ērudītiō mea
@@ -76,9 +75,12 @@ Diplōmate Magistrī in Scientiā Computātrālī in Ūniversitātē Stanfordiē
 studēbam (ā MMXX ad MMXXII). Baccalaureus quōque in Stanford perfēcī (ā MMXVII
 ad MMXXI). prius, in Lūdō Menloniēnsī studēbam.
 
-### nexus
+### et cētera
 
--   [GitHub][github]
+-   [recommendātiōnes meae classium][courses]
+-   [opera][jobs]
+-   [theātrum][shows]
+-   [programmata][github]
 -   [LinkedIn][linkedin]
 -   [mihī epistolam mitte][email]
 

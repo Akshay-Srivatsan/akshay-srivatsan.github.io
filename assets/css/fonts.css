@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap');
 /* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
@@ -7,31 +8,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @font-face {
   font-family: 'Noto Sans Tamil';
-  src: url('assets/fonts/NotoSansTamil-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/NotoSansTamil-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Noto Sans Devanagari';
-  src: url('assets/fonts/NotoSansDevanagari-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/NotoSansDevanagari-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Noto Sans Grantha';
-  src: url('assets/fonts/NotoSansGrantha-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/NotoSansGrantha-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Noto Sans Brahmi';
-  src: url('assets/fonts/NotoSansBrahmi-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/NotoSansBrahmi-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Noto Sans Old Italic';
-  src: url('assets/fonts/NotoSansOldItalic-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/NotoSansOldItalic-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Adinatha';
-  src: url('assets/fonts/Adinatha-Tamil-Brahmi.otf') format('opentype');
+  src: url('/assets/fonts/Adinatha-Tamil-Brahmi.otf') format('opentype');
 }
 @font-face {
   font-family: 'Agastya';
-  src: url('assets/fonts/agastya_sans.otf') format('opentype');
+  src: url('/assets/fonts/agastya_sans.otf') format('opentype');
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
 :lang(en) {
@@ -93,4 +98,10 @@
 :lang(en-phonipa), :lang(la-phonipa), :lang(sa-phonipa), :lang(ta-phonipa), :lang(hi-phonipa) {
   font-family: "Voces", sans-serif;
   font-weight: 400;
+}
+
+code:lang("*") {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16pt;
+  font-weight: bold;
 }

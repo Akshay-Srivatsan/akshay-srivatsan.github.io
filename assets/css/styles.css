@@ -1,14 +1,6 @@
-$fonts.css()$
+@import url('/assets/css/fonts.css');
 
 body {
-  $if(mainfont)$
-  font-family: $mainfont$, sans-serif;
-  $else$
-  font-family: 'Montserrat', sans-serif;
-  $endif$
-  $if(fontsize)$
-  font-size: $fontsize$;
-  $endif$
   margin: 0 auto;
   max-width: 720px;
 }
@@ -53,4 +45,14 @@ img {
   a:visited {
     color: #B39DDB;
   }
+}
+
+table {
+  width: 100%;
+}
+
+.footnote-ref {
+  text-decoration: none;
+  margin-left: 2px;
+  color: inherit;
 }
