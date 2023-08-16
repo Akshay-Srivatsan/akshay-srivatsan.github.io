@@ -40,7 +40,7 @@ praestō est haec pāgina in [Linguā Anglicā][english] et [Linguā Tamulicā][
 sum scientiam computātrālis studens discipulus doctorālis in Ūniversitāte
 Stanfordiēnsī. [Keith Winstein][keithw] et [Dawson Engler][engler] sunt
 advīsōrēs meī. in labōratōrium investīgātiōnis systēmatumque rētiumque labōrō ad
-fāciendum [systēma functiōnālem operandī][fix]. extrā lūdum et opus, mihi
+faciendum [systēma functiōnālem operandī][fix]. extrā lūdum et opus, mihi
 photographia, clāvile cantāre, et linguās discere placet. linguās Anglicam,
 Latinam, Tamulicam, Hindicam, et Sanscritam sciō. mihi saltāre sociāle quoque
 placet.
@@ -91,9 +91,12 @@ setup(
     document.getElementById("font"),
     document.getElementById("change_font"),
     [
-        ["capitālēs quadrātae", "", "la", null],
-        ["capitālēs unciālēs", "uncials", "la-Latg", mapping.to_ascii],
-        ["capitālēs italica", "italics", "la-Ital", mapping.to_italics],
+        ["litterae quadrātae", "", "la", null],
+        ["litterae unciālēs", "unciali", "la-Latg", mapping.to_ascii],
+        ["litterae italicae", "italica", "la-Ital", mapping.to_italics],
+        ["litterae tamulicae", "tamulica", "ta", mapping.to_tamil],
+        ["litterae granthae", "grantha", "ta", mapping.to_grantha],
+        ["litterae brāhmēs", "brahmi", "ta", mapping.to_brahmi],
     ]
 );
 </script>
