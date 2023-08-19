@@ -35,17 +35,19 @@ In addition to my PhD advisors, I've also had the privilege to work with:
 
 ## Teaching
 
-I recently co-taught [CS 45: Software Tools Every Programmer Should Know][cs45]
-with [Ayelet Drazen][adrazen] and [Jonathan Kula][jdkula]. We also developed and
-taught the [premiere offering in Winter 2023][cs45-23win]. We designed this
-course to cover all the basic tools and concepts programmers (both software
-engineers and CS students) are required to know, but which never get taught in
-CS classes; it's inspired by [MIT's Missing Semester course][missing-semester],
-but strives to go more in-depth and cover the conceptual background underlying
-the tools.
+I recently co-taught [CS 45: _Software Tools Every Programmer Should
+Know_][cs45] with [Ayelet Drazen][adrazen] and [Jonathan Kula][jdkula]. We also
+developed and taught the [premiere offering in Winter 2023][cs45-23win]. We
+designed this course to cover all the basic tools and concepts programmers (both
+software engineers and CS students) are required to know, but which never get
+taught in CS classes; it's inspired by [MIT's Missing Semester
+course][missing-semester], but strives to go more in-depth and cover the
+conceptual background underlying the tools. Our two-quarter pilot run was
+successful enough that the course will be taught in the future as CS 104:
+_Introduction to Essential Software Systems and Tools_.
 
-I've been involved in teaching [CS 140E: Operating Systems Design and
-Implementation][cs140e] for several years. I TAed the course in [Spring
+I've been involved in teaching [CS 140E: _Operating Systems Design and
+Implementation_][cs140e] for several years. I TAed the course in [Spring
 2021][cs140e-21spr], [Winter 2022][cs140e-22win], and [Winter
 2023][cs140e-23win]. I also TAed the next course in the sequence, [CS
 240LX][cs240lx-22spr], in Spring 2022. CS 140E is a hands-on approach to

@@ -54,14 +54,15 @@ hīs professōribus grātiās agō ob cōnsilium et auxilium hōrum:
 ## doctrīna mea
 
 vēre ego, [Ayelet Drazen][adrazen], et [Jonathan Kula][jdkula] docuimus [CS XLV:
-programmatae computātrālēs quae sciendae sunt programmātoribus omnibus][cs45].
+_programmatae computātrālēs quae sciendae sunt programmātoribus omnibus_][cs45].
 haec iterātio secunda huius classis; antea in hieme [iterātiōnem
 prīmam][cs45-23win] creāvimus et obtulimus. haec classem est ad docendum
 programmatās et conceptōs quī scīendī est in industriā et academiā, sed nōn est
-doctī.
+doctī. hieme MMXXIV eadem classis in formā CS CIV: _intrōdūctiō ad systēmātēs
+programmatārum essentiālēs_.
 
-trēs annōs auxiliātus sum in [CS CXL-e: inventiōque cōnstrūctiōque nucleōrum
-computātrōrum][cs140e]. auxiliātus sum [vere MMXXI][cs140e-21spr], [hieme
+trēs annōs auxiliātus sum in [CS CXL-e: _inventiōque cōnstrūctiōque nucleōrum
+computātrōrum_][cs140e]. auxiliātus sum [vere MMXXI][cs140e-21spr], [hieme
 MMXXII][cs140e-22win], et [hieme MMXXIII][cs140e-23win]. auxiliātus sum in
 classe secundā, [CS CCXL-lx][cs240lx-22spr] vere MMXXII. in CS CXL-e
 labōrātōriō, discipulī faciunt nucleum parvum similis ŪNĪCĪ. in CS CCXL-lx,
