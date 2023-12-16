@@ -19,50 +19,50 @@ This page is also available in [Latin][latin] and [Tamil][tamil].
 
 ![An image of me][portrait]
 
-I'm a first-year Ph.D. student in Computer Science at Stanford University,
-advised by Professors [Keith Winstein][keithw] and [Dawson Engler][engler]. I'm
-currently working on [functional operating systems][fix] in the Systems and
-Networking Research Lab. Outside of school, I'm interested in analog and digital
-photography, playing the piano, and learning languages.
+I'm a second-year Ph.D. student in Computer Science at Stanford
+University, advised by Professors [Keith Winstein][keithw] and [Dawson
+Engler][engler]. I'm currently working on [functional operating
+systems][fix] in the Systems and Networking Research Lab. Outside of
+school, I'm interested in analog and digital photography, playing the
+piano, and learning languages.
 
-In addition to my PhD advisors, I've also had the privilege to work with:
+In addition to my PhD advisors, I've also had the privilege to be advised by:
 
 -   Professor [Sara Achour][sachour] on mixed-signal circuit verification
-    (rotation project)
 -   Professor [John Mitchell][jcm] on [Carta][carta]
-    ([CartaLab][cartalab]/Pathways Lab)
 -   Professor [Pat Hanrahan][hanrahan], my undergraduate advisor
 
 ## Teaching
 
-I recently co-taught [CS 45: _Software Tools Every Programmer Should
-Know_][cs45] with [Ayelet Drazen][adrazen] and [Jonathan Kula][jdkula]. We also
-developed and taught the [premiere offering in Winter 2023][cs45-23win]. We
-designed this course to cover all the basic tools and concepts programmers (both
-software engineers and CS students) are required to know, but which never get
-taught in CS classes; it's inspired by [MIT's Missing Semester
-course][missing-semester], but strives to go more in-depth and cover the
-conceptual background underlying the tools. Our two-quarter pilot run was
-successful enough that the course will be taught in the future as CS 104:
-_Introduction to Essential Software Systems and Tools_.
+I co-taught [CS 45: _Software Tools Every Programmer Should
+Know_][cs45] with [Ayelet Drazen][adrazen] and [Jonathan Kula][jdkula]
+in both Winter and Spring 2023. We designed this course to cover all
+the basic tools and concepts programmers (both software engineers and
+CS students) are required to know, but which never get taught in CS
+classes; it's inspired by [MIT's Missing Semester
+course][missing-semester], but strives to go more in-depth and cover
+the conceptual background underlying the tools. Our two-quarter pilot
+run was successful enough that the course will be taught in the future
+as CS 104: _Introduction to Essential Software Systems and Tools_.
 
 I've been involved in teaching [CS 140E: _Operating Systems Design and
-Implementation_][cs140e] for several years. I TAed the course in [Spring
-2021][cs140e-21spr], [Winter 2022][cs140e-22win], and [Winter
+Implementation_][cs140e] for several years. I TAed the course in
+[Spring 2021][cs140e-21spr], [Winter 2022][cs140e-22win], and [Winter
 2023][cs140e-23win]. I also TAed the next course in the sequence, [CS
-240LX][cs240lx-22spr], in Spring 2022. CS 140E is a hands-on approach to
-operating system development, starting from baremetal assembly code running on a
-Raspberry Pi and working up to a small UNIX-style operating system, with a
-strong focus on correctness testing and verification. CS 240LX extends the base
-OS built in CS 140E to include many additional checking/verification tools like
-a race detector and various memory checkers.
+240LX][cs240lx-22spr], in Spring 2022. CS 140E is a hands-on approach
+to operating system development, starting from baremetal assembly code
+running on a Raspberry Pi and working up to a small UNIX-style
+operating system, with a strong focus on correctness testing and
+verification. CS 240LX extends the base OS built in CS 140E to include
+many additional checking/verification tools like a race detector and
+various memory checkers.
 
 ## Education
 
 I did my M.S. and B.S. at Stanford, in 2022 and 2021 respectively. My
 undergraduate specialization was computer graphics, and my masters
-specialization was computer systems. Before that, I went to high school at Menlo
-School.
+specialization was computer systems. Before that, I went to high
+school at Menlo School.
 
 ## `/etc`
 
