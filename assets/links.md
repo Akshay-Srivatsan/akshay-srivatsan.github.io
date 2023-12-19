@@ -3,6 +3,7 @@
 [tamil]: tamil.html
 [latin]: latin.html
 [hindi]: hindi.html
+[sanskrit]: sanskrit.html
 [courses]: courses.html
 [jobs]: jobs.html
 [shows]: shows.html
