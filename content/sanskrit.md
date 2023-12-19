@@ -1,8 +1,8 @@
 ---
-title: akṣayasya jālasthāna
-description: chātra saṅgaṇakāṇāṁ stenfārd viśvavidyalaye
+title: akṣayasya jālasthānaḥ
+description: chātraḥ saṅgaṇakāṇāṃ stenfārd viśvavidyalaye
 image: assets/img/portrait-small.jpg
-image-alt: citraṁ mama sān frānsisko nagare
+image-alt: citraṃ mama sān frānsisko nagare
 lang: sa-Latn
 js: [transliterate/sanskrit.js, assets/js/transcribe.js, assets/js/common.js]
 ---
@@ -17,110 +17,69 @@ ca]{#tamil-name} [[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨
 ca]{#brahmi-name} [[akṣay srīvatsan]{lang=sa-Latn} ca]{#iso-name
 style=display:none}
 
-etad jālapr̥ṣṭhopalabhya [āṅglabhāṣayā][english] ca [tamiḷbhāṣayā][tamil] ca
-[lātinbhāṣayā][latin] ca [hindībhāṣayā][hindi] asti.
-
-## namaskāraḥ!
-
-namaskāraś ca svāgatam. saṁskr̥tamekaṁ varṣaṁ viśvavidyālaye &apos;paṭham.  
-vācaka doṣaḥ kṣantavyaḥ.
+eṣaḥ jālapṛṣṭha upalabhyaḥ [āṅglabhāṣayā][english] ca [tamiḷbhāṣayā][tamil] ca
+[lātinbhāṣayā][latin] ca asti.
 
 <div id="scripts" style="display:none">
-<label for="script">**lipiṁ cino—**</label>
+<label for="script">**lipiṃ cino—**</label>
 <select lang="sa-Latn" name="script" id="script">
 <!-- filled from JS -->
 </select>
 </div>
 
-## jīvanavr̥ttāṁto mama
+## itihāsaḥ mama
 
-![citraṁ mama sān frānsisko nagare][portrait]
+![citraṃ mama sān frānsisko nagare][portrait]
 
-sṭenforḍ viśvavidyālaye vijñānaṁ saṅgaṇakayantrāṇāṁ paṭhat śikṣaṇasya chātro
-'smi. saha gurubhyām [kīth vinsṭīn][keithw] ca [dāsan eṅglar][engler] ca
-pranālīṣu śodhaṁ karomi. [gaṇitiyāḥ praṇālīṁ][fix] nirmāmy es en ār
-prayogaśālāyāṁ.
+sṭenforḍ viśvavidyālaye vijñānaṃ saṅgaṇakayantrāṇāṃ paṭhat śikṣaṇasya
+chātro 'smi. saha gurubhyām [kīth vinsṭīn][keithw] ca [dāsan
+eṅglar][engler] ca pranālīṣu śodhaṃ karomi. [gaṇitiyāḥ praṇālīṃ][fix]
+nirmāmy es en ār prayogaśālāyāṃ. any kāryāt mahyam ālokalekhyakalā ca
+piyāno vādayatuṃ ca nṛtyaḥ sāmājikaḥ ca bhāshāḥ jñātuṃ rocante.
+bhāshā āṅglāṃ, drāvidāṃ, hindīṃ, ca saṃskṛtāṃ jānāmi.
 
-hemante 2023 navasya [[CS 45][cs45]]{lang=en} vargaya adhyāpakaḥ asmi.
-[[CS 140E][cs140e]]{lang=en} vargena ca saha sāhāyyaṁ karomi.
+etebhya ācāryebhyaḥ mama dhanyavādāḥ nirdeśeṇa tāsām:
 
-vidyālayād bahiś chāyācitraṁ ca vāditrān vādayatuṁ ca bhāṣā jñatuṁ ca nr̥tyaṁ
-kartuṁ ca roce.
+-   [sārā āchor][sachour]
+-   [jon micchel][jcm]
+-   [pāṭ hānrahān][hanrahan]
 
-āṅglabhāṣāṁ ca tamiḷbhāṣāṁ ca lātinbhāṣāṁ ca hindībhāṣāṁ ca saṁskr̥tabhāṣāṁ ca
-jānāmi.
+# upadeśaḥ mama
 
-sarvo vivaraṇa [āṅglabhāṣāyām][english].
-
-## śikṣaṇa mama
-
--   vidyāvāridhyupādhi vijñāne saṅgaṇakayantrāṇāṁ sṭenforḍ viśvavidyalaye
-    (kāsaṁvidhā, 2022--nu)
--   ācāryopādhi vijñāne saṅgaṇakayantrāṇāṁ sṭenforḍ viśvavidyalaye (kāsaṁvidhā,
-    2020--2022)
--   śāstryupādhi vijñāne saṅgaṇakayantrāṇāṁ sṭenforḍ viśvavidyalaye (citraṇa,
-    2017--2021)
--   menlo vidyālaya (2013--2017)
-
-## prakalpā mama
-
-[corkaḷ][chorkal] khelā śabdānāṁ drāviḍānām asti.
-
-[kārṭā][carta] jālasthānaḥ kakṣāyābhyaś chātrebhyo 'sti.
-
-[sṭejkāsṭ][stagecast] saṁvidhi naṭakebhyo viśtuṁ koviḍ saṅkāmake &apos;sti.
-
-## udyogā mama
-
--   śodha sahāyaka sṭenforḍ vijñāne saṅgaṇakayantrāṇāṁ (śaradāyām 2022)
--   adhyāpakāya sahāyaka sṭenforḍ [CS 240LX]{lang=en} kāsaṁvidhāṇāṁ prayogaśālām
-    (vasante 2022)
--   adhyāpakāya sahāyaka sṭenforḍ [CS 140E]{lang=en} kāsaṁvidhāṇām
-    (hemante 2022)
--   [bhr̥tyaśāstropagrahe samudre][aquasatellite] (grīṣmakāle 2021)
--   adhyāpakāya sahāyaka sṭenforḍ [CS 140E]{lang=en} kāsaṁvidhāṇām
-    (vasante 2021)
--   tantrāṁśābhiyantensṭagrāmi (grīṣmakāle 2020)
--   tantrāṁśābhiyantā fesbuki (grīṣmakāle 2019)
-
-## prakāśanā mama
-
-### śodhāḥ
-
--   [[The Convergence of Efficiency and Scalability in Ocean Data
-    Platforms]{lang=en}][thaumas] ([OCEANS]{lang=en} २०२१)
--   [[Making a Synchronous Motor]{lang=en}][motor] ([Menlo Roundtable]{lang=en},
-    śaradkāle 2016)
--   [[Performance Boost: Dynamically Improving a Home&apos;s Wi-Fi
-    Signal]{lang=en}][wifi] ([IEEE Potentials]{lang=en}, mārc–āpril 2016)
--   [[A Dual Sensor System for Determining the Unique Oxygen Production
-    Signature of Plants]{lang=en}][oxygen] ([Cyber Journals -
-    Mechatronics]{lang=en}, 2015)
-
-### āviṣkārāḥ
-
-::: {lang=en}
-
--   Modular Media Player (US D769941 S1)
--   Multi-Person Straw for Sharing/Tasting Beverages (US 9186007 B2)
--   Apparatus and Method for Repairing a Surface Submerged in Liquid by Creating
-    a Workable Space (US 8925168 B2)
--   System, Methodology, and Product to Sort, Organize, and Store Toy
-    Building/Construction Sets (US 7987990 B2)
-
-:::
+hemante ca vasante 2023 [[CS]{lang=en} 45][cs45] vargasya adhyāpaka
+'smi, [ayeleṭ ḍrejen][adrazen] ca [jonathan kūlā][jdkula]
+saha. [[CS]{lang=en} 140[E]{lang=en}][cs140e] vargena ca saha sāhāyyaṃ karomi.
+trivāram etaṃ vargaṃ sikṣayām asa.
 
 ### pariśabdāḥ
 
--   [vidhilekha][github]
+-   [vargāḥ][courses]
+-   [karyāḥ][jobs]
+-   [nāṭakāḥ][shows]
+-   [vidhilekhāḥ][github]
 -   [linkḍin][linkedin]
--   [yūṭyūb][youtube]
--   [īpatra][email]
+-   [īpatraṃ preṣya][email]
 
 <script>
 var replacement_words = {
     akshay: 'Akshay',
     shreevatsan: 'Srivatsan',
+    ayelet: 'Ayelet',
+    drejen: 'Drazen',
+    jonathan: 'Jonathan',
+    koolaa: 'Kula',
+    keeth: 'Keith',
+    vinsteen: 'Winstein',
+    daasan: 'Dawson',
+    englar: 'Engler',
+    saaraa: 'Sara',
+    aachor: 'Achour',
+    jon: 'John',
+    micchel: 'Mitchell',
+    paat: 'Pat',
+    haanrahaan: 'Hanrahan',
+    linkdin: 'LinkedIn',
+    eepatram: 'e-patram',
 };
 
 setup(
@@ -133,7 +92,7 @@ setup(
         ["tamiḻ-grantha", "tamil-grantha", "sa-Xaaa", mapping.to_tamil_grantha],
         ["grantha", "grantha", "sa-Gran", mapping.to_grantha],
         ["brāhmī", "brahmi", "sa-Brah", mapping.to_brahmi],
-        ["śāradā", "sharada", "sa-Shrd", mapping.to_sharada],
+        <!-- ["śāradā", "sharada", "sa-Shrd", mapping.to_sharada], -->
         ["sarvadeśīya", "ipa", "sa-phonipa", mapping.to_ipa],
         ["āṅglabhāśā", "anglabhasha", "sa-Latn", mapping.to_english],
     ]
