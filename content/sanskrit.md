@@ -31,12 +31,10 @@ eṣaḥ jālapṛṣṭha upalabhyaḥ [āṅglabhāṣayā][english] ca [tami�
 
 ![citraṃ mama sān frānsisko nagare][portrait]
 
-sṭenforḍ viśvavidyālaye vijñānaṃ saṅgaṇakayantrāṇāṃ paṭhat śikṣaṇasya
-chātro 'smi. saha gurubhyām [kīth vinsṭīn][keithw] ca [dāsan
-eṅglar][engler] ca pranālīṣu śodhaṃ karomi. [gaṇitiyāḥ praṇālīṃ][fix]
-nirmāmy es en ār prayogaśālāyāṃ. any kāryāt mahyam ālokalekhyakalā ca
-piyāno vādayatuṃ ca nṛtyaḥ sāmājikaḥ ca bhāshāḥ jñātuṃ rocante.
-bhāshā āṅglāṃ, drāvidāṃ, hindīṃ, ca saṃskṛtāṃ jānāmi.
+sṭenforḍ viśvavidyālaye vijñānaṃ saṅgaṇakayantrāṇāṃ paṭhat śikṣaṇasya chātro
+'smi. saha gurubhyām [kīth vinsṭīn][keithw] ca [dāsan eṅglar][engler] ca
+pranālīṣu śodhaṃ karomi. [gaṇitiyāḥ praṇālīṃ][fix] nirmāmy es en ār
+prayogaśālāyāṃ.
 
 etebhya ācāryebhyaḥ mama dhanyavādāḥ nirdeśeṇa tāsām:
 
@@ -44,12 +42,18 @@ etebhya ācāryebhyaḥ mama dhanyavādāḥ nirdeśeṇa tāsām:
 -   [jon micchel][jcm]
 -   [pāṭ hānrahān][hanrahan]
 
+any kāryāt mahyam ālokalekhyakalā ca piyāno vādayatuṃ ca nṛtyaḥ sāmājikaḥ ca
+bhāshāḥ jñātuṃ rocante. bhāshā āṅglāṃ, drāvidāṃ, hindīṃ, ca saṃskṛtāṃ jānāmi.
+[ḍānsbrek][dancebreak] ca [sṭenforḍ sviṅg nartakeṣu][ssd] ca [2025
+vīyennanṛtyakrīḍānartakeṣv][opening] asmi.
+
 # upadeśaḥ mama
 
-hemante ca vasante 2023 [[CS]{lang=en} 45][cs45] vargasya adhyāpaka
-'smi, [ayeleṭ ḍrejen][adrazen] ca [jonathan kūlā][jdkula]
-saha. [[CS]{lang=en} 140[E]{lang=en}][cs140e] vargena ca saha sāhāyyaṃ karomi.
-trivāram etaṃ vargaṃ sikṣayām asa.
+hemante ca vasante 2023 [[CS]{lang=en} 45][cs45] vargasya adhyāpaka 'smi,
+[ayeleṭ ḍrejen][adrazen] ca [jonathan kūlā][jdkula] saha. [[CS]{lang=en}
+140[E]{lang=en}][cs140e] vargena ca saha sāhāyyaṃ karomi. trivāram etaṃ vargaṃ
+sikṣayām asa. [[CS]{lang=en} 240[LX]{lang=en}][cs240lx-22spr] ca [[CS]{lang=en}
+240][cs240] ca vargiḥ saha sāhāyyaṃ karomi.
 
 ### pariśabdāḥ
 

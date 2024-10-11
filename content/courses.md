@@ -20,11 +20,11 @@ Stanford, so here's a handful (written in mid-2023):
     involved). This class is generally offered once a year in Winter Quarter. I
     TAed this class several times.
 
-    -   For students who took 140E, I'd recommend following up with either 240
-        (more conceptual) or [240LX][cs240lx] (more hands-on), depending on what
-        part of 140 was more enjoyable. For students who took CS 112 or CS 212,
-        I'd recommend [CS 240](https://cs240.stanford.edu). CS 240 is mostly a
-        paper-reading class. There's also a CS 340LX for people who really love
+    -   For students who took 140E, I'd recommend following up with either
+        [240][cs240] (more conceptual) or [240LX][cs240lx] (more hands-on),
+        depending on what part of 140 was more enjoyable. For students who took
+        CS 112 or CS 212, I'd recommend CS 240. CS 240 is mostly a paper-reading
+        class. There's also occasionally a CS 340LX for people who really love
         CS 240LX.
 
 -   [CS 144](https://cs144.stanford.edu) is an introductory class in computer
@@ -79,7 +79,7 @@ All the graphics classes I took were very well-taught in my opinion:
     judicious with choosing what shots to take. There's no automatic exposure
     settings to fall back on, so planning out the shot (taking into account the
     ambient light level) is critical. Since you have to develop the film
-    yourself in the photo lab (and then print it yourself in the darkroom),
+    yourself in the photo lab and then print it yourself in the darkroom,
     there's often a week of latency between hitting the shutter and seeing what
     you captured for the first time. Having taken this class, there's a definite
     separation in my mind between "journaling" photos (photos I'm taking just to

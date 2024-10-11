@@ -5,8 +5,9 @@ lang: en
 
 # Theatre Crew/Tech/Production
 
-I used to do a lot of theatre tech (and some production) back in high school,
-and a little bit into undergrad. Here's a list of the shows I worked on:
+I used to do a lot of theatre tech (and a little production) back in
+high school, and briefly also in undergrad. Here's a list of the shows
+I worked on:
 
 ## Stanford Theater and Performance Studies
 

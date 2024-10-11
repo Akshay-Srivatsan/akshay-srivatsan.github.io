@@ -7,23 +7,24 @@ lang: en
 
 ## Research
 
-| Project             |   Professor    |     Quarter |
-| :------------------ | :------------: | ----------: |
-| Fix (Functional OS) | Keith Winstein | Summer 2023 |
-| Analog Verification |  Sara Achour   | Spring 2023 |
-| OS Verification     | Dawson Engler  | Winter 2023 |
-| Stagecast           | Keith Winstein | Autumn 2023 |
+| Project             | Professor      |          Quarter(s) |
+|:--------------------|:--------------:|--------------------:|
+| Fix (Functional OS) | Keith Winstein | Summer 2023-Present |
+| Analog Verification | Sara Achour    |         Spring 2023 |
+| OS Verification     | Dawson Engler  |         Winter 2023 |
+| Stagecast           | Keith Winstein |         Autumn 2023 |
 
 ## Teaching
 
-| Class    |        Role        |     Quarter |
-| :------- | :----------------: | ----------: |
-| CS 45    |     Instructor     | Spring 2023 |
-| CS 45    |     Instructor     | Winter 2023 |
+| Class    | Role               |     Quarter |
+|:---------|:------------------:|------------:|
+| CS 240   | Course Assistant   | Autumn 2024 |
+| CS 45    | Instructor         | Spring 2023 |
+| CS 45    | Instructor         | Winter 2023 |
 | CS 140E  | Teaching Assistant | Winter 2023 |
-| CS 240LX |  Course Assistant  | Spring 2022 |
-| CS 140E  |  Course Assistant  | Winter 2022 |
-| CS 140E  |  Course Assistant  | Spring 2021 |
+| CS 240LX | Course Assistant   | Spring 2022 |
+| CS 140E  | Course Assistant   | Winter 2022 |
+| CS 140E  | Course Assistant   | Spring 2021 |
 
 ## Industry
 
@@ -37,11 +38,15 @@ lang: en
 
 ### Stanford
 
-| Club/Project |              Role              |      Time |
-| :----------- | :----------------------------: | --------: |
-| Carta        |  Software Engineer, Team Lead  | 2019-2022 |
-| Tau Beta Pi  | Professional Development Chair | 2020-2021 |
-| Stagecast    |       Software Engineer        | 2020-2021 |
+| Club/Project                   | Role                                       |         Time |
+|:-------------------------------|:------------------------------------------:|-------------:|
+| Viennese Ball Opening Commitee | Performer                                  |    2024-2025 |
+| Cardinal Swing                 | Member                                     | 2024-present |
+| Stanford Swing Dancers         | Member                                     | 2024-present |
+| Dancebreak                     | Communications Chair, Workshop Coordinator | 2024-present |
+| Carta                          | Software Engineer, Team Lead               |    2019-2022 |
+| Tau Beta Pi                    | Professional Development Chair             |    2020-2021 |
+| Stagecast                      | Software Engineer                          |    2020-2021 |
 
 ### Menlo
 

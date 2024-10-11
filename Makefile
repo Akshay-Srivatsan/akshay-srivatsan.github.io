@@ -43,7 +43,7 @@ format:
 
 .PHONY: serve
 serve:
-	miniserve .
+	python -m http.server
 
 .PHONY: watch
 watch:

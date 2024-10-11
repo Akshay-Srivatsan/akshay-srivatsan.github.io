@@ -19,6 +19,7 @@
 [cartalab]: https://cartalab.stanford.edu
 [stagecast]: https://taps.stanford.edu/stagecast
 [proleptic]: https://github.com/stanford-stagecast/proleptic
+[arca]: https://github.com/fix-project/arca
 [fix]: https://github.com/fix-project/fix
 [cs140e]: https://cs140e.stanford.edu
 [cs140e-22win]: https://github.com/dddrrreee/cs140e-22win
@@ -28,6 +29,7 @@
 [cs240lx]: https://github.com/dddrrreee/cs240lx-23spr
 [cs45]: https://cs45.stanford.edu
 [cs45-23win]: https://web.stanford.edu/class/archive/cs/cs45/cs45.1234
+[cs240]: https://cs240.stanford.edu
 [missing-semester]: https://missing.csail.mit.edu/
 [motor]:
     http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf
@@ -41,3 +43,7 @@
 [thaumas]: https://doi.org/10.23919/OCEANS44145.2021.9705697
 [orcid]: https://orcid.org/0000-0003-2238-2065
 [orcid-icon]: https://orcid.org/sites/default/files/images/orcid_16x16.png
+
+[dancebreak]: https://dancebreak.stanford.edu
+[ssd]: https://swing.stanford.edu
+[opening]: https://vienneseball.stanford.edu
