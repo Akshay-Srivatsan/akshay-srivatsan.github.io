@@ -32,7 +32,7 @@ eṣaḥ jālapṛṣṭha upalabhyaḥ [āṅglabhāṣayā][english] ca [tami�
 ![citraṃ mama sān frānsisko nagare][portrait]
 
 sṭenforḍ viśvavidyālaye vijñānaṃ saṅgaṇakayantrāṇāṃ paṭhat śikṣaṇasya
-chātro 'smi. saha gurubhyām [kīth vinsṭīn][keithw] ca [dāsan
+chātro 'smi. saha gurubhyām [kīth vinsṭīn][keithw] ca [ḍāsan
 eṅglar][engler] ca pranālīṣu śodhaṃ karomi. [gaṇitiyāḥ praṇālīṃ][fix]
 nirmāmy es en ār prayogaśālāyāṃ.
 
@@ -70,28 +70,41 @@ var replacement_words = {
     akshay: 'Akshay',
     shreevatsan: 'Srivatsan',
     ayelet: 'Ayelet',
+    ayeleṭ: 'Ayelet',
     drejen: 'Drazen',
+    ḍrejen: 'Drazen',
     jonathan: 'Jonathan',
     koolaa: 'Kula',
+    kūlā: 'Kula',
     keeth: 'Keith',
+    kīth: 'Keith',
     vinsteen: 'Winstein',
+    vinsṭīn: 'Winstein',
     daasan: 'Dawson',
+    ḍāsan: 'Dawson',
     englar: 'Engler',
     saaraa: 'Sara',
+    sārā: 'Sara',
     aachor: 'Achour',
+    āchor: 'Achour',
     jon: 'John',
     micchel: 'Mitchell',
     paat: 'Pat',
+    pāṭ: 'Pat',
     haanrahaan: 'Hanrahan',
+    hānrahān: 'Hanrahan',
     linkdin: 'LinkedIn',
     eepatram: 'e-patram',
+    sṭenforḍ: 'Stanford',
+    ḍānsbrek: 'Dancebreak',
+    daansbrek: 'Dancebreak',
 };
 
 setup(
     document.getElementById("scripts"),
     document.getElementById("script"),
     [
-        ["lātin", "iso", "sa-Latn", null],
+        ["lātin", "iast", "sa-Latn", null],
         ["devanāgarī", "devanagari", "sa", mapping.to_devanagari],
         ["tamiḻ", "tamil", "sa-Taml", mapping.to_tamil],
         ["tamiḻ-grantha", "tamil-grantha", "sa-Xaaa", mapping.to_tamil_grantha],
@@ -100,6 +113,7 @@ setup(
         <!-- ["śāradā", "sharada", "sa-Shrd", mapping.to_sharada], -->
         ["sarvadeśīya", "ipa", "sa-phonipa", mapping.to_ipa],
         ["āṅglabhāśā", "anglabhasha", "sa-Latn", mapping.to_english],
+        ["sarala", "simple", "sa-Latn", mapping.to_simple],
     ]
 );
 </script>

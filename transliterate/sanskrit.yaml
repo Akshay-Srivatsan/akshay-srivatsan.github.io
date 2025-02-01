@@ -239,3 +239,24 @@ consonants:
 punctuation:
   - [𑇁, 𑇅, 𑇄]
 digits: [𑇐, 𑇑, 𑇒, 𑇓, 𑇔, 𑇕, 𑇖, 𑇗, 𑇘, 𑇙]
+---
+name: simple
+style: alphabet
+vowels:
+  - [a, ā, i, ī, u, ū]
+  - [ṛ, ṝ, ḷ, ḹ]
+  - [e, ai, o, au]
+modifiers:
+  - ["", m, m, s]
+consonants:
+  - [k, kh, g, gh, n]
+  - [c, ch, j, jh, n]
+  - [ṭ, ṭh, ḍ, ḍh, ṇ]
+  - [t, th, d, dh, n]
+  - [p, ph, b, bh, m]
+  - [y, r, l, v, l]
+  - [sh, ṣ, s, h]
+  - [f, n]
+punctuation:
+  - ["’", ., ōm]
+digits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
