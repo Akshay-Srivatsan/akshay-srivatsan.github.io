@@ -51,12 +51,12 @@ hīs professōribus grātiās agō ob cōnsilium et auxilium hōrum:
 -   professōr [Pat Hanrahan][hanrahan] cōnsuāsor meus baccalaureālis
 
 extrā lūdum et opus, mihī photographia, clāvile cantāre, saltāre
-sociāle, et linguās discere placet. cum [_cōnsiliō initiō ballātiōnī
-Vindobonēnsī quadrāgēnsimō septimō_][opening] ballābō tripudium
-Vindobonēnse et saltātiōnem Bōhēmicam. [_Dancebreak_][dancebreak]
-gregem praesideō quoque.
+sociāle, et linguās discere placet. cum [_cōnsiliō ad initiāndum
+ballātiōnem Vindobonēnsem quadrāgēnsimam septimam_][opening] ballābō
+tripudium Vindobonēnse et saltātiōnem Bōhēmicam.
+[_Dancebreak_][dancebreak] gregem praesideō quoque.
 
-sī hāc paginam intellegis (vel sī erratā vidēs), mihī epistolam
+sī hanc paginam intellegis (vel sī erratā vidēs), mihī epistolam
 ēlectrōnicam mitte!
 
 ## doctrīna mea
