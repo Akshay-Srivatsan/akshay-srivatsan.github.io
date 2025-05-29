@@ -52,12 +52,27 @@ hīs professōribus grātiās agō ob cōnsilium et auxilium hōrum:
 
 extrā lūdum et opus, mihī photographia, clāvile cantāre, saltāre
 sociāle, et linguās discere placet. cum [_cōnsiliō ad initiāndum
-ballātiōnem Vindobonēnsem quadrāgēnsimam septimam_][opening] ballābō
-tripudium Vindobonēnse et saltātiōnem Bōhēmicam.
+ballātiōnem Vindobonēnsem quadrāgēnsimam septimam_][opening] ballāvī
+[tripudium Vindobonēnse][waltz47] et [saltātiōnem Bōhēmicam][polka47].
 [_Dancebreak_][dancebreak] gregem praesideō quoque.
 
 sī hanc paginam intellegis (vel sī erratā vidēs), mihī epistolam
 ēlectrōnicam mitte!
+
+## ballātio sociālis
+
+praesideō [_Dancebreak_][dancebreak], gregem valsaeque polkaeque
+Stanfordiensem.  ballō quoque in [cōnsiliō ad initiāndum ballātiōnem
+Vindobonēnsem][opening].  saltātiōnem docēo in _Dancebreak_,
+[Cōnsiliō][fortnight], et [_Stanford Swing Dancers_][ssd]. sī
+Stanfordī es et scīre dē ballātionem sociālem vīs, venī ad
+_Dancebreak_ diē Lunae.
+
+pelliculae saltātiōnum meārum hīc sunt:
+
+* [ballātiō Vindobonēnsis MMXXV - valsa (Smetana - Má Vlast, No. 2 Vltava)][waltz47]
+* [ballātiō Vindobonēnsis MMXXV - polka (von Suppé - Poet and Peasant Overture)][polka47]
+* [ballātiō magna MMXXV][bigdance25]
 
 ## doctrīna mea
 

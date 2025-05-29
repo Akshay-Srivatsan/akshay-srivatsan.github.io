@@ -45,7 +45,7 @@ etebhya ācāryebhyaḥ mama dhanyavādāḥ nirdeśeṇa tāsām:
 any kāryāt mahyam ālokalekhyakalā ca piyāno vādayatuṃ ca nṛtyaḥ
 sāmājikaḥ ca bhāshāḥ jñātuṃ rocante. bhāshā āṅglāṃ, drāvidāṃ, hindīṃ,
 ca saṃskṛtāṃ jānāmi.  [ḍānsbrek][dancebreak] goṣṭyā rāṣṭrapaty
-asmi. [saptacatvāriṁśe vīyennasahanartane][opening] nṛtyaṃ kariṣyāmi.
+asmi. [saptacatvāriṁśe vīyennasahanartane][opening] nṛtyaṃ akaravam.
 
 # upadeśaḥ mama
 
@@ -98,6 +98,8 @@ var replacement_words = {
     sṭenforḍ: 'Stanford',
     ḍānsbrek: 'Dancebreak',
     daansbrek: 'Dancebreak',
+    vīyenna: 'Vienna',
+    veeyenna: 'Vienna',
 };
 
 setup(

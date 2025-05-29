@@ -35,18 +35,36 @@ advised by:
 -   Professor [Pat Hanrahan][hanrahan], my undergraduate advisor
 
 Outside of work, I also enjoy photography, playing the piano, and
-social dancing. I'm co-president of [Stanford Dancebreak][dancebreak],
-and I'll be performing at the [47th Stanford Viennese Ball][opening]
-as part of the Opening Committee.
+social dancing. I'm co-president of [Dancebreak][dancebreak], and I
+frequent [Stanford Swing Dancers][ssd] and occasionally go to
+[Cardinal West Coast Swing][cardinal]. I performed a [Viennese
+waltz][waltz47] and a [polka][polka47] as a member of the 47th
+Stanford Viennese Ball Opening Committee.
+
+## Social Dance
+
+I'm actively involved in Stanford's social dance clubs and community.
+I organize [Dancebreak][dancebreak], a large social dance club with a
+focus on waltz and swing.  I also perform as part of the [Viennese
+Ball Opening Committee][opening].  I teach dance lessons and workshops
+for Dancebreak, Viennese Ball ([Austria Fortnight][fortnight]), and
+[Stanford Swing Dancers][ssd]. If you're at Stanford and want to learn
+more about social dancing, come to Dancebreak on Monday nights!
+
+Videos of some of my performances are here:
+
+* [Viennese Ball 2025 - Opening Waltz (Smetana - Má Vlast, No. 2 Vltava)][waltz47]
+* [Viennese Ball 2025 - Opening Polka (von Suppé - Poet and Peasant Overture)][polka47]
+* [Big Dance 2025 - Opening Performances][bigdance25]
 
 ## Teaching
 
-I recently TAed [CS 240: _Advanced Topics in Operating
-Systems_][cs240], a graduate-level paper discussion class about
-operating systems. I previously TAed [CS 240LX: _Advanced Systems
-Laboratory, Accelerated_][cs240lx-22spr], a laboratory-based graduate
-operating systems class. I also TAed [CS 140E: _Operating Systems
-Design and Implementation_][cs140e-23win] [several][cs140e-22win]
+I TAed [CS 240: _Advanced Topics in Operating Systems_][cs240], a
+graduate-level paper discussion class about operating systems. I
+previously TAed the laboratory version of the same class, [CS 240LX:
+_Advanced Systems Laboratory, Accelerated_][cs240lx-22spr]. I also
+TAed [CS 140E: _Operating Systems Design and
+Implementation_][cs140e-23win] [several][cs140e-22win]
 [times][cs140e-21spr]; CS 140E is a laboratory-based undergraduate
 introduction to operating systems.
 
@@ -76,3 +94,5 @@ school at Menlo School.
 -   [Email][email]
 -   [GitHub][github]
 -   [LinkedIn][linkedin]
+
+Photo taken by [Lucas Garron][garron], whose website also has a bunch of cool stuff relating to social dance.

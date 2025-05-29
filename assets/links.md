@@ -43,7 +43,13 @@
 [thaumas]: https://doi.org/10.23919/OCEANS44145.2021.9705697
 [orcid]: https://orcid.org/0000-0003-2238-2065
 [orcid-icon]: https://orcid.org/sites/default/files/images/orcid_16x16.png
+[garron]: https://garron.net/
 
 [dancebreak]: https://dancebreak.stanford.edu
 [ssd]: https://swing.stanford.edu
+[cardinal]: https://www.facebook.com/cardinalswing/
 [opening]: https://vienneseball.stanford.edu
+[fortnight]: https://vienneseball.stanford.edu/austria-fortnight
+[waltz47]: https://www.youtube.com/watch?v=OecToTxPurk
+[polka47]: https://www.youtube.com/watch?v=ef7KNEIakik
+[bigdance25]: https://www.youtube.com/watch?v=ZtfiJEXm8oA
