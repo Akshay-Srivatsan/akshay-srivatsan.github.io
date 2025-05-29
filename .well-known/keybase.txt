@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/akshaysrivatsan
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://aks.io
+  * I am akshaysrivatsan (https://keybase.io/akshaysrivatsan) on keybase.
+  * I have a public key ASBHBH-IBQeN_imfX6Dd_sZv6CsKuVld4DVxVnheg7LVQQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012047047f8805078dfe299f5fa0ddfec66fe82b0ab9595de0357156785e83b2d5410a",
+      "host": "keybase.io",
+      "kid": "012047047f8805078dfe299f5fa0ddfec66fe82b0ab9595de0357156785e83b2d5410a",
+      "uid": "daf089867c24d6c7e038f8484a16f219",
+      "username": "akshaysrivatsan"
+    },
+    "merkle_root": {
+      "ctime": 1748476759,
+      "hash": "4648fb520d48c94ecd58e15525009d7bfc89fb95a4d23cbd16076c28db841c526df1692aa2105ffd24216852e63000ff3e6a8939a17ad03d569be4275eb917f3",
+      "hash_meta": "ae5c2c804afe4b0d15f7758dc3a5aba47d5bf98b1667a192f4c10031e8560614",
+      "seqno": 26834540
+    },
+    "service": {
+      "entropy": "ZRQ/WbV7VY4/IACUf94ufwN/",
+      "hostname": "aks.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.5.1"
+  },
+  "ctime": 1748476864,
+  "expire_in": 504576000,
+  "prev": "4509a9a102c018684d39c7ebecb1cf0bd73751dc7558ececcf922196114e6d8c",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgRwR/iAUHjf4pn1+g3f7Gb+grCrlZXeA1cVZ4XoOy1UEKp3BheWxvYWTESpcCD8QgRQmpoQLAGGhNOcfr7LHPC9c3Udx1WOzsz5IhlhFObYzEILeLLQiLkkv0XwIvzUN/IXH+uDWc9jGHrLMbkU0NYFcVAgHCo3NpZ8RAw45aCyDky3sOH5PWyv7/qeBj7mLB8tqLSvtl0hYimjfyQYnUmNZCDg5cGLIXjf7OVJ3kGAj/9hlzxq9KPWkCC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAOmiUZMT+h6sQc3xmZFhBzSIZF7bFhiPEgQPKAZB0oIo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/akshaysrivatsan
+
+==================================================================
