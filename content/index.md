@@ -24,7 +24,8 @@ I'm a third-year Ph.D. candidate in Computer Science at Stanford
 University, advised by Professors [Keith Winstein][keithw] and [Dawson
 Engler][engler]. I'm currently working on [functional operating
 systems][arca] for [serverless computing][fix] in the Systems and
-Networking Research Lab.
+Networking Research Group at Stanford.  Over the summer, I'm visiting
+the [Parallel and Distributed Operating Systems Group][pdos] at MIT.
 
 In addition to my PhD advisors, I've also had the privilege to be
 advised by:
@@ -33,13 +34,6 @@ advised by:
     verification
 -   Professor [John Mitchell][jcm] on [Carta][carta]
 -   Professor [Pat Hanrahan][hanrahan], my undergraduate advisor
-
-Outside of work, I also enjoy photography, playing the piano, and
-social dancing. I'm co-president of [Dancebreak][dancebreak], and I
-frequent [Stanford Swing Dancers][ssd] and occasionally go to
-[Cardinal West Coast Swing][cardinal]. I performed a [Viennese
-waltz][waltz47] and a [polka][polka47] as a member of the 47th
-Stanford Viennese Ball Opening Committee.
 
 ## Social Dance
 

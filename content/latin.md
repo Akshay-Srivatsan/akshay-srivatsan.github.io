@@ -42,7 +42,9 @@ sum scientiam computātrālis studens candidātus doctorālis in
 Ūniversitāte Stanfordiēnsī. [Keith Winstein][keithw] et [Dawson
 Engler][engler] sunt advīsōrēs meī. in labōratōrium investīgātiōnis
 systēmatumque rētiumque labōrō ad faciendum [systēma functiōnālem
-operandī][fix].
+operandī][fix]. hanc aestāte studeō Massachūsettēnsī Īnstitūtō
+Technologiae, cum [parallelārumque distribūtārumque operandī
+systēmārum grege][pdos].
 
 hīs professōribus grātiās agō ob cōnsilium et auxilium hōrum:
 

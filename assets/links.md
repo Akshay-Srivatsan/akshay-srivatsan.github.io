@@ -44,6 +44,8 @@
 [orcid]: https://orcid.org/0000-0003-2238-2065
 [orcid-icon]: https://orcid.org/sites/default/files/images/orcid_16x16.png
 [garron]: https://garron.net/
+[pdos]: https://pdos.csail.mit.edu/
+[kaashoek]: https://people.csail.mit.edu/kaashoek/
 
 [dancebreak]: https://dancebreak.stanford.edu
 [ssd]: https://swing.stanford.edu
