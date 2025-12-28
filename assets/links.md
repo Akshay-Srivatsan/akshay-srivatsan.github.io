@@ -20,7 +20,9 @@
 [stagecast]: https://taps.stanford.edu/stagecast
 [proleptic]: https://github.com/stanford-stagecast/proleptic
 [arca]: https://github.com/fix-project/arca
-[fix]: https://github.com/fix-project/fix
+[fix-repo]: https://github.com/fix-project/fix
+[fix]: https://arxiv.org/abs/2511.00205
+[codillon]: https://github.com/codillon/codillon
 [cs140e]: https://cs140e.stanford.edu
 [cs140e-22win]: https://github.com/dddrrreee/cs140e-22win
 [cs140e-21spr]: https://github.com/dddrrreee/cs140e-21spr
@@ -31,6 +33,8 @@
 [cs45-23win]: https://web.stanford.edu/class/archive/cs/cs45/cs45.1234
 [cs240]: https://cs240.stanford.edu
 [missing-semester]: https://missing.csail.mit.edu/
+[cs104]: https://cs104.stanford.edu
+[cs244c]: https://cs244c.stanford.edu
 [motor]:
     http://roundtable.menloschool.org/issue25/5_McNelly+Srivatsan_MS_Roundtable25_Fall_2016.pdf
 [wifi]: https://doi.org/10.1109/MPOT.2015.2396534
@@ -46,7 +50,6 @@
 [garron]: https://garron.net/
 [pdos]: https://pdos.csail.mit.edu/
 [kaashoek]: https://people.csail.mit.edu/kaashoek/
-
 [dancebreak]: https://dancebreak.stanford.edu
 [ssd]: https://swing.stanford.edu
 [cardinal]: https://www.facebook.com/cardinalswing/
@@ -55,3 +58,4 @@
 [waltz47]: https://www.youtube.com/watch?v=OecToTxPurk
 [polka47]: https://www.youtube.com/watch?v=ef7KNEIakik
 [bigdance25]: https://www.youtube.com/watch?v=ZtfiJEXm8oA
+[bigdance]: https://bigdance.stanford.edu/

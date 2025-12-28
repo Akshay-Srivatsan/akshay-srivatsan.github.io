@@ -38,82 +38,82 @@ et [Linguā Sanscritā][sanskrit] quoque.
 
 ![photographema meī][portrait]
 
-sum scientiam computātrālis studens candidātus doctorālis in
-Ūniversitāte Stanfordiēnsī. [Keith Winstein][keithw] et [Dawson
-Engler][engler] sunt advīsōrēs meī. in labōratōrium investīgātiōnis
-systēmatumque rētiumque labōrō ad faciendum [systēma functiōnālem
-operandī][fix]. hanc aestāte studeō Massachūsettēnsī Īnstitūtō
-Technologiae, cum [parallelārumque distribūtārumque operandī
-systēmārum grege][pdos].
+sum scientiam computātrālis studens candidātus doctorālis in Ūniversitāte
+Stanfordiēnsī. [Keith Winstein][keithw] et [Dawson Engler][engler] sunt
+advīsōrēs meī. in labōratōrium investīgātiōnis systēmatumque rētiumque labōrō ad
+faciendum [systēma functiōnālem operandī][arca] et [systēma functiōnālem sinē
+servīs][fix]. quōque studiō [mittendum prōlepticum musicae][proleptic] et
+[instructiōnem scientiam computātrālis cum xylophōnīs][codillon].
 
 hīs professōribus grātiās agō ob cōnsilium et auxilium hōrum:
 
--   professōr [Sara Achour][sachour] cōnsuāsor mea rotātiōnālis
--   professōr [John Mitchell][jcm] investīgātor prīncipālis Cartae
--   professōr [Pat Hanrahan][hanrahan] cōnsuāsor meus baccalaureālis
+- professōr [Frans Kaashoek][kaashoek], cōnsuāsor meus Massachūsettēnsī
+  Īnstitūtō Technologiae
+- professōr [Sara Achour][sachour], cōnsuāsor mea rotātiōnālis
+- professōr [John Mitchell][jcm], investīgātor prīncipālis Cartae
+- professōr [Pat Hanrahan][hanrahan], cōnsuāsor meus baccalaureālis
 
-extrā lūdum et opus, mihī photographia, clāvile cantāre, saltāre
-sociāle, et linguās discere placet. cum [_cōnsiliō ad initiāndum
-ballātiōnem Vindobonēnsem quadrāgēnsimam septimam_][opening] ballāvī
-[tripudium Vindobonēnse][waltz47] et [saltātiōnem Bōhēmicam][polka47].
-[_Dancebreak_][dancebreak] gregem praesideō quoque.
+extrā lūdum et opus, mihī photographia, clāvile cantāre, saltāre sociāle, et
+linguās discere placet. cum [_cōnsiliō ad initiāndum ballātiōnem Vindobonēnsem
+quadrāgēnsimam septimam_][opening] ballāvī [tripudium Vindobonēnse][waltz47] et
+[saltātiōnem Bōhēmicam][polka47]. [_Dancebreak_][dancebreak] gregem praesideō
+quoqīs.
 
-sī hanc paginam intellegis (vel sī erratā vidēs), mihī epistolam
-ēlectrōnicam mitte!
+sī hanc paginam intellegis (vel sī erratā vidēs), mihī epistolam ēlectrōnicam
+mitte!
 
 ## ballātio sociālis
 
-praesideō [_Dancebreak_][dancebreak], gregem valsaeque polkaeque
-Stanfordiensem.  ballō quoque in [cōnsiliō ad initiāndum ballātiōnem
-Vindobonēnsem][opening].  saltātiōnem docēo in _Dancebreak_,
-[Cōnsiliō][fortnight], et [_Stanford Swing Dancers_][ssd]. sī
-Stanfordī es et scīre dē ballātionem sociālem vīs, venī ad
-_Dancebreak_ diē Lunae.
+praesideō [_Dancebreak_][dancebreak], gregem valsaeque polkaeque Stanfordiensem.
+ballō quoque in [cōnsiliō ad initiāndum ballātiōnem Vindobonēnsem][opening].
+saltātiōnem docēo in _Dancebreak_, [Cōnsiliō][fortnight], et [_Stanford Swing
+Dancers_][ssd]. sī Stanfordī es et scīre dē ballātionem sociālem vīs, venī ad
+_Dancebreak_ vesperī diē Lunae.
 
 pelliculae saltātiōnum meārum hīc sunt:
 
-* [ballātiō Vindobonēnsis MMXXV - valsa (Smetana - Má Vlast, No. 2 Vltava)][waltz47]
-* [ballātiō Vindobonēnsis MMXXV - polka (von Suppé - Poet and Peasant Overture)][polka47]
-* [ballātiō magna MMXXV][bigdance25]
+- [ballātiō Vindobonēnsis MMXXV - valsa (Smetana - Má Vlast, No. 2
+  Vltava)][waltz47]
+- [ballātiō Vindobonēnsis MMXXV - polka (von Suppé - Poet and Peasant
+  Overture)][polka47]
+- [ballātiō magna MMXXV][bigdance25]
 
 ## doctrīna mea
 
-trēs annōs auxiliātus sum in [CS CXL-e: _inventiōque cōnstrūctiōque
-nucleōrum computātrōrum_][cs140e]. auxiliātus sum [vere
-MMXXI][cs140e-21spr], [hieme MMXXII][cs140e-22win], et [hieme
-MMXXIII][cs140e-23win]. auxiliātus sum in classe secundā, [CS
-CCXL-lx][cs240lx-22spr] vere MMXXII. in CS CXL-e labōrātōriō,
-discipulī faciunt nucleum parvum similis ŪNĪCĪ. in CS CCXL-lx,
-discupulī addunt systemātās prō verificātiōne nucleīs suīs.  in [CS
-CCXL: _topicae ulteriōres nucleōrum computātrōrum_][cs240] classī
-quoque auxiliāvī. hāc classī discipulī commentāriī de nucleīs
-computātrōrum legebant.
+hōc annō in [CS CCXLIV-c: _systēma distributa_][cs244c] auxiliābor.
 
-vēre MMXXIII ego, [Ayelet Drazen][adrazen], et [Jonathan Kula][jdkula]
-docuimus [CS XLV: _programmatae computātrālēs quae sciendae sunt
-programmātoribus omnibus_][cs45]. haec iterātio secunda huius classis;
-antea in hieme [iterātiōnem prīmam][cs45-23win] creāvimus et
-obtulimus. haec classem est ad docendum programmatās et conceptōs quī
-scīendī est in industriā et academiā, sed nōn est doctī. nunc eadem
-classis in formā CS CIV: _intrōdūctiō ad systēmātēs programmatārum
-essentiālēs_ oblāta est.
+trēs annōs auxiliātus sum in [CS CXL-e: _inventiōque cōnstrūctiōque nucleōrum
+computātrōrum_][cs140e]. auxiliātus sum [vere MMXXI][cs140e-21spr], [hieme
+MMXXII][cs140e-22win], et [hieme MMXXIII][cs140e-23win]. auxiliātus sum in
+classe secundā, [CS CCXL-lx][cs240lx-22spr] vere MMXXII. in CS CXL-e
+labōrātōriō, discipulī faciunt nucleum parvum similis ŪNĪCĪ. in CS CCXL-lx,
+discupulī addunt systemātās prō verificātiōne nucleīs suīs. in [CS CCXL:
+_topicae ulteriōres nucleōrum computātrōrum_][cs240] classī quoque auxiliāvī.
+hāc classī discipulī commentāriī de nucleīs computātrōrum legebant.
+
+vēre MMXXIII ego, [Ayelet Drazen][adrazen], et [Jonathan Kula][jdkula] docuimus
+[CS XLV: _programmatae computātrālēs quae sciendae sunt programmātoribus
+omnibus_][cs45]. haec iterātio secunda huius classis; antea in hieme
+[iterātiōnem prīmam][cs45-23win] creāvimus et obtulimus. haec classem est ad
+docendum programmatās et conceptōs quī scīendī est in industriā et academiā, sed
+nōn est doctī. nunc eadem classis in formā [CS CIV: _intrōdūctiō ad systēmātēs
+programmatārum essentiālēs_][cs104] oblāta est.
 
 ## ērudītiō mea
 
-ego Ūniversitāte Stanfordiēnsī studeō ut Philosophiae Doctōr
-fīam. antequam, prō Diplōmate Magistrī in Scientiā Computātrālī in
-Ūniversitāte Stanfordiēnsī studēbam (ā MMXX ad MMXXII). Baccalaureus
-quōque in Stanford perfēcī (ā MMXVII ad MMXXI). prius, in Lūdō
-Menloniēnsī studēbam.
+ego Ūniversitāte Stanfordiēnsī studeō ut Philosophiae Doctōr fīam. antequam, prō
+Diplōmate Magistrī in Scientiā Computātrālī in Ūniversitāte Stanfordiēnsī
+studēbam (ā MMXX ad MMXXII). Baccalaureus quōque in Stanford perfēcī (ā MMXVII
+ad MMXXI). prius, in Lūdō Menloniēnsī studēbam.
 
 ## et cētera
 
--   [recommendātiōnes meae classium][courses]
--   [opera][jobs]
--   [theātrum][shows]
--   [programmata][github]
--   [LinkedIn][linkedin]
--   [mihī epistolam mitte][email]
+- [recommendātiōnes meae classium][courses]
+- [opera][jobs]
+- [theātrum][shows]
+- [programmata][github]
+- [LinkedIn][linkedin]
+- [mihī epistolam mitte][email]
 
 <script>
 
