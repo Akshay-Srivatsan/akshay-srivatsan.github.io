@@ -56,19 +56,25 @@ hīs professōribus grātiās agō ob cōnsilium et auxilium hōrum:
 extrā lūdum et opus, mihī photographia, clāvile cantāre, saltāre sociāle, et
 linguās discere placet. cum [_cōnsiliō ad initiāndum ballātiōnem Vindobonēnsem
 quadrāgēnsimam septimam_][opening] ballāvī [tripudium Vindobonēnse][waltz47] et
-[saltātiōnem Bōhēmicam][polka47]. [_Dancebreak_][dancebreak] gregem praesideō
-quoqīs.
+[saltātiōnem Bōhēmicam][polka47].
 
 sī hanc paginam intellegis (vel sī erratā vidēs), mihī epistolam ēlectrōnicam
 mitte!
 
 ## ballātio sociālis
 
-praesideō [_Dancebreak_][dancebreak], gregem valsaeque polkaeque Stanfordiensem.
-ballō quoque in [cōnsiliō ad initiāndum ballātiōnem Vindobonēnsem][opening].
-saltātiōnem docēo in _Dancebreak_, [Cōnsiliō][fortnight], et [_Stanford Swing
-Dancers_][ssd]. sī Stanfordī es et scīre dē ballātionem sociālem vīs, venī ad
-_Dancebreak_ vesperī diē Lunae.
+praesidebām [_Dancebreak_][dancebreak], gregem valsaeque polkaeque
+Stanfordiensem. ballāvī in [cōnsiliō septimō quadrāgēsimus ad initiāndum
+ballātiōnem Vindobonēnsem][opening] et instruō duodēquīnquāgēsimum. saltātiōnem
+docēo in _Dancebreak_ et [_Swing Dancers_ Stanfordiēnsī][ssd] et [Saltātorēs
+Cardinālēs Oscillī Litōris Occidentālis][cardinal].
+
+docuī quōque [duō hebdomādīs Austriālis][fortnight], [magnā
+ballātiōne][bigdance], [_Lindy Hop_ Harvardiēnsī][hlh], et [DANCE
+106I][dance106i].
+
+sī Stanfordī es et scīre dē ballātionem sociālem vīs, venī ad _Dancebreak_
+vesperī diē Lunae.
 
 pelliculae saltātiōnum meārum hīc sunt:
 
@@ -80,7 +86,7 @@ pelliculae saltātiōnum meārum hīc sunt:
 
 ## doctrīna mea
 
-hōc annō in [CS CCXLIV-c: _systēma distributa_][cs244c] auxiliābor.
+hōc annō in [CS CCXLIV-c: _systēma distributa_][cs244c] auxiliōr.
 
 trēs annōs auxiliātus sum in [CS CXL-e: _inventiōque cōnstrūctiōque nucleōrum
 computātrōrum_][cs140e]. auxiliātus sum [vere MMXXI][cs140e-21spr], [hieme

@@ -52,6 +52,8 @@
 [kaashoek]: https://people.csail.mit.edu/kaashoek/
 [dancebreak]: https://dancebreak.stanford.edu
 [ssd]: https://swing.stanford.edu
+[hlh]: https://harvardlindyhop.notion.site/
+[dance106i]: https://bulletin.stanford.edu/courses/2196071
 [cardinal]: https://www.facebook.com/cardinalswing/
 [opening]: https://vienneseball.stanford.edu
 [fortnight]: https://vienneseball.stanford.edu/austria-fortnight

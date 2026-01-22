@@ -42,14 +42,14 @@ various capacities):
 
 ## Social Dance
 
-I'm actively involved in Stanford's social dance clubs and community. I used to
-run (and still help organize) [Dancebreak][dancebreak], a large social dance
-club with a focus on waltz and swing. I also performed in and currently tutor
-the [Stanford Viennese Ball Opening Committee][opening]. I teach dance lessons
-and workshops for Dancebreak, Viennese Ball ([Austria Fortnight][fortnight]),
-[Big Dance][bigdance], [Stanford Swing Dancers][ssd], and [Cardinal West Coast
-Swing][cardinal]. If you're at Stanford and want to learn more about social
-dancing, come to Dancebreak on Monday nights!
+I organize [Dancebreak][dancebreak], a large social dance club at Stanford with
+a focus on waltz and swing. I performed as part of the [47th Stanford Viennese
+Ball Opening Committee][opening] and currently tutor the 48th. I regularly teach
+waltz lessons at Dancebreak, Lindy Hop lessons at [Stanford Swing Dancers][ssd],
+and West Coast Swing at [Cardinal Swing][cardinal]. I have also taught workshops
+for [Viennese Ball (Austria Fortnight)][fortnight], [Big Dance][bigdance],
+[Harvard Lindy Hop][hlh], and [DANCE 106I][dance106i]. If you're around Stanford
+and interested in social dancing, come to Dancebreak on Monday nights!
 
 Videos of some of my performances are here:
 
@@ -61,8 +61,8 @@ Videos of some of my performances are here:
 
 ## Teaching
 
-I will be TAing [CS 244C: Advanced Networking and Distributed Systems][cs244c]
-in Winter 2026. Previously, I TAed [CS 240: _Advanced Topics in Operating
+I am TAing [CS 244C: Advanced Networking and Distributed Systems][cs244c] in
+Winter 2026. Previously, I TAed [CS 240: _Advanced Topics in Operating
 Systems_][cs240], a graduate-level paper discussion class about operating
 systems. Before that, I TAed the laboratory version of the same class, [CS
 240LX: _Advanced Systems Laboratory, Accelerated_][cs240lx-22spr]. I also TAed
