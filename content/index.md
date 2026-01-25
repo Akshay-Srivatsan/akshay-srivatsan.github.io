@@ -29,10 +29,10 @@ systems, including [continuation-centric operating system kernels][arca] and
 and Distributed Operating Systems Group][pdos] at MIT. In addition to functional
 operating systems, I sometimes work on [proleptic zero-latency
 streaming][proleptic] and [a structured editor with realtime feedback for
-beginning computer science][codillon].
+beginner computer scientists][codillon].
 
-In addition to my PhD advisors, I've also had the privilege to be advised by (in
-various capacities):
+In addition to my Ph.D. advisors, I've also had the privilege of being advised
+by (in various capacities):
 
 - Professor [Frans Kaashoek][kaashoek] on operating system design for
   microservice workloads
@@ -47,9 +47,10 @@ a focus on waltz and swing. I performed as part of the [47th Stanford Viennese
 Ball Opening Committee][opening] and currently tutor the 48th. I regularly teach
 waltz lessons at Dancebreak, Lindy Hop lessons at [Stanford Swing Dancers][ssd],
 and West Coast Swing at [Cardinal Swing][cardinal]. I have also taught workshops
-for [Viennese Ball (Austria Fortnight)][fortnight], [Big Dance][bigdance],
-[Harvard Lindy Hop][hlh], and [DANCE 106I][dance106i]. If you're around Stanford
-and interested in social dancing, come to Dancebreak on Monday nights!
+for the [Viennese Ball (during Austria Fortnight)][fortnight], [Big
+Dance][bigdance], [Harvard Lindy Hop][hlh], and [DANCE 106I][dance106i]. If
+you're around Stanford and interested in social dancing, come to Dancebreak on
+Monday nights!
 
 Videos of some of my performances are here:
 
@@ -72,10 +73,10 @@ undergraduate introduction to operating systems.
 
 I co-taught [CS 45: _Software Tools Every Programmer Should Know_][cs45] with
 [Ayelet Drazen][adrazen] and [Jonathan Kula][jdkula] in both Winter and
-Spring 2023. We designed this course to cover all the basic tools and concepts
-programmers (both software engineers and CS students) are required to know, but
+Spring 2023. We designed this course to cover the basic tools and concepts
+programmers (both software engineers and CS students) are required to know but
 which never get taught in CS classes; it's inspired by [MIT's Missing Semester
-course][missing-semester], but strives to go more in-depth and cover the
+course][missing-semester] but strives to go more in-depth and cover the
 conceptual background underlying the tools. Our two-quarter pilot run was
 successful enough that the course was later taught as [CS 104: _Introduction to
 Essential Software Systems and Tools_][cs104].
