@@ -15,9 +15,6 @@ lang: la
 īdem: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} et [अक्षय श्रीवत्सन]{lang=hi} et [𑌅𑌕𑍍𑌷𑌯𑍍
 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran} et [𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah}
 
-praestō est haec pāgina in [Linguā Anglicā][english], [Linguā Tamulicā][tamil],
-et [Linguā Sanscritā][sanskrit] quoque.
-
 <span id="date"></span>
 
 ## dē mē

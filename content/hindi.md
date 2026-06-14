@@ -14,9 +14,6 @@ lang: hi
 ]{#grantha-name} [[अक्षय् श्रीवत्सन्]{lang=hi}, ]{#devanagari-name} [[𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=hi-Brah}, ]{#brahmi-name} [[akṣay
 srīvatsan]{lang=sa-Latn}, ]{#iso-name} वगैरह।
 
-यह पृष्ठ [आंग्रेज़ी में][english], [लातिन में][latin], और [तमिल में][tamil] भी
-मिल सक्ता है।
-
 ## मेरे बारे में
 
 ![मेरी तस्वीर][portrait]

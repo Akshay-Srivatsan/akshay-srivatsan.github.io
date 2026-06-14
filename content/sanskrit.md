@@ -15,9 +15,6 @@ ca]{#tamil-name} [[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨
 श्रीवत्सन्]{lang=sa} ca]{#devanagari-name} [[𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah}
 ca]{#brahmi-name} [[akṣay srīvatsan]{lang=sa-Latn} ca]{#iso-name}
 
-eṣaḥ jālapṛṣṭha upalabhyaḥ [āṅglabhāṣayā][english] ca [tamiḷbhāṣayā][tamil] ca
-[lātinbhāṣayā][latin] ca asti.
-
 ## itihāsaḥ mama
 
 ![citraṃ mama sān frānsisko nagare][portrait]

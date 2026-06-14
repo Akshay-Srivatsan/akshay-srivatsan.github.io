@@ -1,6 +1,11 @@
 <article>
   <header>
     <h1>$title$</h1>
+    $if(switcher)$
+    <nav class="switcher">
+      $switcher$
+    </nav>
+    $endif$
     $if(date)$
     <p class="post-date">$date$</p>
     $endif$
