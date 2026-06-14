@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html lang="$lang$">
   <head>
-    <title>$pagetitle$</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, 
-                user-scalable=yes" />
+    <title>$title$</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <meta charset="utf-8" />
-    $if(favicon)$
-    <link rel="icon" href="$favicon$" />
-    $else$
-    <link rel="icon" href="assets/img/favicon.png" />
-    $endif$
+    <link rel="icon" href="/assets/img/favicon.png" />
     $if(url)$
     <meta property="og:url" content="$url$" />
     $endif$
@@ -18,6 +13,7 @@
     $endif$
     $if(description)$
     <meta property="og:description" content="$description$" />
+    <meta name="description" content="$description$" />
     $endif$
     $if(image)$
     <meta property="og:image" content="$image$" />
@@ -25,33 +21,24 @@
     $if(image-alt)$
     <meta property="og:image:alt" content="$image-alt$" />
     $endif$
-
-    $for(author)$
     <meta name="author" content="$author$" />
-    $endfor$
     $if(date)$
     <meta name="dcterms.date" content="$date$" />
     $endif$
     $if(keywords)$
-    <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+    <meta name="keywords" content="$keywords$" />
     $endif$
-    $if(description)$
-    <meta name="description" content="$description$" />
-    $endif$
-    <meta name="generator" content="pandoc" />
-    $fonts.html()$
-    
+    $alternateLinks$
     <link rel="stylesheet" href="/assets/css/styles.css" />
-    $for(js)$
-    <script type="text/javascript" src="$js$"></script>
-    $endfor$
   </head>
   <body>
-    $body$
-    <p lang="en">
-    $if(copyyear)$
-      &copy; $copyyear$ $author$
+    $if(switcher)$
+    <nav class="switcher">
+      $switcher$
+    </nav>
     $endif$
-    </p>
+    $body$
+    <p lang="en">&copy; $copyyear$ $author$</p>
+    $scripts$
   </body>
 </html>

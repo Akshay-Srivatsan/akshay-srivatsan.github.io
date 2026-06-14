@@ -1,0 +1,32 @@
+cabal-version: 3.0
+name: akshay-srivatsan-site
+version: 0.1.0.0
+build-type: Simple
+
+executable site
+  main-is: Main.hs
+  other-modules:
+      Site.Config
+    , Site.DateScript
+    , Site.Transliterate
+    , Site.Types
+  hs-source-dirs: site
+  default-language: GHC2021
+  ghc-options: -Wall -Wcompat -O2 -threaded
+  build-depends:
+      base >= 4.18 && < 5
+    , aeson
+    , bytestring
+    , containers
+    , directory
+    , filepath
+    , hakyll >= 4.16
+    , pandoc
+    , pandoc-types
+    , scientific
+    , tagsoup
+    , text
+    , time
+    , unicode-transforms
+    , vector
+    , yaml

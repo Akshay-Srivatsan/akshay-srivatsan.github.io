@@ -96,6 +96,61 @@ let numbers_short = [
     'XX',
 ];
 
+let date_label = 'hodie est';
+let ante_diem = 'ante diem';
+let nonas = 'nōnās';
+let nonis = 'nōnīs';
+let nonas_singular = 'nōnas';
+let idus = 'īdūs';
+let idibus = 'īdibus';
+let kalendis = 'kalendīs';
+let kalendas = 'kalendās';
+let kalendas_capitalized = 'Kalendas';
+let pridie = 'prīdiē';
+let kal_short = 'kal.';
+let ante_diem_short = 'a.d.';
+let non_short = 'nōn.';
+let id_short = 'eīd.';
+let pridie_short = 'prīd.';
+
+let dateScript = document.currentScript;
+
+function dataList(name, fallback) {
+    if (!dateScript || !(name in dateScript.dataset)) {
+        return fallback;
+    }
+    return dateScript.dataset[name].split('\t');
+}
+
+function dataText(name, fallback) {
+    if (!dateScript || !(name in dateScript.dataset)) {
+        return fallback;
+    }
+    return dateScript.dataset[name];
+}
+
+months_accusative = dataList('monthsAccusative', months_accusative);
+months_ablative = dataList('monthsAblative', months_ablative);
+numbers_accusative = dataList('numbersAccusative', numbers_accusative);
+months_short = dataList('monthsShort', months_short);
+numbers_short = dataList('numbersShort', numbers_short);
+date_label = dataText('dateLabel', date_label);
+ante_diem = dataText('anteDiem', ante_diem);
+nonas = dataText('nonas', nonas);
+nonis = dataText('nonis', nonis);
+nonas_singular = dataText('nonasSingular', nonas_singular);
+idus = dataText('idus', idus);
+idibus = dataText('idibus', idibus);
+kalendis = dataText('kalendis', kalendis);
+kalendas = dataText('kalendas', kalendas);
+kalendas_capitalized = dataText('kalendasCapitalized', kalendas_capitalized);
+pridie = dataText('pridie', pridie);
+kal_short = dataText('kalShort', kal_short);
+ante_diem_short = dataText('anteDiemShort', ante_diem_short);
+non_short = dataText('nonShort', non_short);
+id_short = dataText('idShort', id_short);
+pridie_short = dataText('pridieShort', pridie_short);
+
 function roman_date(date) {
     let day = date.getDate();
     let month = date.getMonth() + 1;
@@ -112,45 +167,45 @@ function roman_date(date) {
     }
 
     if (day == kalends) {
-        return `kalendīs ${months_ablative[month]}`;
+        return `${kalendis} ${months_ablative[month]}`;
     }
 
     if (day > kalends && day < nones - 1) {
-        return `ante diem ${numbers_accusative[nones - day + 1]} nōnās ${
+        return `${ante_diem} ${numbers_accusative[nones - day + 1]} ${nonas} ${
             months_accusative[month]
         }`;
     }
 
     if (day == nones - 1) {
-        return `prīdiē nōnas ${months_accusative[month]}`;
+        return `${pridie} ${nonas_singular} ${months_accusative[month]}`;
     }
 
     if (day == nones) {
-        return `nōnīs ${months_ablative[month]}`;
+        return `${nonis} ${months_ablative[month]}`;
     }
 
     if (day > nones && day < ides - 1) {
-        return `ante diem ${numbers_accusative[ides - day + 1]} īdūs ${
+        return `${ante_diem} ${numbers_accusative[ides - day + 1]} ${idus} ${
             months_accusative[month]
         }`;
     }
 
     if (day == ides - 1) {
-        return `prīdiē īdūs ${months_accusative[month]}`;
+        return `${pridie} ${idus} ${months_accusative[month]}`;
     }
 
     if (day == ides) {
-        return `īdibus ${months_ablative[month]}`;
+        return `${idibus} ${months_ablative[month]}`;
     }
 
     if (day > ides && day < last_day_of_month) {
-        return `ante diem ${
+        return `${ante_diem} ${
             numbers_accusative[last_day_of_month + 1 - day + 1]
-        } Kalendas ${months_accusative[month + 1]}`;
+        } ${kalendas_capitalized} ${months_accusative[month + 1]}`;
     }
 
     if (day == last_day_of_month) {
-        return `prīdiē kalendās ${months_accusative[month + 1]}`;
+        return `${pridie} ${kalendas} ${months_accusative[month + 1]}`;
     }
 }
 
@@ -170,61 +225,64 @@ function shortRomanDate(date) {
     }
 
     if (day == kalends) {
-        return 'kal. ' + months_short[month];
+        return `${kal_short} ${months_short[month]}`;
     }
 
     if (day > kalends && day < nones - 1) {
         return (
-            'a.d. ' +
+            ante_diem_short +
+            ' ' +
             numbers_short[nones - day + 1] +
-            ' nōn. ' +
+            ' ' +
+            non_short +
+            ' ' +
             months_short[month]
         );
     }
 
     if (day == nones - 1) {
-        return 'prīd. nōn. ' + months_short[month];
+        return `${pridie_short} ${non_short} ${months_short[month]}`;
     }
 
     if (day == nones) {
-        return 'nōn. ' + months_short[month];
+        return `${non_short} ${months_short[month]}`;
     }
 
     if (day > nones && day < ides - 1) {
         return (
-            'a.d. ' +
+            ante_diem_short +
+            ' ' +
             numbers_short[ides - day + 1] +
-            ' eīd. ' +
+            ' ' +
+            id_short +
+            ' ' +
             months_short[month]
         );
     }
 
     if (day == ides - 1) {
-        return 'prīd. eīd. ' + months_short[month];
+        return `${pridie_short} ${id_short} ${months_short[month]}`;
     }
 
     if (day == ides) {
-        return 'eīd. ' + months_short[month];
+        return `${id_short} ${months_short[month]}`;
     }
 
     if (day > ides && day < lastDayOfMonth) {
         return (
-            'a.d. ' +
+            ante_diem_short +
+            ' ' +
             numbers_short[lastDayOfMonth + 1 - day + 1] +
-            ' kal. ' +
+            ' ' +
+            kal_short +
+            ' ' +
             months_short[month + 1]
         );
     }
 
     if (day == lastDayOfMonth) {
-        return 'prīd. kal. ' + months_short[month + 1];
+        return `${pridie_short} ${kal_short} ${months_short[month + 1]}`;
     }
-}
-
-function romanize(string) {
-    return string
-        .replace(new RegExp('U', 'g'), 'V')
-        .replace(new RegExp('v', 'g'), 'u');
 }
 
 function hodie() {
@@ -234,3 +292,10 @@ function hodie() {
 function hodieBreve() {
     return shortRomanDate(new Date());
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    let date = document.getElementById('date');
+    if (date) {
+        date.innerHTML = `${date_label}: ${hodie()} (${hodieBreve()})`;
+    }
+});

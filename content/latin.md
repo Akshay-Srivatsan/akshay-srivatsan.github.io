@@ -6,13 +6,6 @@ description:
 image: assets/img/portrait-small.jpg
 image-alt: photographema meī
 lang: la
-js:
-    [
-        transliterate/latin.js,
-        assets/js/common.js,
-        assets/js/transcribe.js,
-        assets/js/date.js,
-    ]
 ---
 
 # Akshay Srivatsan
@@ -26,13 +19,6 @@ praestō est haec pāgina in [Linguā Anglicā][english], [Linguā Tamulicā][ta
 et [Linguā Sanscritā][sanskrit] quoque.
 
 <span id="date"></span>
-
-<div id="font" style="display:none">
-<label for="change_font">**speciēm litterārum ēligē:**</label>
-<select name="change_font" id="change_font">
-<!-- filled from JS -->
-</select>
-</div>
 
 ## dē mē
 
@@ -120,20 +106,3 @@ ad MMXXI). prius in Lūdō Menloniēnsī studēbam.
 - [LinkedIn][linkedin]
 - [mihī epistolam mitte][email]
 
-<script>
-
-date.innerHTML = `hodie est: ${hodie()} (${hodieBreve()})`;
-
-setup(
-    document.getElementById("font"),
-    document.getElementById("change_font"),
-    [
-        ["litterae quadrātae", "", "la", null],
-        ["litterae unciālēs", "unciali", "la-Latg", mapping.to_ascii],
-        ["litterae italicae", "italica", "la-Ital", mapping.to_italics],
-        ["litterae tamulicae", "tamulica", "ta", mapping.to_tamil],
-        ["litterae granthae", "grantha", "ta", mapping.to_grantha],
-        ["litterae brāhmēs", "brahmi", "ta", mapping.to_brahmi],
-    ]
-);
-</script>
