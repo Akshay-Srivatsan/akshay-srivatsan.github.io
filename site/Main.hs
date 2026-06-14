@@ -24,13 +24,14 @@ main = do
 
         let pages = fixedPages <> blogPages
             pagesByGroup = M.fromListWith (<>) [(pageGroup p, [p]) | p <- pages]
+        overrides <- preprocess loadTransliterationOverrides
 
         forM_ pages $ \page -> do
             mappings <- preprocess $ loadMappingsForPage page
             forM_ (pageVariants page) $ \variant ->
                 create [fromFilePath $ outputFor page variant] $ do
                     route idRoute
-                    compile $ compilePage pagesByGroup page mappings variant
+                    compile $ compilePage pagesByGroup page mappings overrides variant
 
         create ["blog.html"] $ do
             route idRoute
@@ -42,7 +43,7 @@ main = do
 
 copyStaticFiles :: Rules ()
 copyStaticFiles = do
-    match ("assets/**" .&&. complement "assets/links.md" .&&. complement "assets/js/**") $ do
+    match ("assets/**" .&&. complement "assets/links.md" .&&. complement "assets/transliterations.yaml" .&&. complement "assets/js/**") $ do
         route idRoute
         compile copyFileCompiler
 
@@ -78,13 +79,13 @@ blogContext =
         <> constField "scripts" ""
         <> defaultContext
 
-compilePage :: PageMap -> PageSpec -> MappingSet -> Variant -> Compiler (Item String)
-compilePage pagesByGroup page mappings variant = do
+compilePage :: PageMap -> PageSpec -> MappingSet -> TransliterationOverrides -> Variant -> Compiler (Item String)
+compilePage pagesByGroup page mappings overrides variant = do
     body <- loadBody (fromFilePath $ pageSource page)
     links <- unsafeCompiler $ readFile "assets/links.md"
     rendered <- renderMarkdown page body links
     let renderedForTarget = Item (fromFilePath $ outputFor page variant) (itemBody rendered)
-    transformed <- applyTemplates pagesByGroup page variant mappings renderedForTarget
+    transformed <- applyTemplates pagesByGroup page variant mappings overrides renderedForTarget
     saveSnapshotWhenBlog page transformed
 
 renderMarkdown :: PageSpec -> String -> String -> Compiler (Item String)
@@ -93,11 +94,11 @@ renderMarkdown page body links = do
     rendered <- writePandocWith writerOptions <$> readPandocWith readerOptions sourceItem
     pure $ Item (fromFilePath $ pageOutput page) (itemBody rendered)
 
-applyTemplates :: PageMap -> PageSpec -> Variant -> MappingSet -> Item String -> Compiler (Item String)
-applyTemplates pagesByGroup page variant mappings item = do
+applyTemplates :: PageMap -> PageSpec -> Variant -> MappingSet -> TransliterationOverrides -> Item String -> Compiler (Item String)
+applyTemplates pagesByGroup page variant mappings overrides item = do
     metadata <- getMetadata (fromFilePath $ pageSource page)
     let ctx = pageContext pagesByGroup page variant mappings metadata
-        item' = fmap (transformHtml page mappings variant) item
+        item' = fmap (transformHtml page mappings overrides variant) item
     if isBlogPage page
         then
             loadAndApplyTemplate "templates/post.html" ctx item'

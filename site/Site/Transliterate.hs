@@ -4,13 +4,14 @@ module Site.Transliterate where
 
 import qualified Data.ByteString as BS
 import Data.Char (isSpace)
-import Data.List (sortOn)
+import Data.List (isPrefixOf, sortOn, stripPrefix)
 import qualified Data.Map.Strict as M
-import Data.Maybe (fromMaybe)
+import Data.Maybe (fromMaybe, mapMaybe)
 import Data.Ord (Down (Down))
 import qualified Data.Text as T
 import qualified Data.Text.Normalize as TN
 import qualified Data.Yaml as Y
+import Control.Applicative ((<|>))
 import Site.Config (mappingPathForPage, replacementsFor)
 import Site.Types
 import System.FilePath (dropExtension, splitDirectories, takeDirectory, (</>))
@@ -19,6 +20,50 @@ import qualified Text.HTML.TagSoup as TS
 
 type MappingTable = M.Map T.Text T.Text
 type MappingSet = M.Map T.Text MappingTable
+data TransliterationOverrides = TransliterationOverrides
+    { overrideByKey :: M.Map T.Text T.Text
+    , overrideByHref :: M.Map String T.Text
+    }
+
+loadTransliterationOverrides :: IO TransliterationOverrides
+loadTransliterationOverrides = do
+    transliterationBytes <- BS.readFile "assets/transliterations.yaml"
+    links <- readFile "assets/links.md"
+    byKey <- case Y.decodeEither' transliterationBytes of
+        Left err -> fail $ Y.prettyPrintParseException err
+        Right values -> pure values
+    pure $
+        TransliterationOverrides
+            { overrideByKey = byKey
+            , overrideByHref = linkOverrides byKey links
+            }
+
+linkOverrides :: M.Map T.Text T.Text -> String -> M.Map String T.Text
+linkOverrides overrides links =
+    M.fromList
+        [ (target, text)
+        | (key, target) <- parseLinkReferences links
+        , Just text <- [M.lookup (T.pack key) overrides]
+        ]
+
+parseLinkReferences :: String -> [(String, String)]
+parseLinkReferences =
+    mapMaybe parseLine . lines
+  where
+    parseLine ('[' : rest) = do
+        (key, afterKey) <- breakOn "]: " rest
+        target <- stripPrefix "]: " afterKey
+        pure (key, target)
+    parseLine _ = Nothing
+    breakOn needle haystack =
+        case findNeedle "" haystack of
+            Nothing -> Nothing
+            Just result -> Just result
+      where
+        findNeedle prefix suffix
+            | needle `isPrefixOf` suffix = Just (reverse prefix, suffix)
+            | c : cs <- suffix = findNeedle (c : prefix) cs
+            | otherwise = Nothing
 
 loadMappingsForPage :: PageSpec -> IO MappingSet
 loadMappingsForPage page =
@@ -135,8 +180,8 @@ transformFor :: PageSpec -> MappingSet -> Variant -> String -> String
 transformFor page mappings variant =
     maybe id (transcribeString page mappings) (variantMapping variant)
 
-transformHtml :: PageSpec -> MappingSet -> Variant -> String -> String
-transformHtml page mappings variant body =
+transformHtml :: PageSpec -> MappingSet -> TransliterationOverrides -> Variant -> String -> String
+transformHtml page mappings overrides variant body =
     TS.renderTags $ go [] $ parseTags body
   where
     maybeMapping = variantMapping variant >>= (`M.lookup` mappings)
@@ -145,15 +190,53 @@ transformHtml page mappings variant body =
     go stack (tag : tags) =
         case tag of
             TagOpen name attrs ->
-                let skip = shouldSkip name attrs
-                 in TagOpen name (rewriteAttrs depthPrefix attrs) : go (skip : stack) tags
+                let frame = frameFor name attrs
+                 in TagOpen name (rewriteAttrs depthPrefix $ removeInternalAttrs attrs) : go (frame : stack) tags
             TagClose _ ->
                 tag : go (drop 1 stack) tags
             TagText text
-                | or stack -> tag : go stack tags
+                | skipTransliteration stack -> tag : go stack tags
                 | otherwise ->
-                    TagText (T.unpack $ maybe (T.pack text) (\mapping -> transcribeText page mapping $ T.pack text) maybeMapping) : go stack tags
+                    case maybeMapping of
+                        Nothing -> tag : go stack tags
+                        Just mapping ->
+                            let (replacement, stack') = overrideText stack text
+                                output = maybe (transcribeText page mapping $ T.pack text) id replacement
+                             in TagText (T.unpack output) : go stack' tags
             _ -> tag : go stack tags
+    frameFor name attrs =
+        Frame
+            { frameSkip = shouldSkip name attrs
+            , frameOverride = transliterationOverride name attrs
+            }
+    transliterationOverride name attrs =
+        explicitOverride attrs <|> linkOverride name attrs
+    explicitOverride attrs = do
+        value <- T.pack <$> lookup "data-translit" attrs
+        pure $ fromMaybe value $ M.lookup value (overrideByKey overrides)
+    linkOverride "a" attrs = do
+        href <- lookup "href" attrs
+        M.lookup href (overrideByHref overrides)
+    linkOverride _ _ = Nothing
+
+data TransformFrame = Frame
+    { frameSkip :: Bool
+    , frameOverride :: Maybe T.Text
+    }
+
+skipTransliteration :: [TransformFrame] -> Bool
+skipTransliteration = any frameSkip
+
+overrideText :: [TransformFrame] -> String -> (Maybe T.Text, [TransformFrame])
+overrideText [] _ = (Nothing, [])
+overrideText (frame : rest) text
+    | Just replacement <- frameOverride frame =
+        if T.all isSpace (T.pack text)
+            then (Just $ T.pack text, frame : rest)
+            else (Just replacement, frame{frameOverride = Just ""} : rest)
+    | otherwise =
+        let (replacement, rest') = overrideText rest text
+         in (replacement, frame : rest')
 
 outputDepth :: PageSpec -> Variant -> Int
 outputDepth page variant =
@@ -165,6 +248,9 @@ rewriteAttrs prefix = fmap rewriteAttr
     rewriteAttr (key, value)
         | key `elem` ["href", "src"] = (key, rewriteUrl prefix value)
         | otherwise = (key, value)
+
+removeInternalAttrs :: [(String, String)] -> [(String, String)]
+removeInternalAttrs = filter ((/= "data-translit") . fst)
 
 rewriteUrl :: String -> String -> String
 rewriteUrl prefix value
@@ -339,7 +425,7 @@ shortenFinalHindiEnglishVowels =
 
 cleanupHindiPostprocess :: T.Text -> T.Text
 cleanupHindiPostprocess =
-    collapseDigitPeriodSpaces . T.replace "- " "-"
+    collapseDigitPeriodSpaces . T.replace " -" "-" . T.replace "- " "-"
 
 collapseDigitPeriodSpaces :: T.Text -> T.Text
 collapseDigitPeriodSpaces = T.pack . go . T.unpack
