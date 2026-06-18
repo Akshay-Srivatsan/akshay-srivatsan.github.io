@@ -23,7 +23,7 @@ main = do
     compileSourcesAndTemplates
 
     let pages = fixedPages <> blogPages
-        pagesByGroup = M.fromListWith (<>) [(pageGroup p, [p]) | p <- pages]
+        pagesByGroup = M.fromListWith (flip (<>)) [(pageGroup p, [p]) | p <- pages]
     overrides <- preprocess loadTransliterationOverrides
 
     forM_ pages $ \page -> do
@@ -43,7 +43,7 @@ main = do
 
 copyStaticFiles :: Rules ()
 copyStaticFiles = do
-  match ("assets/**" .&&. complement "assets/links.md" .&&. complement "assets/transliterations.yaml" .&&. complement "assets/js/**") $ do
+  match ("assets/**" .&&. complement "assets/links.md" .&&. complement "assets/js/**") $ do
     route idRoute
     compile copyFileCompiler
 

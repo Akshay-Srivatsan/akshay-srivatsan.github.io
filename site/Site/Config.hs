@@ -21,10 +21,10 @@ currentYear = "2026"
 fixedPages :: [PageSpec]
 fixedPages =
   [ PageSpec "content/index.md" "index.html" "home" "English" [englishVariant],
-    PageSpec "content/latin.md" "latin.html" "home" "Latin" latinVariants,
     PageSpec "content/tamil.md" "tamil.html" "home" "Tamil" tamilVariants,
-    PageSpec "content/sanskrit.md" "sanskrit.html" "home" "Sanskrit" sanskritVariants,
+    PageSpec "content/latin.md" "latin.html" "home" "Latin" latinVariants,
     PageSpec "content/hindi.md" "hindi.html" "home" "Hindi" hindiVariants,
+    PageSpec "content/sanskrit.md" "sanskrit.html" "home" "Sanskrit" sanskritVariants,
     PageSpec "content/courses.md" "courses.html" "courses" "English" [englishVariant],
     PageSpec "content/jobs.md" "jobs.html" "jobs" "English" [englishVariant],
     PageSpec "content/shows.md" "shows.html" "shows" "English" [englishVariant]
@@ -37,36 +37,26 @@ latinVariants, tamilVariants, sanskritVariants, hindiVariants :: [Variant]
 latinVariants =
   [ Variant "default" "quadratae" "la" Nothing,
     Variant "unciali" "unciales" "la-Latg" (Just "to_ascii"),
-    Variant "italica" "italicae" "la-Ital" (Just "to_italics"),
-    Variant "tamulica" "tamulicae" "ta" (Just "to_tamil"),
-    Variant "grantha" "granthae" "ta" (Just "to_grantha"),
-    Variant "brahmi" "brahmes" "ta" (Just "to_brahmi")
+    Variant "italica" "italicae" "la-Ital" (Just "to_italics")
   ]
 tamilVariants =
-  [ Variant "default" "தமிழ்" "ta" Nothing,
-    Variant "brahmi" "பிராமி" "ta-Brah" (Just "to_brahmi"),
-    Variant "devanagari" "தேவநாகரி" "ta-Deva" (Just "to_devanagari"),
+  [ Variant "default" "தமிழ்" "ta" (Just "to_tamil"),
     Variant "iso" "லத்தீன்" "ta-Latn" (Just "to_iso"),
-    Variant "ipa" "சர்வதேச" "ta-phonipa" (Just "to_ipa"),
-    Variant "aangilam" "ஆங்கிலம்" "ta-Latn" (Just "to_english")
+    Variant "simple" "எளியது" "ta-Latn" Nothing,
+    Variant "brahmi" "பிராமி" "ta-Brah" (Just "to_brahmi")
   ]
 sanskritVariants =
-  [ Variant "default" "lātin" "sa-Latn" Nothing,
-    Variant "devanagari" "devanāgarī" "sa" (Just "to_devanagari"),
-    Variant "tamil" "tamiḻ" "sa-Taml" (Just "to_tamil"),
-    Variant "tamil-grantha" "tamiḻ-grantha" "sa-Xaaa" (Just "to_tamil_grantha"),
+  [ Variant "default" "devanāgarī" "sa" (Just "to_devanagari"),
+    Variant "iast" "lātin" "sa-Latn" (Just "to_iast"),
+    Variant "simple" "sarala" "sa-Latn" Nothing,
     Variant "grantha" "grantha" "sa-Gran" (Just "to_grantha"),
-    Variant "brahmi" "brāhmī" "sa-Brah" (Just "to_brahmi"),
-    Variant "ipa" "sarvadeśīya" "sa-phonipa" (Just "to_ipa"),
-    Variant "anglabhasha" "āṅglabhāśā" "sa-Latn" (Just "to_english"),
-    Variant "simple" "sarala" "sa-Latn" (Just "to_simple")
+    Variant "tamil-grantha" "tamiḻ-grantha" "sa-Xaaa" (Just "to_tamil_grantha"),
+    Variant "brahmi" "brāhmī" "sa-Brah" (Just "to_brahmi")
   ]
 hindiVariants =
-  [ Variant "default" "देवनागरी" "hi" Nothing,
-    Variant "tamil" "तमिल" "hi-Taml" (Just "to_tamil"),
+  [ Variant "default" "देवनागरी" "hi" (Just "to_devanagari"),
     Variant "iso" "लातिन" "hi-Latn" (Just "to_iso"),
-    Variant "ipa" "ध्वन्यात्मक" "hi-phonipa" (Just "to_ipa"),
-    Variant "angrezi" "आंग्रेज़ी" "hi-Latn" (Just "to_english")
+    Variant "simple" "सरल" "hi-Latn" Nothing
   ]
 
 discoverBlogPages :: IO [PageSpec]

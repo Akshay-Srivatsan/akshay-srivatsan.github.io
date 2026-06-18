@@ -22,7 +22,7 @@ lang: la
 ![photographema meī][portrait]
 
 sum scientiam computātrālis studens candidātus doctorālis in Ūniversitāte
-Stanfordiēnsī. [Keith Winstein][keithw] et [Dawson Engler][engler] sunt
+Stanfordiēnsī. [[Keith Winstein]{lang=en}][keithw] et [[Dawson Engler]{lang=en}][engler] sunt
 advīsōrēs meī. in labōratōriō investīgātiōnis systēmatum rētiumque labōrō ad
 faciendum [systēma functiōnālēs operandī][arca] et [systēma confirmandī
 computātium][fix]. quōque studiō [mittendum prōlepticum musicae][proleptic] et
@@ -30,27 +30,27 @@ computātium][fix]. quōque studiō [mittendum prōlepticum musicae][proleptic] 
 
 hīs professōribus grātiās agō ob cōnsilium et auxilium hōrum:
 
-- professōr [Frans Kaashoek][kaashoek], cōnsuāsor meus Massachūsettēnsī
+- professōr [[Frans Kaashoek]{lang=en}][kaashoek], cōnsuāsor meus Massachūsettēnsī
   Īnstitūtō Technologiae
-- professōr [Sara Achour][sachour], cōnsuāsor mea rotātiōnālis
-- professōr [John Mitchell][jcm], investīgātor prīncipālis Cartae
-- professōr [Pat Hanrahan][hanrahan], cōnsuāsor meus baccalaureālis
+- professōr [[Sara Achour]{lang=en}][sachour], cōnsuāsor mea rotātiōnālis
+- professōr [[John Mitchell]{lang=en}][jcm], investīgātor prīncipālis Cartae
+- professōr [[Pat Hanrahan]{lang=en}][hanrahan], cōnsuāsor meus baccalaureālis
 
 extrā lūdum et opus, mihī photographia, clāvile cantāre, saltāre sociāle, et
 linguās discere placet. cum [_cōnsiliō ad initiāndum ballātiōnem Vindobonēnsem
-quadrāgēnsimam septimam_][opening] ballāvī [tripudium Vindobonēnse][waltz47] et
-[saltātiōnem Bōhēmicam][polka47].
+quadrāgēnsimam septimam_][opening] ballāvī [[Viennese Ball]{lang=en}][waltz47] et
+[[Viennese Ball]{lang=en}][polka47].
 
 sī hanc paginam intellegis (vel sī erratā vidēs), mihī epistolam ēlectrōnicam
 mitte!
 
 ## ballātio sociālis
 
-praesidebām [_Dancebreak_][dancebreak], gregem valsaeque polkaeque
+praesidebām [[Dancebreak]{lang=en}][dancebreak], gregem valsaeque polkaeque
 Stanfordiensem. ballāvī in [cōnsiliō septimō quadrāgēsimus ad initiāndum
 ballātiōnem Vindobonēnsem][opening] et instruō duodēquīnquāgēsimum. saltātiōnem
-docēo in _Dancebreak_ et cum [Oscillātōribus Stanfordiēnsibus][ssd] et cum
-[Oscillātoribus Occidentālibus Cardinālibus][cardinal].
+docēo in [Dancebreak]{lang=en} et cum [[Stanford Swing Dancers]{lang=en}][ssd] et cum
+[[Cardinal Swing]{lang=en}][cardinal].
 
 docuī quōque [duō hebdomādīs Austriālis][fortnight], [magnā
 ballātiōne][bigdance], [_Lindy Hop_ Harvardiēnsī][hlh], et [DANCE
@@ -65,7 +65,7 @@ pelliculae saltātiōnum meārum hīc sunt:
   Vltava)][waltz47]
 - [ballātiō Vindobonēnsis MMXXV - polka (von Suppé - Poet and Peasant
   Overture)][polka47]
-- [ballātiō magna MMXXV][bigdance25]
+- [[Big Dance]{lang=en} MMXXV][bigdance25]
 
 ## doctrīna mea
 
@@ -80,7 +80,7 @@ discupulī addunt systemātās prō verificātiōne nucleōrum suōrum. in [CS C
 _topicae ulteriōres nucleōrum computātrōrum_][cs240] classī quoque auxiliāvī.
 hāc classī discipulī commentāriōs de nucleīs computātrōrum legebant.
 
-vēre MMXXIII ego, [Ayelet Drazen][adrazen], et [Jonathan Kula][jdkula] docuimus
+vēre MMXXIII ego, [[Ayelet Drazen]{lang=en}][adrazen], et [[Jonathan Kula]{lang=en}][jdkula] docuimus
 [CS XLV: _programmatae quae sciendae sunt programmātoribus omnibus_][cs45]. haec
 iterātio secunda huius classis; anteā in hieme [iterātiōnem prīmam][cs45-23win]
 creāvimus et obtulimus. hāc classe programmatās et conceptōs doctōs scīendī est
@@ -99,7 +99,6 @@ ad MMXXI). prius in Lūdō Menloniēnsī studēbam.
 - [recommendātiōnes meae classium][courses]
 - [opera][jobs]
 - [theātrum][shows]
-- [programmata][github]
-- [LinkedIn][linkedin]
+- [[GitHub]{lang=en}][github]
+- [[LinkedIn]{lang=en}][linkedin]
 - [mihī epistolam mitte][email]
-

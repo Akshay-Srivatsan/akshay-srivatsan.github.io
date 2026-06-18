@@ -1,63 +1,63 @@
 ---
-title: अक्षय श्रीवत्सन
-description: कमप्युटर वैज्ञानि का छात्र, स्टैंफ़ोर्ड विश्वविध्यालय
-image-alt: मेरी तस्वीर
+title: akṣay śrīvatsan
+description: kamapyuṭar vaijñāni kā chātra, sṭainforḍ viśvavidhyālay
+image-alt: merī tasvīr
 lang: hi
 ---
 
-# अक्षय श्रीवत्सन
+# akṣay śrīvatsan
 
 [/əkʂəy ʃriːʋətsən/]{lang=hi-phonipa .ipa #ipa-name}
 
-अन्य लिपि में: [[Akshay Srivatsan]{lang=en}, ]{#english-name} [[அக்ஷய்
+anya lipi men: [[Akshay Srivatsan]{lang=en}, ]{#english-name} [[அக்ஷய்
 ஶ்ரீவத்ஸன்]{lang=ta}, ]{#tamil-name} [[𑌅𑌕𑍍𑌷𑌯𑍍 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=hi-Gran},
 ]{#grantha-name} [[अक्षय् श्रीवत्सन्]{lang=hi}, ]{#devanagari-name} [[𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=hi-Brah}, ]{#brahmi-name} [[akṣay
-srīvatsan]{lang=sa-Latn}, ]{#iso-name} वगैरह।
+srīvatsan]{lang=sa-Latn}, ]{#iso-name} vagairah.
 
-## मेरे बारे में
+## mere bāre men
 
-![मेरी तस्वीर][portrait]
+![merī tasvīra][portrait]
 
-मैं स्टैंफ़ोर्ड विश्वविध्यालय में पी एच डी छात्र हूँ। कमप्यूटर विज्ञान के
-डिपार्ट्मेंट में काम करता हूँ; मेरे सलाहकार [कीथ विंस्टीन][keithw] और [डासन
-एंगलर][engler] हैं। आजकल [फ़ंक्शनल प्रचालन तंंत्रोंं के बारे मेंं][fix] शोध कर
-रहा हूँ। काम के अलावा, मुझे तसवीरें कींचना, पियानो बजाना, और भाषाएं सीखना पसंद
-हैं। मुझे आंग्रेज़ी, तमिल, लातिन, संस्कृत, और हिन्दी अभी आती है। मुझे सामाजिक
-नृत्य भि पसंद है।
+main sṭainforḍ viśvavidhyālay men pī ec ḍī chātra hūn. kamapyūṭar vijñān ke
+ḍipārṭmenṭ men kām kartā hūn; mere salāhakār [[Keith Winstein]{lang=en}][keithw] aur [[Dawson
+Engler]{lang=en}][engler] hain. ājakal [fankśanal pracālan tantron ke bāre men][fix] śodh kar
+rahā hūn. kām ke alāvā, mujhe tasvīren kīncanā, piyāno bajānā, aur bhāṣāen sīkhanā pasand
+hain. mujhe āngrezī, tamil, lātin, sanskr̥t, aur hindī abhī ātī hai. mujhe sāmājik
+nr̥ty bhi pasand hai.
 
-मैं इन प्रोफ़ेसरों की मदद और सलाह के लिए बहुत आभारी हूँ:
+main in profesron kī madad aur salāh ke lie bahut ābhārī hūn:
 
--   प्रोफ़ेसर [सारा अशुर][sachour], मेरी पहले साल की सलाहकार
--   प्रोफ़ेसर [जान मिट्चेल][jcm], [कार्टा][carta] का नेता
--   प्रोफ़ेसर [पैट हैंरहैन][hanrahan], मेरा पूर्वस्नातक का सलाहकार
+- profesar [[Sara Achour]{lang=en}][sachour], merī pahle sāl kī salāhakār
+- profesar [[John Mitchell]{lang=en}][jcm], [[Carta]{lang=en}][carta] kā netā
+- profesar [[Pat Hanrahan]{lang=en}][hanrahan], merā pūrvasnātak kā salāhakār
 
-## मेरा शिक्षण
+## merā śikṣaṇ
 
-पिछले क्वार्टर, मैं, [अयेलेट द्रेज़ेन][adrazen], और [जानथन कूल][jdkula] हमारी नयी
-ककशा, [[CS 45]{lang=en}: सोफ़्टवेयर उपकारण हर प्रोग्रामरों को पता होना चाहिए][cs45] सिख रहे
-थे। इसके पहले [सरदी में भी सिखाइ][cs45-23win]। हमने यह ककशा बनाई क्योंकि
-प्रोग्रामरों को बहुत चीज़ जाना चहिये, पर विध्यालयों में कोई नहीं वे सिखाता है, तो
-हर लोगों को अपने आप सीखना चाहिए। यह योजना [एम आई टी][missing-semester] से आयी,
-पर हमरी ककशा में ज़्यादा विश्य हैं।
+pichle kvārṭar, main, [[Ayelet Drazen]{lang=en}][adrazen], aur [[Jonathan Kula]{lang=en}][jdkula] hamārī nayī
+kakśā, [[CS 45]{lang=en}: sofṭaveyar upkāraṇ har progrāmron ko patā honā cāhie][cs45] sikh rahe
+the. iske pahle [sardī men bhī sikhāi][cs45-23win]. hamne yah kakśā banāī kyonki
+progrāmron ko bahut cīz jānā cahiye, par vidhyālyon men koī nahīn ve sikhātā hai, to
+har logon ko apne āp sīkhanā cāhie. yah yojnā [[MIT]{lang=en}][missing-semester] se āyī,
+par hamrī kakśā men zyādā viśy hain.
 
-मैं [[CS 140E]{lang=en}: ओपरेटिंग सिस्टम डिज़ाइन और कार्यान्वयन][cs140e] में भी मदद कर रहा
-था। तीन साल के लिए उस में मदद की: [२०२१][cs140e-21spr], [२०२२][cs140e-22win], और
-[२०२३][cs140e-23win]। उसकी बादवाली ककशा, [CS 240LX][cs240lx-22spr] में भी २०२२
-में मदद की। इन ककशाओं में, छात्रोंं ने अपने नाये यूनिक्स के समान ओपरेटिंग सिसटम
-किए।
+main [[CS 140E]{lang=en}: opreṭing sisṭam ḍizāin aur kāryānvayna][cs140e] men bhī madad kar rahā
+thā. tīn sāl ke lie us men madad kī: [2021][cs140e-21spr], [2022][cs140e-22win], aur
+[2023][cs140e-23win]. uskī bādvālī kakśā, [CS 240LX][cs240lx-22spr] men bhī 2022
+men madad kī. in kakśāon men, chātron ne apne nāye yūniks ke samān opreṭing sisṭam
+kie.
 
-## मेरी शिकशा
+## merī śikśā
 
-मैं २०१७ से स्टैंफ़ोर्ड यूनिवेर्सिटी में अपना डिग्रीयाँ कर रहा हूँ। अब (२०२२ से)
-मैं पी एच डी कर रहा हूँ। २०२० से २०२२ तक, मैंने सिस्टेमस में अपनी मास्टेर्स
-डिग्री कमप्यूटर विज्ञान में की। २०१७ से २०२१ तक, मैंने अपनी बाचेलोर्स डिग्री भी
-कमप्यूटर विज्ञान में की। उच्च विध्यालय के लिये, मैं मेनलो स्कूल गया।
+main 2017 se sṭainforḍ yūniversiṭī men apnā ḍigrīyān kar rahā hūn. ab (2022 se)
+main pī ec ḍī kar rahā hūn. 2020 se 2022 tak, mainne sisṭemas men apnī māsṭers
+ḍigrī kamapyūṭar vijñān men kī. 2017 se 2021 tak, mainne apnī bācelors ḍigrī bhī
+kamapyūṭar vijñān men kī. ucc vidhyālay ke liye, main menlo skūl gayā.
 
-## अन्य वेबसाईट
+## anya vebsāīṭ
 
--   [मेरी मनपसंद कक्षाएँ][courses]
--   [मेरे काम][jobs]
--   [नाटक][shows]
--   [गिटहुब][github]
--   [लिंकिडिन][linkedin]
--   [ई-पत्र][email]
+- [merī manapsand kakṣāen][courses]
+- [mere kāma][jobs]
+- [nāṭka][shows]
+- [[GitHub]{lang=en}][github]
+- [[LinkedIn]{lang=en}][linkedin]
+- [ī-patra][email]

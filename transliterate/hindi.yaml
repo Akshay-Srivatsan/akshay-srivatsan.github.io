@@ -1,5 +1,26 @@
 # Circle: ◌◌◌◌◌◌◌
 # Circle: ◌
+name: source
+style: alphabet
+vowels:
+  - [a, ā, i, ī, u, ū]
+  - [r̥, r̥̄, l̥, l̥̄]
+  - [e, ai, o, au]
+modifiers:
+  - ["", ṁ, m̐, ḥ, "ṁ "]
+consonants:
+  - [k, kh, g, gh, ṅ]
+  - [c, ch, j, jh, ñ, jñ]
+  - [ṭ, ṭh, ḍ, ḍh, ṇ]
+  - [t, th, d, dh, n]
+  - [p, ph, b, bh, m]
+  - [y, r, l, v, ḷ]
+  - [ś, ṣ, s, h]
+  - [f, ṉ, ṛ, ṛh, z]
+punctuation:
+  - ["'", ., ōṃ]
+digits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+---
 name: devanagari
 style: abugida
 virama: ◌्
