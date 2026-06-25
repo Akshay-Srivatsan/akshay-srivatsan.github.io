@@ -11,6 +11,7 @@ import Site.Config
 import Site.DateScript
 import Site.Transliterate
 import Site.Types
+import System.FilePath (replaceExtension)
 import Text.Pandoc.Options
 
 type PageMap = M.Map String [PageSpec]
@@ -39,7 +40,6 @@ main = do
         makeItem ("" :: String)
           >>= loadAndApplyTemplate "templates/blog.html" blogContext
           >>= loadAndApplyTemplate "templates/default.html" blogContext
-          >>= relativizeUrls
 
 copyStaticFiles :: Rules ()
 copyStaticFiles = do
@@ -90,7 +90,7 @@ compilePage pagesByGroup page mappings overrides variant = do
 
 renderMarkdown :: PageSpec -> String -> String -> Compiler (Item String)
 renderMarkdown page body links = do
-  let sourceItem = Item (fromFilePath $ pageSource page) (stripLegacyControls body <> "\n\n" <> links)
+  let sourceItem = Item (fromFilePath $ replaceExtension (pageOutput page) "md") (stripLegacyControls body <> "\n\n" <> links)
   rendered <- writePandocWith writerOptions <$> readPandocWith readerOptions sourceItem
   pure $ Item (fromFilePath $ pageOutput page) (itemBody rendered)
 
@@ -109,10 +109,8 @@ applyTemplates pagesByGroup page variant mappings overrides item = do
     then
       loadAndApplyTemplate "templates/post.html" ctx item'
         >>= loadAndApplyTemplate "templates/default.html" ctx
-        >>= relativizeUrls
     else
       loadAndApplyTemplate "templates/default.html" ctx item'
-        >>= relativizeUrls
 
 pageContext :: PageMap -> PageSpec -> Variant -> MappingSet -> TransliterationOverrides -> Metadata -> Context String
 pageContext pagesByGroup page variant mappings overrides metadata =

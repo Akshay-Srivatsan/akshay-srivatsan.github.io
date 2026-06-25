@@ -215,7 +215,7 @@ overrideText (frame : rest) text
 
 outputDepth :: PageSpec -> Variant -> Int
 outputDepth page variant =
-    length $ filter (not . null) $ splitDirectories $ takeDirectory $ outputFor page variant
+    length $ filter (`notElem` ["", "."]) $ splitDirectories $ takeDirectory $ outputFor page variant
 
 rewriteAttrs :: String -> [(String, String)] -> [(String, String)]
 rewriteAttrs prefix = fmap rewriteAttr
