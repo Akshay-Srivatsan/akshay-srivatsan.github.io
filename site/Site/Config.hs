@@ -22,8 +22,7 @@ fixedPages :: [PageSpec]
 fixedPages =
   [ PageSpec "content/index.md" "index.html" "home" "English" [englishVariant],
     PageSpec "content/tamil.md" "tamil.html" "home" "Tamil" tamilVariants,
-    PageSpec "content/latin.md" "latin.html" "home" "Latin" latinVariants,
-    PageSpec "content/hindi.md" "hindi.html" "home" "Hindi" hindiVariants,
+    PageSpec "content/latin.md" "latin.html" "home" "Latin" [latinVariant],
     PageSpec "content/sanskrit.md" "sanskrit.html" "home" "Sanskrit" sanskritVariants,
     PageSpec "content/courses.md" "courses.html" "courses" "English" [englishVariant],
     PageSpec "content/jobs.md" "jobs.html" "jobs" "English" [englishVariant],
@@ -33,12 +32,10 @@ fixedPages =
 englishVariant :: Variant
 englishVariant = Variant "default" "English" "en" Nothing
 
-latinVariants, tamilVariants, sanskritVariants, hindiVariants :: [Variant]
-latinVariants =
-  [ Variant "default" "quadratae" "la" Nothing,
-    Variant "unciali" "unciales" "la-Latg" (Just "to_ascii"),
-    Variant "italica" "italicae" "la-Ital" (Just "to_italics")
-  ]
+latinVariant :: Variant
+latinVariant = Variant "default" "Latin" "la" Nothing
+
+tamilVariants, sanskritVariants :: [Variant]
 tamilVariants =
   [ Variant "default" "தமிழ்" "ta" (Just "to_tamil"),
     Variant "iso" "லத்தீன்" "ta-Latn" (Just "to_iso"),
@@ -52,11 +49,6 @@ sanskritVariants =
     Variant "grantha" "grantha" "sa-Gran" (Just "to_grantha"),
     Variant "tamil-grantha" "tamiḻ-grantha" "sa-Xaaa" (Just "to_tamil_grantha"),
     Variant "brahmi" "brāhmī" "sa-Brah" (Just "to_brahmi")
-  ]
-hindiVariants =
-  [ Variant "default" "देवनागरी" "hi" (Just "to_devanagari"),
-    Variant "iso" "लातिन" "hi-Latn" (Just "to_iso"),
-    Variant "simple" "सरल" "hi-Latn" Nothing
   ]
 
 discoverBlogPages :: IO [PageSpec]
@@ -93,16 +85,14 @@ blogSpec dir file = do
 languageConfig :: String -> (String, [Variant])
 languageConfig "ta" = ("Tamil", tamilVariants)
 languageConfig "sa" = ("Sanskrit", sanskritVariants)
-languageConfig "la" = ("Latin", latinVariants)
-languageConfig "hi" = ("Hindi", hindiVariants)
-languageConfig _ = ("English", [englishVariant])
+languageConfig "la" = ("Latin", [latinVariant])
+languageConfig "en" = ("English", [englishVariant])
+languageConfig _ = error "unsupported language"
 
 mappingPathForPage :: PageSpec -> Maybe FilePath
 mappingPathForPage page
-  | pageSource page == "content/latin.md" || ".la.md" `isSuffixOf` pageSource page = Just "transliterate/latin.yaml"
   | pageSource page == "content/tamil.md" || ".ta.md" `isSuffixOf` pageSource page = Just "transliterate/tamil.yaml"
   | pageSource page == "content/sanskrit.md" || ".sa.md" `isSuffixOf` pageSource page = Just "transliterate/sanskrit.yaml"
-  | pageSource page == "content/hindi.md" || ".hi.md" `isSuffixOf` pageSource page = Just "transliterate/hindi.yaml"
   | otherwise = Nothing
 
 isBlogPage :: PageSpec -> Bool
@@ -129,12 +119,5 @@ replacementsFor page
       [ ("akshay", "Akshay"),
         ("shreevatsan", "Srivatsan"),
         ("sṭenforḍ", "Stanford")
-      ]
-  | pageSource page == "content/hindi.md" =
-      [ ("akshay", "Akshay"),
-        ("shreevatsan", "Srivatsan"),
-        ("stainford", "Stanford"),
-        ("yooniversiti", "University"),
-        ("தமில்", "தமிழ்")
       ]
   | otherwise = []

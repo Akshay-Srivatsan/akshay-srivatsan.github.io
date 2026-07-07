@@ -1,26 +1,28 @@
 cabal-version: 3.0
-name: akshay-srivatsan-site
-version: 0.1.0.0
-build-type: Simple
+name:          akshay-srivatsan-site
+version:       0.1.0.0
+build-type:    Simple
 
 executable site
-  main-is: Main.hs
+  main-is:          Main.hs
   other-modules:
-      Site.Config
-    , Site.DateScript
-    , Site.Transliterate
-    , Site.Types
-  hs-source-dirs: site
+    Site.Config
+    Site.DateScript
+    Site.Transliterate
+    Site.Types
+
+  hs-source-dirs:   site
   default-language: GHC2021
-  ghc-options: -Wall -Wcompat -O2 -threaded
+  ghc-options:      -Wall -Wcompat -O2 -threaded
   build-depends:
-      base >= 4.18 && < 5
     , aeson
+    , base                >=4.18 && <5
     , bytestring
     , containers
     , directory
     , filepath
-    , hakyll >= 4.16
+    , hakyll              >=4.16
+    , mtl
     , pandoc
     , pandoc-types
     , scientific

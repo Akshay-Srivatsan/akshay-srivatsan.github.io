@@ -25,31 +25,31 @@ nān sṭānfōrḍ palkalaikkazhakattil munaivar paṭṭattukkākap paṭittuk
 koṇṭirukkirhēn. en ālōcakargaḷ [[Keith Winstein]{lang=en}][keithw]um [[Dawson
 Engler]{lang=en}][engler]um. ippozhutu [gaṇitayiyakkuttaḷangaḷai][arca] marrum
 [vazhangiyillātiyakkattaḷangaḷaip][fix] parri āyvaippaṇṇikkoṇṭirukkirhēn.
-avaittavira cila nēram [cangīttaiyai etirpārvai][proleptic] marrum
-[gaṇiniyarhiviyalin karhpittalaip][codillon] parri āyvaippaṇṇikkoṇṭirukkirhēn.
 
-ivargaḷ ellōrukkum ālōcanaiyukkākum utaviyukkākum nandri:
+pērāciriyargaḷ [[Frans Kaashoek]{lang=en}][kaashoek]ukkum [[Sara
+Achour]{lang=en}][sachour]ukkum alocanaiukkāga nandri.
 
-- pērāciriyar [[Frans Kaashoek]{lang=en}][kaashoek], [[MIT]{lang=en}][missing-semester]yil en ālōcakar 
-- pērāciriyar [[Sara Achour]{lang=en}][sachour], en mutal varusha ālōcakar 
-- pērāciriyar [[John Mitchell]{lang=en}][jcm], [[Carta]{lang=en}][carta]vin mutanmai ārāycciyāḷar 
-- pērāciriyar [[Pat Hanrahan]{lang=en}][hanrahan], en iḷangalai ālōcakar 
+## ārāycci
 
-paḷḷikku veḷiyil, pukaippaṭangaḷai eṭukkavum, piyānōvai vācikkavum, mozhigaḷaik
-karrukkoḷḷavum enakkup piṭikkum. enakku camūka naṭanattaiyum
-piṭikkum—[nārhpattēzhāvatu sṭānfōrḍin viyannāvin naṭanattin
-tirhappukkuzhuvai][opening]k kūṭa viyannāvin naṭanangaḷaip paṇṇēn.
+::: {lang=en}
+**Continuation-Centric Computing with Arca** ([PDF](assets/pdf/osdi26.pdf))
+: Akshay Srivatsan, Yuhan Deng, Katherine Mohr, Emma Sudo, Sebastian Ingino, Francis Chua, Keith Winstein
+: _20th USENIX Symposium on Operating Systems Design and Implementation (OSDI 26)_, Seattle, WA, 2026
 
+**Fix: externalizing network I/O in serverless computing** ([PDF](assets/pdf/eurosys26.pdf))
+: Yuhan Deng, Akshay Srivatsan, Sebastian Ingino, Francis Chua, Yasmine Mitchell, Matthew Vilaysack, Keith Winstein
+: _20th USENIX Symposium on Operating Systems Design and Implementation (OSDI 26)_, Seattle, WA, 2026
+: _European Conference on Computer Systems (EuroSys)_, Edinburgh, U.K., 2026.
+:::
+    
 ## camūka naṭanam
 
-nān [[Dancebreak]{lang=en}][dancebreak]kin talaivarāka iruntēn. angēyum [[Stanford
-Swing Dancers]{lang=en}][ssd]ilum [[Cardinal Swing]{lang=en}][cardinal]ilum naṭanattaik
-karrukkoṭukkirhēn. atarhku tavira [tirhappukuzhuvilum][fortnight] [periya
-naṭanattilum][bigdance] [hārvarṭ liṇṭī hāppilum][hlh] [DANCE
-106Iyilum][dance106i] naṭanattaic collikkoṭuttēn.
+nān [[Dancebreak]{lang=en}][dancebreak] naḍakka vaikkirhen; ange nān
+naḍanatthai colik kuḍukkirhen.
 
 en naṭanangaḷai ingē pārkkalām:
 
+* [[Viennese Ball]{lang=en} 2026 [(Cubberley)]{lang=en}][cubberley26]
 - [[Viennese Ball]{lang=en}][waltz47] 2025-vālṭs ([Smetana-Má Vlast, No. 2 Vltava]{lang=cs}) 
 - [[Viennese Ball]{lang=en}][polka47] 2025-pōlkkā ([von Suppé-Poet and Peasant 
   Overture]{lang=de})
@@ -57,36 +57,27 @@ en naṭanangaḷai ingē pārkkalām:
 
 ## en karhpittal
 
-inta varusham [CS 244C: _paraviya gaṇittaḷiyal_][cs244c] vakuppukkāka utavi paṇṇakirhēn.
+[CS 244C: _paraviya gaṇittaḷiyal_][cs244c] 
+: kuḷirkālam 2026 - utaviyālar
 
-mūndru varushangaḷukku [CS 140E: _iyakkuttaḷangaḷ_][cs140e] vakuppukkāka utavi
-paṇṇik koṇṭirukkirhēn: [2021il][cs140e-21spr], [2022il][cs140e-22win],
-marrum [2023il][cs140e-23win]. 2022il [CS 240LX][cs240lx-22spr]
-vakuppukkākavum utavi paṇṇinēn. inta iraṇṭu vakuppugaḷil māṇavargaḷ tangaḷ putiya
-yuniksai mātiri iyakkuttaḷangaḷaip paṇṇukirhārgaḷ. [CS 240:
-_iyakkuttaḷangaḷ_][cs240] vakuppukkākavum 2024il utavi paṇṇēn; inta vakuppil
-māṇavargaḷ iyakkuttaḷangaḷaip parri kaṭṭuraigaḷaip paṭittārgaḷ.
+[CS 240: _iyakkuttaḷangaḷ_][cs240]
+: mazhaikālam 2024 - utaviyālar
 
-pōna varusham [[Ayelet Drazen]{lang=en}][adrazen] marrum [[Jonathan Kula]{lang=en}][jdkula] cērntu
-putiya vakuppai [CS 45: _niralargaḷ ellārukkum teriya vēṇṭiya
-meṉporuṭgaḷ_][cs45] karhpittēn. ēn vakuppaip paṇṇinōm endrāl,
-niralargaḷukku nirhaiya vishayam teriya vēṇṭum, ānālum yārumē collittara māṭṭēn
-engirhār. inta yōjnai [[MIT]{lang=en}][missing-semester]yiliruntu vantatu, ānāl
-engaḷin taṭavaiyil atai viṭa pala vishayangaḷaic collittarukirhatu. inta vakuppu aṭuttu
-varushamum [CS 104: _attiyāvaciya meṉporuḷ amaippugaḷ arhimukam_][cs104] āka
-naṭantatu.
+[CS 45: _niralargaḷ ellārukkum teriya vēṇṭiya meṉporuṭgaḷ_][cs45]
+: vacanthakālam 2023 - **ācariyar**
+: kuḷirkālam 2023 - **ācariyar**
+: [CS 104: _attiyāvaciya meṉporuḷ amaippugaḷ arhimukam_][cs104] agiviṭṭattu
 
-## en paṭippugaḷ
+[CS 240LX: _iyakkuttaḷangaḷ_][cs240lx-22spr]
+: vacanthakālam 2022 - utaviyālar
 
-nān sṭānfōrḍilē mutukalaip paṭṭattai muṭittēn (2020–2022). atarhku mun nān
-iḷangalai māṇavanāka iruntēn (2017–2021). nirhaiya varushangaḷḷukku munnāl nān
-menlō paḷḷiyil paṭittuk koṇṭu iruntēn (2013–2017).
+[CS 140E: _iyakkuttaḷangaḷ_][cs140e-23win]
+: kuḷirkālam 2023 - **ācariyar**
+: kuḷirkālam 2022 - utaviyālar
+: vacanthakālam 2021 - utaviyālar
 
 ## iṇaippugaḷ
 
-- [enakku piṭittu vakuppugaḷ][courses] 
-- [vēlaigaḷ][jobs] 
-- [nāṭakangaḷ][shows] 
 - [[GitHub]{lang=en}][github]il gaṇini niralgaḷ 
 - [[LinkedIn]{lang=en}][linkedin] 
 - [minnañjalai anuppungaḷ][email] 

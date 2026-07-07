@@ -1,8 +1,7 @@
-[portrait]: assets/img/portrait-small.jpg
+[portrait]: assets/img/portrait_2026.jpg
 [english]: index.html
 [tamil]: tamil.html
 [latin]: latin.html
-[hindi]: hindi.html
 [sanskrit]: sanskrit.html
 [courses]: courses.html
 [jobs]: jobs.html
@@ -51,6 +50,7 @@
 [pdos]: https://pdos.csail.mit.edu/
 [kaashoek]: https://people.csail.mit.edu/kaashoek/
 [dancebreak]: https://dancebreak.stanford.edu
+[fnw]: https://fridaynightwaltz.org
 [ssd]: https://swing.stanford.edu
 [hlh]: https://harvardlindyhop.notion.site/
 [dance106i]: https://bulletin.stanford.edu/courses/2196071
@@ -61,3 +61,4 @@
 [polka47]: https://www.youtube.com/watch?v=ef7KNEIakik
 [bigdance25]: https://www.youtube.com/watch?v=ZtfiJEXm8oA
 [bigdance]: https://bigdance.stanford.edu/
+[cubberley26]: https://www.youtube.com/watch?v=Bs6Rw2GMzug 

@@ -28,8 +28,6 @@ etebhyas ācāryebhyas mama dhanyavādās nirdeśeṇa tāsām:
 
 - [[Frans Kaashoek]{lang=en}][kaashoek]
 - [[Sara Achour]{lang=en}][sachour]
-- [[John Mitchell]{lang=en}][jcm]
-- [[Pat Hanrahan]{lang=en}][hanrahan]
 
 any kāryāt mahyam ālokalekhyakalā ca piyāno vādayatuṃ ca nṛtyas sāmājikas ca
 bhāshās jñātuṃ rocante. bhāshā āṅglāṃ, drāvidāṃ, hindīṃ, ca saṃskṛtāṃ jānāmi.

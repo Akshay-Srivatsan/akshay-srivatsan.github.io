@@ -3,6 +3,7 @@
 module Main where
 
 import Control.Monad (forM_)
+import Control.Monad.State
 import Data.List (intercalate)
 import Data.Map.Strict qualified as M
 import Data.Maybe (fromMaybe)
@@ -160,11 +161,15 @@ saveSnapshotWhenBlog page item =
 readerOptions :: ReaderOptions
 readerOptions =
   defaultHakyllReaderOptions
-    { readerExtensions =
-        disableExtension Ext_implicit_figures $
-          enableExtension Ext_bracketed_spans $
-            enableExtension Ext_fenced_divs githubMarkdownExtensions
+    { readerExtensions = snd $ runState customExtensions githubMarkdownExtensions
     }
+
+customExtensions :: State Extensions ()
+customExtensions = do
+  modify $ enableExtension Ext_fenced_divs
+  modify $ enableExtension Ext_bracketed_spans
+  modify $ enableExtension Ext_definition_lists
+  modify $ disableExtension Ext_implicit_figures
 
 writerOptions :: WriterOptions
 writerOptions = defaultHakyllWriterOptions

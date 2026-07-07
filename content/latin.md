@@ -21,46 +21,40 @@ lang: la
 
 ![photographema meī][portrait]
 
-sum scientiam computātrālis studens candidātus doctorālis in Ūniversitāte
-Stanfordiēnsī. [[Keith Winstein]{lang=en}][keithw] et [[Dawson Engler]{lang=en}][engler] sunt
-advīsōrēs meī. in labōratōriō investīgātiōnis systēmatum rētiumque labōrō ad
-faciendum [systēma functiōnālēs operandī][arca] et [systēma confirmandī
-computātium][fix]. quōque studiō [mittendum prōlepticum musicae][proleptic] et
-[instructiōnem scientiae computātrālis cum xylophōnīs][codillon].
+investigo scientiam computationalem in Universitate Stanfordiensi. a [[Keith
+Winstein]{lang=en}][keithw] et [[Dawson Engler]{lang=en}][engler] advisus sum.
+res investigatae a me sunt applicationes linguarum programmaticalium ad
+systemata operantes.
 
-hīs professōribus grātiās agō ob cōnsilium et auxilium hōrum:
-
-- professōr [[Frans Kaashoek]{lang=en}][kaashoek], cōnsuāsor meus Massachūsettēnsī
-  Īnstitūtō Technologiae
-- professōr [[Sara Achour]{lang=en}][sachour], cōnsuāsor mea rotātiōnālis
-- professōr [[John Mitchell]{lang=en}][jcm], investīgātor prīncipālis Cartae
-- professōr [[Pat Hanrahan]{lang=en}][hanrahan], cōnsuāsor meus baccalaureālis
-
-extrā lūdum et opus, mihī photographia, clāvile cantāre, saltāre sociāle, et
-linguās discere placet. cum [_cōnsiliō ad initiāndum ballātiōnem Vindobonēnsem
-quadrāgēnsimam septimam_][opening] ballāvī [[Viennese Ball]{lang=en}][waltz47] et
-[[Viennese Ball]{lang=en}][polka47].
+gratias ago professoribus [[Frans Kaashoek]{lang=en}][kaashoek] et [[Sara
+Achour]{lang=en}][sachour] ob consilium et auxilium.
 
 sī hanc paginam intellegis (vel sī erratā vidēs), mihī epistolam ēlectrōnicam
 mitte!
 
+## investigationes meae
+
+::: {lang=en}
+**Continuation-Centric Computing with Arca** ([PDF](assets/pdf/osdi26.pdf))
+: Akshay Srivatsan, Yuhan Deng, Katherine Mohr, Emma Sudo, Sebastian Ingino, Francis Chua, Keith Winstein
+: _20th USENIX Symposium on Operating Systems Design and Implementation (OSDI 26)_, Seattle, WA, 2026
+
+**Fix: externalizing network I/O in serverless computing** ([PDF](assets/pdf/eurosys26.pdf))
+: Yuhan Deng, Akshay Srivatsan, Sebastian Ingino, Francis Chua, Yasmine Mitchell, Matthew Vilaysack, Keith Winstein
+: _20th USENIX Symposium on Operating Systems Design and Implementation (OSDI 26)_, Seattle, WA, 2026
+: _European Conference on Computer Systems (EuroSys)_, Edinburgh, U.K., 2026.
+:::
+
 ## ballātio sociālis
 
-praesidebām [[Dancebreak]{lang=en}][dancebreak], gregem valsaeque polkaeque
-Stanfordiensem. ballāvī in [cōnsiliō septimō quadrāgēsimus ad initiāndum
-ballātiōnem Vindobonēnsem][opening] et instruō duodēquīnquāgēsimum. saltātiōnem
-docēo in [Dancebreak]{lang=en} et cum [[Stanford Swing Dancers]{lang=en}][ssd] et cum
-[[Cardinal Swing]{lang=en}][cardinal].
-
-docuī quōque [duō hebdomādīs Austriālis][fortnight], [magnā
-ballātiōne][bigdance], [_Lindy Hop_ Harvardiēnsī][hlh], et [DANCE
-106I][dance106i].
-
-sī Stanfordī es et scīre dē ballātiōne sociāle vīs, venī ad _Dancebreak_ vesperī
-diē Lunae.
+praesidebam [[Dancebreak]{lang=en}][dancebreak], gregem magnum ballationis
+Stanfordiensem. ballavi in cōnsiliō ad initiāndum ballātiōnem Vindobonēnsem.
+saltationem in [Dancebreak]{lang=en} et [valsa nocte veneris][fnw] doceo, et
+docui quoque in [DANCE 106I][dance106i].
 
 pelliculae saltātiōnum meārum hīc sunt:
 
+- [ballātiō Vindobonēnsis MMXXVI][cubberley26]
 - [ballātiō Vindobonēnsis MMXXV - valsa (Smetana - Má Vlast, No. 2
   Vltava)][waltz47]
 - [ballātiō Vindobonēnsis MMXXV - polka (von Suppé - Poet and Peasant
@@ -69,36 +63,27 @@ pelliculae saltātiōnum meārum hīc sunt:
 
 ## doctrīna mea
 
-hōc annō in [CS CCXLIV-c: _systēma distributa_][cs244c] auxiliōr.
+[CS 244C: _connexus et systemata distributae_][cs244c] 
+: hieme MMXXVI - Auxiliator
 
-trēs annōs auxiliātus sum in [CS CXL-e: _inventiōque cōnstrūctiōque nucleōrum
-computātrōrum_][cs140e]. auxiliātus sum [vere MMXXI][cs140e-21spr], [hieme
-MMXXII][cs140e-22win], et [hieme MMXXIII][cs140e-23win]. auxiliātus sum in
-classe secundā, [CS CCXL-lx][cs240lx-22spr] vere MMXXII. in CS CXL-e
-labōrātōriō, discipulī faciunt nucleum parvum simile ŪNĪCĪ. in CS CCXL-lx,
-discupulī addunt systemātās prō verificātiōne nucleōrum suōrum. in [CS CCXL:
-_topicae ulteriōres nucleōrum computātrōrum_][cs240] classī quoque auxiliāvī.
-hāc classī discipulī commentāriōs de nucleīs computātrōrum legebant.
+[CS 240: _res de nucleorum computatrorum_][cs240]
+: autumno MMXXIV - Auxiliator
 
-vēre MMXXIII ego, [[Ayelet Drazen]{lang=en}][adrazen], et [[Jonathan Kula]{lang=en}][jdkula] docuimus
-[CS XLV: _programmatae quae sciendae sunt programmātoribus omnibus_][cs45]. haec
-iterātio secunda huius classis; anteā in hieme [iterātiōnem prīmam][cs45-23win]
-creāvimus et obtulimus. hāc classe programmatās et conceptōs doctōs scīendī est
-in industriā et academiā, sed nōn est doctī. nunc eadem classis in formā [CS
-CIV: _intrōdūctiō ad systēmātēs programmatārum essentiālēs_][cs104] oblāta est.
+[CS 45: _programmatae quae sciendae sunt programmātoribus omnibus_][cs45]
+: vere MMXXIII - **Magister**
+: hieme MMXXIII - **Magister**
+: nunc oblata est [CS 104: _intrōdūctiō ad systēmātēs programmatārum essentiālēs_][cs104]
 
-## ērudītiō mea
+[CS 240LX: _laboratio de nucleorum computatrorum_][cs240lx-22spr]
+: vere MMXXII - Auxiliator
 
-ego in Ūniversitāte Stanfordiēnsī studeō ut Philosophiae Doctōr fīam. antequam,
-prō Diplōmate Magistrī in Scientiā Computātrālī in Ūniversitāte Stanfordiēnsī
-studēbam (ā MMXX ad MMXXII). Baccalaureum quōque in Stanford perfēcī (ā MMXVII
-ad MMXXI). prius in Lūdō Menloniēnsī studēbam.
+[CS 140E: _nuclei computatrorum_][cs140e-23win]
+: hieme MMXXIII - **Magister**
+: hieme MMXXII - Auxiliator
+: vere MMXXI - Auxiliator
 
 ## et cētera
 
-- [recommendātiōnes meae classium][courses]
-- [opera][jobs]
-- [theātrum][shows]
 - [[GitHub]{lang=en}][github]
 - [[LinkedIn]{lang=en}][linkedin]
 - [mihī epistolam mitte][email]
