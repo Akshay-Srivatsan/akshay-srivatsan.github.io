@@ -1,10 +1,10 @@
 ---
-title: Akshay Srivatsan (situs interrētiālis)
-title-meta: situs interrētiālis dē Akshay Srivatsan
+title: Akshay Srivatsan (situs interretialis)
+title-meta: situs interretialis de Akshay Srivatsan
 description:
-    ūniversitātē stanfordiēnsī discipulus doctōrālis scientiae computātrālis.
+    universitate stanfordiensi discipulus doctoralis scientiae computatralis.
 image: assets/img/portrait-small.jpg
-image-alt: photographema meī
+image-alt: photographema mei
 lang: la
 ---
 
@@ -12,14 +12,14 @@ lang: la
 
 [/ak.sei̯ sriː.wat.san/]{lang=la-phonipa .ipa}
 
-īdem: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} et [अक्षय श्रीवत्सन]{lang=hi} et [𑌅𑌕𑍍𑌷𑌯𑍍
+idem: [அக்ஷய் ஶ்ரீவத்ஸன்]{lang=ta} et [अक्षय श्रीवत्सन]{lang=hi} et [𑌅𑌕𑍍𑌷𑌯𑍍
 𑌶𑍍𑌰𑍀𑌵𑌤𑍍𑌸𑌨𑍍]{lang=sa-Gran} et [𑀅𑀓𑁆𑀱𑀬𑁆 𑀰𑁆𑀭𑀻𑀯𑀢𑁆𑀲𑀦𑁆]{lang=sa-Brah}
 
 <span id="date"></span>
 
-## dē mē
+## de me
 
-![photographema meī][portrait]
+![photographema mei][portrait]
 
 investigo scientiam computationalem in Universitate Stanfordiensi. a [[Keith
 Winstein]{lang=en}][keithw] et [[Dawson Engler]{lang=en}][engler] advisus sum.
@@ -29,7 +29,7 @@ systemata operantes.
 gratias ago professoribus [[Frans Kaashoek]{lang=en}][kaashoek] et [[Sara
 Achour]{lang=en}][sachour] ob consilium et auxilium.
 
-sī hanc paginam intellegis (vel sī erratā vidēs), mihī epistolam ēlectrōnicam
+si hanc paginam intellegis (vel si errata vides), mihi epistolam electronicam
 mitte!
 
 ## investigationes meae
@@ -45,23 +45,23 @@ mitte!
 : _European Conference on Computer Systems (EuroSys)_, Edinburgh, U.K., 2026.
 :::
 
-## ballātio sociālis
+## ballatio socialis
 
 praesidebam [[Dancebreak]{lang=en}][dancebreak], gregem magnum ballationis
-Stanfordiensem. ballavi in cōnsiliō ad initiāndum ballātiōnem Vindobonēnsem.
+Stanfordiensem. ballavi in consilio ad initiandum ballationem Vindobonensem.
 saltationem in [Dancebreak]{lang=en} et [valsa nocte veneris][fnw] doceo, et
 docui quoque in [DANCE 106I][dance106i].
 
-pelliculae saltātiōnum meārum hīc sunt:
+pelliculae saltationum mearum hic sunt:
 
-- [ballātiō Vindobonēnsis MMXXVI][cubberley26]
-- [ballātiō Vindobonēnsis MMXXV - valsa (Smetana - Má Vlast, No. 2
+- [ballatio Vindobonensis MMXXVI][cubberley26]
+- [ballatio Vindobonensis MMXXV - valsa (Smetana - Má Vlast, No. 2
   Vltava)][waltz47]
-- [ballātiō Vindobonēnsis MMXXV - polka (von Suppé - Poet and Peasant
+- [ballatio Vindobonensis MMXXV - polka (von Suppé - Poet and Peasant
   Overture)][polka47]
 - [[Big Dance]{lang=en} MMXXV][bigdance25]
 
-## doctrīna mea
+## doctrina mea
 
 [CS 244C: _connexus et systemata distributae_][cs244c] 
 : hieme MMXXVI - Auxiliator
@@ -69,10 +69,10 @@ pelliculae saltātiōnum meārum hīc sunt:
 [CS 240: _res de nucleorum computatrorum_][cs240]
 : autumno MMXXIV - Auxiliator
 
-[CS 45: _programmatae quae sciendae sunt programmātoribus omnibus_][cs45]
+[CS 45: _programmatae quae sciendae sunt programmatoribus omnibus_][cs45]
 : vere MMXXIII - **Magister**
 : hieme MMXXIII - **Magister**
-: nunc oblata est [CS 104: _intrōdūctiō ad systēmātēs programmatārum essentiālēs_][cs104]
+: nunc oblata est [CS 104: _introductio ad systemates programmatarum essentiales_][cs104]
 
 [CS 240LX: _laboratio de nucleorum computatrorum_][cs240lx-22spr]
 : vere MMXXII - Auxiliator
@@ -82,8 +82,8 @@ pelliculae saltātiōnum meārum hīc sunt:
 : hieme MMXXII - Auxiliator
 : vere MMXXI - Auxiliator
 
-## et cētera
+## et cetera
 
 - [[GitHub]{lang=en}][github]
 - [[LinkedIn]{lang=en}][linkedin]
-- [mihī epistolam mitte][email]
+- [mihi epistolam mitte][email]
