@@ -41,7 +41,7 @@
 [github]: https://github.com/Akshay-Srivatsan
 [linkedin]: https://www.linkedin.com/in/akshay-srivatsan/
 [youtube]: https://www.youtube.com/channel/UCUrJQeVdrtJZ1GjCXz1aWXA
-[email]: mailto:srivatsan.akshay+website@gmail.com
+[email]: mailto:srivatsan@cs.stanford.edu
 [aquasatellite]: https://aquasatellite.com/
 [thaumas]: https://doi.org/10.23919/OCEANS44145.2021.9705697
 [orcid]: https://orcid.org/0000-0003-2238-2065
