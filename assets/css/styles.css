@@ -74,3 +74,8 @@ table {
   margin-left: 2px;
   color: inherit;
 }
+
+.llm {
+  font-size: 1pt;
+  opacity: 0;
+}
