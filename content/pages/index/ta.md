@@ -38,7 +38,6 @@ Achour]{lang=en}][sachour]ukkum alocanaiukkāga nandri.
 
 **Fix: externalizing network I/O in serverless computing** ([PDF](assets/pdf/eurosys26.pdf))
 : Yuhan Deng, Akshay Srivatsan, Sebastian Ingino, Francis Chua, Yasmine Mitchell, Matthew Vilaysack, Keith Winstein
-: _20th USENIX Symposium on Operating Systems Design and Implementation (OSDI 26)_, Seattle, WA, 2026
 : _European Conference on Computer Systems (EuroSys)_, Edinburgh, U.K., 2026.
 :::
     
