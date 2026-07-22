@@ -80,3 +80,25 @@ en naṭanangaḷai ingē pārkkalām:
 - [[GitHub]{lang=en}][github]il gaṇini niralgaḷ 
 - [[LinkedIn]{lang=en}][linkedin] 
 - [minnañjalai anuppungaḷ][email] 
+
+[arca]: https://github.com/fix-project/arca
+[bigdance25]: https://www.youtube.com/watch?v=ZtfiJEXm8oA
+[cs104]: https://cs104.stanford.edu
+[cs140e-23win]: https://github.com/dddrrreee/cs140e-23win
+[cs240]: https://cs240.stanford.edu
+[cs240lx-22spr]: https://github.com/dddrrreee/cs240lx-22spr
+[cs244c]: https://cs244c.stanford.edu
+[cs45]: https://cs45.stanford.edu
+[cubberley26]: https://www.youtube.com/watch?v=Bs6Rw2GMzug
+[dancebreak]: https://dancebreak.stanford.edu
+[email]: mailto:srivatsan@cs.stanford.edu
+[engler]: https://web.stanford.edu/~engler/
+[fix]: https://arxiv.org/abs/2511.00205
+[github]: https://github.com/Akshay-Srivatsan
+[kaashoek]: https://people.csail.mit.edu/kaashoek/
+[keithw]: https://cs.stanford.edu/~keithw/
+[linkedin]: https://www.linkedin.com/in/akshay-srivatsan/
+[polka47]: https://www.youtube.com/watch?v=ef7KNEIakik
+[portrait]: /assets/img/portrait_2026.jpg
+[sachour]: https://www.sara-achour.me/
+[waltz47]: https://www.youtube.com/watch?v=OecToTxPurk

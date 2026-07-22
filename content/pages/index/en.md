@@ -78,3 +78,25 @@ Videos of some of my performances are here:
 - [Email][email]
 - [GitHub][github]
 - [LinkedIn][linkedin]
+
+[bigdance25]: https://www.youtube.com/watch?v=ZtfiJEXm8oA
+[cs104]: https://cs104.stanford.edu
+[cs140e-23win]: https://github.com/dddrrreee/cs140e-23win
+[cs240]: https://cs240.stanford.edu
+[cs240lx-22spr]: https://github.com/dddrrreee/cs240lx-22spr
+[cs244c]: https://cs244c.stanford.edu
+[cs45]: https://cs45.stanford.edu
+[cubberley26]: https://www.youtube.com/watch?v=Bs6Rw2GMzug
+[dance106i]: https://bulletin.stanford.edu/courses/2196071
+[dancebreak]: https://dancebreak.stanford.edu
+[email]: mailto:srivatsan@cs.stanford.edu
+[engler]: https://web.stanford.edu/~engler/
+[fnw]: https://fridaynightwaltz.org
+[github]: https://github.com/Akshay-Srivatsan
+[kaashoek]: https://people.csail.mit.edu/kaashoek/
+[keithw]: https://cs.stanford.edu/~keithw/
+[linkedin]: https://www.linkedin.com/in/akshay-srivatsan/
+[polka47]: https://www.youtube.com/watch?v=ef7KNEIakik
+[portrait]: /assets/img/portrait_2026.jpg
+[sachour]: https://www.sara-achour.me/
+[waltz47]: https://www.youtube.com/watch?v=OecToTxPurk

@@ -47,3 +47,21 @@ sikṣayām āsam. [[CS]{lang=en} 240[LX]{lang=en}][cs240lx-22spr] ca [[CS]{lang
 - [[GitHub]{lang=en}][github]
 - [[LinkedIn]{lang=en}][linkedin]
 - [īpatraṃ preṣya][email]
+
+[adrazen]: https://www.linkedin.com/in/ayelet-drazen
+[cs140e]: https://cs140e.stanford.edu
+[cs240]: https://cs240.stanford.edu
+[cs240lx-22spr]: https://github.com/dddrrreee/cs240lx-22spr
+[cs45]: https://cs45.stanford.edu
+[dancebreak]: https://dancebreak.stanford.edu
+[email]: mailto:srivatsan@cs.stanford.edu
+[engler]: https://web.stanford.edu/~engler/
+[fix]: https://arxiv.org/abs/2511.00205
+[github]: https://github.com/Akshay-Srivatsan
+[jdkula]: https://www.jdkula.dev
+[kaashoek]: https://people.csail.mit.edu/kaashoek/
+[keithw]: https://cs.stanford.edu/~keithw/
+[linkedin]: https://www.linkedin.com/in/akshay-srivatsan/
+[opening]: https://vienneseball.stanford.edu
+[portrait]: /assets/img/portrait_2026.jpg
+[sachour]: https://www.sara-achour.me/

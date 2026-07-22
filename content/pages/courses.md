@@ -131,3 +131,9 @@ All the graphics classes I took were very well-taught in my opinion:
     whatever random classes seem interesting"; I signed up for this class on a
     whim, but it ended up being one of the most important decisions I made
     during undergrad (it was a strong factor in my choice to do a Ph.D.).
+
+[carta]: https://carta.stanford.edu
+[cs140e]: https://cs140e.stanford.edu
+[cs240]: https://cs240.stanford.edu
+[cs240lx]: https://github.com/dddrrreee/cs240lx-23spr
+[stagecast]: https://taps.stanford.edu/stagecast

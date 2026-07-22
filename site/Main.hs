@@ -56,7 +56,7 @@ main = do
 siteRules :: Site -> Rules ()
 siteRules site = do
   copyStaticFiles
-  match ("content/**.md" .||. "assets/links.md" .||. "transliterate/*.yaml" .||. "locales.yaml") $ compile getResourceBody
+  match ("content/**.md" .||. "transliterate/*.yaml" .||. "locales.yaml") $ compile getResourceBody
   match "templates/*" $ compile templateBodyCompiler
   contentDependency <- makePatternDependency KindContent "content/**.md"
   transliterationDependency <- makePatternDependency KindContent "transliterate/*.yaml"
@@ -132,9 +132,8 @@ availableTags site sources =
 compileAuthored :: Site -> Bool -> FilePath -> Sources -> Maybe String -> OutputLanguage -> SelectedSource -> Compiler (Item String)
 compileAuthored site isPost logicalPath sources date language source = do
   body <- loadBody $ selectedIdentifier source
-  links <- loadBody "assets/links.md"
   metadata <- getMetadata $ selectedIdentifier source
-  let input = Item (selectedIdentifier source) $ body <> "\n\n" <> links
+  let input = Item (selectedIdentifier source) body
   parsed <- readPandocWith readerOptions input
   let transform = transcribeString (selectedBaseLanguage source) logicalPath (selectedTransliteration source)
       transliterated = fmap (transliteratePandoc (selectedBaseLanguage source) logicalPath (selectedTransliteration source)) parsed
@@ -551,7 +550,7 @@ listFilesRecursively root = do
 
 copyStaticFiles :: Rules ()
 copyStaticFiles = do
-  match ("assets/**" .&&. complement "assets/links.md") $ route idRoute >> compile copyFileCompiler
+  match "assets/**" $ route idRoute >> compile copyFileCompiler
   match ".well-known/**" $ route idRoute >> compile copyFileCompiler
   match (fromList ["CNAME", ".nojekyll"]) $ route idRoute >> compile copyFileCompiler
 
