@@ -44,9 +44,6 @@ sikṣayām āsam. [[CS]{lang=en} 240[LX]{lang=en}][cs240lx-22spr] ca [[CS]{lang
 
 ### pariśabdās
 
-- [vargās](/courses/)
-- [karyās](/jobs/)
-- [nāṭakās](/shows/)
 - [[GitHub]{lang=en}][github]
 - [[LinkedIn]{lang=en}][linkedin]
 - [īpatraṃ preṣya][email]

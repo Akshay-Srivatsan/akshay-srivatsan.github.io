@@ -1,0 +1,61 @@
+# All text is written in the language's source representation. Script-specific
+# output is produced by the same transliteration tables used for page content.
+en:
+  name: English
+  strings:
+    languages: Languages
+    scripts: Scripts
+    available-languages: Available languages
+    blog: Blog
+    no-posts: No posts yet.
+    posts-from: Posts from
+    continue: Continue
+  scripts:
+    en: English
+
+la:
+  name: Latina
+  strings:
+    languages: linguae
+    scripts: litterae
+    available-languages: linguae quae praesto sunt
+    blog: commentarii
+    no-posts: nondum sunt commentarii.
+    posts-from: commentarii ex
+    continue: perge
+  scripts:
+    la: Latina
+
+sa:
+  name: saṃskṛtam
+  strings:
+    languages: bhāṣāḥ
+    scripts: lipayaḥ
+    available-languages: upalabdhā bhāṣāḥ
+    blog: lekhasaṅgrahaḥ
+    no-posts: lekhāḥ na santi.
+    posts-from: lekhāḥ
+    continue: gaccha
+  scripts:
+    sa: devanāgarī
+    sa-Brah: brāhmī
+    sa-Gran: grantha
+    sa-Gran-x-tamil: tamiḻ-grantha
+    sa-Latn: lātin
+    sa-Latn-x-simple: sarala
+
+ta:
+  name: tamiḻ
+  strings:
+    languages: moḻikaḷ
+    scripts: eḻuttu muṟaikaḷ
+    available-languages: kiṭaikkum moḻikaḷ
+    blog: pativukaḷ
+    no-posts: pativukaḷ illai.
+    posts-from: pativukaḷ
+    continue: toṭar
+  scripts:
+    ta: tamiḻ
+    ta-Brah: pirāmi
+    ta-Latn: lattīṉ
+    ta-Latn-x-simple: eḷiyatu

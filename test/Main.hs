@@ -3,6 +3,8 @@
 module Main where
 
 import Control.Monad (unless)
+import Data.Map.Strict qualified as M
+import Site.Config
 import Site.Transliterate
 import Site.Types
 import System.Exit (exitFailure)
@@ -11,6 +13,7 @@ import Text.Pandoc.Definition
 main :: IO ()
 main = do
   routeTests
+  localeTests
   transliterationTests
   putStrLn "site tests passed"
 
@@ -24,6 +27,14 @@ routeTests = do
   assertEqual "post tagged" "2026/07/21/example/ta.html" $ routeFor "2026/07/21/example" (LanguageTag "ta")
   assertEqual "default URL" "/courses/" $ urlFor "courses" Default
   assertEqual "tagged URL" "/courses/ta.html" $ urlFor "courses" (LanguageTag "ta")
+
+localeTests :: IO ()
+localeTests = do
+  locales <- loadLocales "locales.yaml"
+  tamil <- require "Tamil locale" $ M.lookup "ta" locales
+  assertEqual "Tamil language name" "tamiḻ" $ localeName tamil
+  assertEqual "Tamil script label" (Just "pirāmi") $ M.lookup "ta-Brah" $ localeScripts tamil
+  assertEqual "Tamil selector heading" (Just "kiṭaikkum moḻikaḷ") $ M.lookup "available-languages" $ localeStrings tamil
 
 transliterationTests :: IO ()
 transliterationTests = do
