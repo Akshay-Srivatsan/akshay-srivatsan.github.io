@@ -4,6 +4,7 @@ module Main where
 
 import Control.Monad (forM, forM_, unless, when)
 import Control.Monad.Reader (ReaderT, ask, lift, runReaderT)
+import Control.Applicative ((<|>))
 import Data.Char (isAlphaNum)
 import Data.List (intercalate, isPrefixOf, sort, sortOn)
 import Data.Map.Strict qualified as M
@@ -185,14 +186,8 @@ compileSelector site logicalPath language tags = do
   loadAndApplyTemplate "templates/default.html" context item
 
 compileBlogIndex :: Site -> OutputLanguage -> Compiler (Item String)
-compileBlogIndex site language = do
-  let posts = filter (canRender site language . postSources) $ sitePosts site
-      tags = tagsWithPosts site $ sitePosts site
-  if null (sitePosts site)
-    then compileListing site "blog" language (localizedUiText site language "blog") []
-    else if null posts
-    then compileSelector site "blog" language tags
-    else compileListing site "blog" language (localizedUiText site language "blog") posts
+compileBlogIndex site language =
+  compileListing site "blog" language (localizedUiText site language "blog") $ sitePosts site
 
 compileArchive :: Site -> FilePath -> OutputLanguage -> Compiler (Item String)
 compileArchive site archive language = do
@@ -209,7 +204,7 @@ compileArchive site archive language = do
 compileListing :: Site -> FilePath -> OutputLanguage -> String -> [BlogPost] -> Compiler (Item String)
 compileListing site logicalPath language title posts = do
   entries <- fmap concat $ forM (sortOn (Down . postDate) posts) $ \post -> do
-    case sourceFor site (postSources post) language of
+    case listingSourceFor site (postSources post) language of
       Nothing -> pure ""
       Just source -> do
         metadata <- getMetadata $ selectedIdentifier source
@@ -230,6 +225,10 @@ compileListing site logicalPath language title posts = do
             else "<ul class=\"post-list\">\n" <> entries <> "</ul>"
       item = Item (fromFilePath $ routeFor logicalPath language) body
   loadAndApplyTemplate "templates/default.html" (syntheticContext logicalPath language title "") item
+
+listingSourceFor :: Site -> Sources -> OutputLanguage -> Maybe SelectedSource
+listingSourceFor site sources language =
+  sourceFor site sources language <|> sourceFor site sources (LanguageTag "en")
 
 compileRedirect :: Site -> FilePath -> OutputLanguage -> String -> Compiler (Item String)
 compileRedirect site logicalPath language target =
