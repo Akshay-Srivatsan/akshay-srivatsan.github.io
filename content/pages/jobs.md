@@ -53,7 +53,7 @@ lang: en
 | Club                |  Topic  |         Role         |      Time |
 | :------------------ | :-----: | :------------------: | --------: |
 | Neighborhood[^n]    | Math/CS |      President       | 2014-2017 |
-| Theatre Tech        | Theatre |   [Various][shows]   | 2015-2017 |
+| Theatre Tech        | Theatre |   [Various](/shows/) | 2015-2017 |
 | Trivia Club         | Trivia  |        Member        | 2013-2017 |
 | Certamen            | Trivia  |        Member        | 2013-2017 |
 | California JCL[^ca] |  Latin  |      Webmaster       | 2016-2017 |

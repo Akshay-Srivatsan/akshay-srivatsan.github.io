@@ -1,11 +1,4 @@
-[portrait]: assets/img/portrait_2026.jpg
-[english]: index.html
-[tamil]: tamil.html
-[latin]: latin.html
-[sanskrit]: sanskrit.html
-[courses]: courses.html
-[jobs]: jobs.html
-[shows]: shows.html
+[portrait]: /assets/img/portrait_2026.jpg
 [sachour]: https://www.sara-achour.me/
 [engler]: https://web.stanford.edu/~engler/
 [keithw]: https://cs.stanford.edu/~keithw/

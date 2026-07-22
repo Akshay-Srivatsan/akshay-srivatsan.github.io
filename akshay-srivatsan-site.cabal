@@ -26,9 +26,33 @@ executable site
     , pandoc
     , pandoc-types
     , scientific
-    , tagsoup
     , text
     , time
     , unicode-transforms
-    , vector
+    , yaml
+
+test-suite site-test
+  type:             exitcode-stdio-1.0
+  main-is:          Main.hs
+  other-modules:
+    Site.Transliterate
+    Site.Types
+
+  hs-source-dirs:
+    test
+    site
+
+  default-language: GHC2021
+  ghc-options:      -Wall -Wcompat
+  build-depends:
+    , aeson
+    , base                >=4.18 && <5
+    , bytestring
+    , containers
+    , filepath
+    , hakyll              >=4.16
+    , pandoc-types
+    , scientific
+    , text
+    , unicode-transforms
     , yaml

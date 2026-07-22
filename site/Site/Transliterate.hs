@@ -12,19 +12,19 @@ import Data.Ord (Down (Down))
 import Data.Text qualified as T
 import Data.Text.Normalize qualified as TN
 import Data.Yaml qualified as Y
-import Site.Config (mappingPathForPage, replacementsFor)
 import Site.Types
-import System.FilePath (dropExtension, splitDirectories, takeDirectory, (</>))
-import Text.HTML.TagSoup hiding (renderTags)
-import Text.HTML.TagSoup qualified as TS
+import Text.Pandoc.Definition
 
 type MappingTable = M.Map T.Text T.Text
 
-type MappingSet = M.Map T.Text MappingTable
+data Transliteration = Identity | Transliteration MappingTable
+  deriving (Show)
 
-data TransliterationOverrides = TransliterationOverrides
-  { overrideByKey :: M.Map T.Text T.Text
+data LanguageMappings = LanguageMappings
+  { mappingSourceTag :: T.Text,
+    mappingTargets :: M.Map T.Text MappingTable
   }
+  deriving (Show)
 
 data SanskritBoundary = SanskritBoundary
   { sandhiLeft :: T.Text,
@@ -36,28 +36,32 @@ data SanskritSutra = SanskritSutra
     applySutra :: SanskritBoundary -> Maybe SanskritBoundary
   }
 
-loadTransliterationOverrides :: IO TransliterationOverrides
-loadTransliterationOverrides =
-  pure $ TransliterationOverrides {overrideByKey = M.empty}
-
-loadMappingsForPage :: PageSpec -> IO MappingSet
-loadMappingsForPage page =
-  maybe (pure M.empty) loadMappings (mappingPathForPage page)
-
-loadMappings :: FilePath -> IO MappingSet
+loadMappings :: FilePath -> IO LanguageMappings
 loadMappings path = do
   bytes <- BS.readFile path
   scripts <- case Y.decodeAllEither' bytes of
     Left err -> fail $ Y.prettyPrintParseException err
     Right values -> pure values
   case scripts of
-    [] -> pure M.empty
+    [] -> fail $ path <> ": expected at least one script"
     source : targets ->
       pure $
-        M.fromList
-          [ ("to_" <> scriptName target, makeMapping source target)
-          | target <- targets
-          ]
+        LanguageMappings
+          { mappingSourceTag = scriptName source,
+            mappingTargets =
+              M.fromList
+                [ (scriptName target, makeMapping source target)
+                | target <- targets
+                ]
+          }
+
+mappingTags :: LanguageMappings -> [T.Text]
+mappingTags mappings = mappingSourceTag mappings : M.keys (mappingTargets mappings)
+
+mappingFor :: LanguageMappings -> T.Text -> Maybe Transliteration
+mappingFor mappings tag
+  | tag == mappingSourceTag mappings = Just Identity
+  | otherwise = Transliteration <$> M.lookup tag (mappingTargets mappings)
 
 makeMapping :: Script -> Script -> MappingTable
 makeMapping source target =
@@ -153,101 +157,127 @@ normalizeMap = M.fromList . fmap normalizePair . M.toList
 normalize :: T.Text -> T.Text
 normalize = TN.normalize TN.NFC . T.replace "◌" "" . TN.normalize TN.NFD
 
-transformFor :: PageSpec -> MappingSet -> Variant -> String -> String
-transformFor page mappings variant =
-  maybe id (transcribeString page mappings) (variantMapping variant)
-
-transformHtml :: PageSpec -> MappingSet -> TransliterationOverrides -> Variant -> String -> String
-transformHtml page mappings overrides variant body =
-  TS.renderTags $ go [] $ parseTags body
+transliteratePandoc :: T.Text -> FilePath -> Transliteration -> Pandoc -> Pandoc
+transliteratePandoc language logicalPath transliteration = mapPandocBlocks (fmap goBlock)
   where
-    maybeMapping = variantMapping variant >>= (`M.lookup` mappings)
-    depthPrefix = concat $ replicate (outputDepth page variant) "../"
-    go _ [] = []
-    go stack (tag : tags) =
-      case tag of
-        TagOpen name attrs ->
-          let frame = frameFor name attrs
-           in TagOpen name (rewriteAttrs depthPrefix $ removeInternalAttrs attrs) : go (frame : stack) tags
-        TagClose _ ->
-          tag : go (drop 1 stack) tags
-        TagText text
-          | skipTransliteration stack -> tag : go stack tags
-          | otherwise ->
-              case maybeMapping of
-                Nothing -> tag : go stack tags
-                Just mapping ->
-                  let (replacement, stack') = overrideText stack text
-                      output = maybe (transcribeText page mapping $ T.pack text) id replacement
-                   in TagText (T.unpack output) : go stack' tags
-        _ -> tag : go stack tags
-    frameFor name attrs =
-      Frame
-        { frameSkip = shouldSkip name attrs,
-          frameOverride = transliterationOverride name attrs
-        }
-    transliterationOverride _ attrs =
-      explicitOverride attrs
-    explicitOverride attrs = do
-      value <- T.pack <$> lookup "data-translit" attrs
-      pure $ fromMaybe value $ M.lookup value (overrideByKey overrides)
+    transform = case transliteration of
+      Identity -> id
+      Transliteration mapping -> transcribeText language logicalPath mapping
+    applyOverride = case transliteration of
+      Identity -> False
+      Transliteration _ -> True
 
-data TransformFrame = Frame
-  { frameSkip :: Bool,
-    frameOverride :: Maybe T.Text
-  }
+    goBlock block =
+      case block of
+        Plain inlines -> Plain $ goInlines inlines
+        Para inlines -> Para $ goInlines inlines
+        LineBlock lines' -> LineBlock $ fmap goInlines lines'
+        CodeBlock attrs code -> CodeBlock (removeTranslit attrs) code
+        RawBlock {} -> block
+        BlockQuote blocks -> BlockQuote $ fmap goBlock blocks
+        OrderedList attrs items -> OrderedList attrs $ fmap (fmap goBlock) items
+        BulletList items -> BulletList $ fmap (fmap goBlock) items
+        DefinitionList items ->
+          DefinitionList [(goInlines term, fmap (fmap goBlock) definitions) | (term, definitions) <- items]
+        Header level attrs inlines -> Header level attrs $ goInlines inlines
+        HorizontalRule -> HorizontalRule
+        Table attrs caption columns head' bodies foot ->
+          Table attrs (goCaption caption) columns (goTableHead head') (fmap goTableBody bodies) (goTableFoot foot)
+        Div attrs blocks
+          | hasLanguage attrs -> Div (removeTranslit attrs) blocks
+          | otherwise -> Div (removeTranslit attrs) $ fmap goBlock blocks
+        Figure attrs caption blocks
+          | hasLanguage attrs -> Figure (removeTranslit attrs) caption blocks
+          | otherwise -> Figure (removeTranslit attrs) (goCaption caption) $ fmap goBlock blocks
 
-skipTransliteration :: [TransformFrame] -> Bool
-skipTransliteration = any frameSkip
+    goCaption (Caption short blocks) = Caption (goInlines <$> short) $ fmap goBlock blocks
+    goTableHead (TableHead attrs rows) = TableHead attrs $ fmap goRow rows
+    goTableBody (TableBody attrs rowHeads headRows bodyRows) =
+      TableBody attrs rowHeads (fmap goRow headRows) (fmap goRow bodyRows)
+    goTableFoot (TableFoot attrs rows) = TableFoot attrs $ fmap goRow rows
+    goRow (Row attrs cells) = Row attrs $ fmap goCell cells
+    goCell (Cell attrs alignment rowSpan colSpan blocks) =
+      Cell attrs alignment rowSpan colSpan $ fmap goBlock blocks
 
-overrideText :: [TransformFrame] -> String -> (Maybe T.Text, [TransformFrame])
-overrideText [] _ = (Nothing, [])
-overrideText (frame : rest) text
-  | Just replacement <- frameOverride frame =
-      if T.all isSpace (T.pack text)
-        then (Just $ T.pack text, frame : rest)
-        else (Just replacement, frame {frameOverride = Just ""} : rest)
-  | otherwise =
-      let (replacement, rest') = overrideText rest text
-       in (replacement, frame : rest')
+    goInlines [] = []
+    goInlines inlines@(inline : rest)
+      | isTextInline inline =
+          let (run, after) = span isTextInline inlines
+           in textToInlines (transform $ inlinesToText run) <> goInlines after
+      | otherwise = goInline inline : goInlines rest
 
-outputDepth :: PageSpec -> Variant -> Int
-outputDepth page variant =
-  length $ filter (`notElem` ["", "."]) $ splitDirectories $ takeDirectory $ outputFor page variant
+    goInline inline =
+      case inline of
+        Emph xs -> Emph $ goInlines xs
+        Underline xs -> Underline $ goInlines xs
+        Strong xs -> Strong $ goInlines xs
+        Strikeout xs -> Strikeout $ goInlines xs
+        Superscript xs -> Superscript $ goInlines xs
+        Subscript xs -> Subscript $ goInlines xs
+        SmallCaps xs -> SmallCaps $ goInlines xs
+        Quoted quoteType xs -> Quoted quoteType $ goInlines xs
+        Cite citations xs -> Cite citations $ goInlines xs
+        Link attrs xs target -> Link (removeTranslit attrs) (goInlines xs) target
+        Image attrs xs target -> Image (removeTranslit attrs) (goInlines xs) target
+        Note blocks -> Note $ fmap goBlock blocks
+        Code attrs code -> Code (removeTranslit attrs) code
+        Span attrs _
+          | applyOverride,
+            Just replacement <- lookup "data-translit" (third attrs) -> Span (removeTranslit attrs) [Str replacement]
+        Span attrs xs
+          | hasLanguage attrs -> Span (removeTranslit attrs) xs
+        Span attrs xs -> Span (removeTranslit attrs) $ goInlines xs
+        _ -> inline
 
-rewriteAttrs :: String -> [(String, String)] -> [(String, String)]
-rewriteAttrs prefix = fmap rewriteAttr
+mapPandocBlocks :: ([Block] -> [Block]) -> Pandoc -> Pandoc
+mapPandocBlocks transform (Pandoc meta blocks) = Pandoc meta $ transform blocks
+
+isTextInline :: Inline -> Bool
+isTextInline Str {} = True
+isTextInline Space = True
+isTextInline SoftBreak = True
+isTextInline LineBreak = True
+isTextInline _ = False
+
+inlinesToText :: [Inline] -> T.Text
+inlinesToText = T.concat . fmap inlineText
   where
-    rewriteAttr (key, value)
-      | key `elem` ["href", "src"] = (key, rewriteUrl prefix value)
-      | otherwise = (key, value)
+    inlineText (Str value) = value
+    inlineText Space = " "
+    inlineText SoftBreak = " "
+    inlineText LineBreak = " "
+    inlineText _ = ""
 
-removeInternalAttrs :: [(String, String)] -> [(String, String)]
-removeInternalAttrs = filter ((/= "data-translit") . fst)
+textToInlines :: T.Text -> [Inline]
+textToInlines = fmap toInline . T.groupBy (\a b -> isSpace a == isSpace b)
+  where
+    toInline chunk
+      | T.all isSpace chunk = Space
+      | otherwise = Str chunk
 
-rewriteUrl :: String -> String -> String
-rewriteUrl prefix value
-  | null prefix = value
-  | any (`startsWith` value) ["http://", "https://", "mailto:", "#", "/", "../"] = value
-  | otherwise = prefix <> value
+hasLanguage :: Attr -> Bool
+hasLanguage (_, _, attrs) = maybe False (not . T.null) $ lookup "lang" attrs
 
-startsWith :: String -> String -> Bool
-startsWith prefix s = take (length prefix) s == prefix
+removeTranslit :: Attr -> Attr
+removeTranslit (identifier, classes, attrs) =
+  (identifier, classes, filter ((/= "data-translit") . fst) attrs)
 
-transcribeString :: PageSpec -> MappingSet -> T.Text -> String -> String
-transcribeString page mappings mappingName text =
-  case M.lookup mappingName mappings of
-    Nothing -> text
-    Just mapping -> T.unpack $ transcribeText page mapping $ T.pack text
+third :: (a, b, c) -> c
+third (_, _, value) = value
 
-transcribeText :: PageSpec -> MappingTable -> T.Text -> T.Text
-transcribeText page mapping text =
+transcribeString :: T.Text -> FilePath -> Transliteration -> String -> String
+transcribeString _ _ Identity = id
+transcribeString language logicalPath (Transliteration mapping) =
+  T.unpack . transcribeText language logicalPath mapping . T.pack
+
+transcribeText :: T.Text -> FilePath -> MappingTable -> T.Text -> T.Text
+transcribeText language logicalPath mapping text =
   preserveBoundaryWhitespace text $
     fixTamilVariants
-      . applyReplacements page
+      . applyReplacements language logicalPath
       . postprocessSource
       . transcribeWithoutReplacements mapping
-      . preprocessSource page
+      . preprocessSource language
 
 preserveBoundaryWhitespace :: T.Text -> (T.Text -> T.Text) -> T.Text
 preserveBoundaryWhitespace text transform
@@ -289,23 +319,37 @@ transcribeWithoutReplacements mapping =
         chars
     trimOne s = fromMaybe s $ T.stripPrefix " " s >>= T.stripSuffix " "
 
-applyReplacements :: PageSpec -> T.Text -> T.Text
-applyReplacements page text =
-  foldl replaceOne text (replacementsFor page)
+applyReplacements :: T.Text -> FilePath -> T.Text -> T.Text
+applyReplacements language logicalPath text =
+  foldl replaceOne text (replacementsFor language logicalPath)
   where
     replaceOne acc (from, to) = T.replace (T.replace "◌" "" from) (T.replace "◌" "" to) acc
 
-preprocessSource :: PageSpec -> T.Text -> T.Text
-preprocessSource page
-  | isTamilPage page = normalizeTamilSource
-  | isSanskritPage page = applySanskritSandhi . normalizeSanskritSource
+replacementsFor :: T.Text -> FilePath -> [(T.Text, T.Text)]
+replacementsFor "ta" "" =
+  [ ("akshay", "Akshay"),
+    ("sreevadhsan", "Srivatsan"),
+    ("ɕɾiːʋadsan", "ɕɾiːʋatsan"),
+    ("श्रीवत्सऩ्", "श्रीवत्सन्"),
+    ("kanini", "ganini"),
+    ("kaɳini", "gaɳini"),
+    ("sdaanford", "Stanford"),
+    ("sdaanbord", "Stanford"),
+    ("menlo", "Menlo"),
+    ("yunigs", "UNIX")
+  ]
+replacementsFor "sa" "" =
+  [ ("akshay", "Akshay"),
+    ("shreevatsan", "Srivatsan"),
+    ("sṭenforḍ", "Stanford")
+  ]
+replacementsFor _ _ = []
+
+preprocessSource :: T.Text -> T.Text -> T.Text
+preprocessSource language
+  | language == "ta" = normalizeTamilSource
+  | language == "sa" = applySanskritSandhi . normalizeSanskritSource
   | otherwise = id
-
-isTamilPage :: PageSpec -> Bool
-isTamilPage page = pageSource page == "content/tamil.md" || ".ta.md" `endsWith` pageSource page
-
-isSanskritPage :: PageSpec -> Bool
-isSanskritPage page = pageSource page == "content/sanskrit.md" || ".sa.md" `endsWith` pageSource page
 
 postprocessSource :: T.Text -> T.Text
 postprocessSource =
@@ -778,19 +822,3 @@ replaceAllLongest mapping text =
       sortOn
         (Down . T.length . fst)
         [(from, to) | (from, to) <- M.toList mapping, not (T.null from)]
-
-shouldSkip :: String -> [(String, String)] -> Bool
-shouldSkip name attrs =
-  name `elem` ["script", "style"]
-    || maybe False (not . null) (lookup "lang" attrs)
-
-outputFor :: PageSpec -> Variant -> FilePath
-outputFor page variant
-  | variantCode variant == "default" = pageOutput page
-  | otherwise = dropExtension (pageOutput page) </> variantCode variant <> ".html"
-
-defaultVariant :: PageSpec -> Variant
-defaultVariant page =
-  case pageVariants page of
-    variant : _ -> variant
-    [] -> Variant "default" (pageLanguageLabel page) "en" Nothing

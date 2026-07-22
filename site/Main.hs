@@ -2,287 +2,499 @@
 
 module Main where
 
-import Control.Monad (forM_)
-import Control.Monad.State
-import Data.List (intercalate)
+import Control.Monad (forM, forM_, unless, when)
+import Control.Monad.Reader (ReaderT, ask, lift, runReaderT)
+import Data.Char (isAlphaNum)
+import Data.List (intercalate, isPrefixOf, sort, sortOn)
 import Data.Map.Strict qualified as M
-import Data.Maybe (fromMaybe)
-import Hakyll
+import Data.Maybe (catMaybes, fromMaybe, isJust)
+import Data.Ord (Down (Down))
+import Data.Set qualified as S
+import Data.Text qualified as T
+import Data.Time (Day, defaultTimeLocale, formatTime, parseTimeM)
+import Hakyll hiding (escapeHtml, isExternal)
+import Hakyll.Core.Dependencies (DependencyKind (KindContent))
 import Site.Config
 import Site.DateScript
 import Site.Transliterate
 import Site.Types
-import System.FilePath (replaceExtension)
+import System.Directory (doesDirectoryExist, doesFileExist, listDirectory)
+import System.FilePath (dropExtension, takeExtension, takeFileName, (</>))
+import System.IO (hPutStrLn, stderr)
+import Text.Pandoc.Definition
+import Text.Pandoc.Extensions
 import Text.Pandoc.Options
+import Text.Pandoc.Walk (walkM)
 
-type PageMap = M.Map String [PageSpec]
+type SiteCompiler = ReaderT OutputLanguage Compiler
+
+data Site = Site
+  { sitePages :: [StaticPage],
+    sitePosts :: [BlogPost],
+    siteMappings :: M.Map T.Text LanguageMappings,
+    siteOutputTags :: [T.Text],
+    siteLogicalPaths :: S.Set FilePath,
+    siteAssets :: S.Set FilePath
+  }
 
 main :: IO ()
 main = do
-  blogPages <- discoverBlogPages
-  hakyll $ do
-    copyStaticFiles
-    compileSourcesAndTemplates
+  pages <- discoverStaticPages "content/pages"
+  posts <- discoverBlogPosts "content/blog"
+  mappings <- traverse loadMappings transliterationFiles
+  assets <- S.fromList <$> listFilesRecursively "assets"
+  let outputTags = discoverOutputTags mappings pages posts
+      archives = archivePaths posts
+      logicalPaths = S.fromList $ "blog" : archives <> fmap staticLogicalPath pages <> fmap postLogicalPath posts
+      site = Site pages posts mappings outputTags logicalPaths assets
+  validateSite site
+  hakyll $ siteRules site
 
-    let pages = fixedPages <> blogPages
-        pagesByGroup = M.fromListWith (flip (<>)) [(pageGroup p, [p]) | p <- pages]
-    overrides <- preprocess loadTransliterationOverrides
+siteRules :: Site -> Rules ()
+siteRules site = do
+  copyStaticFiles
+  match ("content/**.md" .||. "assets/links.md" .||. "transliterate/*.yaml") $ compile getResourceBody
+  match "templates/*" $ compile templateBodyCompiler
+  contentDependency <- makePatternDependency KindContent "content/**.md"
+  transliterationDependency <- makePatternDependency KindContent "transliterate/*.yaml"
+  rulesExtraDependencies [contentDependency, transliterationDependency] $ generatedRules site
 
-    forM_ pages $ \page -> do
-      mappings <- preprocess $ loadMappingsForPage page
-      forM_ (pageVariants page) $ \variant ->
-        create [fromFilePath $ outputFor page variant] $ do
-          route idRoute
-          compile $ compilePage pagesByGroup page mappings overrides variant
+generatedRules :: Site -> Rules ()
+generatedRules site = do
+  forM_ (sitePages site) $ \page ->
+    forLanguages site $ \language ->
+      create [fromFilePath $ routeFor (staticLogicalPath page) language] $ do
+        route idRoute
+        compile $ runReaderT (compileStaticPage site page) language
 
-    create ["blog.html"] $ do
+  forM_ (sitePosts site) $ \post ->
+    forLanguages site $ \language ->
+      create [fromFilePath $ routeFor (postLogicalPath post) language] $ do
+        route idRoute
+        compile $ runReaderT (compileBlogPost site post) language
+
+  forLanguages site $ \language ->
+    create [fromFilePath $ routeFor "blog" language] $ do
       route idRoute
-      compile $
-        makeItem ("" :: String)
-          >>= loadAndApplyTemplate "templates/blog.html" blogContext
-          >>= loadAndApplyTemplate "templates/default.html" blogContext
+      compile $ compileBlogIndex site language
+
+  forM_ (archivePaths $ sitePosts site) $ \archive ->
+    forLanguages site $ \language ->
+      create [fromFilePath $ routeFor archive language] $ do
+        route idRoute
+        compile $ compileArchive site archive language
+
+forLanguages :: Site -> (OutputLanguage -> Rules ()) -> Rules ()
+forLanguages site action = forM_ (Default : fmap LanguageTag (siteOutputTags site)) action
+
+compileStaticPage :: Site -> StaticPage -> SiteCompiler (Item String)
+compileStaticPage site page = do
+  language <- ask
+  case sourceFor site (staticSources page) language of
+    Nothing -> lift $ compileSelector site (staticLogicalPath page) language (availableTags site $ staticSources page)
+    Just source -> lift $ compileAuthored site False (staticLogicalPath page) (staticSources page) Nothing language source
+
+compileBlogPost :: Site -> BlogPost -> SiteCompiler (Item String)
+compileBlogPost site post = do
+  language <- ask
+  case sourceFor site (postSources post) language of
+    Nothing -> lift $ compileSelector site (postLogicalPath post) language (availableTags site $ postSources post)
+    Just source -> lift $ compileAuthored site True (postLogicalPath post) (postSources post) (Just $ postDate post) language source
+
+data SelectedSource = SelectedSource
+  { selectedIdentifier :: Identifier,
+    selectedBaseLanguage :: T.Text,
+    selectedTransliteration :: Transliteration
+  }
+
+sourceFor :: Site -> Sources -> OutputLanguage -> Maybe SelectedSource
+sourceFor site sources language = do
+  let target = requestedTag language
+      base = primaryLanguage target
+  identifier <- M.lookup base $ sourceFiles sources
+  transliteration <-
+    case M.lookup base (siteMappings site) of
+      Nothing -> if target == base then Just Identity else Nothing
+      Just mappings -> mappingFor mappings target
+  pure $ SelectedSource identifier base transliteration
+
+availableTags :: Site -> Sources -> [T.Text]
+availableTags site sources =
+  [ tag
+  | tag <- siteOutputTags site,
+    isJust $ sourceFor site sources (LanguageTag tag)
+  ]
+
+compileAuthored :: Site -> Bool -> FilePath -> Sources -> Maybe String -> OutputLanguage -> SelectedSource -> Compiler (Item String)
+compileAuthored site isPost logicalPath sources date language source = do
+  body <- loadBody $ selectedIdentifier source
+  links <- loadBody "assets/links.md"
+  metadata <- getMetadata $ selectedIdentifier source
+  let input = Item (selectedIdentifier source) $ body <> "\n\n" <> links
+  parsed <- readPandocWith readerOptions input
+  let transform = transcribeString (selectedBaseLanguage source) logicalPath (selectedTransliteration source)
+      transliterated = fmap (transliteratePandoc (selectedBaseLanguage source) logicalPath (selectedTransliteration source)) parsed
+  linked <- rewriteLinks site (selectedIdentifier source) language transliterated
+  let switcher = switcherHtml site logicalPath language $ availableTags site sources
+      structured = if isPost then linked else fmap (insertSwitcher switcher) linked
+  let rendered = writePandocWith writerOptions structured
+      output = Item (fromFilePath $ routeFor logicalPath language) (itemBody rendered)
+      context = pageContext logicalPath language metadata transform switcher date
+  if isPost
+    then loadAndApplyTemplate "templates/post.html" context output >>= loadAndApplyTemplate "templates/default.html" context
+    else loadAndApplyTemplate "templates/default.html" context output
+
+insertSwitcher :: String -> Pandoc -> Pandoc
+insertSwitcher "" pandoc = pandoc
+insertSwitcher switcher (Pandoc meta blocks) = Pandoc meta $ go blocks
+  where
+    nav = RawBlock (Format "html") $ T.pack $ "<nav class=\"switcher\">\n" <> switcher <> "\n</nav>"
+    go [] = [nav]
+    go (header@Header { } : rest) = header : nav : rest
+    go (block : rest) = block : go rest
+
+pageContext :: FilePath -> OutputLanguage -> Metadata -> (String -> String) -> String -> Maybe String -> Context String
+pageContext logicalPath language metadata transform switcher date =
+  constField "title" (transform $ fromMaybe (fallbackTitle logicalPath) $ lookupString "title" metadata)
+    <> transformedField "description"
+    <> transformedField "image-alt"
+    <> transformedField "title-meta"
+    <> constField "image" (absoluteAsset $ fromMaybe defaultImage $ lookupString "image" metadata)
+    <> constField "lang" (T.unpack $ requestedTag language)
+    <> constField "author" authorName
+    <> constField "copyyear" currentYear
+    <> constField "url" (baseUrl <> urlFor logicalPath language)
+    <> optionalField "switcher" switcher
+    <> maybe mempty (constField "date") date
+    <> constField "scripts" (scriptsFor logicalPath language transform)
+    <> defaultContext
+  where
+    transformedField name = maybe mempty (constField name . transform) $ lookupString name metadata
+
+compileSelector :: Site -> FilePath -> OutputLanguage -> [T.Text] -> Compiler (Item String)
+compileSelector site logicalPath language tags = do
+  let title = "Available languages | " <> fallbackTitle logicalPath
+      links = switcherHtml site logicalPath language tags
+      body = "<h1>Available languages</h1>\n<nav class=\"switcher\">\n" <> links <> "\n</nav>"
+      item = Item (fromFilePath $ routeFor logicalPath language) body
+      context = syntheticContext logicalPath language title ""
+  loadAndApplyTemplate "templates/default.html" context item
+
+compileBlogIndex :: Site -> OutputLanguage -> Compiler (Item String)
+compileBlogIndex site language = do
+  let posts = filter (canRender site language . postSources) $ sitePosts site
+      tags = tagsWithPosts site $ sitePosts site
+  if null (sitePosts site)
+    then compileListing site "blog" language "Blog" []
+    else if null posts
+    then compileSelector site "blog" language tags
+    else compileListing site "blog" language "Blog" posts
+
+compileArchive :: Site -> FilePath -> OutputLanguage -> Compiler (Item String)
+compileArchive site archive language = do
+  let descendants =
+        filter
+          (\post -> archive `isPathPrefixOf` postLogicalPath post && canRender site language (postSources post))
+          (sitePosts site)
+      allDescendants = filter (\post -> archive `isPathPrefixOf` postLogicalPath post) $ sitePosts site
+  case descendants of
+    [] -> compileSelector site archive language $ tagsWithPosts site allDescendants
+    [post] -> compileRedirect archive language $ urlFor (postLogicalPath post) language
+    posts -> compileListing site archive language (archiveTitle archive) posts
+
+compileListing :: Site -> FilePath -> OutputLanguage -> String -> [BlogPost] -> Compiler (Item String)
+compileListing site logicalPath language title posts = do
+  entries <- fmap concat $ forM (sortOn (Down . postDate) posts) $ \post -> do
+    case sourceFor site (postSources post) language of
+      Nothing -> pure ""
+      Just source -> do
+        metadata <- getMetadata $ selectedIdentifier source
+        let transform = transcribeString (selectedBaseLanguage source) (postLogicalPath post) (selectedTransliteration source)
+            postTitle = transform $ fromMaybe (postSlug post) $ lookupString "title" metadata
+        pure $
+          "<li><a href=\""
+            <> urlFor (postLogicalPath post) language
+            <> "\">"
+            <> escapeHtml postTitle
+            <> "</a> <span class=\"post-date\">"
+            <> postDate post
+            <> "</span></li>\n"
+  let body =
+        "<h1>" <> escapeHtml title <> "</h1>\n"
+          <> if null posts
+            then "<p>No posts yet.</p>"
+            else "<ul class=\"post-list\">\n" <> entries <> "</ul>"
+      item = Item (fromFilePath $ routeFor logicalPath language) body
+  loadAndApplyTemplate "templates/default.html" (syntheticContext logicalPath language title "") item
+
+compileRedirect :: FilePath -> OutputLanguage -> String -> Compiler (Item String)
+compileRedirect logicalPath language target =
+  makeItem
+    ( "<!doctype html><html lang=\""
+        <> T.unpack (requestedTag language)
+        <> "\"><head><meta charset=\"utf-8\"><meta http-equiv=\"refresh\" content=\"0; url="
+        <> target
+        <> "\"><link rel=\"canonical\" href=\""
+        <> target
+        <> "\"></head><body><p><a href=\""
+        <> target
+        <> "\">Continue</a></p></body></html>"
+    )
+    >>= \item -> pure item {itemIdentifier = fromFilePath $ routeFor logicalPath language}
+
+syntheticContext :: FilePath -> OutputLanguage -> String -> String -> Context String
+syntheticContext logicalPath language title scripts =
+  constField "title" title
+    <> constField "lang" (T.unpack $ requestedTag language)
+    <> constField "author" authorName
+    <> constField "copyyear" currentYear
+    <> constField "url" (baseUrl <> urlFor logicalPath language)
+    <> constField "scripts" scripts
+    <> defaultContext
+
+optionalField :: String -> String -> Context a
+optionalField _ "" = mempty
+optionalField name value = constField name value
+
+canRender :: Site -> OutputLanguage -> Sources -> Bool
+canRender site language sources = isJust $ sourceFor site sources language
+
+tagsWithPosts :: Site -> [BlogPost] -> [T.Text]
+tagsWithPosts site posts =
+  [ tag
+  | tag <- siteOutputTags site,
+    any (canRender site (LanguageTag tag) . postSources) posts
+  ]
+
+switcherHtml :: Site -> FilePath -> OutputLanguage -> [T.Text] -> String
+switcherHtml site logicalPath current tags =
+  intercalate " · "
+    [ if requestedTag current == tag
+        then "<strong>" <> label tag <> "</strong>"
+        else "<a hreflang=\"" <> T.unpack tag <> "\" href=\"" <> urlFor logicalPath (LanguageTag tag) <> "\">" <> label tag <> "</a>"
+    | tag <- tags
+    ]
+  where
+    label tag = escapeHtml $ languageLabel site tag
+
+languageLabel :: Site -> T.Text -> String
+languageLabel site tag =
+  let base = primaryLanguage tag
+      endonym = fromMaybe tag $ M.lookup base languageEndonyms
+      transliteration = M.lookup base (siteMappings site) >>= (`mappingFor` tag)
+   in T.unpack $ case transliteration of
+        Nothing -> endonym
+        Just Identity -> endonym
+        Just mapping -> T.pack $ transcribeString base "__language_name__" mapping $ T.unpack endonym
+
+rewriteLinks :: Site -> Identifier -> OutputLanguage -> Item Pandoc -> Compiler (Item Pandoc)
+rewriteLinks site source language = traverse $ walkM rewriteInline
+  where
+    rewriteInline inline =
+      case inline of
+        Link attrs label (target, title) -> Link attrs label . (,title) <$> rewriteTarget target
+        Image attrs label (target, title) -> Image attrs label . (,title) <$> rewriteTarget target
+        _ -> pure inline
+    rewriteTarget target
+      | isExternal target || T.isPrefixOf "#" target = pure target
+      | otherwise = do
+          let raw = T.unpack target
+              (pathPart, suffix) = break (`elem` ("?#" :: String)) raw
+              rooted = if "/" `isPrefixOf` pathPart then drop 1 pathPart else pathPart
+              logical = trimSlashes rooted
+              asset = if "assets/" `isPrefixOf` logical then Just logical else Nothing
+          if logical `S.member` siteLogicalPaths site
+            then pure $ T.pack $ urlFor logical language <> suffix
+            else case asset of
+              Just path | path `S.member` siteAssets site -> pure $ T.pack $ "/" <> path <> suffix
+              _ -> do
+                unsafeCompiler $ hPutStrLn stderr $ "WARNING: " <> show source <> ": unresolved internal link " <> raw
+                pure target
+
+isExternal :: T.Text -> Bool
+isExternal target =
+  any (`T.isPrefixOf` target) ["http://", "https://", "mailto:", "tel:", "data:"]
+
+trimSlashes :: String -> String
+trimSlashes = reverse . dropWhile (== '/') . reverse . dropWhile (== '/')
+
+isPathPrefixOf :: FilePath -> FilePath -> Bool
+isPathPrefixOf prefix path = prefix == path || (prefix <> "/") `isPrefixOf` path
+
+archiveTitle :: FilePath -> String
+archiveTitle path = "Posts from " <> fmap (\c -> if c == '/' then '-' else c) path
+
+archivePaths :: [BlogPost] -> [FilePath]
+archivePaths = sort . S.toList . S.fromList . concatMap prefixes
+  where
+    prefixes post =
+      case splitOnSlash $ postLogicalPath post of
+        year : month : day : _ -> [year, year </> month, year </> month </> day]
+        _ -> []
+
+splitOnSlash :: String -> [String]
+splitOnSlash "" = []
+splitOnSlash value =
+  let (part, rest) = break (== '/') value
+   in part : case rest of
+        [] -> []
+        _ : remaining -> splitOnSlash remaining
+
+discoverStaticPages :: FilePath -> IO [StaticPage]
+discoverStaticPages root = do
+  exists <- doesDirectoryExist root
+  unless exists $ fail $ "missing static-page directory: " <> root
+  entries <- sort <$> listDirectory root
+  catMaybes <$> traverse discover entries
+  where
+    discover entry = do
+      let path = root </> entry
+      directory <- doesDirectoryExist path
+      file <- doesFileExist path
+      if directory
+        then Just . StaticPage (logicalName entry) <$> discoverSources path
+        else
+          if file && takeExtension entry == ".md"
+            then do
+              language <- readSourceLanguage path
+              pure $ Just $ StaticPage (logicalName $ dropExtension entry) $ Sources $ M.singleton language (fromFilePath path)
+            else pure Nothing
+    logicalName "index" = ""
+    logicalName name = name
+
+discoverBlogPosts :: FilePath -> IO [BlogPost]
+discoverBlogPosts root = do
+  exists <- doesDirectoryExist root
+  if not exists
+    then pure []
+    else do
+      entries <- sort <$> listDirectory root
+      catMaybes <$> traverse discover entries
+  where
+    discover entry = do
+      let path = root </> entry
+          name = if takeExtension entry == ".md" then dropExtension entry else entry
+      directory <- doesDirectoryExist path
+      file <- doesFileExist path
+      case parsePostName name of
+        Nothing
+          | directory || (file && takeExtension entry == ".md") -> fail $ "invalid blog source name: " <> path
+          | otherwise -> pure Nothing
+        Just (date, slug) -> do
+          sources <-
+            if directory
+              then discoverSources path
+              else do
+                language <- readSourceLanguage path
+                pure $ Sources $ M.singleton language (fromFilePath path)
+          let (year, month, day) = dateParts date
+              logicalPath = year </> month </> day </> slug
+          pure $ Just $ BlogPost logicalPath date slug sources
+
+discoverSources :: FilePath -> IO Sources
+discoverSources directory = do
+  entries <- sort <$> listDirectory directory
+  let markdown = filter ((== ".md") . takeExtension) entries
+  when (null markdown) $ fail $ "no language sources in " <> directory
+  pairs <- forM markdown $ \entry -> do
+    let path = directory </> entry
+        language = T.pack $ dropExtension entry
+    metadataLanguage <- readSourceLanguage path
+    when (metadataLanguage /= language) $
+      fail $ path <> ": lang metadata must match filename " <> T.unpack language
+    pure (language, fromFilePath path)
+  pure $ Sources $ M.fromList pairs
+
+readSourceLanguage :: FilePath -> IO T.Text
+readSourceLanguage path = do
+  contents <- lines <$> readFile path
+  let frontMatter = takeWhile (/= "---") $ drop 1 $ dropWhile (/= "---") contents
+      languages = [T.strip $ T.pack $ drop 5 line | line <- frontMatter, "lang:" `isPrefixOf` line]
+  case languages of
+    [language] | not (T.null language) -> pure language
+    _ -> fail $ path <> ": expected exactly one lang field in front matter"
+
+parsePostName :: String -> Maybe (String, String)
+parsePostName name = do
+  let (dateText, slugWithDash) = splitAt 10 name
+  guardValue (length name > 11 && take 1 slugWithDash == "-")
+  day <- parseTimeM True defaultTimeLocale "%F" dateText :: Maybe Day
+  let slug = drop 1 slugWithDash
+  guardValue $ not (null slug) && all (\c -> isAlphaNum c || c == '-') slug
+  pure (formatTime defaultTimeLocale "%F" day, slug)
+
+guardValue :: Bool -> Maybe ()
+guardValue True = Just ()
+guardValue False = Nothing
+
+dateParts :: String -> (String, String, String)
+dateParts date = (take 4 date, take 2 $ drop 5 date, take 2 $ drop 8 date)
+
+discoverOutputTags :: M.Map T.Text LanguageMappings -> [StaticPage] -> [BlogPost] -> [T.Text]
+discoverOutputTags mappings pages posts =
+  sort . S.toList . S.fromList $ concatMap tagsForBase allBases
+  where
+    allSources = fmap staticSources pages <> fmap postSources posts
+    allBases = concatMap (M.keys . sourceFiles) allSources
+    tagsForBase base = maybe [base] mappingTags $ M.lookup base mappings
+
+validateSite :: Site -> IO ()
+validateSite site = do
+  let logicalPaths = "blog" : archivePaths (sitePosts site) <> fmap staticLogicalPath (sitePages site) <> fmap postLogicalPath (sitePosts site)
+      duplicatePaths = duplicateValues logicalPaths
+      routes =
+        [ routeFor logical language
+        | logical <- S.toList $ siteLogicalPaths site,
+          language <- Default : fmap LanguageTag (siteOutputTags site)
+        ]
+      duplicates = duplicateValues routes
+  unless (null duplicatePaths) $ fail $ "duplicate logical paths: " <> show duplicatePaths
+  unless (null duplicates) $ fail $ "duplicate output routes: " <> show duplicates
+
+duplicateValues :: Ord a => [a] -> [a]
+duplicateValues values = M.keys $ M.filter (> (1 :: Int)) $ M.fromListWith (+) [(value, 1) | value <- values]
+
+listFilesRecursively :: FilePath -> IO [FilePath]
+listFilesRecursively root = do
+  entries <- listDirectory root
+  fmap concat $ forM entries $ \entry -> do
+    let path = root </> entry
+    directory <- doesDirectoryExist path
+    if directory then listFilesRecursively path else pure [path]
 
 copyStaticFiles :: Rules ()
 copyStaticFiles = do
-  match ("assets/**" .&&. complement "assets/links.md" .&&. complement "assets/js/**") $ do
-    route idRoute
-    compile copyFileCompiler
-
-  match "assets/js/date.js" $ do
-    route idRoute
-    compile copyFileCompiler
-
-  match ".well-known/**" $ do
-    route idRoute
-    compile copyFileCompiler
-
-  match (fromList ["CNAME", ".nojekyll"]) $ do
-    route idRoute
-    compile copyFileCompiler
-
-compileSourcesAndTemplates :: Rules ()
-compileSourcesAndTemplates = do
-  match "content/**.md" $
-    compile getResourceBody
-
-  match "templates/*" $
-    compile templateBodyCompiler
-
-blogContext :: Context String
-blogContext =
-  constField "posts" ""
-    <> constField "title" "Blog | Akshay Srivatsan"
-    <> constField "lang" "en"
-    <> constField "author" authorName
-    <> constField "copyyear" currentYear
-    <> constField "url" (baseUrl <> "/blog.html")
-    <> constField "alternateLinks" ""
-    <> constField "scripts" ""
-    <> defaultContext
-
-compilePage :: PageMap -> PageSpec -> MappingSet -> TransliterationOverrides -> Variant -> Compiler (Item String)
-compilePage pagesByGroup page mappings overrides variant = do
-  body <- loadBody (fromFilePath $ pageSource page)
-  links <- unsafeCompiler $ readFile "assets/links.md"
-  rendered <- renderMarkdown page body links
-  let renderedForTarget = Item (fromFilePath $ outputFor page variant) (itemBody rendered)
-  transformed <- applyTemplates pagesByGroup page variant mappings overrides renderedForTarget
-  saveSnapshotWhenBlog page transformed
-
-renderMarkdown :: PageSpec -> String -> String -> Compiler (Item String)
-renderMarkdown page body links = do
-  let sourceItem = Item (fromFilePath $ replaceExtension (pageOutput page) "md") (stripLegacyControls body <> "\n\n" <> links)
-  rendered <- writePandocWith writerOptions <$> readPandocWith readerOptions sourceItem
-  pure $ Item (fromFilePath $ pageOutput page) (itemBody rendered)
-
-applyTemplates :: PageMap -> PageSpec -> Variant -> MappingSet -> TransliterationOverrides -> Item String -> Compiler (Item String)
-applyTemplates pagesByGroup page variant mappings overrides item = do
-  metadata <- getMetadata (fromFilePath $ pageSource page)
-  let ctx = pageContext pagesByGroup page variant mappings overrides metadata
-      switcher = switcherHtmlMaybe pagesByGroup page mappings overrides variant
-      item' =
-        fmap
-          ( (if isBlogPage page then id else injectSwitcherAfterTitle switcher)
-              . transformHtml page mappings overrides variant
-          )
-          item
-  if isBlogPage page
-    then
-      loadAndApplyTemplate "templates/post.html" ctx item'
-        >>= loadAndApplyTemplate "templates/default.html" ctx
-    else
-      loadAndApplyTemplate "templates/default.html" ctx item'
-
-pageContext :: PageMap -> PageSpec -> Variant -> MappingSet -> TransliterationOverrides -> Metadata -> Context String
-pageContext pagesByGroup page variant mappings overrides metadata =
-  constField "title" title
-    <> maybe mempty (constField "description") description
-    <> maybe mempty (constField "image-alt") imageAlt
-    <> maybe mempty (constField "title-meta") titleMeta
-    <> constField "image" image
-    <> constField "lang" (variantLang variant)
-    <> constField "author" authorName
-    <> constField "copyyear" currentYear
-    <> constField "url" (baseUrl <> "/" <> outputFor page variant)
-    <> constField "alternateLinks" ""
-    <> maybe mempty (constField "switcher") switcher
-    <> constField "scripts" (scriptsFor page mappings variant)
-    <> defaultContext
-  where
-    transform = transformFor page mappings variant
-    title = transform $ fromMaybe "" $ lookupString "title" metadata
-    description = transform <$> lookupString "description" metadata
-    image = fromMaybe "assets/img/portrait-small.jpg" $ lookupString "image" metadata
-    imageAlt = transform <$> lookupString "image-alt" metadata
-    titleMeta = transform <$> lookupString "title-meta" metadata
-    switcher =
-      switcherHtmlMaybe pagesByGroup page mappings overrides variant
-
-switcherHtmlMaybe :: PageMap -> PageSpec -> MappingSet -> TransliterationOverrides -> Variant -> Maybe String
-switcherHtmlMaybe pagesByGroup page mappings overrides variant =
-  let html = switcherHtml pagesByGroup page mappings overrides variant
-   in if null html then Nothing else Just html
-
-injectSwitcherAfterTitle :: Maybe String -> String -> String
-injectSwitcherAfterTitle Nothing body = body
-injectSwitcherAfterTitle (Just switcher) body =
-  case breakOn titleEnd body of
-    Nothing -> body
-    Just (before, after) -> before <> titleEnd <> "\n<nav class=\"switcher\">\n" <> switcher <> "\n</nav>" <> drop (length titleEnd) after
-  where
-    titleEnd = "</h1>"
-
-saveSnapshotWhenBlog :: PageSpec -> Item String -> Compiler (Item String)
-saveSnapshotWhenBlog page item =
-  if isBlogPage page && pageOutput page == outputFor page (defaultVariant page)
-    then saveSnapshot "content" item
-    else pure item
+  match ("assets/**" .&&. complement "assets/links.md") $ route idRoute >> compile copyFileCompiler
+  match ".well-known/**" $ route idRoute >> compile copyFileCompiler
+  match (fromList ["CNAME", ".nojekyll"]) $ route idRoute >> compile copyFileCompiler
 
 readerOptions :: ReaderOptions
 readerOptions =
   defaultHakyllReaderOptions
-    { readerExtensions = snd $ runState customExtensions githubMarkdownExtensions
+    { readerExtensions =
+        disableExtension Ext_implicit_figures $
+          enableExtension Ext_definition_lists $
+            enableExtension Ext_bracketed_spans $
+              enableExtension Ext_fenced_divs githubMarkdownExtensions
     }
-
-customExtensions :: State Extensions ()
-customExtensions = do
-  modify $ enableExtension Ext_fenced_divs
-  modify $ enableExtension Ext_bracketed_spans
-  modify $ enableExtension Ext_definition_lists
-  modify $ disableExtension Ext_implicit_figures
 
 writerOptions :: WriterOptions
 writerOptions = defaultHakyllWriterOptions
 
-switcherHtml :: PageMap -> PageSpec -> MappingSet -> TransliterationOverrides -> Variant -> String
-switcherHtml pagesByGroup page mappings overrides variant =
-  transformHtml page mappings overrides variant $ languageSwitcher <> scriptSwitcher
+absoluteAsset :: String -> String
+absoluteAsset value
+  | "/" `isPrefixOf` value || isExternal (T.pack value) = value
+  | otherwise = "/" <> value
+
+fallbackTitle :: FilePath -> String
+fallbackTitle "" = "Home"
+fallbackTitle path = takeFileName path
+
+escapeHtml :: String -> String
+escapeHtml = concatMap escape
   where
-    languageSwitcher
-      | showLanguageSwitcher pagesByGroup page =
-          switcherRow page "languages" (languageLinks pagesByGroup page)
-      | otherwise = ""
-    scriptSwitcher
-      | length (pageVariants page) > 1 =
-          switcherRow page "scripts" (variantLinks page variant)
-      | otherwise = ""
-
-showLanguageSwitcher :: PageMap -> PageSpec -> Bool
-showLanguageSwitcher pagesByGroup page =
-  length pages > 1
-  where
-    pages = M.findWithDefault [page] (pageGroup page) pagesByGroup
-
-switcherRow :: PageSpec -> String -> [String] -> String
-switcherRow page key links =
-  "<p>"
-    <> label
-    <> ": "
-    <> intercalate " · " links
-    <> "</p>"
-  where
-    label = switcherLabel page key
-
-switcherLabel :: PageSpec -> String -> String
-switcherLabel page key =
-  case (pageLanguageLabel page, key) of
-    ("Tamil", "languages") -> "மொழிகள்"
-    ("Tamil", "scripts") -> "எழுத்து முறைகள்"
-    ("Hindi", "languages") -> "भाषाएँ"
-    ("Hindi", "scripts") -> "लिपियाँ"
-    ("Sanskrit", "languages") -> "bhāṣāḥ"
-    ("Sanskrit", "scripts") -> "lipayaḥ"
-    ("Latin", "languages") -> "linguae"
-    ("Latin", "scripts") -> "litterae"
-    (_, "languages") -> "Languages"
-    _ -> "Scripts"
-
-languageLinks :: PageMap -> PageSpec -> [String]
-languageLinks pagesByGroup page =
-  [ linkFor other (localizedLanguageName page other)
-  | other <- M.findWithDefault [page] (pageGroup page) pagesByGroup
-  ]
-  where
-    linkFor other label =
-      if pageOutput other == pageOutput page
-        then "<strong>" <> label <> "</strong>"
-        else "<a href=\"/" <> pageOutput other <> "\">" <> label <> "</a>"
-
-localizedLanguageName :: PageSpec -> PageSpec -> String
-localizedLanguageName current target =
-  case (pageLanguageLabel current, pageLanguageLabel target) of
-    ("Tamil", "English") -> "ஆங்கிலம்"
-    ("Tamil", "Latin") -> "லத்தீன்"
-    ("Tamil", "Tamil") -> "தமிழ்"
-    ("Tamil", "Sanskrit") -> "சம்ஸ்கிருதம்"
-    ("Tamil", "Hindi") -> "இந்தி"
-    ("Hindi", "English") -> "आंग्रेज़ी"
-    ("Hindi", "Latin") -> "लातिन"
-    ("Hindi", "Tamil") -> "तमिल"
-    ("Hindi", "Sanskrit") -> "संस्कृत"
-    ("Hindi", "Hindi") -> "हिन्दी"
-    ("Sanskrit", "English") -> "āṅglabhāṣā"
-    ("Sanskrit", "Latin") -> "lātinbhāṣā"
-    ("Sanskrit", "Tamil") -> "tamiḷbhāṣā"
-    ("Sanskrit", "Sanskrit") -> "saṃskṛtam"
-    ("Sanskrit", "Hindi") -> "hindī"
-    ("Latin", "English") -> "Anglica"
-    ("Latin", "Latin") -> "Latina"
-    ("Latin", "Tamil") -> "Tamulica"
-    ("Latin", "Sanskrit") -> "Sanscrita"
-    ("Latin", "Hindi") -> "Hindica"
-    (_, label) -> label
-
-variantLinks :: PageSpec -> Variant -> [String]
-variantLinks page current =
-  [ if v == current
-      then "<strong>" <> variantLabel v <> "</strong>"
-      else "<a href=\"/" <> outputFor page v <> "\">" <> variantLabel v <> "</a>"
-  | v <- pageVariants page
-  ]
-
-stripLegacyControls :: String -> String
-stripLegacyControls =
-  stripBlock "<div id=\"scripts\"" "</div>"
-    . stripBlock "<div id=\"font\"" "</div>"
-    . stripBlock "<script>" "</script>"
-
-stripBlock :: String -> String -> String -> String
-stripBlock start end input =
-  case breakOn start input of
-    Nothing -> input
-    Just (before, rest) ->
-      case breakOn end rest of
-        Nothing -> before
-        Just (_, afterEnd) -> before <> stripBlock start end (drop (length end) afterEnd)
-
-breakOn :: String -> String -> Maybe (String, String)
-breakOn needle haystack = go "" haystack
-  where
-    go _ "" = Nothing
-    go before rest@(x : xs)
-      | needle `prefixOf` rest = Just (reverse before, rest)
-      | otherwise = go (x : before) xs
-
-prefixOf :: String -> String -> Bool
-prefixOf prefix s = take (length prefix) s == prefix
+    escape '&' = "&amp;"
+    escape '<' = "&lt;"
+    escape '>' = "&gt;"
+    escape '"' = "&quot;"
+    escape c = [c]

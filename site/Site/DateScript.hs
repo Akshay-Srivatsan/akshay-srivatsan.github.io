@@ -3,20 +3,17 @@
 module Site.DateScript where
 
 import Data.List (intercalate)
-import Site.Config (isLatinPage)
-import Site.Transliterate (MappingSet, transformFor)
 import Site.Types
 
-scriptsFor :: PageSpec -> MappingSet -> Variant -> String
-scriptsFor page mappings variant
-    | isLatinPage page =
+scriptsFor :: FilePath -> OutputLanguage -> (String -> String) -> String
+scriptsFor logicalPath language transform
+    | logicalPath == "" && primaryLanguage (requestedTag language) == "la" =
         "<script src=\"/assets/js/date.js\" defer"
             <> concatMap dateListAttr dateLists
             <> concatMap dateTextAttr dateTexts
             <> "></script>"
     | otherwise = ""
   where
-    transform = transformFor page mappings variant
     dateListAttr (name, values) =
         " data-" <> name <> "=\"" <> escapeHtmlAttr (intercalate "\t" $ fmap transform values) <> "\""
     dateTextAttr (name, value) =

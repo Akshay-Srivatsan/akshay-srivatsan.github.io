@@ -1,6 +1,6 @@
 # Circle: ◌◌◌◌◌◌◌
 # Circle: ◌
-name: source
+name: sa-Latn-x-simple
 style: alphabet
 vowels:
   - [a, ā, i, ī, u, ū]
@@ -21,7 +21,7 @@ punctuation:
   - ["’", ., ōṃ]
 digits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ---
-name: iast
+name: sa-Latn
 style: alphabet
 vowels:
   - [a, ā, i, ī, u, ū]
@@ -42,28 +42,7 @@ punctuation:
   - ["’", ., ōṃ]
 digits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ---
-name: iso
-style: alphabet
-vowels:
-  - [a, ā, i, ī, u, ū]
-  - [r̥, r̥̄, l̥, l̥̄]
-  - [e, ai, o, au]
-modifiers:
-  - ["", ṁ, m̐, ḥ]
-consonants:
-  - [k, kh, g, gh, ṅ]
-  - [c, ch, j, jh, ñ]
-  - [ṭ, ṭh, ḍ, ḍh, ṇ]
-  - [t, th, d, dh, n]
-  - [p, ph, b, bh, m]
-  - [y, r, l, v, ḷ]
-  - [ś, ṣ, s, h]
-  - [f, ṉ]
-punctuation:
-  - ["’", ., ōṃ]
-digits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
----
-name: devanagari
+name: sa
 style: abugida
 virama: ◌्
 vowels:
@@ -89,33 +68,7 @@ punctuation:
   - [ऽ, ।, ॐ]
 digits: [०, १, २, ३, ४, ५, ६, ७, ८, ९]
 ---
-name: tamil
-style: abugida
-virama: ◌்
-vowels:
-  - [அ, ஆ, இ, ஈ, உ, ஊ]
-  - [ரு, ரூ, லு, லூ]
-  - [ஏ, ஐ, ஓ, ஔ]
-diacritics:
-  - [◌, ◌ா, ◌ி, ◌ீ, ◌ு, ◌ூ]
-  - [◌்ரு, ◌்ரூ, ◌்லு, ◌்லூ]
-  - [◌ே, ◌ை, ◌ோ, ◌ௌ]
-modifiers:
-  - ["", ◌ஂ, ◌ஂ, ◌𑌃]
-consonants:
-  - [க, க, க, க, ங]
-  - [ச, ச, ஜ, ஜ, ஞ]
-  - [ட, ட, ட, ட, ண]
-  - [த, த, த, த, ந]
-  - [ப, ப, ப, ப, ம]
-  - [ய, ர, ல, வ, ள]
-  - [ஶ, ஷ, ஸ, ஹ]
-  - [ஃப, ன]
-punctuation:
-  - ["'", ., ௐ]
-digits: [௦, ௧, ௨, ௩, ௪, ௫, ௬, ௭, ௮, ௯]
----
-name: brahmi
+name: sa-Brah
 style: abugida
 virama: ◌𑁆
 vowels:
@@ -141,7 +94,7 @@ punctuation:
   - ["'", 𑁉, ॐ]
 digits: [𑁦, 𑁧, 𑁨, 𑁩, 𑁪, 𑁫, 𑁬, 𑁭, 𑁮, 𑁯]
 ---
-name: grantha
+name: sa-Gran
 style: abugida
 virama: ◌𑍍
 vowels:
@@ -167,28 +120,7 @@ punctuation:
   - [𑌽, ।, 𑍐]
 digits: [௦, ௧, ௨, ௩, ௪, ௫, ௬, ௭, ௮, ௯]
 ---
-name: ipa
-style: alphabet
-vowels:
-  - [ɐ, aː, ɪ, iː, ʊ, uː]
-  - [r̩, r̩ː, l̩, l̩ː]
-  - [eː, aɪ, oː, aʊ]
-modifiers:
-  - ["", ◌̃, ◌̃,h]
-consonants:
-  - [k, kʰ, ɡ, ɡʱ, ŋ]
-  - [tɕ, tɕʰ, dʑ, dʑʱ, ɲ]
-  - [ʈ, ʈʰ, ɖ, ɖʱ, ɳ]
-  - [t, tʰ, d, dʱ, n]
-  - [p, pʰ, b, bʱ, m]
-  - [y, r, l, ʋ, ḷ]
-  - [ɕ, ʂ, s, ɦ]
-  - [f, n]
-punctuation:
-  - ["", ., õː]
-digits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
----
-name: tamil_grantha
+name: sa-Gran-x-tamil
 style: abugida
 virama: ◌𑍍
 vowels:
@@ -213,50 +145,3 @@ consonants:
 punctuation:
   - ["'", ., ௐ]
 digits: [௦, ௧, ௨, ௩, ௪, ௫, ௬, ௭, ௮, ௯]
----
-name: english
-style: alphabet
-vowels:
-  - [a, aa, i, ee, u, oo]
-  - [ri, ree, li, lee]
-  - [e, ai, o, au]
-modifiers:
-  - ["", m, m, h]
-consonants:
-  - [k, kh, g, gh, n]
-  - [c, ch, j, jh, n]
-  - [t, th, d, dh, n]
-  - [t, th, d, dh, n]
-  - [p, ph, b, bh, m]
-  - [y, r, l, v, l]
-  - [sh, sh, s, h]
-  - [f, n]
-punctuation:
-  - ["'", ., om]
-digits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
----
-name: sharada
-style: abugida
-virama: ◌𑇀
-vowels:
-  - [𑆃, 𑆄, 𑆅, 𑆆, 𑆇, 𑆈]
-  - [𑆉, 𑆊, 𑆋, 𑆌]
-  - [𑆍, 𑆎, 𑆏, 𑆐]
-diacritics:
-  - [◌, ◌𑆳, ◌𑆴, ◌𑆵, ◌𑆶, ◌𑆷]
-  - [◌𑆸, ◌𑆹, ◌𑆺, ◌𑆻]
-  - [◌𑆼, ◌𑆽, ◌𑆾, ◌𑆿]
-modifiers:
-  - ["", ◌𑆁, ◌𑆀, ◌𑆂]
-consonants:
-  - [𑆑, 𑆒, 𑆓, 𑆔, 𑆕]
-  - [𑆖, 𑆗, 𑆘, 𑆙, 𑆚]
-  - [𑆛, 𑆜, 𑆝, 𑆞, 𑆟]
-  - [𑆠, 𑆡, 𑆢, 𑆣, 𑆤]
-  - [𑆥, 𑆦, 𑆧, 𑆨, 𑆩]
-  - [𑆪, 𑆫, 𑆬, 𑆮, 𑆭]
-  - [𑆯, 𑆑𑇀𑆰, 𑆱, 𑆲]
-  - [𑆦𑇊, 𑆤]
-punctuation:
-  - [𑇁, 𑇅, 𑇄]
-digits: [𑇐, 𑇑, 𑇒, 𑇓, 𑇔, 𑇕, 𑇖, 𑇗, 𑇘, 𑇙]

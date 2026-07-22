@@ -1,6 +1,6 @@
 # Circle: ◌◌◌◌◌◌◌
 # Circle: ◌
-name: source
+name: ta-Latn-x-simple
 style: alphabet
 vowels:
   - [a, ā, i, ī, u, ū]
@@ -21,7 +21,7 @@ punctuation:
   - [ḵ, ., ōṃ]
 digits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ---
-name: tamil
+name: ta
 style: abugida
 virama: ◌்
 vowels:
@@ -46,7 +46,7 @@ punctuation:
   - [ஃ, ., ௐ]
 digits: [௦, ௧, ௨, ௩, ௪, ௫, ௬, ௭, ௮, ௯]
 ---
-name: brahmi
+name: ta-Brah
 style: abugida
 virama: ◌𑁆
 vowels:
@@ -71,32 +71,7 @@ punctuation:
   - [◌𑀂, 𑁉, ௐ]
 digits: [𑁦, 𑁧, 𑁨, 𑁩, 𑁪, 𑁫, 𑁬, 𑁭, 𑁮, 𑁯]
 ---
-name: devanagari
-style: abugida
-virama: ◌्
-vowels:
-  - [अ, आ, इ, ई, उ, ऊ]
-  - [ऎ, ए, ऐ, ऒ, ओ, औ]
-diacritics:
-  - [◌, ◌ा, ◌ि, ◌ी, ◌ु, ◌ू]
-  - [◌ॆ, ◌े, ◌ै, ◌ॊ, ◌ो, ◌ौ]
-modifiers:
-  - ["", ◌ं]
-consonants:
-  - [क, च, ट, त, प, ऱ]
-  - [" क", " स", " ट", " त", " प", " ऱ"]
-  - ["क् क", "च् च", "त् त", "प् प"]
-  - [क्क, च्च, ट्ट, त्त, प्प, ऱ्ऱ]
-  - [ऱ्क, ऱ्प, ञ्च]
-  - [ङ, ञ, ण, न, म, ऩ]
-  - [य, र, ल, व, ऴ, ळ]
-  - [श, ष, स, ह, ज]
-  - [क्ष, फ़, ज़]
-punctuation:
-  - [ह, ।, ॐ]
-digits: [०, १, २, ३, ४, ५, ६, ७, ८, ९]
----
-name: iso
+name: ta-Latn
 style: alphabet
 vowels:
   - [a, ā, i, ī, u, ū]
@@ -115,46 +90,4 @@ consonants:
   - [kṣ, f, z]
 punctuation:
   - [ḵ, ., ōṃ]
-digits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
----
-name: ipa
-style: alphabet
-vowels:
-  - [ʌ, ɑː, i, iː, u, uː]
-  - [e, eː, ʌj, o, oː, ʌʋ]
-modifiers:
-  - ["", ◌̃]
-consonants:
-  - [g, s, ɖ, d, b, r]
-  - [" k", " s", " ʈ", " t", " p", " r"]
-  - [" k", " tɕ", " t", " p"]
-  - [kː, tɕː, ʈː, tː, pː, tːr]
-  - [rk, rp, ɲdʑ]
-  - [ŋ, ɲ, ɳ, n̪, m, n]
-  - [j, ɾ, l, ʋ, ɻ, ɭ]
-  - [ɕ, ʂ, s, h, dʑ]
-  - [kʂ, f, z]
-punctuation:
-  - [x, ., õː]
-digits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
----
-name: english
-style: alphabet
-vowels:
-  - [a, aa, i, ee, u, oo]
-  - [e, e, ai, o, o, au]
-modifiers:
-  - ["", n]
-consonants:
-  - [g, s, d, dh, b, r]
-  - [" k", " s", " t", " th", " p", " r"]
-  - [" k", " ch", " th", " p"]
-  - [kk, cch, tt, tth, pp, tr]
-  - [rk, rp, nj]
-  - [n, n, n, n, m, n]
-  - [y, r, l, v, zh, l]
-  - [s, sh, s, h, j]
-  - [ksh, f, z]
-punctuation:
-  - [hk, ., om]
 digits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]

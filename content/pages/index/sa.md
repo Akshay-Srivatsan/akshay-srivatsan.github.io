@@ -3,7 +3,7 @@ title: akṣayasya jālasthānas
 description: chātras saṅgaṇakāṇāṃ stenfārd viśvavidyalaye
 image: assets/img/portrait-small.jpg
 image-alt: citraṃ mama sān frānsisko nagare
-lang: sa-Latn
+lang: sa
 ---
 
 # akṣay śrīvatsan
@@ -44,9 +44,9 @@ sikṣayām āsam. [[CS]{lang=en} 240[LX]{lang=en}][cs240lx-22spr] ca [[CS]{lang
 
 ### pariśabdās
 
-- [vargās][courses]
-- [karyās][jobs]
-- [nāṭakās][shows]
+- [vargās](/courses/)
+- [karyās](/jobs/)
+- [nāṭakās](/shows/)
 - [[GitHub]{lang=en}][github]
 - [[LinkedIn]{lang=en}][linkedin]
 - [īpatraṃ preṣya][email]
