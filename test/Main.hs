@@ -3,8 +3,12 @@
 module Main where
 
 import Control.Monad (unless)
+import Data.Aeson (Value (String))
+import Data.Aeson.KeyMap qualified as KM
 import Data.Map.Strict qualified as M
+import Hakyll (fromFilePath)
 import Site.Config
+import Site.Content
 import Site.Transliterate
 import Site.Types
 import System.Exit (exitFailure)
@@ -13,6 +17,7 @@ import Text.Pandoc.Definition
 main :: IO ()
 main = do
   routeTests
+  contentTests
   localeTests
   transliterationTests
   putStrLn "site tests passed"
@@ -27,6 +32,61 @@ routeTests = do
   assertEqual "post tagged" "2026/07/21/example/ta.html" $ routeFor "2026/07/21/example" (LanguageTag "ta")
   assertEqual "default URL" "/courses/" $ urlFor "courses" Default
   assertEqual "tagged URL" "/courses/ta.html" $ urlFor "courses" (LanguageTag "ta")
+
+contentTests :: IO ()
+contentTests = do
+  let metadata language = KM.singleton "lang" (String language)
+      staticSources =
+        [ (fromFilePath "content/pages/courses.md", metadata "en"),
+          (fromFilePath "content/pages/index/en.md", metadata "en"),
+          (fromFilePath "content/pages/index/ta.md", metadata "ta")
+        ]
+      expectedPages =
+        [ StaticPage "" $
+            Sources $
+              M.fromList
+                [ ("en", fromFilePath "content/pages/index/en.md"),
+                  ("ta", fromFilePath "content/pages/index/ta.md")
+                ],
+          StaticPage "courses" $
+            Sources $
+              M.singleton "en" (fromFilePath "content/pages/courses.md")
+        ]
+  assertEqual "static-page discovery" (Right expectedPages) $ discoverStaticPages staticSources
+  assertLeft
+    "translated filename validation"
+    $ discoverStaticPages [(fromFilePath "content/pages/index/ta.md", metadata "en")]
+
+  let blogSources =
+        [ (fromFilePath "content/blog/2026-07-21-first.md", metadata "en"),
+          (fromFilePath "content/blog/2026-07-22-second/en.md", metadata "en"),
+          (fromFilePath "content/blog/2026-07-22-second/ta.md", metadata "ta")
+        ]
+      expectedPosts =
+        [ BlogPost
+            "2026/07/21/first"
+            "2026-07-21"
+            "first"
+            (Sources $ M.singleton "en" $ fromFilePath "content/blog/2026-07-21-first.md"),
+          BlogPost
+            "2026/07/22/second"
+            "2026-07-22"
+            "second"
+            ( Sources $
+                M.fromList
+                  [ ("en", fromFilePath "content/blog/2026-07-22-second/en.md"),
+                    ("ta", fromFilePath "content/blog/2026-07-22-second/ta.md")
+                  ]
+            )
+        ]
+  assertEqual "blog discovery" (Right expectedPosts) $ discoverBlogPosts blogSources
+  assertEqual
+    "archive discovery"
+    ["2026", "2026/07", "2026/07/21", "2026/07/22"]
+    (archivePaths expectedPosts)
+  assertLeft
+    "blog filename validation"
+    $ discoverBlogPosts [(fromFilePath "content/blog/not-a-date.md", metadata "en")]
 
 localeTests :: IO ()
 localeTests = do
@@ -64,7 +124,12 @@ require label Nothing = failTest $ label <> " was missing"
 assertEqual :: (Eq a, Show a) => String -> a -> a -> IO ()
 assertEqual label expected actual =
   unless (expected == actual) $
-    failTest $ label <> ": expected " <> show expected <> ", got " <> show actual
+    failTest $
+      label <> ": expected " <> show expected <> ", got " <> show actual
+
+assertLeft :: String -> Either String a -> IO ()
+assertLeft _ (Left _) = pure ()
+assertLeft label (Right _) = failTest $ label <> ": expected failure"
 
 failTest :: String -> IO a
 failTest message = do

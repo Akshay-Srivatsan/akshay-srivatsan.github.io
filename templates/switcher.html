@@ -1,0 +1,26 @@
+$if(has-languages)$
+<p>
+  <span>$language-label$:</span>
+  $for(languages)$
+    $if(current)$
+  <strong>$label$</strong>
+    $else$
+  <a hreflang="$lang$" href="$url$">$label$</a>
+    $endif$
+    $sep$ ·
+  $endfor$
+</p>
+$endif$
+$if(has-scripts)$
+<p>
+  <span>$script-label$:</span>
+  $for(scripts)$
+    $if(current)$
+  <strong>$label$</strong>
+    $else$
+  <a hreflang="$lang$" href="$url$">$label$</a>
+    $endif$
+    $sep$ ·
+  $endfor$
+</p>
+$endif$

@@ -2,37 +2,16 @@
 
 module Site.Types where
 
-import Data.Aeson (Value (..), (.:), (.:?), (.!=))
-import Data.Map.Strict qualified as M
+import Data.Aeson (Value (..), (.!=), (.:), (.:?))
 import Data.Scientific (FPFormat (Fixed), Scientific, floatingOrInteger, formatScientific)
 import Data.Text qualified as T
 import Data.Yaml qualified as Y
-import Hakyll (Identifier)
 import System.FilePath ((</>))
 
 data OutputLanguage
   = Default
   | LanguageTag T.Text
   deriving (Eq, Ord, Show)
-
-newtype Sources = Sources
-  { sourceFiles :: M.Map T.Text Identifier
-  }
-  deriving (Show)
-
-data StaticPage = StaticPage
-  { staticLogicalPath :: FilePath,
-    staticSources :: Sources
-  }
-  deriving (Show)
-
-data BlogPost = BlogPost
-  { postLogicalPath :: FilePath,
-    postDate :: String,
-    postSlug :: String,
-    postSources :: Sources
-  }
-  deriving (Show)
 
 data Style = Abugida | Alphabet
   deriving (Eq, Show)

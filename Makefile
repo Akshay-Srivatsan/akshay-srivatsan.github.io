@@ -21,6 +21,10 @@ serve:
 watch:
 	cabal run site -- watch
 
+.PHONY: check
+check: build
+	cabal run site -- check --internal-links
+
 .PHONY: format
 format:
 	prettier --write .

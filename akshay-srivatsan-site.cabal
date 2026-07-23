@@ -7,6 +7,7 @@ executable site
   main-is:          Main.hs
   other-modules:
     Site.Config
+    Site.Content
     Site.DateScript
     Site.Transliterate
     Site.Types
@@ -19,10 +20,8 @@ executable site
     , base                >=4.18 && <5
     , bytestring
     , containers
-    , directory
     , filepath
     , hakyll              >=4.16
-    , mtl
     , pandoc
     , pandoc-types
     , scientific
@@ -36,13 +35,11 @@ test-suite site-test
   main-is:          Main.hs
   other-modules:
     Site.Config
+    Site.Content
     Site.Transliterate
     Site.Types
 
-  hs-source-dirs:
-    test
-    site
-
+  hs-source-dirs:   test site
   default-language: GHC2021
   ghc-options:      -Wall -Wcompat
   build-depends:
@@ -55,5 +52,6 @@ test-suite site-test
     , pandoc-types
     , scientific
     , text
+    , time
     , unicode-transforms
     , yaml

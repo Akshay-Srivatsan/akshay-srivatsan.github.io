@@ -1,0 +1,12 @@
+<h1>$heading$</h1>
+$if(has-posts)$
+<ul class="post-list">
+  $for(posts)$
+  <li>
+    <a href="$url$">$title$</a> <span class="post-date">$date$</span>
+  </li>
+  $endfor$
+</ul>
+$else$
+<p>$empty$</p>
+$endif$
