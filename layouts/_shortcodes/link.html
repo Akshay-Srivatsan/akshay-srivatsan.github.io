@@ -1,0 +1,6 @@
+{{- $key := .Get 0 -}}
+{{- with index hugo.Data.links $key -}}
+  {{- . -}}
+{{- else -}}
+  {{- errorf "%s: unknown link key %q" .Position $key -}}
+{{- end -}}

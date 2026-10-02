@@ -1,0 +1,13 @@
+{{ define "main" }}
+<article>
+  <header>
+    <h1>{{ .Title }}</h1>
+    {{ if gt (len .AllTranslations) 1 }}{{ partial "languages.html" . }}{{ end }}
+    <p><time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time></p>
+    {{ with .GetTerms "tags" }}
+    <p class="post-tags">{{ range . }}<a href="{{ .RelPermalink }}">{{ .Title }}</a> {{ end }}</p>
+    {{ end }}
+  </header>
+  {{ .Content }}
+</article>
+{{ end }}

@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ partial "languages.html" . }}
+  {{ .Content }}
+  {{ with partial "posts.html" .Site }}
+    {{ partial "post-list.html" . }}
+  {{ else }}
+    <p>{{ T "no-posts" }}</p>
+  {{ end }}
+{{ end }}

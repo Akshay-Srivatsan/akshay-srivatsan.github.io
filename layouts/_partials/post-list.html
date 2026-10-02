@@ -1,0 +1,13 @@
+<ul class="post-list">
+  {{ range . }}
+  <li>
+    <a class="post-title" lang="{{ .Language.Lang }}" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+    <span class="post-languages">
+      {{ range .AllTranslations }}
+      <a lang="{{ .Language.Lang }}" hreflang="{{ .Language.Lang }}" href="{{ .RelPermalink }}">{{ .Language.Label }}</a>
+      {{ end }}
+    </span>
+  </li>
+  {{ end }}
+</ul>

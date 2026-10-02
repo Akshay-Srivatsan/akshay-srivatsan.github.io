@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <h1>{{ T "tags" }}</h1>
+  {{ partial "languages.html" . }}
+  <ul>
+    {{ range .Data.Terms.Alphabetical }}
+    <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>
+    {{ end }}
+  </ul>
+{{ end }}

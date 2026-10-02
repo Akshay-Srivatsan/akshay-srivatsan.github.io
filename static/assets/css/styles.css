@@ -1,0 +1,121 @@
+@import url('/assets/css/fonts.css');
+
+body {
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+img {
+  float: right;
+  max-width: 240px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.ipa {
+  font-size: 1.25em;
+}
+
+.switcher {
+  color: #555;
+  font-size: 0.95em;
+  margin: -0.5rem 0 1.25rem;
+}
+
+.switcher p {
+  margin: 0.2rem 0;
+}
+
+.switcher strong {
+  font-weight: 600;
+}
+
+.site-nav, .post-languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+}
+
+.site-nav {
+  margin: 1rem 0;
+}
+
+.switcher a, .switcher strong {
+  margin-right: 0.75rem;
+}
+
+.post-list li {
+  margin-bottom: 1rem;
+}
+
+.post-date, .post-languages {
+  font-size: 0.9em;
+}
+
+.post-date {
+  color: #555;
+}
+
+article img {
+  float: none;
+  max-width: 100%;
+  border-radius: 0;
+  display: block;
+  margin: 1rem 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .post-date {
+    color: #CCC;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  h1, h2 {
+    text-align: center;
+  }
+  body {
+    max-width: inherit;
+    margin: 25px;
+  }
+  img {
+    max-width: 196px;
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color: #FAFAFA;
+    background: #212121;
+  }
+
+  a {
+    color: #03A9F4;
+  }
+
+  a:visited {
+    color: #B39DDB;
+  }
+
+  .switcher {
+    color: #CCC;
+  }
+}
+
+table {
+  width: 100%;
+}
+
+.footnote-ref {
+  text-decoration: none;
+  margin-left: 2px;
+  color: inherit;
+}
+
+.llm {
+  font-size: 1pt;
+  opacity: 0;
+}

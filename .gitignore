@@ -1,7 +1,14 @@
 .DS_Store
-*.pyc
 .vscode
-_cache
-_site
-dist-newstyle
-transliterate/target
+public/
+resources/_gen/
+.hugo_build.lock
+
+# Ignore artifacts left by the previous generator.
+_cache/
+_site/
+dist-newstyle/
+
+# Some global Git ignore files exclude every directory named tags.
+!/content/tags/
+!/content/tags/**

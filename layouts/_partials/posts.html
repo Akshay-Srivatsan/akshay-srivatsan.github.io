@@ -1,0 +1,15 @@
+{{/* One published variant per post, preferring this site then language weight order. */}}
+{{ $posts := where .RegularPages "Section" "blog" }}
+{{ range hugo.Sites }}
+  {{ $posts = $posts | lang.Merge (where .RegularPages "Section" "blog") }}
+{{ end }}
+{{ range $posts }}
+  {{ $date := .Date.Format "2006-01-02" }}
+  {{ range .AllTranslations }}
+    {{ if .Date.IsZero }}{{ errorf "%s: blog posts require a date" .File.Path }}{{ end }}
+    {{ if ne (.Date.Format "2006-01-02") $date }}
+      {{ errorf "%s: translations must share the same publication date" .File.Path }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return $posts.ByDate.Reverse }}

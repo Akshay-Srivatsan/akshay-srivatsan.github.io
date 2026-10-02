@@ -1,0 +1,51 @@
+baseURL: https://aks.io/
+title: Akshay Srivatsan
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+disableDefaultLanguageRedirect: true
+disableAliases: true
+enableRobotsTXT: true
+timeZone: America/Los_Angeles
+
+languages:
+  en:
+    label: English
+    locale: en
+    weight: 1
+  la:
+    label: Latina
+    locale: la
+    weight: 2
+  sa:
+    label: संस्कृतम्
+    locale: sa
+    weight: 3
+  ta:
+    label: தமிழ்
+    locale: ta
+    weight: 4
+
+params:
+  author: Akshay Srivatsan
+  image: /assets/img/portrait-small.jpg
+
+taxonomies:
+  tag: tags
+
+outputs:
+  home: [HTML]
+  section: [HTML]
+  taxonomy: [HTML]
+  term: [HTML]
+
+markup:
+  goldmark:
+    # Bundle assets must also work for posts without an English version.
+    duplicateResourceFiles: true
+    renderHooks:
+      image:
+        useEmbedded: always
+      link:
+        useEmbedded: always
+    renderer:
+      unsafe: true

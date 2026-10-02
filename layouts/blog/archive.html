@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ partial "languages.html" . }}
+  {{ with partial "posts.html" .Site }}
+    {{ range .GroupByDate "2006" }}
+      <h2>{{ .Key }}</h2>
+      {{ range .Pages.GroupByDate "2006-01" }}
+        <h3>{{ .Key }}</h3>
+        {{ partial "post-list.html" .Pages }}
+      {{ end }}
+    {{ end }}
+  {{ else }}
+    <p>{{ T "no-posts" }}</p>
+  {{ end }}
+{{ end }}

@@ -1,30 +1,18 @@
-.PHONY: all
+HUGO ?= hugo
+
+.PHONY: all build rebuild clean serve watch check
 all: build
 
-.PHONY: build
 build:
-	cabal run site -- build
+	$(HUGO) --cleanDestinationDir --printI18nWarnings --panicOnWarning
 
-.PHONY: rebuild
-rebuild:
-	cabal run site -- rebuild
+rebuild: build
 
-.PHONY: clean
 clean:
-	cabal run site -- clean
+	rm -rf public
 
-.PHONY: serve
-serve:
-	cabal run site -- server
+serve watch:
+	$(HUGO) server
 
-.PHONY: watch
-watch:
-	cabal run site -- watch
-
-.PHONY: check
 check: build
-	cabal run site -- check --internal-links
-
-.PHONY: format
-format:
-	prettier --write .
+	HUGO="$(HUGO)" sh scripts/check-site.sh

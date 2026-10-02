@@ -10,13 +10,9 @@
     in {
       devShells.${system}.default = pkgs.mkShell {
         packages = with pkgs; [
-          ghc
-          zlib
-          cabal-install
-          haskell-language-server
-          hlint
-          ormolu
-          haskellPackages.cabal-fmt
+          hugo
+          gnumake
+          libxml2.bin
         ];
       };
     };

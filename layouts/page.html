@@ -1,0 +1,4 @@
+{{ define "main" }}
+  {{ if gt (len .AllTranslations) 1 }}{{ partial "languages.html" . }}{{ end }}
+  {{ .Content }}
+{{ end }}
